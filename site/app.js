@@ -316,7 +316,7 @@
         <span class="count" id="count"></span>
       </div>
       <div class="vlist">
-        <div class="vrow vhead"><span class="label">Variable</span><span class="label">${glyph('trait')}Trait</span><span class="label">Method / scale</span><span class="label">Data type</span></div>
+        <div class="vrow vhead"><span class="label">Variable</span><span class="label">Trait</span><span class="label">Method / scale</span><span class="label">Data type</span></div>
         <ul id="list"><li class="empty">Loading variables...</li></ul>
       </div>
       <button type="button" class="more" id="more" aria-label="Show more variables" title="Show more" hidden>${chevron('down')}</button>`;
@@ -379,7 +379,7 @@
       <div class="browser">
         <div class="tree-pane">
           <div class="tree-tools">
-            <div class="type-key" aria-hidden="true"><span>${glyph('term')}Trait class</span><span>${glyph('variable')}Variable</span></div>
+            <div class="type-key" aria-hidden="true"><span>${glyph('term')}Trait class</span><span>${glyph('trait')}Trait</span><span>${glyph('variable')}Variable</span></div>
             <input type="search" id="tq" placeholder="Filter traits and variables" aria-label="Filter traits and variables">
             <span class="count" id="tcount"></span>
           </div>
@@ -448,7 +448,7 @@
           const tOpen = (filtering && !hit(traitHay.get(t))) || open.has(`t:${t.key}`);
           return `
             <li class="tn" role="treeitem" aria-expanded="${tOpen}">
-              <div class="tn-row${selected === t.key ? ' sel' : ''}">${toggle(`t:${t.key}`, tOpen, traitName(t))}<a class="tn-label" href="${href(t.key)}">${esc(traitName(t))}</a><span class="tn-n">${vs.length}</span></div>
+              <div class="tn-row${selected === t.key ? ' sel' : ''}">${toggle(`t:${t.key}`, tOpen, traitName(t))}${glyph('trait')}<a class="tn-label" href="${href(t.key)}">${esc(traitName(t))}</a><span class="tn-n">${vs.length}</span></div>
               ${tOpen ? `<ul role="group">${vs.map((v) => `
                 <li class="tn tn-leaf" role="treeitem"><div class="tn-row${selected === v.observationVariableDbId ? ' sel' : ''}"><span class="tw-gap"></span>${glyph('variable')}<a class="tn-label" href="${href(v.observationVariableDbId)}">${esc(varName(v))}</a></div></li>`).join('')}</ul>` : ''}
             </li>`;
@@ -486,7 +486,7 @@
     function showTrait(t) {
       const tr = t.trait;
       pane.innerHTML = `
-        <span class="label">Trait</span>
+        <span class="label">${glyph('trait')}Trait</span>
         <h2>${esc(traitName(t))}</h2>
         <p class="term-id">${esc(t.key.startsWith('none:') ? 'No trait ID' : t.key)}</p>
         <dl class="kv">

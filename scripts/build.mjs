@@ -376,7 +376,11 @@ for (const id of ids) {
     ontologyDbId: id, ontologyName: o.ontologyName, preferred: LABELS[prefer], reason,
     planteomeFile: planteome?.file ?? null, planteomeUsable: planteome?.usable ?? false,
     planteomeDate: planteome?.date ?? null, cropontologyLoadedAt: siteState?.loadedAt ?? null,
-    served: variables.length, fromCropontology: fromCount.cropontology, fromPlanteome: fromCount.planteome,
+    served: variables.length,
+    // How many served variables each source has (shared ones count for both)…
+    inCropontology: s.agree + s.disagree + s.onlyCropontology, inPlanteome: s.agree + s.disagree + s.onlyPlanteome,
+    // …and which copy each served record was taken from (a shared variable is taken from the preferred copy).
+    fromCropontology: fromCount.cropontology, fromPlanteome: fromCount.planteome,
     agree: s.agree, disagree: s.disagree, onlyCropontology: s.onlyCropontology, onlyPlanteome: s.onlyPlanteome,
     duplicatesLeftOut: s.duplicates.length, obsoleteLeftOut: s.obsolete.length,
   });
@@ -387,6 +391,7 @@ for (const id of ids) {
     .map((c) => [c.toLowerCase(), c])).values()];
   const sourceInfo = {
     preferred: LABELS[prefer], reason,
+    inCropontology: s.agree + s.disagree + s.onlyCropontology, inPlanteome: s.agree + s.disagree + s.onlyPlanteome,
     fromCropontology: fromCount.cropontology, fromPlanteome: fromCount.planteome,
     ...(srcs.planteome ? { planteomeFile: srcs.planteome.url } : {}),
   };
@@ -456,6 +461,7 @@ for (const id of ids) {
     source: {
       preferred: prefer, label: LABELS[prefer], reason, cropontologyUrl: site ? srcs.cropontology.url : null,
       planteomeUrl: srcs.planteome?.url ?? null, planteomeFile: srcs.planteome?.file ?? null,
+      inCropontology: s.agree + s.disagree + s.onlyCropontology, inPlanteome: s.agree + s.disagree + s.onlyPlanteome,
       fromCropontology: fromCount.cropontology, fromPlanteome: fromCount.planteome,
     },
   });
@@ -495,18 +501,18 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
   policy: {
     include: 'Only CO-numbered ontologies (CO_###) are included.',
     merge: [
-      'Each ontology serves every variable found in either cropontology.org or its Planteome GitHub trait dictionary.',
+      'Each ontology serves every variable found in either Crop Ontology or its Planteome trait dictionary.',
       'Where both have a variable and its details agree, it is served as is.',
-      `Where they disagree, the Planteome GitHub version is used, unless cropontology.org changed the ontology later than the GitHub file: a reload on or after ${siteReloadsCountFrom} (earlier reloads were the site's 2023 migration) or an edit to the site seen by the harvester.`,
+      `Where they disagree, the Planteome version is used, unless Crop Ontology changed the ontology later than the Planteome file: a reload on or after ${siteReloadsCountFrom} (earlier reloads were Crop Ontology's 2023 migration) or an edit seen by the harvester.`,
       'A variable that only one copy has, but whose name matches a variable under a different ID in the preferred copy, is treated as the same variable renumbered and left out.',
-      'A GitHub trait dictionary is only used if it has trait, method and scale columns.',
+      'A Planteome trait dictionary is only used if it has trait, method and scale columns.',
     ],
     formatting: [
       'List responses put records under result.data, as the BrAPI v2 specification requires.',
       'Scale categories written as "value = label" are split into BrAPI { value, label } objects.',
-      'Scale categories are listed in value order; cropontology.org returns them in no fixed order.',
+      'Scale categories are listed in value order; Crop Ontology returns them in no fixed order.',
       'Scale limits are given both as BrAPI 2.1 minimumValue/maximumValue strings and BrAPI 2.0 min/max integers.',
-      'Variables marked obsolete in a GitHub trait dictionary are left out, as cropontology.org leaves them out.',
+      'Variables marked obsolete in a Planteome trait dictionary are left out, as Crop Ontology leaves them out.',
       'Each variable records where it came from in additionalInfo.provenance.',
       "Every variable's commonCropName is its ontology's name, one crop per ontology, so clients can filter by crop; the source's own crop value is kept in additionalInfo.sourceCropName.",
     ],

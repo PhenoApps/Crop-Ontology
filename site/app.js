@@ -58,8 +58,8 @@
 
   function docLink(url) {
     if (!url) return '';
-    const where = /cropontology\.org/.test(url) ? 'cropontology.org' : /github\.com/.test(url) ? 'the Planteome GitHub file' : 'the source';
-    return `<a href="${esc(url)}">View on ${where}</a>`;
+    const where = /cropontology\.org/.test(url) ? 'cropontology.org' : /github\.com/.test(url) ? 'the Planteome file' : 'the source';
+    return `<a href="${esc(url)}">View ${where === 'cropontology.org' ? 'on cropontology.org' : where}</a>`;
   }
 
   // ---- shared pieces ------------------------------------------------------------------
@@ -84,10 +84,10 @@
         src.disagree && `${plural(src.disagree, 'variable')} ${src.disagree === 1 ? 'differs' : 'differ'}; the ${esc(src.preferred)} version is used for ${src.disagree === 1 ? 'it' : 'those'}.`].filter(Boolean).join(' '));
     }
     if (src?.onlyPlanteome || src?.onlyCropontology) {
-      items.push(`Included from one source only: ${[src.onlyPlanteome && `${num(src.onlyPlanteome)} only on Planteome GitHub`, src.onlyCropontology && `${num(src.onlyCropontology)} only on cropontology.org`].filter(Boolean).join(', ')}.`);
+      items.push(`Included from one source only: ${[src.onlyPlanteome && `${num(src.onlyPlanteome)} only in Planteome`, src.onlyCropontology && `${num(src.onlyCropontology)} only in Crop Ontology`].filter(Boolean).join(', ')}.`);
     }
     if (src?.duplicatesLeftOut) items.push(`${plural(src.duplicatesLeftOut, 'variable')} left out as renumbered copies of variables already included.`);
-    if (src?.obsoleteLeftOut) items.push(`${plural(src.obsoleteLeftOut, 'variable')} marked obsolete on GitHub left out.`);
+    if (src?.obsoleteLeftOut) items.push(`${plural(src.obsoleteLeftOut, 'variable')} marked obsolete in Planteome left out.`);
     const r = c.renamed?.find((x) => x.ontologyDbId === id);
     if (r) items.push(`Shown as "${esc(r.to)}"; the source titles it "${esc(r.from)}".`);
     const crop = c.cropNames?.find((x) => x.ontologyDbId === id);
@@ -113,8 +113,9 @@
 
   function ontologyHead(o, tab, notes) {
     const s = o.source ?? {};
-    const mix = [['cropontology.org', s.fromCropontology], ['Planteome GitHub', s.fromPlanteome]]
-      .filter(([, n]) => n).map(([label, n]) => `${num(n)} from ${label}`).join('<br>');
+    // How many of the served variables each source has; a variable in both counts for both.
+    const mix = [['Crop Ontology', s.inCropontology ?? s.fromCropontology], ['Planteome', s.inPlanteome ?? s.fromPlanteome]]
+      .map(([label, n]) => `${num(n)} in ${label}`).join('<br>');
     const links = [
       s.cropontologyUrl && `<a href="${esc(s.cropontologyUrl)}">cropontology.org</a>`,
       s.planteomeUrl && `<a href="${esc(s.planteomeUrl)}">${esc(s.planteomeFile ?? 'GitHub file')}</a>`,
@@ -125,7 +126,7 @@
       <div class="title-row"><h1>${esc(o.name)}</h1><span class="id">${esc(o.id)}</span></div>
       ${o.description ? `<p class="lede">${esc(o.description)}</p>` : ''}
       <dl class="facts">
-        ${fact('Variables', `${num(o.variableCount)}${mix ? `<span class="note">${mix}</span>` : ''}`)}
+        ${fact('Variables', `${num(o.variableCount)}<span class="note">${mix}</span>`)}
         ${fact('Updated', day(o.version) ? esc(day(o.version)) : '')}
         ${fact('Served from', s.label ? `${esc(s.label)}${s.reason ? `<span class="note">${esc(s.reason)}</span>` : ''}` : '')}
         ${fact('Licence', esc(o.licence ?? ''))}
@@ -549,8 +550,8 @@
         phenotypic data comparable, so Field Book users should be able to start from them rather than typing traits
         in by hand.</p>
         <p>Getting them into an app has not been easy. The trait dictionaries are kept in two places that have drifted
-        apart: the cropontology.org database and the crop repositories in the
-        <a href="https://github.com/Planteome">Planteome</a> GitHub organization. Some crops have been updated in one
+        apart: the Crop Ontology database behind cropontology.org, and the crop repositories in the
+        <a href="https://github.com/Planteome">Planteome</a> organization on GitHub. Some crops have been updated in one
         and not the other, and the cropontology.org BrAPI service can take minutes to answer for a single crop.</p>
         <p>This site collects both copies, merges them crop by crop, and serves the result as plain files that load
         quickly and don't depend on a database being up.</p>
@@ -566,12 +567,12 @@
 
         <h2>Where the data comes from</h2>
         <p>Both sources are checked every week and kept in the repository exactly as they were downloaded.
-        cropontology.org was last checked ${esc(checked(sources?.cropontology) ?? 'recently')}; Planteome GitHub
+        Crop Ontology was last checked ${esc(checked(sources?.cropontology) ?? 'recently')}; Planteome
         ${esc(checked(sources?.planteome) ?? 'recently')}. ${fromGitHub} of ${ontologies.length} crops currently
-        prefer the Planteome GitHub copy where the two disagree.</p>
+        prefer the Planteome copy where the two disagree.</p>
         ${c?.policy?.merge?.length ? `<p>For each crop:</p><ul>${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
-        <p>The date on each crop is the last change to the copy served here: the GitHub file's last commit, or the
-        last time cropontology.org reloaded that ontology.</p>
+        <p>The date on each crop is the last change to the copy served here: the Planteome file's last commit, or the
+        last time Crop Ontology reloaded that ontology.</p>
 
         <h2>Using it in Field Book</h2>
         <p>Open a crop, copy its BrAPI base URL, and set it as the BrAPI server in Field Book's settings. Traits can
@@ -622,15 +623,15 @@
     ];
     app.innerHTML = `
       <h1>Changes from sources</h1>
-      <p class="lede">Each crop is built from two sources, cropontology.org and the Planteome GitHub trait
-      dictionaries. Both are kept in the repository exactly as downloaded. This page lists everything the published
+      <p class="lede">Each crop is built from two sources: Crop Ontology (cropontology.org) and the Planteome
+      trait dictionaries on GitHub. Both are kept in the repository exactly as downloaded. This page lists everything the published
       site and BrAPI endpoints change, and why. Changed records also note it in their <code>additionalInfo</code>.</p>
       <p class="toc">${sections.map(([key, label]) => `<a href="#/changes" data-jump="${key}">${label}</a>`).join(' &nbsp;|&nbsp; ')}</p>
 
       <h2 id="sources">Which copy each crop uses</h2>
       ${c.policy?.merge?.length ? `<ul class="prose">${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
-      ${table(['Crop', 'Preferred copy', 'From cropontology.org', 'From GitHub', 'Match', 'Differ', 'Why'], perOntology.map((x) => [
-        crop(x.ontologyDbId), esc(x.preferred), num(x.fromCropontology), num(x.fromPlanteome), num(x.agree), num(x.disagree), esc(x.reason ?? '')]), [2, 3, 4, 5])}
+      ${table(['Crop', 'Preferred copy', 'In Crop Ontology', 'In Planteome', 'Match', 'Differ', 'Why'], perOntology.map((x) => [
+        crop(x.ontologyDbId), esc(x.preferred), num(x.inCropontology ?? x.fromCropontology), num(x.inPlanteome ?? x.fromPlanteome), num(x.agree), num(x.disagree), esc(x.reason ?? '')]), [2, 3, 4, 5])}
 
       <h2 id="categories">Repaired scale categories</h2>
       <p class="muted">Some categories were turned into dates by spreadsheet software before upload (for example
@@ -662,10 +663,10 @@
 
       <h2 id="left-out">Variables left out</h2>
       <p class="muted">A variable found in only one source whose name matches a different ID in the preferred copy is
-      treated as the same variable renumbered. Variables marked obsolete on GitHub are left out too.</p>
+      treated as the same variable renumbered. Variables marked obsolete in Planteome are left out too.</p>
       ${table(['Crop', 'Left out', 'Name', 'From', 'Kept instead'], (c.duplicates ?? []).map((x) => [
         crop(x.ontologyDbId), `<code>${esc(x.id)}</code>`, esc(x.name ?? ''), esc(x.source), varLink(x.ontologyDbId, x.keptId)]))}
-      ${(c.obsoleteExcluded ?? []).length ? `<h3>Obsolete on GitHub</h3>${table(['Crop', 'Variables'], c.obsoleteExcluded.map((x) => [crop(x.ontologyDbId), num(x.count)]), [1])}` : ''}
+      ${(c.obsoleteExcluded ?? []).length ? `<h3>Obsolete in Planteome</h3>${table(['Crop', 'Variables'], c.obsoleteExcluded.map((x) => [crop(x.ontologyDbId), num(x.count)]), [1])}` : ''}
 
       <h2 id="conflicts">IDs used with different names</h2>
       <p class="muted">The same trait, method or scale ID appears with different names on different variables. These

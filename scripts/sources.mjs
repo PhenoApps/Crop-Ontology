@@ -26,7 +26,8 @@ export const CO_DIR = join(ROOT, 'data', 'cropontology');
 export const PL_DIR = join(ROOT, 'data', 'planteome');
 const readJson = (f, fallback = null) => (existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : fallback);
 
-export const LABELS = { cropontology: 'cropontology.org', planteome: 'Planteome GitHub' };
+// Short names for the two sources, as shown to users.
+export const LABELS = { cropontology: 'Crop Ontology', planteome: 'Planteome' };
 
 // Which file in a Planteome repo to use: curation.json planteomeFiles override, else a CSV named like a
 // TD, else any CSV, else an .xlsx, else an OBO export (Banana has only that); "staging" files are skipped.
@@ -76,8 +77,8 @@ export function preferredSource(id, { siteState, siteHasVariables, planteome }) 
   const override = sourceOverrides[id];
   if (override === 'planteome' && planteome?.usable) return { prefer: 'planteome', reason: 'set in curation.json' };
   if (override === 'cropontology' && siteHasVariables) return { prefer: 'cropontology', reason: 'set in curation.json' };
-  if (!planteome?.usable) return { prefer: siteHasVariables ? 'cropontology' : null, reason: planteome ? `GitHub copy unusable: ${planteome.reason}` : 'no GitHub repo' };
-  if (!siteHasVariables) return { prefer: 'planteome', reason: 'not available from cropontology.org' };
+  if (!planteome?.usable) return { prefer: siteHasVariables ? 'cropontology' : null, reason: planteome ? `Planteome copy unusable: ${planteome.reason}` : 'no Planteome repo' };
+  if (!siteHasVariables) return { prefer: 'planteome', reason: 'not available from Crop Ontology' };
   const gh = time(planteome.date);
   const siteChanges = [
     time(siteState?.loadedAt) >= time(siteReloadsCountFrom) ? { what: 'reloaded', at: siteState.loadedAt } : null,
@@ -85,9 +86,9 @@ export function preferredSource(id, { siteState, siteHasVariables, planteome }) 
   ].filter(Boolean).sort((a, b) => time(b.at) - time(a.at));
   const latest = siteChanges[0];
   if (latest && gh != null && time(latest.at) > gh) {
-    return { prefer: 'cropontology', reason: `cropontology.org ${latest.what} ${day(latest.at)}, after the GitHub file's last change (${day(planteome.date)})` };
+    return { prefer: 'cropontology', reason: `Crop Ontology ${latest.what} ${day(latest.at)}, after the Planteome file's last change (${day(planteome.date)})` };
   }
-  return { prefer: 'planteome', reason: `GitHub preferred; no change on cropontology.org since the GitHub file's last change (${day(planteome.date)})` };
+  return { prefer: 'planteome', reason: `Planteome preferred; no change on Crop Ontology since the Planteome file's last change (${day(planteome.date)})` };
 }
 
 // Merge one ontology's two copies. Returns the variables to serve, each with where it came from, plus counts.
@@ -95,9 +96,13 @@ export function mergeOntology({ id, ontologyName, siteVariables, planteome, pref
   const fromGH = (r) => tdRowToVariable(r, id, ontologyName);
   const stats = { agree: 0, disagree: 0, onlyCropontology: 0, onlyPlanteome: 0, duplicates: [], obsolete: [] };
   const usableGH = planteome?.usable ? planteome : null;
-  if (!usableGH) return { variables: (siteVariables ?? []).map((raw) => ({ raw, source: 'cropontology', status: 'only' })), stats };
+  if (!usableGH) {
+    const variables = (siteVariables ?? []).map((raw) => ({ raw, source: 'cropontology', status: 'only' }));
+    return { variables, stats: { ...stats, onlyCropontology: variables.length } };
+  }
   if (!siteVariables) {
-    return { variables: usableGH.rows.map((r) => ({ raw: fromGH(r), source: 'planteome', status: 'only' })), stats: { ...stats, obsolete: [...usableGH.obsoleteIds] } };
+    const variables = usableGH.rows.map((r) => ({ raw: fromGH(r), source: 'planteome', status: 'only' }));
+    return { variables, stats: { ...stats, onlyPlanteome: variables.length, obsolete: [...usableGH.obsoleteIds] } };
   }
   const fields = comparableFields(usableGH.header, notExported);
   const ghById = new Map(usableGH.rows.map((r) => [r['variable id'], r]));

@@ -158,9 +158,9 @@
         ${fact('Served from', s.label ? `${esc(s.label)}${s.reason ? `<span class="note">${esc(s.reason)}</span>` : ''}` : '')}
         ${fact('Licence', esc(o.licence ?? ''))}
         ${fact('Sources', links)}
+        ${fact('BrAPI v2', `<span class="qr" data-qr="${esc(brapiBase(o.id))}" role="img" aria-label="QR code of the BrAPI v2 base URL for ${esc(o.name)}" title="${esc(brapiBase(o.id))}"></span>`)}
       </dl>
       ${notes}
-      ${endpointBox(o.id, `BrAPI v2 base URL for ${o.name}`, `Use this in Field Book or another BrAPI client to import this crop's traits. <a href="#/about">How it works</a>`)}
       <nav class="tabs" aria-label="Views">
         <a href="#/${enc(o.id)}"${tab === 'list' ? ' aria-current="page"' : ''}>Variable list</a>
         <a href="#/${enc(o.id)}/browse"${tab === 'browse' ? ' aria-current="page"' : ''}>Trait browser</a>
@@ -1158,8 +1158,9 @@
     }
     const btn = e.target.closest('[data-copy]');
     if (!btn) return;
+    btn.dataset.label ??= btn.textContent;
     try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = 'Copied'; } catch { btn.textContent = 'Copy failed'; }
-    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+    setTimeout(() => { btn.textContent = btn.dataset.label; }, 1500);
   });
   // Every link that leaves the site opens in a new tab, wherever a view renders it.
   function openExternalInNewTab(root) {
@@ -1168,7 +1169,37 @@
     }
   }
   openExternalInNewTab(document);
-  new MutationObserver(() => openExternalInNewTab(app)).observe(app, { childList: true, subtree: true });
+  // QR codes of BrAPI base URLs (crop pages), drawn as SVG once the small qrcode-generator library has loaded.
+  let qrP = null;
+  const loadQr = () => (qrP ??= new Promise((resolve, reject) => {
+    if (window.qrcode) { resolve(window.qrcode); return; }
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js';
+    s.onload = () => resolve(window.qrcode);
+    s.onerror = () => { qrP = null; reject(new Error('QR library unavailable')); };
+    document.head.append(s);
+  }));
+  function qrSvg(make, text) {
+    const qr = make(0, 'M');
+    qr.addData(text);
+    qr.make();
+    const n = qr.getModuleCount();
+    let d = '';
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) d += `M${c} ${r}h1v1h-1z`;
+    return `<svg viewBox="0 0 ${n} ${n}" shape-rendering="crispEdges" aria-hidden="true"><path d="${d}" fill="#1f2328"/></svg>`;
+  }
+  async function fillQrCodes(root) {
+    const pending = [...root.querySelectorAll('[data-qr]:not([data-qr-done])')];
+    if (!pending.length) return;
+    for (const el of pending) el.dataset.qrDone = '1';
+    try {
+      const make = await loadQr();
+      for (const el of pending) el.innerHTML = qrSvg(make, el.dataset.qr);
+    } catch {
+      for (const el of pending) { el.classList.add('qr-failed'); el.innerHTML = `<code>${esc(el.dataset.qr)}</code>`; }
+    }
+  }
+  new MutationObserver(() => { openExternalInNewTab(app); fillQrCodes(app); }).observe(app, { childList: true, subtree: true });
 
   window.addEventListener('hashchange', route);
   route();

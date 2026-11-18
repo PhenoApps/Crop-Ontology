@@ -9,8 +9,9 @@ bundler or framework.
 | `app.js` | the whole UI: a hash router and one function per view |
 | `style.css` | styles (light theme; IBM Plex Sans and Mono from Google Fonts, with system fallbacks) |
 
-The graph tab loads [d3](https://d3js.org) 7.9.0 from cdnjs when it opens, for its force layout, zoom and drag;
-no other view loads it. Element-type colours are CSS tokens (`--node-*` in `style.css`), shared by the graph and
+Two small libraries are loaded from cdnjs only where they're needed: [d3](https://d3js.org) 7.9.0 for the graph
+tab's force layout, zoom and drag, and [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) 1.4.4
+for the QR code on crop pages (which falls back to showing the URL as text). Element-type colours are CSS tokens (`--node-*` in `style.css`), shared by the graph and
 the trait browser icons, and each type also has its own shape.
 
 ## Views
@@ -20,7 +21,7 @@ the trait browser icons, and each type also has its own shape.
 | `#/` | crops, sorted by name, with variable count and last-updated date; sortable and filterable |
 | `#/about` | what the site is for, where the data comes from, how to use it with Field Book |
 | `#/conflicts` | where the sources disagree and everything the build changes, from `changes.json` (`#/changes` also works) |
-| `#/CO_320` | one crop: source details, BrAPI base URL, and the variable list |
+| `#/CO_320` | one crop: source details, a QR code of its BrAPI base URL, and the variable list |
 | `#/CO_320/browse` | trait browser: a trait class → trait → variable tree beside the selected term |
 | `#/CO_320/browse/<TERM_ID>` | the trait browser with a trait or variable selected |
 | `#/CO_320/graph` | network graph of the ontology: classes, traits, variables, methods and scales (like the cropontology.org explorer) |

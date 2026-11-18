@@ -57,7 +57,7 @@
   const buildNotes = (v) => info(v).changes ?? info(v).mirrorChanges ?? [];
 
   const EXT = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-  const extLink = (url, text) => `<a class="ext" href="${esc(url)}">${esc(text)}${EXT}<span class="sr">(external site)</span></a>`;
+  const extLink = (url, text) => `<a class="ext" href="${esc(url)}">${esc(text)}${EXT}<span class="sr">(opens in a new tab)</span></a>`;
   const coTermUrl = (id) => `https://cropontology.org/term/${id}`;
 
   // Which sources have this variable, from its provenance.
@@ -762,6 +762,15 @@
     try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = 'Copied'; } catch { btn.textContent = 'Copy failed'; }
     setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
   });
+  // Every link that leaves the site opens in a new tab, wherever a view renders it.
+  function openExternalInNewTab(root) {
+    for (const a of root.querySelectorAll('a[href]')) {
+      if (a.origin !== location.origin && !a.target) { a.target = '_blank'; a.rel = 'noopener'; }
+    }
+  }
+  openExternalInNewTab(document);
+  new MutationObserver(() => openExternalInNewTab(app)).observe(app, { childList: true, subtree: true });
+
   window.addEventListener('hashchange', route);
   route();
 })();

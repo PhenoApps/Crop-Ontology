@@ -47,7 +47,9 @@ a:hover { color: var(--accent-ink); }
 .ext svg { width: .8em; height: .8em; margin-left: 3px; vertical-align: -1px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-main { padding-top: 32px; padding-bottom: 64px; }
+main.wrap { padding-top: 28px; padding-bottom: 48px; }
+/* Empty footer: a closing rule and breathing room below the last list or table. */
+.foot { height: 96px; border-top: 1px solid var(--rule); background: var(--surface); }
 
 /* ---- type ------------------------------------------------------------------------- */
 

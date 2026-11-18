@@ -51,7 +51,7 @@ The details are in the folder READMEs:
 | --- | --- |
 | [`scripts/`](scripts/README.md) | harvesters, comparison, the build and its modules |
 | [`data/`](data/README.md) | raw snapshots of both sources, committed as downloaded |
-| [`site/`](site/README.md) | the browser UI (variable list, trait browser, About and Conflicts pages) |
+| [`site/`](site/README.md) | the browser UI (variable list, trait browser, graph, About and Conflicts pages) |
 | `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site |
 | `curation.json` | publishing rules: which ontologies, display names, source overrides (see below) |
 

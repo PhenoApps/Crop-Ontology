@@ -28,9 +28,11 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+/* Full-height column: main grows to fill the window, so the footer stays at the bottom on short pages. */
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font: 15px/1.5 var(--sans);
+  display: flex; flex-direction: column; min-height: 100vh;
 }
 a { color: var(--accent); text-underline-offset: 2px; }
 a:hover { color: var(--accent-ink); }
@@ -54,9 +56,9 @@ a:hover { color: var(--accent-ink); }
 .ext svg { width: .8em; height: .8em; margin-left: 3px; vertical-align: -1px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-main.wrap { padding-top: 28px; padding-bottom: 48px; }
+main.wrap { flex: 1 0 auto; width: 100%; padding-top: 28px; padding-bottom: 48px; }
 /* Empty footer: a closing rule and breathing room below the last list or table. */
-.foot { height: 96px; border-top: 1px solid var(--rule); background: var(--surface); }
+.foot { flex: none; height: 96px; border-top: 1px solid var(--rule); background: var(--surface); }
 
 /* ---- type ------------------------------------------------------------------------- */
 

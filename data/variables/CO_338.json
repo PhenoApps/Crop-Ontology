@@ -1,0 +1,5328 @@
+[
+ {
+  "observationVariableDbId": "CO_338:0000269",
+  "observationVariableName": "FLCOL_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000017",
+   "traitName": "Flower color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the flower",
+   "synonyms": [],
+   "mainAbbreviation": "FLCOL",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000097",
+   "methodName": "Flower color - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000098",
+   "scaleName": "Flower color category",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = dark pink",
+     "2 = pink",
+     "3 = dark blue",
+     "4 = blue",
+     "5 = white"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000270",
+  "observationVariableName": "PLHGT_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000023",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Height of the plant described as the distance between the soil and the plant canopy",
+   "synonyms": [],
+   "mainAbbreviation": "PLHGT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000099",
+   "methodName": "Plant height - Method",
+   "methodClass": "Computation",
+   "description": "Measure the height of the plant from the soil surface to the canopy at the end of flowering and calculate the mean canopy height of five representative plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000100",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000272",
+  "observationVariableName": "SY_Meas_gPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "31-juil-15",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000265",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of seed per unit of area",
+   "synonyms": [],
+   "mainAbbreviation": "SY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000101",
+   "methodName": "Seed yield per plot - Method",
+   "methodClass": "Measurement",
+   "description": "Weight of seed harvested from each plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000102",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000273",
+  "observationVariableName": "SYPL_Av_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000025",
+   "traitName": "Seed yield per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of seeds obtained from a plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SYPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000103",
+   "methodName": "Seed yield per plant - Method",
+   "methodClass": "Computation",
+   "description": "Averaged weight of air-dried seeds harvested from each plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000104",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000274",
+  "observationVariableName": "SDWT_100Wgh_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000026",
+   "traitName": "Seed weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of a seed",
+   "synonyms": [],
+   "mainAbbreviation": "SDWT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000105",
+   "methodName": "100-seed weight - Method",
+   "methodClass": "Measurement",
+   "description": "Count 100 well-developed whole air-dried seeds and weigh",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000106",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000276",
+  "observationVariableName": "SY_Comp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "31-juil-15",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000265",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of seed per unit of area",
+   "synonyms": [],
+   "mainAbbreviation": "SY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000107",
+   "methodName": "Seed yield - Method",
+   "methodClass": "Computation",
+   "description": "Weight of harvested seeds on a plot divided by the surface of the plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000108",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000277",
+  "observationVariableName": "FWR_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000037",
+   "traitName": "Fusarium wilt resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Fusarium oxysporum f.sp.ciceris. It causes seedlings to die, seedlings collapse and lie flat on the ground, when uprooted plants show uneven shrinking of the stem above and below the collar region",
+   "synonyms": [],
+   "mainAbbreviation": "FWR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Fusarium blight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000109",
+   "methodName": "Fusarium wilt resistance - Method",
+   "methodClass": "Computation",
+   "description": "Proportion of dead plants in a plot due to fusarium wilt",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000110",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000278",
+  "observationVariableName": "ABR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000039",
+   "traitName": "Ascochyta blight resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Ascochyta rabiei. It causes dark brown lesions at the base of the stem of emerging seedlings, seen during the flowering and podding phases of blighted plants in the field, affected seedlings die",
+   "synonyms": [],
+   "mainAbbreviation": "ABR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Ascochyta blight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000111",
+   "methodName": "Ascochyta blight resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the resistaance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000112",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000280",
+  "observationVariableName": "TimeFlw_50Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "All types of evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "31-juil-15",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000266",
+   "traitName": "Time to flowering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Time elpased from sowing to flowering",
+   "synonyms": [],
+   "mainAbbreviation": "TimeFlw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000113",
+   "methodName": "Days to 50% flowering - Method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from sowing to 50% of plants started flowering",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000114",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000281",
+  "observationVariableName": "TimMat_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "All types of evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000044",
+   "traitName": "Time to maturity",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Time elpased from sowing to maturity",
+   "synonyms": [],
+   "mainAbbreviation": "TimeMat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000115",
+   "methodName": "Days to maturity - Method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from sowing to maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000116",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000283",
+  "observationVariableName": "PLN_CountPerPlot_plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "All types of evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000045",
+   "traitName": "Plant number per experimental unit",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of plants per experimental unit",
+   "synonyms": [],
+   "mainAbbreviation": "PLN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Number per experimental unit",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000267",
+   "methodName": "Plant number per plot - Method",
+   "methodClass": "Counting",
+   "description": "Counting number of plants per plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000118",
+   "scaleName": "plants",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000285",
+  "observationVariableName": "PDPL_Comp_PodPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000004",
+   "traitName": "Pods per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of pods counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PDPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000119",
+   "methodName": "Pods per plant - Method",
+   "methodClass": "Computation",
+   "description": "Average number of pods from 3 or 5 randomly selected plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000120",
+   "scaleName": "pods/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000286",
+  "observationVariableName": "SDPD_Comp_sdpod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000005",
+   "traitName": "Seeds per pod",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of seeds per pod from a plant",
+   "synonyms": [],
+   "mainAbbreviation": "SDPD",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Seed number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000121",
+   "methodName": "Seeds per pod - Method",
+   "methodClass": "Computation",
+   "description": "Ratio between seed number per plant and pod number per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000122",
+   "scaleName": "seeds/pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000287",
+  "observationVariableName": "GRH_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000011",
+   "traitName": "Growth habit",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Growth habit of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "GRH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth habit",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000123",
+   "methodName": "Growth habit - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation at mid-pod filling stage of the angle of primary branches",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000124",
+   "scaleName": "Type of growth habit categories",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = erect (0-150 from vertical)",
+     "2 = semi-erect (16-250 from vertical)",
+     "3 = semi-spreading (26-600 from vertical)",
+     "4 = spreading (61-800 from vertical)",
+     "5 = prostrate (branches flat on the ground)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000288",
+  "observationVariableName": "SDCOL_Est_1to21",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000020",
+   "traitName": "Seed color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the seed coat. It can describe the main color of the seed coat (e.g., black, brown, green, yellow, white), its different color shades, its combination of colors",
+   "synonyms": [],
+   "mainAbbreviation": "SDCOL",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000125",
+   "methodName": "Seed color - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000126",
+   "scaleName": "Seed color category",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Black (black group 202A, 202B, brown group 200A)",
+     "2= Brown (greyed-orange group 177B)",
+     "3= Light brown (greyed-orange group 177C)",
+     "4= Dark brown (greyed-orange group 177A)",
+     "5= Reddish brown (greyed-orange group 166C)",
+     "6= Greyish brown (brown group 200D)",
+     "7= Salmon brown (greyed-orange group 165C)",
+     "8= Grey (greyed-green group 196A)",
+     "9= Brown beige (greyed orange group 173D)",
+     "10= Beige (greyed-orange group 165D)",
+     "11= Yellow (greyed-orange group 164B)",
+     "12= Light yellow (greyed-orange group 164C)",
+     "13= Yellow brown (greyed-orange group 165C)",
+     "14= Orange yellow (greyed-orange group 168D)",
+     "15= Orange (greyed-orange group 168C)",
+     "16= Yellow beige (orange-white group 159C)",
+     "17= Ivory white (orange-white group 159C)",
+     "18= Green (greyed-green group 191A, grey group 201A)",
+     "19= Light green (greyed-green group 193B)",
+     "20= Variegated",
+     "21= Black brown mosaic (black group 202A,greyed-orange group 177E)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000289",
+  "observationVariableName": "SDNPL_Count_SdPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000052",
+   "traitName": "Seed per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of seeds per plant",
+   "synonyms": [],
+   "mainAbbreviation": "SDNPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000127",
+   "methodName": "Seed per plant - Method",
+   "methodClass": "Counting",
+   "description": "Number of seeds counted per plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000128",
+   "scaleName": "seeds/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000290",
+  "observationVariableName": "VGRP_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000053",
+   "traitName": "Variety group",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Type of chickpea e.g., desi, kabuli or intermediate",
+   "synonyms": [],
+   "mainAbbreviation": "VGRP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Variety type",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000129",
+   "methodName": "Variety group - Method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000130",
+   "scaleName": "variety group scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = desi",
+     "2 = kabuli",
+     "3 = intermediate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000291",
+  "observationVariableName": "HI_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000029",
+   "traitName": "Harvest index",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of grain yield over total biomass yield",
+   "synonyms": [],
+   "mainAbbreviation": "HI",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass partionning to seed",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000131",
+   "methodName": "Harvest index - Method",
+   "methodClass": "Computation",
+   "description": "Proportion of grain yield over total biomass yield by dividing the weight of harvested grain by the weight of harvested biomass",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000132",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000292",
+  "observationVariableName": "BYPL_Wgh_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000047",
+   "traitName": "Biomass yield per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The dry weight of the whole plant (excluding roots)",
+   "synonyms": [],
+   "mainAbbreviation": "BYPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000133",
+   "methodName": "Biomass yield per plant - Method",
+   "methodClass": "Measurement",
+   "description": "At harvest, weigh an oven or sun dried plant (excluding roots)",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000134",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000293",
+  "observationVariableName": "PLWTH_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000014",
+   "traitName": "Plant width",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Width of the plant i.e., the spread of the plant canopy",
+   "synonyms": [],
+   "mainAbbreviation": "PLWTH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000135",
+   "methodName": "Plant width - Method",
+   "methodClass": "Computation",
+   "description": "Measuring of the plant canopy spread, average fronm 3 or 5 plants randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000136",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000294",
+  "observationVariableName": "FLPED_Count_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000054",
+   "traitName": "Number of flowers per peduncle",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of flowers per peduncle",
+   "synonyms": [],
+   "mainAbbreviation": "FLPED",
+   "alternativeAbbreviations": [],
+   "entity": "Peduncle",
+   "entityPUI": null,
+   "attribute": "Flower number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000137",
+   "methodName": "Number of flowers per peduncle - Method",
+   "methodClass": "Counting",
+   "description": "Visual observation of the number of flowers per peduncle",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000138",
+   "scaleName": "Flowering type",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = single",
+     "2 = double",
+     "3 = triple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000295",
+  "observationVariableName": "SDDIA_Meas_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000055",
+   "traitName": "Seed diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Seed diameter of fully dried seed",
+   "synonyms": [],
+   "mainAbbreviation": "SDDIA",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000139",
+   "methodName": "Seed diameter - Method",
+   "methodClass": "Measurement",
+   "description": "Diameter of fully dried seed is measured using vernier caliper",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000140",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000296",
+  "observationVariableName": "SDSHP_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000019",
+   "traitName": "Seed shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Shape of the seed e.g., angular/pea shaped/owls head",
+   "synonyms": [],
+   "mainAbbreviation": "SDSHP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000141",
+   "methodName": "Seed shape - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000142",
+   "scaleName": "Type of seed shape",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = angular",
+     "2 = pea shaped",
+     "3 = owls head shaped"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000297",
+  "observationVariableName": "PBR_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Entomological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000041",
+   "traitName": "Pod borer resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The extent of damage caused by the pod borer. Causative agent:Helicoverpa armigera. The insect feeds on all green parts and defoliate young crops, large larvae cut round holes in the pod wall and devour the seed inside.",
+   "synonyms": [],
+   "mainAbbreviation": "PBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod borer resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000143",
+   "methodName": "Pod borer resistance - Method",
+   "methodClass": "Computation",
+   "description": "Damage at pod stage measured by counting total pods and damaged pods and calculating proportion of damaged pods",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000144",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000299",
+  "observationVariableName": "TimeFlw_1stCount_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "All types of evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "31-juil-15",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000266",
+   "traitName": "Time to flowering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Time elpased from sowing to flowering",
+   "synonyms": [],
+   "mainAbbreviation": "TimeFlw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000145",
+   "methodName": "Days to first flower - Method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from sowing to appearnce of first floewer",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000146",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000300",
+  "observationVariableName": "CT_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000057",
+   "traitName": "Cold tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to cold",
+   "synonyms": [],
+   "mainAbbreviation": "CT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Cold tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000147",
+   "methodName": "Cold tolerance - Method",
+   "methodClass": "Computation",
+   "description": "Cold tolerance index calculated by dividing the percentage of filled pods of the cold-stressed plants by that of the control plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000148",
+   "scaleName": "index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000301",
+  "observationVariableName": "NPDPL_Av_podPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "EIAR",
+  "language": "EN",
+  "scientist": "Asnake Fikre",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-08-26 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000058",
+   "traitName": "No. of fertile pods per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of pods with seed",
+   "synonyms": [],
+   "mainAbbreviation": "NPDPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Fertile pod number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000149",
+   "methodName": "No. of fertile pods per plant - Method",
+   "methodClass": "Computation",
+   "description": "Average number of pods with seed from 3 or 5 randomly selected plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000150",
+   "scaleName": "fertile pods/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000302",
+  "observationVariableName": "PLPIG_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000015",
+   "traitName": "Plant pigmentation",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Extent of anthocyanin pigmentation in the plant",
+   "synonyms": [],
+   "mainAbbreviation": "PLPIG",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pigmentation",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000151",
+   "methodName": "Plant pigmentation - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the extent of anthocyanin pigmentation on stem and leaves at flowering",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000152",
+   "scaleName": "Plant pigmentation category",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = no anthocyanin",
+     "2 = low anthocyanin",
+     "3 = high anthocyanin"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000303",
+  "observationVariableName": "SDSRF_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000021",
+   "traitName": "Seed surface",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Surface of the seed e.g., rough, smooth, tuberculated",
+   "synonyms": [],
+   "mainAbbreviation": "SDSRF",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Surface",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000153",
+   "methodName": "Seed surface - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the surface of the seed (e.g., rough, smooth, tuberculated)",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000154",
+   "scaleName": "Surface categories",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = smooth",
+     "2 = rough",
+     "3 = tuberculated"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000304",
+  "observationVariableName": "BY_Meas_gPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000059",
+   "traitName": "Biomass yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The dry weight of the plant (excluding roots) harvested from an area",
+   "synonyms": [],
+   "mainAbbreviation": "BY",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000155",
+   "methodName": "Biomass yield per plot - Method",
+   "methodClass": "Measurement",
+   "description": "Taking weight of oven or sun dried plant (excluding roots) of a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000156",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000305",
+  "observationVariableName": "FLD_Count_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000049",
+   "traitName": "Flowering duration",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Period during which plants continue to flower",
+   "synonyms": [],
+   "mainAbbreviation": "FLD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering duration",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000157",
+   "methodName": "Flowering duration - Method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from first flower to end of flowering",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000158",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000306",
+  "observationVariableName": "PRT_Meas_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000060",
+   "traitName": "Seed protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Protein content of the whole seed",
+   "synonyms": [],
+   "mainAbbreviation": "PRT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000159",
+   "methodName": "Protein % - Method",
+   "methodClass": "Measurement",
+   "description": "In laboratory, analyse the whole seed crude protein content",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000160",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000307",
+  "observationVariableName": "CKT_count_min",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "EIAR",
+  "language": "EN",
+  "scientist": "Asnake Fikre",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-08-26 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000061",
+   "traitName": "Cooking time",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Cooking time for dry seed without soaking",
+   "synonyms": [],
+   "mainAbbreviation": "CKT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Cooking time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000161",
+   "methodName": "Cooking time - Method",
+   "methodClass": "Counting",
+   "description": "Number of Minutes taken for seed to cook",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000162",
+   "scaleName": "Minutes",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000308",
+  "observationVariableName": "SHWT_Wgh_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000030",
+   "traitName": "Shoot dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of the shoot without roots",
+   "synonyms": [],
+   "mainAbbreviation": "SHWT",
+   "alternativeAbbreviations": [],
+   "entity": "Shoot",
+   "entityPUI": null,
+   "attribute": "Dry weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000163",
+   "methodName": "Shoot dry weight - Method",
+   "methodClass": "Measurement",
+   "description": "Measuring the weight of the total shoot above ground",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000164",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000309",
+  "observationVariableName": "CH_Comp_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000062",
+   "traitName": "Canopy height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Height of the canopy",
+   "synonyms": [],
+   "mainAbbreviation": "CH",
+   "alternativeAbbreviations": [],
+   "entity": "Canopy",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000165",
+   "methodName": "Canopy height - Method",
+   "methodClass": "Computation",
+   "description": "Average canopy height of three/five representative plants of an accession.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000166",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000310",
+  "observationVariableName": "GRV_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000063",
+   "traitName": "Growth vigor",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Vigor of the plant growth charaterized by the plant height and shoot biomass",
+   "synonyms": [],
+   "mainAbbreviation": "GRV",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Vigor",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000167",
+   "methodName": "Early growth vigor - Method",
+   "methodClass": "Estimation",
+   "description": "At 10-15 days after emergence, observe the growth vigor visually",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000168",
+   "scaleName": "Growth vigor category",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = high",
+     "2 = average",
+     "3 = low"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000311",
+  "observationVariableName": "RTWT_Wgh_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000034",
+   "traitName": "Root dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Dry weight of the root",
+   "synonyms": [],
+   "mainAbbreviation": "RTWT",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Dry weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000169",
+   "methodName": "Root dry weight - Method",
+   "methodClass": "Measurement",
+   "description": "Weight of oven-dried roots from a plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000170",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000312",
+  "observationVariableName": "COLRR_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000064",
+   "traitName": "Collar rot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Sclerotium rolfsii. It causes constriction of collar region and rotting. White strands grow over affected tissue. Sclerotia, small round fungal structures that look like mustard seeds, are seen on the dead tissues",
+   "synonyms": [],
+   "mainAbbreviation": "COLRR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Collar rot resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000171",
+   "methodName": "Collar rot resistance - Method",
+   "methodClass": "Computation",
+   "description": "Proportion of dead plants in a plot due to collar rot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000172",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000313",
+  "observationVariableName": "BGMR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000036",
+   "traitName": "Botrytis grey mold resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Botrytis cinerea. It causes water soaked and irregular lesions on the pod that contain either small shriveled seeds or no seeds at all, lesions girdle the stem completely",
+   "synonyms": [],
+   "mainAbbreviation": "BGMR",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Botrytis grey mold resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000173",
+   "methodName": "Botrytis grey mold resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000174",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000314",
+  "observationVariableName": "LMR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Entomological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000065",
+   "traitName": "Leaf miner resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Liriomyza cicerina. The leaflets are mined, have a reduced photosynthetic capacity and senesce prematurely.",
+   "synonyms": [],
+   "mainAbbreviation": "LMR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Leaf miner resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000175",
+   "methodName": "Leaf miner resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000176",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000315",
+  "observationVariableName": "LFT_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000066",
+   "traitName": "Leaf type",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Type of leaf of the plant e.g., normal/simple/multipinnate",
+   "synonyms": [],
+   "mainAbbreviation": "LFT",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Type",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000177",
+   "methodName": "Leaf type - Method",
+   "methodClass": "Estimation",
+   "description": "Classification of leaf type based on visual observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000178",
+   "scaleName": "leaf type categories",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=normal",
+     "2=simple",
+     "3=multipinnate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000316",
+  "observationVariableName": "DRRR_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000068",
+   "traitName": "Dry root rot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Rhizoctonia bataticola. It causes drying up of plants. Roots become brittle and minute sclerotia are seen on the exposed roots",
+   "synonyms": [],
+   "mainAbbreviation": "DRRR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Dry root rot resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000181",
+   "methodName": "Dry root rot resistance - Method",
+   "methodClass": "Computation",
+   "description": "Proportion of dead plants in a plot due to dry root rot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000182",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000317",
+  "observationVariableName": "DFPD_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000074",
+   "traitName": "Time to pod formation",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Time elapsed between sowing and pod formation",
+   "synonyms": [],
+   "mainAbbreviation": "DFPD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod formation time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000193",
+   "methodName": "Days to first pod formation - Method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from sowing to first pod formation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000194",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000318",
+  "observationVariableName": "COLBR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000038",
+   "traitName": "Colletotrichum blight resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent:Colletotrichum capsici. It causes elongated, sunken, dark brown spots on the lower part of the stem, wilting and drying due to severe infection",
+   "synonyms": [],
+   "mainAbbreviation": "COLBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Colletotrichum blight resistance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000195",
+   "methodName": "Colletotrichum blight resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000196",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000319",
+  "observationVariableName": "PDLTH_Av_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000076",
+   "traitName": "Pod length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of pods",
+   "synonyms": [],
+   "mainAbbreviation": "PDLTH",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000199",
+   "methodName": "Pod length - Method",
+   "methodClass": "Computation",
+   "description": "Average length of 9 randomly chosen pods, 3 each from 3 randomly-selected plants at mid-pod filling stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000200",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000320",
+  "observationVariableName": "PDWT_Av_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000002",
+   "traitName": "Pod weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of pods from a plant",
+   "synonyms": [],
+   "mainAbbreviation": "PDWT",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000201",
+   "methodName": "Pod weight - Method",
+   "methodClass": "Computation",
+   "description": "Average weight from 3 or 5 randomly-selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000202",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000321",
+  "observationVariableName": "PLSTD_Count_PlntPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Breeding/Agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000083",
+   "traitName": "Plant stand",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of plants in a productive unit",
+   "synonyms": [],
+   "mainAbbreviation": "PLSTD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Number per area",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000233",
+   "methodName": "Plant stand - Method",
+   "methodClass": "Counting",
+   "description": "Count taken within a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000234",
+   "scaleName": "plants/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000322",
+  "observationVariableName": "HTT_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000067",
+   "traitName": "High temperature tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to high temperature",
+   "synonyms": [],
+   "mainAbbreviation": "HTT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "High temperature tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000179",
+   "methodName": "High temperature tolerance - Method",
+   "methodClass": "Computation",
+   "description": "Heat tolerance index calculated by dividing the percentage of filled pods of the heat-stressed plants by that of the control plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000180",
+   "scaleName": "index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000323",
+  "observationVariableName": "VRLR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000069",
+   "traitName": "Viral (stunt) resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Pea leaf roll virus. It causes stunted growth and discoloured (yellow, orange or brown) foliage",
+   "synonyms": [],
+   "mainAbbreviation": "VRLR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Viral (stunt) resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000183",
+   "methodName": "Viral (stunt) resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000184",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000324",
+  "observationVariableName": "TST_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "EIAR",
+  "language": "EN",
+  "scientist": "Asnake Fikre",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-08-26 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000070",
+   "traitName": "Taste",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Taste of seed for Consuming",
+   "synonyms": [],
+   "mainAbbreviation": "TST",
+   "alternativeAbbreviations": [],
+   "entity": "Cooked seed",
+   "entityPUI": null,
+   "attribute": "Taste",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000185",
+   "methodName": "Taste - Method",
+   "methodClass": "Estimation",
+   "description": "Tasting the Seed with at least 10 Persons",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000186",
+   "scaleName": "Taste categories",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = bad",
+     "2 = Fair",
+     "3 = Good",
+     "4 = very good",
+     "5 = excellent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000325",
+  "observationVariableName": "RL_Comp_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000071",
+   "traitName": "Root length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Cumulative root length of a sample",
+   "synonyms": [],
+   "mainAbbreviation": "RL",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000187",
+   "methodName": "Root length - Method",
+   "methodClass": "Computation",
+   "description": "Usually measured through winrhizo software from scanned image files or maually using a measuring scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000188",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000326",
+  "observationVariableName": "SALT_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000072",
+   "traitName": "Salinity tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to soil salinity",
+   "synonyms": [],
+   "mainAbbreviation": "SALT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Salinity tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000189",
+   "methodName": "Salinity tolerance - Method",
+   "methodClass": "Computation",
+   "description": "Salinity tolerance index calculated by dividing the biomass or grain yield of the plants grown under saline conditions by that of the control plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000190",
+   "scaleName": "index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000327",
+  "observationVariableName": "RDp_Meas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000073",
+   "traitName": "Rooting depth",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Rooting depth of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "RDp",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Rooting depth",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000191",
+   "methodName": "Rooting depth - Method",
+   "methodClass": "Measurement",
+   "description": "Measured in field pits or containers",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000192",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000328",
+  "observationVariableName": "CYSNR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000075",
+   "traitName": "Cyst nematode resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Heterodera spp. Syncytia are formed on the roots which become necrotic.",
+   "synonyms": [],
+   "mainAbbreviation": "CYSNR",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Cyst nematode resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000197",
+   "methodName": "Cyst nematode resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000198",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000329",
+  "observationVariableName": "APBR_Av_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000007",
+   "traitName": "Apical primary branches number per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of apical primary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "APBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Apical primary branches number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000205",
+   "methodName": "Apical primary branches number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of apical primary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000206",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000330",
+  "observationVariableName": "ASBR_Av_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000008",
+   "traitName": "Apical secondary branches number per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of apical secondary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "ASBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Apical secondary branches number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000207",
+   "methodName": "Apical secondary branches number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of apical secondary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000208",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000331",
+  "observationVariableName": "BPBR_Av_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000009",
+   "traitName": "Basal primary branches number per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of basal primary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "BPBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Basal primary branches number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000209",
+   "methodName": "Basal primary branches number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of basal primary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000210",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000332",
+  "observationVariableName": "BSBR_Av_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000010",
+   "traitName": "Basal secondary branches number per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of basal secondary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "BSBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Basal secondary branches number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000211",
+   "methodName": "Basal secondary branches number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of basal secondary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000212",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000333",
+  "observationVariableName": "TRBR_Av_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000012",
+   "traitName": "Tertiary branches number per plant",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of tertiary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "TRBR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Tertiary branches number per plant",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000213",
+   "methodName": "Tertiary branches number - Method",
+   "methodClass": "Computation",
+   "description": "Number of tertiary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000214",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000334",
+  "observationVariableName": "DOTSD_Est_1or2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000022",
+   "traitName": "Dots on seed coat",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Trait indicating the presence or absence of dots on the seed coat.",
+   "synonyms": [],
+   "mainAbbreviation": "DOTSD",
+   "alternativeAbbreviations": [],
+   "entity": "Seed coat",
+   "entityPUI": null,
+   "attribute": "Dot presence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000215",
+   "methodName": "Dots on seed coat - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation (present, absent)",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000216",
+   "scaleName": "Presence scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = absent",
+     "2 = present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000335",
+  "observationVariableName": "SHSOD_Meas_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000032",
+   "traitName": "Shoot sodium",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Shoot sodium content from plants/subset of plants.",
+   "synonyms": [],
+   "mainAbbreviation": "SHSOD",
+   "alternativeAbbreviations": [],
+   "entity": "Shoot",
+   "entityPUI": null,
+   "attribute": "Sodium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000217",
+   "methodName": "Shoot sodium - Method",
+   "methodClass": "Measurement",
+   "description": "Determination of Sodium content by using nitric acid digestion method (AAS & ICP-OES) at vegetative stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000218",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000336",
+  "observationVariableName": "SHPOT_Meas_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000033",
+   "traitName": "Shoot potassium",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Shoot potassium content from plants/subset of plants.",
+   "synonyms": [],
+   "mainAbbreviation": "SHPOT",
+   "alternativeAbbreviations": [],
+   "entity": "Shoot",
+   "entityPUI": null,
+   "attribute": "Potassium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000219",
+   "methodName": "Shoot potassium - Method",
+   "methodClass": "Measurement",
+   "description": "Determination of potassium content by using nitric acid digestion method (AAS & ICP-OES) at vegetative stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000220",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000337",
+  "observationVariableName": "FDPN_Count_DblPod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000048",
+   "traitName": "Filled double pod number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Is a count of the number of filled chickpea double pods produced by a double podded line.",
+   "synonyms": [],
+   "mainAbbreviation": "FDPN",
+   "alternativeAbbreviations": [],
+   "entity": "Double-podded plant",
+   "entityPUI": null,
+   "attribute": "Filled double pod number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000221",
+   "methodName": "Filled double pod number - Method",
+   "methodClass": "Counting",
+   "description": "Counting of number of filled double pods produced by a double-podded genotype",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000222",
+   "scaleName": "double pods",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000338",
+  "observationVariableName": "LFLM_Est_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000078",
+   "traitName": "Leaflet margin",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Type of leaflet margin e.g., smooth, serrated",
+   "synonyms": [],
+   "mainAbbreviation": "LFLM",
+   "alternativeAbbreviations": [],
+   "entity": "Leafllet",
+   "entityPUI": null,
+   "attribute": "Margin",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000223",
+   "methodName": "Leaflet margin - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000224",
+   "scaleName": "Margin type categories",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = entire and smooth",
+     "2 = serrated"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000339",
+  "observationVariableName": "LFLN_Av_LfletLf",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000079",
+   "traitName": "Number of leaflets per leaf",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of leaflets in a fully developed leaf",
+   "synonyms": [],
+   "mainAbbreviation": "LFLN",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Leaflet number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000225",
+   "methodName": "Number of leaflets per leaf - Method",
+   "methodClass": "Computation",
+   "description": "Average of 9 leaves (from the median part of the plant), 3 each from 3 randomly-selected plants at mid-pod filling stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000226",
+   "scaleName": "leaflets/leaf",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000340",
+  "observationVariableName": "PLPUB_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000080",
+   "traitName": "Plant pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Extent of hairiness of the shoot",
+   "synonyms": [],
+   "mainAbbreviation": "PLPUB",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000227",
+   "methodName": "Plant pubescence - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation on intensity of trichomes on the shoot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000228",
+   "scaleName": "Pubescence categories",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = low pubescence",
+     "2 = moderate pubescence",
+     "3 = high pubescence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000341",
+  "observationVariableName": "ALTBR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000081",
+   "traitName": "Alternaria blight resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Alternaria alternata. It causes water-soaked purple lesions on leaflets which later turn brown to dark brown",
+   "synonyms": [],
+   "mainAbbreviation": "ALTBR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaflet",
+   "entityPUI": null,
+   "attribute": "Alternaria blight resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000229",
+   "methodName": "Alternaria blight resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000230",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000342",
+  "observationVariableName": "RTKNR_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Pathological and breeding trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Pooran Gaur",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-04-24 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000082",
+   "traitName": "Root knot nematode resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Meloidogyne spp. It causes formation of galls on the root",
+   "synonyms": [],
+   "mainAbbreviation": "RTKNR",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Root knot nematode resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000231",
+   "methodName": "Root knot nematode resistance - Method",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to the disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000232",
+   "scaleName": "Disease resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = highly resistant",
+     "2-3 = resistant",
+     "4-5 = moderately resistant",
+     "6-7 = susceptible",
+     "8-9 = highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000343",
+  "observationVariableName": "StemDW_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000084",
+   "traitName": "Stem dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stem Dry Weight of a sample",
+   "synonyms": [],
+   "mainAbbreviation": "StemDW",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000235",
+   "methodName": "Stem dry weight - Method",
+   "methodClass": "Computation",
+   "description": "Stem dry weight taken after seperation and oven drying at 80âˆžC for at least 3 days",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000236",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000344",
+  "observationVariableName": "LeafDW_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000085",
+   "traitName": "Leaf dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaf Dry Weight of a sample",
+   "synonyms": [],
+   "mainAbbreviation": "LeafDW",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000237",
+   "methodName": "Leaf dry weight - Method",
+   "methodClass": "Computation",
+   "description": "Leaf dry weight taken after seperation and oven drying at 80âˆžC for at least 3 days",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000238",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000345",
+  "observationVariableName": "RTRatio_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000087",
+   "traitName": "Root dry weight/total plant dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Ratio of Root Dry weight to that of the whole plant dry weight",
+   "synonyms": [],
+   "mainAbbreviation": "RTRatio",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Root dry weight/total plant dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000241",
+   "methodName": "Root dry weight/total plant dry weight - Method",
+   "methodClass": "Computation",
+   "description": "Calculated using both root and shoot dry weights.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000242",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000346",
+  "observationVariableName": "RLD_Comp_cmcm3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000088",
+   "traitName": "Root length density",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of roots present in a unit volume of soil",
+   "synonyms": [],
+   "mainAbbreviation": "RLD",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length per volume of soil",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000243",
+   "methodName": "Root length density - Method",
+   "methodClass": "Computation",
+   "description": "Calculated using both root length measured and soil volume from where the root comes.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000244",
+   "scaleName": "cm cm-3",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000347",
+  "observationVariableName": "RSA_Comp_cm2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000089",
+   "traitName": "Root surface area",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Surface of roots",
+   "synonyms": [],
+   "mainAbbreviation": "RSA",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Surface area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000245",
+   "methodName": "Root surface area - Method",
+   "methodClass": "Computation",
+   "description": "Calculated through length and diameter measured through winrhizo software",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000246",
+   "scaleName": "cm2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000348",
+  "observationVariableName": "RV_Comp_cm3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2010-10-21 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000090",
+   "traitName": "Root volume",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Volume of root",
+   "synonyms": [],
+   "mainAbbreviation": "RV",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Volume",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000247",
+   "methodName": "Root volume - Method",
+   "methodClass": "Computation",
+   "description": "Calculated through length and diameter measured through winrhizo software",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000248",
+   "scaleName": "cm3",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000349",
+  "observationVariableName": "CID_Meas_PerThsnd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000091",
+   "traitName": "Carbon isotope discrimination",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Ratio of carbon isotope in tissue relative to the air",
+   "synonyms": [],
+   "mainAbbreviation": "CID",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Carbon isotope discrimination",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000249",
+   "methodName": "Carbon isotope discrimination - Method",
+   "methodClass": "Measurement",
+   "description": "Ratio of C13/C12 in leaf in relation to the air",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000250",
+   "scaleName": "?",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000350",
+  "observationVariableName": "SLA_Comp_cm2g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000092",
+   "traitName": "Specific leaf area",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaf area per dry weight of leaves",
+   "synonyms": [],
+   "mainAbbreviation": "SLA",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Area per weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000251",
+   "methodName": "Specific leaf area - Method",
+   "methodClass": "Computation",
+   "description": "Ratio of area to the weight of leaves. Leaf area is measured using leaf area meters and leaf weight using precision balances",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000252",
+   "scaleName": "cm2 g-1",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000351",
+  "observationVariableName": "LfChlorCt_Meas_SPAD",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000093",
+   "traitName": "Leaf chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Chlorophyll content in the leaf",
+   "synonyms": [],
+   "mainAbbreviation": "LfChlorCt",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000253",
+   "methodName": "SPAD chlorophyll meter readings - Method",
+   "methodClass": "Measurement",
+   "description": "Using SPAD chlorophyll meter",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000254",
+   "scaleName": "SPAD units",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000352",
+  "observationVariableName": "TE_Comp_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000094",
+   "traitName": "Transpiration efficiency",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Ratio of shoot biomass produced per unit of transpired water",
+   "synonyms": [],
+   "mainAbbreviation": "TE",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Transpiration efficiency",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000255",
+   "methodName": "Transpiration efficiency - Method",
+   "methodClass": "Computation",
+   "description": "Shoot biomass is harvested and weighed and the water used during the growing time is calculated using initial and final weight of the containers",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000256",
+   "scaleName": "g kg-1 water",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000353",
+  "observationVariableName": "WUE_Comp_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000095",
+   "traitName": "Water use efficiency",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Ratio of shoot biomass produced per unit of water lost from the field through both transpiration and evaporation",
+   "synonyms": [],
+   "mainAbbreviation": "WUE",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Water use efficiency",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000257",
+   "methodName": "Water use efficiency - Method",
+   "methodClass": "Computation",
+   "description": "Shoot biomass is harvested and weighed and the water used during the growing time is calculated using initial and final soil weights plus the rainfall",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000258",
+   "scaleName": "g kg-1 water",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_338:0000354",
+  "observationVariableName": "DTI_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_338",
+   "ontologyName": "Chickpea"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "L Krishnamurthy",
+  "status": null,
+  "synonyms": [],
+  "date": "2011-09-09 00:00:00",
+  "crop": "Chickpea",
+  "trait": {
+   "traitDbId": "CO_338:0000096",
+   "traitName": "Drought tolerance",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Standard residual after removing the effects of flowering time and yield potential advantages from the drought yields",
+   "synonyms": [],
+   "mainAbbreviation": "DTI",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought tolerance index",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_338:0000259",
+   "methodName": "Drought tolerance index - Method",
+   "methodClass": "Computation",
+   "description": "Drought yield is assumed as a function of days to flowering, yield potential and residual in a multiple regression approach. The standardized residual is considered as drought tolerance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_338:0000260",
+   "scaleName": "Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

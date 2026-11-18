@@ -1,0 +1,68 @@
+name: Refresh data from cropontology.org
+
+on:
+  schedule:
+    - cron: '17 6 * * 1' # Mondays 06:17 UTC; the first Monday of each month does a full refresh
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Re-fetch every ontology, not just those whose fingerprint changed
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: harvest
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: harvest
+        name: Harvest
+        run: |
+          flag=""
+          if [ "${{ inputs.full }}" = "true" ] || { [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%-d)" -le 7 ]; }; then
+            flag="--full"
+          fi
+          # Keep going on partial failure so the ontologies that did succeed are still committed.
+          status=0
+          node scripts/harvest.mjs $flag || status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+      - id: commit
+        name: Commit snapshot if it changed
+        run: |
+          # The harvester only rewrites files whose content changed, so any diff is a real change.
+          if [ -z "$(git status --porcelain -- data)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A data
+            git commit -m "Refresh cropontology.org snapshot"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Report harvest failures
+        if: steps.harvest.outputs.status != '0'
+        run: |
+          echo "::error::Some ontologies failed to harvest; see the Harvest step log."
+          exit 1
+
+  deploy:
+    needs: harvest
+    # Pushes made with GITHUB_TOKEN don't trigger other workflows, so deploy from here.
+    if: always() && needs.harvest.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml

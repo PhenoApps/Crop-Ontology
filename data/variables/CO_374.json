@@ -1,0 +1,1868 @@
+[
+ {
+  "observationVariableDbId": "CO_374:0000001",
+  "observationVariableName": "AnthracRes_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000029",
+   "traitName": "Anthracnose resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to Colletotrichum trifolii measured on young plants in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "AnthracRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Anthracnose resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000053",
+   "methodName": "Anthracnose resistance - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": "Frey et al. (2023) Phenotypic variation and quantitative trait loci for resistance to southern anthracnose and clover rot in red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000002",
+  "observationVariableName": "FlowerBegin_Count_Date (yyyymmdd)",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000030",
+   "traitName": "Beginning of flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when flowering starts",
+   "synonyms": [],
+   "mainAbbreviation": "FlowerBegin",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Begin of flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000054",
+   "methodName": "Begin of flowering time - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record date when the first flowers appear in the plot",
+   "formula": null,
+   "reference": "Jing and Boelt (2021) Seed Production of Red Clover (Trifolium pratense L.) under Danish Field Conditions.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000082",
+   "scaleName": "Date (yyyymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000003",
+  "observationVariableName": "FlowerBegin_DOY_Comp_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000030",
+   "traitName": "Beginning of flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when flowering starts",
+   "synonyms": [],
+   "mainAbbreviation": "FlowerBegin",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Begin of flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000055",
+   "methodName": "Begin of flowering time - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (in dryland areas use first day of rainfall or irrigation) to when the first flowers appear in the plot",
+   "formula": null,
+   "reference": "Jing and Boelt (2021) Seed Production of Red Clover (Trifolium pratense L.) under Danish Field Conditions.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000083",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000004",
+  "observationVariableName": "ClovContent_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000031",
+   "traitName": "Clover content",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Percentage of red clover herbage in field plots with companion grasses and/or grassland herbs",
+   "synonyms": [],
+   "mainAbbreviation": "ClovContent",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Clover content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000056",
+   "methodName": "Clover content - Computation",
+   "methodClass": "Computation",
+   "description": "Separate clover herbage and determine the weight fraction compared to the total herbage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000005",
+  "observationVariableName": "CloverRotRes_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000032",
+   "traitName": "Clover rot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to clover rot caused by Sclerotinia spp. measured on young plants in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "CloverRotRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Clover rot resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000057",
+   "methodName": "Clover rot resistance - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": "Frey et al. (2023) Phenotypic variation and quantitative trait loci for resistance to southern anthracnose and clover rot in red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000006",
+  "observationVariableName": "DryMatterCont_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "DMC"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000033",
+   "traitName": "Dry matter content",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Dry matter content (%) of herbage harvested in field plots",
+   "synonyms": [],
+   "mainAbbreviation": "DryMatterCont",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "dry matter content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000058",
+   "methodName": "dry matter content - Computation",
+   "methodClass": "Computation",
+   "description": "Determined by weighing a freshly harvested sample, drying it at 60°C for 48h, and weighing the dried sample",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000007",
+  "observationVariableName": "DryMatterYield_Comp_kg/ha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "DMY"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000034",
+   "traitName": "Dry matter yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Dry matter yield of herbage harvested in field plots",
+   "synonyms": [],
+   "mainAbbreviation": "DryMatterYield",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Dry matter yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000059",
+   "methodName": "Dry matter yield - Computation",
+   "methodClass": "Computation",
+   "description": "Dry matter yield harvested in a field plot, calculated from the fresh matter yield and the dry matter content",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000084",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000008",
+  "observationVariableName": "FlowerEnd_Count_Date (yyyymmdd)",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000035",
+   "traitName": "End of flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when flowering ends",
+   "synonyms": [],
+   "mainAbbreviation": "FlowerEnd",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "End of flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000060",
+   "methodName": "End of flowering time - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record date when no more new flowers are formed in the plot",
+   "formula": null,
+   "reference": "Jing and Boelt (2021) Seed Production of Red Clover (Trifolium pratense L.) under Danish Field Conditions.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000082",
+   "scaleName": "Date (yyyymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000009",
+  "observationVariableName": "FlowerEnd_DOY_Comp_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000035",
+   "traitName": "End of flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when flowering ends",
+   "synonyms": [],
+   "mainAbbreviation": "FlowerEnd",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "End of flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000061",
+   "methodName": "End of flowering time - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (in dryland areas use first day of rainfall or irrigation) to when no more new flowers are formed in the plot",
+   "formula": null,
+   "reference": "Jing and Boelt (2021) Seed Production of Red Clover (Trifolium pratense L.) under Danish Field Conditions.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000083",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000010",
+  "observationVariableName": "Floret_Fert_Count_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000036",
+   "traitName": "Floret fertility",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "Fertility of individual florets, measured in controlled environment with pollinators",
+   "synonyms": [],
+   "mainAbbreviation": "Floret_Fert",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Floret fertility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000062",
+   "methodName": "Floret fertility - Counting",
+   "methodClass": "Counting",
+   "description": "Register the number of seed per floret",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000011",
+  "observationVariableName": "FloretHeadN_Count_flower",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "FlowerPodN"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000037",
+   "traitName": "Floret number per flower head",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "The number of flowers/flowers per flower head",
+   "synonyms": [],
+   "mainAbbreviation": "FloretHeadN",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Flower number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000063",
+   "methodName": "Flower number - Counting",
+   "methodClass": "Counting",
+   "description": "Usually recorded as mean number of flowers on the second flower-bearing node of five plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000085",
+   "scaleName": "flower",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000012",
+  "observationVariableName": "HeadAreaN_Count_number",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000038",
+   "traitName": "Flower head number",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "The number of flower heads",
+   "synonyms": [],
+   "mainAbbreviation": "HeadtN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flower head number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000064",
+   "methodName": "Flower head number per m² - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of flower heads in a representative area of the field plot",
+   "formula": null,
+   "reference": "Vleugels et al. (2016) Models with only two predictor variables\ncan accurately predict seed yield in diploid\nand tetraploid red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000086",
+   "scaleName": "number",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000013",
+  "observationVariableName": "HeadPlantN_Count_number",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000038",
+   "traitName": "Flower head number",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "The number of flower heads",
+   "synonyms": [],
+   "mainAbbreviation": "HeadtN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flower head number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000065",
+   "methodName": "Flower head number per plant - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of flower heads on the individual plant",
+   "formula": null,
+   "reference": "Vleugels et al. (2016) Models with only two predictor variables\ncan accurately predict seed yield in diploid\nand tetraploid red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000086",
+   "scaleName": "number",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000014",
+  "observationVariableName": "FlowerPeriod_Count_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000039",
+   "traitName": "Flowering period duration",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The flowering period duration in days",
+   "synonyms": [],
+   "mainAbbreviation": "FlowerPeriod",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering period duration",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000066",
+   "methodName": "Flowering period duration - Counting",
+   "methodClass": "Counting",
+   "description": "Estimate flowering period duration and rate it",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000087",
+   "scaleName": "1 to 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Asynchronous (flowering period >30 days)",
+     "2= Intermediate (flowering period 16-30 days)",
+     "3= Synchronous (flowering period <15 days)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000015",
+  "observationVariableName": "FreezTol_Count_°C",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "In controlled conditions"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "Lethal temperature 50"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000040",
+   "traitName": "Freezing tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to freezing measured on young plants in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "FreezTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Freezing tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000067",
+   "methodName": "Freezing tolerance - Counting",
+   "methodClass": "Counting",
+   "description": "Measure survival rate 3-4 weeks after freezing at each of several test temperatures. Find LT50 with probit analysis",
+   "formula": null,
+   "reference": "Zanotto et al. (2021). Trait characterization of genetic resources reveals useful variation for the improvement of cultivated Nordic red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000088",
+   "scaleName": "°C",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000016",
+  "observationVariableName": "FrMatterYield_M_kg/ha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "DFLY"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000041",
+   "traitName": "Fresh matter yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Fresh matter yield of herbage harvested in field plots",
+   "synonyms": [],
+   "mainAbbreviation": "FrMatterYield",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Fresh matter yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000068",
+   "methodName": "Fresh matter yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Fresh matter yield harvested in a field plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000084",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000017",
+  "observationVariableName": "FusResPlant_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000042",
+   "traitName": "Fusarium resistance on plants",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to Fusarium oxysporum measured on young plants in greenhouse conditions",
+   "synonyms": [],
+   "mainAbbreviation": "FusResPlant",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Fusarium resistance on plants",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000069",
+   "methodName": "Fusarium resistance on plants - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000018",
+  "observationVariableName": "FusariumResSeed_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000043",
+   "traitName": "Fusarium resistance on seedlings",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to Fusarium oxysporum measured on seedlings in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "FusariumResSeed",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Fusarium resistance on seedlings",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000070",
+   "methodName": "Fusarium resistance on seedlings - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000019",
+  "observationVariableName": "MainStmNodN_Count_number",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000044",
+   "traitName": "Node number in main stem",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of nodes in main stem",
+   "synonyms": [],
+   "mainAbbreviation": "MainStmNodN",
+   "alternativeAbbreviations": [],
+   "entity": "Main stem",
+   "entityPUI": null,
+   "attribute": "Node number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000071",
+   "methodName": "Node number - Counting",
+   "methodClass": "Counting",
+   "description": "Count nodes in the main stem",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000086",
+   "scaleName": "number",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000020",
+  "observationVariableName": "PowdMildRes_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000045",
+   "traitName": "Powdery mildew resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to powdery mildew caused by Erysiphe polygoni measured on young plants in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "PowdMildRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Powdery mildew resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000072",
+   "methodName": "Powdery mildew resistance - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000021",
+  "observationVariableName": "HyperaRes_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000046",
+   "traitName": "Resistance to Hypera",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to Hypera spp. insects measured on seedlings in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "HyperaRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Hypera",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000073",
+   "methodName": "Resistance to Hypera - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000022",
+  "observationVariableName": "ProtapionRes_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000047",
+   "traitName": "Resistance to Protapion",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant resistance to Protapion spp. insects measured on seedlings in controlled conditions",
+   "synonyms": [],
+   "mainAbbreviation": "ProtapionRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Protapion",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000074",
+   "methodName": "Resistance to Protapion - Computation",
+   "methodClass": "Computation",
+   "description": "Assess the resistance to clover rot using a bio-test in controlled conditions, rate it from immune/resistant to susceptible, and calculate the resistance index",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000023",
+  "observationVariableName": "SNHead_Count_seed",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "SN/FH"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000048",
+   "traitName": "Seed number per flower head",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "The number of seeds per flower head",
+   "synonyms": [],
+   "mainAbbreviation": "SNHead",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Seed number per head",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000075",
+   "methodName": "Seed number per head - Counting",
+   "methodClass": "Counting",
+   "description": "Usually recorded as averaged number of seeds from 10 representative flower heads",
+   "formula": null,
+   "reference": "Vleugels et al. (2016) Models with only two predictor variables\ncan accurately predict seed yield in diploid\nand tetraploid red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000089",
+   "scaleName": "seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000024",
+  "observationVariableName": "SNPod_Count_seed",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "SN/F"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000049",
+   "traitName": "Seed number per pod",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "The number of seeds per pod/floret",
+   "synonyms": [],
+   "mainAbbreviation": "SNPod",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Seed number per pod",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000076",
+   "methodName": "Seed number per pod - Counting",
+   "methodClass": "Counting",
+   "description": "Usually recorded as averaged number of seeds from 10 representative pods",
+   "formula": null,
+   "reference": "Vleugels et al. (2016) Models with only two predictor variables\ncan accurately predict seed yield in diploid\nand tetraploid red clover",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000089",
+   "scaleName": "seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000025",
+  "observationVariableName": "SY_M_kg/ha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000050",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested.",
+   "synonyms": [],
+   "mainAbbreviation": "SY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000077",
+   "methodName": "Yield per hectare - Measurement",
+   "methodClass": "Measurement",
+   "description": "Compute seed yield per hectare using the seed weight harvested on field plots",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000084",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000026",
+  "observationVariableName": "SY_M_g/plant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000050",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested.",
+   "synonyms": [],
+   "mainAbbreviation": "SY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000078",
+   "methodName": "Yield per plant - Measurement",
+   "methodClass": "Measurement",
+   "description": "Seed yield per plant measured on single plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000090",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000027",
+  "observationVariableName": "TSW_Comp_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [
+   "TSW"
+  ],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000051",
+   "traitName": "Thousand seed weight",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The weight of thousand seed.",
+   "synonyms": [],
+   "mainAbbreviation": "TSW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000079",
+   "methodName": "Weight - Computation",
+   "methodClass": "Computation",
+   "description": "Count and weigh 4x 100 seeds and calculate the weight of 1000 seeds",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000091",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_374:0000028",
+  "observationVariableName": "WinterSurv_Comp_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_374",
+   "ontologyName": "Red clover"
+  },
+  "contextOfUse": [
+   "Field trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": null,
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Red clover",
+  "trait": {
+   "traitDbId": "CO_374:0000052",
+   "traitName": "Winter survival",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants ability to survive harsh winters",
+   "synonyms": [],
+   "mainAbbreviation": "WinterSurv",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Winter survival",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_374:0000080",
+   "methodName": "Winter survival - Computation",
+   "methodClass": "Computation",
+   "description": "Assess plant coverage in late autumn and in spring after regrowth has resumed. Calculate the percent survival based on these assessments.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_374:0000081",
+   "scaleName": "%",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

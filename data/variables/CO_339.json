@@ -1,0 +1,4445 @@
+[
+ {
+  "observationVariableDbId": "CO_339:0000197",
+  "observationVariableName": "AnthrRes_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000000",
+   "traitName": "Anthracnose resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Anthracnose disease. Causative organism: Colletotrichum truncatum. Symptoms develop when plants start to flower. Necrotic lesions can be found on the lower leaflets and cause premature leaf senescence. Symptoms can also be found on stem starting from the base to the top of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "ANTR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf and Stem",
+   "entityPUI": null,
+   "attribute": "Resistance to Anthracnose",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000001",
+   "methodName": "Scoring method for Anthracnose resistance",
+   "methodClass": "Estimation",
+   "description": "Quantification of symptoms development in leaves and stem",
+   "formula": null,
+   "reference": "Genetic resources and crop evolution 53: 111-119.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000002",
+   "scaleName": "Anthracnose damage score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No lesion",
+     "3= Few small superficial lesions",
+     "5=Few deep lesions, mostly superficial, no stem girdling",
+     "7= Several deep stem lesions, mixture of deep and superficial, partial wilting",
+     "9=Deep penetrating lesions coalesce, stem girdling, wilting"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000198",
+  "observationVariableName": "AphRes_Est_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000003",
+   "traitName": "Aphid resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Aphids. Acrythosiphon pisum. Suck sap from tender parts of plants and it is the vector of viral diseases.",
+   "synonyms": [],
+   "mainAbbreviation": "APHR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Aphid",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000004",
+   "methodName": "Screening method for Aphid Resitance",
+   "methodClass": "Estimation",
+   "description": "Infestation area was taken and the percentage of area infestated was determined at seven days interval",
+   "formula": null,
+   "reference": "Journal of Agriculture and Rural Development,4(1&2),101-106.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000005",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000199",
+  "observationVariableName": "AscBltRes_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000006",
+   "traitName": "Ascochyta blight resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Ascochyta blight . Causative agent: Ascochyta lentis (Didymella lentis). The pathogen infects leaves, stems, petioles, pods and seeds. On leaves, young lesions with small necrotic spots of 3-5mm diameter can be found. Reddish brown to black pycnidia from in the middle of the mature lesions. In severe infections, lesions gridle the stem, kill the epidermal and cortical cells and lead to stem breakage. Pods can also be infected and results seed infection. Heavily infected seeds look shrivelled and discoloured with a whitish mycelium and pycnidia.",
+   "synonyms": [],
+   "mainAbbreviation": "ABR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf and Stem",
+   "entityPUI": null,
+   "attribute": "Resistance to Ascochyta blight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000007",
+   "methodName": "Visual estimation of Ascochyta blight Resistance",
+   "methodClass": "Estimation",
+   "description": "Quantification of infestation rate in leaves and stem",
+   "formula": null,
+   "reference": "Theoretical and Applied Genetics,1999,98:93-98.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000008",
+   "scaleName": "Ascochyta blight damage score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=No symptoms",
+     "3=small flecks or small lesions on leaves and chlorosis at leaf tips",
+     "5=Many leaf lesions, leaf drop, stem flecks or small lesions",
+     "7=Defoliation, extended stem lesions",
+     "9= stem girdling and or plant death"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000200",
+  "observationVariableName": "BYPL_Meas_gplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000009",
+   "traitName": "Biological yield per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The total biological yield of a plant (seed yield + straw yield)",
+   "synonyms": [],
+   "mainAbbreviation": "BYPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "straw and seed weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000010",
+   "methodName": "Method of measuring BYPL",
+   "methodClass": "Measurement",
+   "description": "Yield of dried matured plants after pulling",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000011",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000201",
+  "observationVariableName": "BYPL_Meas_gplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000012",
+   "traitName": "Biological yield per area",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The total biological yield (seed yield + straw yield) of plants in a plot",
+   "synonyms": [],
+   "mainAbbreviation": "BYPO",
+   "alternativeAbbreviations": [],
+   "entity": "Straw and seed",
+   "entityPUI": null,
+   "attribute": "Weight per area",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000013",
+   "methodName": "Method of measuring BYPO",
+   "methodClass": "Measurement",
+   "description": "Yield of dried matured plants in a plot after pulling",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000014",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000202",
+  "observationVariableName": "BDef_Est_0to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000015",
+   "traitName": "Boron deficiency",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Deficiency of Boron in the plant",
+   "synonyms": [],
+   "mainAbbreviation": "BORD",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf and Stem",
+   "entityPUI": null,
+   "attribute": "Boron deficiency",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000016",
+   "methodName": "Screening method for Boron Deficiency",
+   "methodClass": "Estimation",
+   "description": "Quantification of symptoms development in leaves and stem, measured after six weeks of sowing",
+   "formula": null,
+   "reference": "Plant and Soil,2000, 219,147-151.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000017",
+   "scaleName": "boron deficiency score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0=No symptoms of B deficiency",
+     "1= 10% of plants showing boron deficiency",
+     "2= 20% of plants showing boron deficiency",
+     "3= 30% of plants showing boron deficiency",
+     "4= 40% of plants showing boron deficiency",
+     "5= 50% of plants showing boron deficiency",
+     "6= 60% of plants showing boron deficiency",
+     "7= 70% of plants showing boron deficiency",
+     "8= 80% of plants showing boron deficiency",
+     "9 = All plants showing severe stunting and chlorosis"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000203",
+  "observationVariableName": "BToxRes_Est_1to10",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000018",
+   "traitName": "Boron toxicity tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to boron toxicity",
+   "synonyms": [],
+   "mainAbbreviation": "BORT",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Boron toxicity tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000019",
+   "methodName": "Screening method for Boron toxicity tolerance",
+   "methodClass": "Estimation",
+   "description": "Quantification of symptoms of boron toxicity in leaves",
+   "formula": null,
+   "reference": "Theoretical and Applied Genetics,2014:127,703-713",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000020",
+   "scaleName": "boron toxicity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=No symptoms of B toxicity",
+     "2= 20% of plants showing foliar damage",
+     "3=30% of plants showing foliar damage",
+     "4=40% of plants showing foliar damage",
+     "5=50% of plants showing foliar damage",
+     "6=60% of plants showing foliar damage",
+     "7=70% of plants showing foliar damage",
+     "8=80% of plants showing foliar damage",
+     "9=90% of plants showing foliar damage",
+     "10= Completed dead"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000204",
+  "observationVariableName": "BranchPat_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000021",
+   "traitName": "Branching pattern",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait describing the branching pattern of plant",
+   "synonyms": [],
+   "mainAbbreviation": "BRPT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Branch Pattern",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000022",
+   "methodName": "Branching pattern - method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the branching pattern",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000023",
+   "scaleName": "branching pattern scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Erect compact with a narrow branch angle",
+     "2= Spreading",
+     "3= Intermediate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000205",
+  "observationVariableName": "BruRes_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "IPM trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000024",
+   "traitName": "Bruchid resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Bruchids.Callosobruchus analis. Damage flowers, pods and seeds",
+   "synonyms": [],
+   "mainAbbreviation": "BRUR",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Resistance to Bruchid",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000025",
+   "methodName": "Screening method for Bruchid Resistance",
+   "methodClass": "Computation",
+   "description": "Proportion of penetrated seeds in a sample of 40 seeds",
+   "formula": null,
+   "reference": "Euphytica.2012.188,153-162.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000026",
+   "scaleName": "Percentage of bruchid damaged seeds",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000206",
+  "observationVariableName": "CanWid_Est_Cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000027",
+   "traitName": "Canopy width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Width of the canopy",
+   "synonyms": [],
+   "mainAbbreviation": "CANW",
+   "alternativeAbbreviations": [],
+   "entity": "Canopy",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000028",
+   "methodName": "Canopy Width - method",
+   "methodClass": "Computation",
+   "description": "Average canopy width of three/five representative plants of an accession.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000029",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000207",
+  "observationVariableName": "CoTol_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000030",
+   "traitName": "Cold tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Tolerance to damage caused to aerial plant parts by cold stress.",
+   "synonyms": [],
+   "mainAbbreviation": "CTOL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Cold tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000031",
+   "methodName": "Screening method for Cold Tolerance",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the proportion of plants showing symptoms of cold stress",
+   "formula": null,
+   "reference": "Pakistan Journal of Biological Sciences,1999, 2(4): 1292-1295",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000032",
+   "scaleName": "cold tolerance score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No foliar damage",
+     "2= 30% of plants showing symptoms to low temperature stress",
+     "3= 50% of plants showing symptoms to low temperature stress",
+     "4= 70% of plants showing symptoms to low temperature stress",
+     "5= Completely dead"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000208",
+  "observationVariableName": "CollRotRes_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000033",
+   "traitName": "Collar rot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to collar rot. Causative agent: Sclerotium rolfsii.",
+   "synonyms": [],
+   "mainAbbreviation": "COLRR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Collar rot",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000034",
+   "methodName": "Screening method for Colar resistance",
+   "methodClass": "Computation",
+   "description": "Observation of seedling mortality",
+   "formula": null,
+   "reference": "Pakistan Journal of Botany, 2008, 40(5):2211-2215",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000035",
+   "scaleName": "collar rot damage score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0=No mortality",
+     "1=less than 1% mortality",
+     "3=1-10% mortality",
+     "5=11-20% mortality",
+     "7=21-50%mortality",
+     "9=51% or more mortality"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000209",
+  "observationVariableName": "CookT_Meas_min",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000036",
+   "traitName": "Cooking time",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Time needed for lentil sample to cook",
+   "synonyms": [],
+   "mainAbbreviation": "CKT",
+   "alternativeAbbreviations": [],
+   "entity": "Grain",
+   "entityPUI": null,
+   "attribute": "Cooking time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000037",
+   "methodName": "Cooking time - Method",
+   "methodClass": "Measurement",
+   "description": "Cooking time for dry seed without soaking",
+   "formula": null,
+   "reference": "Field crops research,12(1985): 153-161.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000038",
+   "scaleName": "Minutes",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000210",
+  "observationVariableName": "CotCol_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000039",
+   "traitName": "Cotyledon colour",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "A trait describing the colour of cotyledon",
+   "synonyms": [],
+   "mainAbbreviation": "CTLC",
+   "alternativeAbbreviations": [],
+   "entity": "Cotyledon",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000040",
+   "methodName": "Cotyledon Colour - Method",
+   "methodClass": "Estimation",
+   "description": "To be observed on seeds less than three months old",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000041",
+   "scaleName": "cotyldeon colour classes",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Yellow",
+     "2= Orange-red",
+     "3= Olive-green"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000211",
+  "observationVariableName": "StrProtCont_Meas_Ptc",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000042",
+   "traitName": "Straw protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The amount of protein content in the straw",
+   "synonyms": [],
+   "mainAbbreviation": "STRP",
+   "alternativeAbbreviations": [],
+   "entity": "Straw",
+   "entityPUI": null,
+   "attribute": "Protein Content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000043",
+   "methodName": "Straw protein content analysis - Method",
+   "methodClass": "Measurement",
+   "description": "Crude protein analysis in lentil straw",
+   "formula": null,
+   "reference": "Animal Feed Science and Technology,1990.28,61-69.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000044",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000214",
+  "observationVariableName": "TFlw_CountTo50Flow_d",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [
+   "DFTFL",
+   " DFFL"
+  ],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000195",
+   "traitName": "Time to flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time elapsed between sowing to flowering",
+   "synonyms": [],
+   "mainAbbreviation": "TF",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Time to Flowering",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000046",
+   "methodName": "Time to 50% flowering - method",
+   "methodClass": "Counting",
+   "description": "Number of days from sowing until 50% of the plants are in flower under irrigated condition. In rain-fed conditions, it is counted from first day of rainfall or irrigation, which is sufficient for germination",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000047",
+   "scaleName": "Days",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000215",
+  "observationVariableName": "TFlow_CountTo1F_d",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [
+   "DFTFL",
+   " DFFL"
+  ],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000195",
+   "traitName": "Time to flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time elapsed between sowing to flowering",
+   "synonyms": [],
+   "mainAbbreviation": "TF",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Time to Flowering",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000049",
+   "methodName": "Time to first flower - method",
+   "methodClass": "Counting",
+   "description": "Number of days from sowing until the first flower started to occur.",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000050",
+   "scaleName": "Days",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000216",
+  "observationVariableName": "Tto1Pod_Count_d",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000051",
+   "traitName": "Time to first pod formation",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days from sowing to formation of first pod",
+   "synonyms": [],
+   "mainAbbreviation": "DFPD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Time to first pod formation",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000052",
+   "methodName": "Time to first pod formation - method",
+   "methodClass": "Counting",
+   "description": "Counting the number of days from sowing to first pod formation",
+   "formula": null,
+   "reference": "Impact of reproductive duration on yield and its component traits in lentil. Legume Research (in press)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000053",
+   "scaleName": "Days",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000217",
+  "observationVariableName": "TtoMat_Count_d",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000054",
+   "traitName": "Time to maturity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "A quantitative trait describing the physiological maturity of plant",
+   "synonyms": [],
+   "mainAbbreviation": "DM",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Time to maturity",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000055",
+   "methodName": "Time to maturity - method",
+   "methodClass": "Counting",
+   "description": "Number of days from sowing until 90% of the pods are in golden brown",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000056",
+   "scaleName": "Days",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000218",
+  "observationVariableName": "DrghtTol_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000057",
+   "traitName": "Drought tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to drought stress",
+   "synonyms": [],
+   "mainAbbreviation": "DRTL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000058",
+   "methodName": "Screening method for Drought tolerance",
+   "methodClass": "Computation",
+   "description": "Drought tolerance index is calucated by using the formula of crop yield under drought conditons to the non-drought conditions i.e., 1-[(Ys)/(Yp)]",
+   "formula": null,
+   "reference": "American-Eurasian J.Agriculture and environmental sciences, 2009, 6(3):352-355",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000059",
+   "scaleName": "Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000219",
+  "observationVariableName": "GrthVig_Meas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "IIPR, Kanpur",
+  "language": "EN",
+  "scientist": "Dr. Jitendra Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000060",
+   "traitName": "Early growth vigour",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "A quantitative traits desrcibing the growth of seedlings",
+   "synonyms": [],
+   "mainAbbreviation": "EGV",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth Vigour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000061",
+   "methodName": "Early growth vigour - Method",
+   "methodClass": "Measurement",
+   "description": "Seedling length after 40-45 days of sowing , which is measured in field",
+   "formula": null,
+   "reference": "Genetics of early growth vigour in lentil (Lens culinaris Medik.). Journal of Genetics 92:323-326.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000062",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000220",
+  "observationVariableName": "FusWiRes_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000063",
+   "traitName": "Fusarium wilt resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Fusarium wilt disease.Causative organism: Fusarium oxysporum f. sp. lentis. Typical symptoms of wilt are first seen as sudden drooping of leaflets starting at the plant top and progressing downward. Leaflets close and do not shed prematurely, turning dull green . Finally the whole plant wilts . Wilting may be unilateral and confined to individual branches. When wilt appears at flowering no seeds are produced.",
+   "synonyms": [],
+   "mainAbbreviation": "FWR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Fusarium wilt",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000064",
+   "methodName": "Screening method for Fusarium wilt resistance",
+   "methodClass": "Estimation",
+   "description": "Proportion of wilted or dead plants per plot were recorded periodically every 3-4 days interval",
+   "formula": null,
+   "reference": "Euphytica,1997:98,69-74",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000065",
+   "scaleName": "fusarium wilt damage score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2= Resistant",
+     "3= Moderately resistant",
+     "4= Susceptible",
+     "5= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000221",
+  "observationVariableName": "SdCol_VisClsn_1to6",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000066",
+   "traitName": "Ground colour of seed testa",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait indicating seed coat color.",
+   "synonyms": [],
+   "mainAbbreviation": "CSTA",
+   "alternativeAbbreviations": [],
+   "entity": "Seed coat (testa)",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000067",
+   "methodName": "Seed coat color - Method",
+   "methodClass": "Estimation",
+   "description": "To be observed on seeds less than three months old",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000068",
+   "scaleName": "seed coat colour classes",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Grey",
+     "3= Brown",
+     "4= Black",
+     "5= Pink",
+     "6= Yellow"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000222",
+  "observationVariableName": "GwthHab_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000069",
+   "traitName": "Growth habit",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative description of the growth habit of the plant.",
+   "synonyms": [],
+   "mainAbbreviation": "GRH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth Habit",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000070",
+   "methodName": "Growth Habit - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the angle of primary branches recorded at mid-pod",
+   "formula": null,
+   "reference": "Crop Sci. 31:1040-1044 (1991).Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/).",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000071",
+   "scaleName": "growth habit scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Erect (0-150 from vertical)",
+     "2= Semi-erect (16-250 from vertical)",
+     "3= Semi-spreading (26-600 from vertical)",
+     "4= Spreading (61-800 from vertical)",
+     "5= Prostrate (branches flat on the ground)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000223",
+  "observationVariableName": "HarvInx_Comp_ratio",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000072",
+   "traitName": "Harvest Index",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A measurement of crop yield, the weight of the harvested product as a percentage of the total plant weight of a crop",
+   "synonyms": [],
+   "mainAbbreviation": "HI",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Harvest index",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000073",
+   "methodName": "Harvest Index - Method",
+   "methodClass": "Computation",
+   "description": "Grain yield/ (straw yield + grain yield)",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000074",
+   "scaleName": "Ratio",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000224",
+  "observationVariableName": "HeatTol_Cont_nbPod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000075",
+   "traitName": "Heat tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to high temperature",
+   "synonyms": [],
+   "mainAbbreviation": "HTOL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Heat tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000076",
+   "methodName": "Screening method for Heat tolerance",
+   "methodClass": "Counting",
+   "description": "Heat tolerance can be observed by counting number of unfilled or filled pods per plant",
+   "formula": null,
+   "reference": "International Journal of Agriculture: Research and Review. 2012,Vol.,2, 969-974.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000077",
+   "scaleName": "Number of pods",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000225",
+  "observationVariableName": "HghtPod_Est_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000078",
+   "traitName": "Height of the lowest pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Height above ground of the lowest pod",
+   "synonyms": [],
+   "mainAbbreviation": "HLPD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height of the lowest pod",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000079",
+   "methodName": "Height of the lowest pod - Method",
+   "methodClass": "Estimation",
+   "description": "Estimate of the average height above ground of the lowest pod on randomly selected 3 to 5 unlodged plants at harvest",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000080",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000226",
+  "observationVariableName": "HerbTol_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000081",
+   "traitName": "Herbicide tolerance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant ability to resist the toxic effects of herbicides.",
+   "synonyms": [],
+   "mainAbbreviation": "HERBT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Herbicide tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000082",
+   "methodName": "Screening method for Herbicide Tolerance",
+   "methodClass": "Estimation",
+   "description": "Estimation of the tolerance to herbicide",
+   "formula": null,
+   "reference": "Agronomy,2013,3(524-536)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000083",
+   "scaleName": "herbicide tolerance score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2= Tolerant",
+     "3= Moderately tolerant",
+     "4= Sensitive",
+     "5= Highly sensitive"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000227",
+  "observationVariableName": "SdWt_Comp_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000084",
+   "traitName": "Seed weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of seeds",
+   "synonyms": [],
+   "mainAbbreviation": "HSW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000085",
+   "methodName": "100 seed weight - Method",
+   "methodClass": "Computation",
+   "description": "Average weight of two samples of 100 randomly chosen seeds",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/), 2. Lentils of the USSR and other countries. Bulletin of Applied Botany, Genetics and Plant Breeding Supplement 40. USSR Institute of Plant Industry of the Lenin Academy of Agricultural Science Leningrad, USSR, pp.265.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000086",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000228",
+  "observationVariableName": "IrDef_Est_0to8",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000087",
+   "traitName": "Iron (Fe) deficiency",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Deficiency of Iron (Fe) in the plant measured at flowering stage",
+   "synonyms": [],
+   "mainAbbreviation": "IRND",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Iron deficiency",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000088",
+   "methodName": "Screening method for Iron Deficency",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of Fe deficiency",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000089",
+   "scaleName": "iron deficiency score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0=No symptoms of Fe deficiency",
+     "1= 10% of plants showing Fe deficiency",
+     "2= 20% of plants showing Fe deficiency",
+     "3= 30% of plants showing Fe deficiency",
+     "4= 40% of plants showing Fe deficiency",
+     "5= 50% of plants showing Fe deficiency",
+     "6= 60% of plants showing Fe deficiency",
+     "7= 70% of plants showing Fe deficiency",
+     "8= 80% of plants showing Fe deficiency"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000229",
+  "observationVariableName": "LodgSuscp_Est_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000090",
+   "traitName": "Lodging susceptibility",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A trait describing status of susceptibilty of genotypes to lodging",
+   "synonyms": [],
+   "mainAbbreviation": "LOSP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000091",
+   "methodName": "Lodgind susceptibility assessment - Method",
+   "methodClass": "Estimation",
+   "description": "Visually assessed at maturity",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000092",
+   "scaleName": "lodging incidence score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= None",
+     "3= Low",
+     "5= Medium",
+     "7= High"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000230",
+  "observationVariableName": "SdMcrNutCont_Meas_Ptc",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000093",
+   "traitName": "Micro nutrient content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The amount of micro-nutrient including Fe and Zn in the seed",
+   "synonyms": [],
+   "mainAbbreviation": "MNCG",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Micro Nutrient content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000094",
+   "methodName": "Micro nutrient content analysis -Method",
+   "methodClass": "Measurement",
+   "description": "Using atomic absorption spectrometry",
+   "formula": null,
+   "reference": "Research Journal of Agriculture and Biological Sciences,2007, 3(6):748-752",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000095",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000231",
+  "observationVariableName": "NbPodpPlnt_Calc_Pod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000096",
+   "traitName": "Number of pods per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A trait indicating total number of pods per plant",
+   "synonyms": [],
+   "mainAbbreviation": "NPDPL",
+   "alternativeAbbreviations": [],
+   "entity": "Pod per plant",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000097",
+   "methodName": "Number of Pod per Plant - method",
+   "methodClass": "Computation",
+   "description": "Mean number of pods recorded from 10 randomly selected plants at physiological maturity",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000098",
+   "scaleName": "Pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000232",
+  "observationVariableName": "NbPedpPlnt_Calc_Ped",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000099",
+   "traitName": "Number of peduncles per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A trait indicating total number of peduncles per plant",
+   "synonyms": [],
+   "mainAbbreviation": "NPPP",
+   "alternativeAbbreviations": [],
+   "entity": "Peduncles",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000100",
+   "methodName": "Number of peduncle per plant - Method",
+   "methodClass": "Computation",
+   "description": "The mean number of peduncles on 10 representative plants",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/), 2. Genetic variability and genotype-environmental interaction studies in lentil. Journal of Research Punjab Agricultural University, 10(1), 17-21.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000101",
+   "scaleName": "Peduncle",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000233",
+  "observationVariableName": "NbPodpPed_Calc_Pod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000102",
+   "traitName": "Number of pods per peduncle",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A trait indicating number of pods per peduncle",
+   "synonyms": [],
+   "mainAbbreviation": "NPPE",
+   "alternativeAbbreviations": [],
+   "entity": "Pod per peduncle",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000103",
+   "methodName": "Number of pod per peduncle method",
+   "methodClass": "Computation",
+   "description": "Maximum number of pods per peduncle on 10 representative plants",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000104",
+   "scaleName": "Pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000234",
+  "observationVariableName": "NbSdpPod_Calc_Sd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000105",
+   "traitName": "Number of seeds per pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "A trait indicating number of seeds per pod",
+   "synonyms": [],
+   "mainAbbreviation": "NSPP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed per pod",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000106",
+   "methodName": "Number of seed per pod - method",
+   "methodClass": "Computation",
+   "description": "Average number of seeds of 10 dry pods",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000107",
+   "scaleName": "Seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000235",
+  "observationVariableName": "OroRes_Comp_oroPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000108",
+   "traitName": "Orobanche resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to Orobanche. Casative agent: Orobanche crenata.",
+   "synonyms": [],
+   "mainAbbreviation": "OROR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Orobanche",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000109",
+   "methodName": "Screening method for Orobanche Resistance",
+   "methodClass": "Computation",
+   "description": "1/ Count the number of broomrapes emerged in the four rows of faba bean surrounding each row of lentil plants. 2/ divide the number of broomrapes by the number of lentil plants to compute an average",
+   "formula": null,
+   "reference": "Screening techniques and sources of resistance to crenate broomrape in spanish lentil germplasm.2007.48,85-94.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000110",
+   "scaleName": "orobranch/lentil plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000236",
+  "observationVariableName": "TesPat_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000111",
+   "traitName": "Pattern of seed testa",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait describing the pattern of seed testa",
+   "synonyms": [],
+   "mainAbbreviation": "PAST",
+   "alternativeAbbreviations": [],
+   "entity": "Seed coat (testa)",
+   "entityPUI": null,
+   "attribute": "Pattern",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000112",
+   "methodName": "Pattern of seed testa - method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the pattern of the seed testa",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000113",
+   "scaleName": "seed coat pattern scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Absent",
+     "2= Dotted",
+     "3= Spotted",
+     "4= Marbled",
+     "5= Complex"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000237",
+  "observationVariableName": "PlntH_ToLeafMeas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000114",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Height of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "PLHGT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000115",
+   "methodName": "Plant height highest leaf - Method",
+   "methodClass": "Measurement",
+   "description": "Height of the plant measured from the ground to the tip of the extended foliage at maturity. Mean plant height (cm) of five representative plants from soil surface measured at the end of flowering",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/), 2. Hand book of world economic importance. Plenum Press, New York, pp.52-57,3. Lentil (Lens culinaris Medik.). In:Summerfield, R.J. and Roberts, E.I.I. (eds) Grain legume crops. Colins, London. UK, pp.266-311.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000116",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000238",
+  "observationVariableName": "PlntPub_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000117",
+   "traitName": "Plant pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait describing extent of hairiness of the shoot",
+   "synonyms": [],
+   "mainAbbreviation": "PLPUB",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000118",
+   "methodName": "Plant pubescence - Method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the plant pubescence",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000119",
+   "scaleName": "pubescent intesity score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Low pubescence",
+     "2= Moderate pubescence",
+     "3= High pubescence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000239",
+  "observationVariableName": "PlntArch_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000120",
+   "traitName": "Plant structure",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait describing the structure and branching pattern of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "PSTR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Structure",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000121",
+   "methodName": "Plant Structure - Method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of plant structure",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000122",
+   "scaleName": "structure scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly branched, bushy",
+     "2= Sparsely branched, tall erect",
+     "3= moderately branched, semi-tall erect",
+     "4= moderate to highly branched, semi-tall, subcompact",
+     "5= moderate to highly branched, short, subcompact"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000240",
+  "observationVariableName": "PodBrRes_Comp_perc",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "IPM trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000123",
+   "traitName": "Pod borer resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to podborer.Helicoverpa armigera. Damage pods and seeds",
+   "synonyms": [],
+   "mainAbbreviation": "PBR",
+   "alternativeAbbreviations": [],
+   "entity": "Pod and Seed",
+   "entityPUI": null,
+   "attribute": "Resistance to Pod borer",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000124",
+   "methodName": "Screening method for Pod borer resistance",
+   "methodClass": "Computation",
+   "description": "Damage at pod stage measured by counting total pods and damaged pods and calculating proportion of damaged pods",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000125",
+   "scaleName": "percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000241",
+  "observationVariableName": "PodDhsce_Est_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000126",
+   "traitName": "Pod dehiscence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Splitting of pods at maturity along its built in line of weakness in order to release seeds",
+   "synonyms": [],
+   "mainAbbreviation": "PDEH",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "dehiscence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000127",
+   "methodName": "Pod dehiscence - Method",
+   "methodClass": "Estimation",
+   "description": "Visually assessed one week after maturity",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000128",
+   "scaleName": "splitting occurrence score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= None",
+     "3= Low",
+     "5= Medium",
+     "7= High"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000242",
+  "observationVariableName": "PodFillPerd_Count_Day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "IIPR, Kanpur",
+  "language": "EN",
+  "scientist": "Dr. Jitendra Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000129",
+   "traitName": "Pod filling period",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "A quantitative trait indicating the time required for pod filling",
+   "synonyms": [],
+   "mainAbbreviation": "PFIP",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Filing period",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000130",
+   "methodName": "Pod filing per pod - Method",
+   "methodClass": "Counting",
+   "description": "Counting up the duration of flowering and pod maturing period",
+   "formula": null,
+   "reference": "Kumar J and Srivastava E (2013) Impact of reproductive duration on yield and its component traits in lentil. Legume Research (in press)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000131",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000243",
+  "observationVariableName": "PodShg_Est_0to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000132",
+   "traitName": "Pod shedding",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Dropping of pods caused by cessation of the peduncle at maturity",
+   "synonyms": [],
+   "mainAbbreviation": "PSHD",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Shedding",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000133",
+   "methodName": "Pod shedding - method",
+   "methodClass": "Estimation",
+   "description": "Visually assessed after or during harvesting one week after maturity",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000134",
+   "scaleName": "dropping occurrence score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= None",
+     "3= Low",
+     "5= Medium",
+     "7= High"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000244",
+  "observationVariableName": "PodWght_Calc_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000135",
+   "traitName": "Pod weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of pods",
+   "synonyms": [],
+   "mainAbbreviation": "PDWT",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000136",
+   "methodName": "Pod Weight - Method",
+   "methodClass": "Computation",
+   "description": "Average weight from 3 or 5 randomly-selected plants at maturity, from a plant grown in the pot or field.",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000137",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000245",
+  "observationVariableName": "PrnscTan_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000138",
+   "traitName": "Presence of Tendrils",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait describing presence of tendrils",
+   "synonyms": [],
+   "mainAbbreviation": "PTEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Tendrils Presence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000139",
+   "methodName": "Presence of tendrils - Method",
+   "methodClass": "Estimation",
+   "description": "Visual observation of the presence and nature of tendrils",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000140",
+   "scaleName": "degree of tendril expression",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Absent",
+     "2= Rudimentary",
+     "3= Prominent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000246",
+  "observationVariableName": "PrimBrchNb_Calc_PrimBrch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000141",
+   "traitName": "Primary branches number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of basal primary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "BPBR",
+   "alternativeAbbreviations": [],
+   "entity": "Primary Branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000142",
+   "methodName": "Primary Branch number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of basal primary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": "1. The lentil botany, production and uses,2009,34-45, 2. Genetic variability and genotype environmental interaction studies in lentil. Journal of Research Punjab Agricultural University, 10(1), 17-21.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000143",
+   "scaleName": "Primary branch",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000247",
+  "observationVariableName": "RtLng_WinMeas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000144",
+   "traitName": "Root length",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Cumulative root length of a sample",
+   "synonyms": [],
+   "mainAbbreviation": "RL",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000145",
+   "methodName": "Root length by Winrhizo - Method",
+   "methodClass": "Measurement",
+   "description": "Measured through winrhizo software from scanned image files",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000146",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000248",
+  "observationVariableName": "RtLng_RulMeas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000144",
+   "traitName": "Root length",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Cumulative root length of a sample",
+   "synonyms": [],
+   "mainAbbreviation": "RL",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000196",
+   "methodName": "Root length measurement - Method",
+   "methodClass": "Measurement",
+   "description": "Measured maually using the ruler",
+   "formula": null,
+   "reference": "Pulse crops of India.1970. Indian Council of Agricultural research, Krishi Bhawan, New Delhi.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000146",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000249",
+  "observationVariableName": "RtLngDen_Comp_cmcm3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000147",
+   "traitName": "Root length density",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The length of roots present in a unit volume of soil",
+   "synonyms": [],
+   "mainAbbreviation": "RLD",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Density",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000148",
+   "methodName": "RLD measurement - method",
+   "methodClass": "Computation",
+   "description": "Calculated using both root length measured and soil volume from where the root comes.",
+   "formula": null,
+   "reference": "Australian Journal of Agricultural Research,2005,56,971-981.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000149",
+   "scaleName": "cm cm-3",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000250",
+  "observationVariableName": "RustRes_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000150",
+   "traitName": "Rust resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to rust disease. Causative agent : Uromyces viciae-faba. It produces lesions on stems and leaves which result leaf fall and premature plant death",
+   "synonyms": [],
+   "mainAbbreviation": "RUSR",
+   "alternativeAbbreviations": [],
+   "entity": "Stem and Leaf",
+   "entityPUI": null,
+   "attribute": "Resistance to Rust",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000151",
+   "methodName": "Screening method for Rust resistance",
+   "methodClass": "Estimation",
+   "description": "Quantification of symptoms development in leaves and stems",
+   "formula": null,
+   "reference": "Stemphylium blight disease scoring in field condition. Research Geneticist, USDA-ARS,Washington state university, Pullman.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000152",
+   "scaleName": "rust damage score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= 0-10% leaf area infected",
+     "3= 11-30% leaf area infected",
+     "5= 31-50% leaf area infected",
+     "7= 51-70% leaf area infected",
+     "9= More than 70% leaf area infected"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000251",
+  "observationVariableName": "SalTol_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000153",
+   "traitName": "Salinity tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to salinity",
+   "synonyms": [],
+   "mainAbbreviation": "SALT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Salinity tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000154",
+   "methodName": "Screening method for Salinity tolerance",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of leaf symptoms",
+   "formula": null,
+   "reference": "ICARDA, Screening wild lentils for salt tolerance, (https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&ved=0CC4QFjAB&url=https%3A%2F%2Fapps.icarda.org%2FwsInternet%2FwsInternet.asmx%2FDownloadFileToLocal%3FfilePath%3DList_of_publications%2FPoster_in_ConProc%2FIFLRC%2FScreening_wild.pdf%26fileName%3DScreening_wild.pdf&ei=oYMVU_3vBcbR7AaTzIBI&usg=AFQjCNFAaJGNIlisM92i8pjraLFiTmB-tQ&bvm=bv.62286460,d.bGQ).",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000155",
+   "scaleName": "salinity suceptibility scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant (100% healthy leaves)",
+     "2= Tolerant (75% healthy leaves)",
+     "3= Moderately Tolerant (50% healthy leaves)",
+     "4= Susceptible (25% healthy leaves)",
+     "5= Highly susceptible (completely dead)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000252",
+  "observationVariableName": "SecBrchNb_Calc_SecBrch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000156",
+   "traitName": "Secondary branches number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of basal secondary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "BSBR",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary Branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000157",
+   "methodName": "Secondary Branch number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of basal secondary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000158",
+   "scaleName": "Secondary Branch",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000253",
+  "observationVariableName": "SeedDiam_Meas_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000159",
+   "traitName": "Seed diameter",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed diameter",
+   "synonyms": [],
+   "mainAbbreviation": "SDDIA",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000160",
+   "methodName": "Seed diameter - Method",
+   "methodClass": "Measurement",
+   "description": "Diameter of fully dried seed is measured using vernier caliper",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000161",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000254",
+  "observationVariableName": "GrPrtCent_Comp_Ptc",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000162",
+   "traitName": "Grain protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Amount of protein in the seed",
+   "synonyms": [],
+   "mainAbbreviation": "PRT",
+   "alternativeAbbreviations": [],
+   "entity": "Grain",
+   "entityPUI": null,
+   "attribute": "Protein Content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000163",
+   "methodName": "Grain protein content analysis - Method",
+   "methodClass": "Computation",
+   "description": "Seed nitrogen content which is multiplied by the factor 6.25",
+   "formula": null,
+   "reference": "Research Journal of Agriculture and Biological Sciences,2007, 3(6):748-752",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000164",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000255",
+  "observationVariableName": "SYPL_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000165",
+   "traitName": "Seed yield per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed yield from a single plant",
+   "synonyms": [],
+   "mainAbbreviation": "SYPL",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "weight per plant",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000166",
+   "methodName": "SYPL measurment method",
+   "methodClass": "Measurement",
+   "description": "Yield of seeds after drying",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000167",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000256",
+  "observationVariableName": "SYPO_Meas_kgm2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding and agronomic trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000168",
+   "traitName": "Seed yield per area",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed yield from a plot",
+   "synonyms": [],
+   "mainAbbreviation": "SYPO",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "yield per area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000169",
+   "methodName": "SYPO measurment method",
+   "methodClass": "Measurement",
+   "description": "Yield of seed after drying (Plot basis)",
+   "formula": null,
+   "reference": "Key access and utilization descriptors for lentil genetic resources (http://www.bioversityinternational.org/e-library/publications/detail/key-access-and-utilization-descriptors-for-lentil-genetic-resources/)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000170",
+   "scaleName": "kg/m2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000257",
+  "observationVariableName": "ChlCont_Meas_SPAD",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000171",
+   "traitName": "Chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Proportions that indicate chlorophyll density and/or leaf thickness measured through a SPAD chlorophyll meter.",
+   "synonyms": [],
+   "mainAbbreviation": "SCMR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000172",
+   "methodName": "Chlorophyll content measurement method",
+   "methodClass": "Measurement",
+   "description": "Measure using a SPAD chlorophil meter",
+   "formula": null,
+   "reference": "Crop and Pasture Science,2012, 63: 547?554",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000173",
+   "scaleName": "SPAD unit",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000258",
+  "observationVariableName": "StmWeeRes_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000174",
+   "traitName": "Stem weevil resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to stem weevil.Sitona crinitus. Damage seedlings and root nodules",
+   "synonyms": [],
+   "mainAbbreviation": "SWVR",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Resistance to Stem weevil",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000175",
+   "methodName": "Screening method for Stem weevil resistance",
+   "methodClass": "Computation",
+   "description": "Nodule damage was assessed in five plants randomly selected from each plot, uprooted with soil to recover most of the root system and then washed in laboratory",
+   "formula": null,
+   "reference": "Genetic resources and crop evolution,2008,55(1):1-4",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000176",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000259",
+  "observationVariableName": "StBli_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000177",
+   "traitName": "Stemphylium blight resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Degree of resistance to Stemphylium blight disease. Causative agent: Stemphylium botryosum. Small, light-beige lesions apper in the upper canopy. Leaves, pedicels, flowers and branches become necrotic resulting in a characteristic blighted appearance of lentil plants.",
+   "synonyms": [],
+   "mainAbbreviation": "SBLR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Resistance to Stemphylium blight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000178",
+   "methodName": "Screening method for Stemphylium blight resistance",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of the resistance to weevil",
+   "formula": null,
+   "reference": "Stemphylium blight disease scoring in field condition. Research Geneticist, USDA-ARS,Washington state university, Pullman.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000179",
+   "scaleName": "stem weevil damage score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= 0-10% leaf area infected",
+     "3= 11-30% leaf area infected",
+     "5= 31-50% leaf area infected",
+     "7= 51-70% leaf area infected",
+     "9= More than 70% leaf area infected"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000260",
+  "observationVariableName": "StoCond_Meas_poromUnit",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Physiological trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000180",
+   "traitName": "Stomatal conductance",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "It is the measure of the rate of passage of carbon dioxide entering, or water vapour exiting through the stomata of a leaf.",
+   "synonyms": [],
+   "mainAbbreviation": "STCC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Stomatal conductance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000181",
+   "methodName": "Stomatal conductance measurment - Method",
+   "methodClass": "Measurement",
+   "description": "Measured using a Porometer",
+   "formula": null,
+   "reference": "Annals of Biological Research,2013,4(5):139-145.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000182",
+   "scaleName": "Reading of porometer",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000261",
+  "observationVariableName": "TerBrchNb_Comp_TerBrch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000183",
+   "traitName": "Tertiary branches number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of tertiary branches per plant",
+   "synonyms": [],
+   "mainAbbreviation": "TRBR",
+   "alternativeAbbreviations": [],
+   "entity": "Tertiary branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000184",
+   "methodName": "Tertiary Branch number - Method",
+   "methodClass": "Computation",
+   "description": "Mean number of tertiary branches from 3 or 5 randomly selected plants at maturity",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000185",
+   "scaleName": "Tertiary Branch",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000262",
+  "observationVariableName": "TanTyp_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "All types of evaluation trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000186",
+   "traitName": "Type of tendril",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "A qualitative trait discriminating different types of tendrils",
+   "synonyms": [],
+   "mainAbbreviation": "TTEN",
+   "alternativeAbbreviations": [],
+   "entity": "Tendrils",
+   "entityPUI": null,
+   "attribute": "Type",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000187",
+   "methodName": "Tendrils Type - Method",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the type of tendrils",
+   "formula": null,
+   "reference": "The lentil botany, production and uses,2009,34-45",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000188",
+   "scaleName": "classification scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Bristle",
+     "2= Simple",
+     "3= Dichotomous"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000263",
+  "observationVariableName": "WatLogTol_Calc_ratio",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000189",
+   "traitName": "Water logging tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Degree of tolerance to waterlogging condition",
+   "synonyms": [],
+   "mainAbbreviation": "WLOT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Water logging tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000190",
+   "methodName": "Screening method for Water logging tolerance",
+   "methodClass": "Computation",
+   "description": "Root and shoot growth ratio of plants grown under water logged conditions over % of drained controls",
+   "formula": null,
+   "reference": "Australian Journal of Agricultural Research,2007,58(406-412)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000191",
+   "scaleName": "Ratio",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_339:0000264",
+  "observationVariableName": "WintSurv_Comp_ratio",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_339",
+   "ontologyName": "Lentil"
+  },
+  "contextOfUse": [
+   "Breeding Trials"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA",
+  "language": "EN",
+  "scientist": "Karthika Rajendran & Shiv Kumar",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Lentil",
+  "trait": {
+   "traitDbId": "CO_339:0000192",
+   "traitName": "Winter survival",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Proportion of the plants emerged prior to winter and survived through winter",
+   "synonyms": [],
+   "mainAbbreviation": "WSUR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Winter survival",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_339:0000193",
+   "methodName": "Screening method for Winter survival",
+   "methodClass": "Computation",
+   "description": "Plant stand counts recorded after complete emergence of seedlings survived through winter. Divide plant stand count by the number of emerged seedlings",
+   "formula": null,
+   "reference": "Crop Science,2004,44:5-12.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_339:0000194",
+   "scaleName": "Ratio",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

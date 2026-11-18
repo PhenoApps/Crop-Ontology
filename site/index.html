@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crop Ontology Mirror</title>
+  <meta name="description" content="Static, read-only mirror of cropontology.org trait dictionaries with a BrAPI v2 endpoint per ontology.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#/">Crop Ontology <span>mirror</span></a>
+      <p class="snapshot" id="snapshot"></p>
+    </div>
+  </header>
+  <main class="wrap" id="app" aria-live="polite">
+    <p class="muted">Loading…</p>
+  </main>
+  <footer class="wrap foot">
+    <p>
+      Data from <a href="https://cropontology.org">cropontology.org</a>, a read-only copy. Each ontology keeps its own licence, shown on its page.
+      Every ontology has a <a href="https://brapi.org/specification">BrAPI v2</a> base URL for importing traits into
+      clients such as <a href="https://github.com/PhenoApps/Field-Book">Field Book</a>.
+      <a href="https://github.com/PhenoApps/Crop-Ontology">Source on GitHub</a>.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4256 @@
+[
+ {
+  "observationVariableDbId": "CO_327:0000147",
+  "observationVariableName": "DS_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Seedling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000000",
+   "traitName": "Date of sowing",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when seeds are sown on the soil",
+   "synonyms": [],
+   "mainAbbreviation": "DS",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of sowing",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000001",
+   "methodName": "Date of sowing - Method",
+   "methodClass": "Estimation",
+   "description": "Record the sowing date",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000002",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000148",
+  "observationVariableName": "DEm_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Seedling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000003",
+   "traitName": "Date of emergence",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when seedlings emerge from the soil",
+   "synonyms": [],
+   "mainAbbreviation": "DEm",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of emergence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000004",
+   "methodName": "Date of emergence - Method",
+   "methodClass": "Estimation",
+   "description": "Record the emergence date",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000005",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000149",
+  "observationVariableName": "DHd_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "D50Hd"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000006",
+   "traitName": "Date of heading",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when the first panicles emerges from the boot leaf sheath of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "DHd",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of heading",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000007",
+   "methodName": "Date of 50% heading - Method",
+   "methodClass": "Estimation",
+   "description": "Record the date when 50% of the plants of the plot begin to bring out their first inflorescence",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000008",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000150",
+  "observationVariableName": "DBl_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "D50Bl"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000009",
+   "traitName": "Date of bloom",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when 50% of the stigma emerges on first panicle of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "DBl",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of bloom",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000010",
+   "methodName": "Date of 50% bloom - Method",
+   "methodClass": "Estimation",
+   "description": "Record the date when 50% of the plants reach 50% stigma emergence of their first panicle",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000011",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000151",
+  "observationVariableName": "DAn_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "D50An"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000012",
+   "traitName": "Date of anthesis",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when the plant is at 50% anther emergence on first panicle",
+   "synonyms": [],
+   "mainAbbreviation": "DAn",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of anthesis",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000013",
+   "methodName": "Date of 50% anthesis - Method",
+   "methodClass": "Estimation",
+   "description": "Record the date when 50% of the plants reach 50% anther emergence of their first panicle",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000014",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000152",
+  "observationVariableName": "DPhysMat_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000015",
+   "traitName": "Date of physiological maturity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when grain dry weight increase ceases",
+   "synonyms": [],
+   "mainAbbreviation": "DPhysMat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of physiological maturity",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000016",
+   "methodName": "Date of physiological maturity - Method",
+   "methodClass": "Estimation",
+   "description": "Record the date of onset of black spot formation at the base of the grain on a sample of panicles. The recommended sample size is 10 panicles",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000017",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000153",
+  "observationVariableName": "DHar_Est_JDay",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": null,
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000018",
+   "traitName": "Date of harvest",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date when plot harvested",
+   "synonyms": [],
+   "mainAbbreviation": "DHar",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Date of harvest",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000019",
+   "methodName": "Date of harvest - Method",
+   "methodClass": "Estimation",
+   "description": "Record the harvest date",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000020",
+   "scaleName": "Julian Days",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000156",
+  "observationVariableName": "SVig_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Seedling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000027",
+   "traitName": "Seedling vigor",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Biomass of the plants in the plot at 15 days after sowing",
+   "synonyms": [],
+   "mainAbbreviation": "SVig",
+   "alternativeAbbreviations": [],
+   "entity": "Seedling",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000028",
+   "methodName": "Seedling vigor - Method",
+   "methodClass": "Estimation",
+   "description": "Comparative visual observation of the biomass of plants (length, width, number of leaves) 15 days after sowing. The maximum score is given to the plot that has plants with maximum biomass. The lowest score is assigned to the plot with the minimum biomass. Plots with biomass between these two extremes will be included notes between the two extreme scores.",
+   "formula": null,
+   "reference": "House, L.R. 1987. A guide to sorghum breeding. Second edition. Patancheru, AP 502 324, India: International Crops Research Institute for the Semi-Arid Tropics.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000029",
+   "scaleName": "Vigor scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Very Bad Vigor",
+     "2 = Bad Vigor",
+     "3 = Acceptable vigor",
+     "4 = Good Vigor",
+     "5 = Excellent Vigor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000157",
+  "observationVariableName": "VegVig_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Vegetative growth Stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000030",
+   "traitName": "Vegetative vigor",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Biomass of the plants in the plot at 30 to 40 days after sowing",
+   "synonyms": [],
+   "mainAbbreviation": "VegVig",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000031",
+   "methodName": "Vegetative vigor - Method",
+   "methodClass": "Estimation",
+   "description": "Comparative visual observation of the biomass of plants (length, width, number of leaves, number of tillers) 30 to 40 days after sowing. The maximum score is given to the plot that has plants with maximum biomass. The lowest score is assigned to the plot with the minimum biomass. Plots with biomass between these two extremes will be scored between the two extreme scores.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000032",
+   "scaleName": "Vigor scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Very Bad Vigor",
+     "2 = Bad Vigor",
+     "3 = Acceptable vigor",
+     "4 = Good Vigor",
+     "5 = Excellent Vigor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000160",
+  "observationVariableName": "DMP_Count_Plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Vegetative growth Stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000039",
+   "traitName": "Downy mildew infected plant number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of downy mildew infected plants",
+   "synonyms": [],
+   "mainAbbreviation": "DMP",
+   "alternativeAbbreviations": [],
+   "entity": "Downy mildew infected plant",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000040",
+   "methodName": "Downy mildew infected plant number - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of infected plants in the plot at time of scoring downy mildew incidence",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000041",
+   "scaleName": "Plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000161",
+  "observationVariableName": "DMH_Count_Plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Vegetative growth Stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000042",
+   "traitName": "Downy mildew infected hill number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of downy mildew infected pockets",
+   "synonyms": [],
+   "mainAbbreviation": "DMH",
+   "alternativeAbbreviations": [],
+   "entity": "Downy mildew infected pockets",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000043",
+   "methodName": "Downy mildew infected hill number - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of infected hills in the plot at time of scoring downy mildew incidence",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000044",
+   "scaleName": "Plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000162",
+  "observationVariableName": "BlaRS_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000045",
+   "traitName": "Plant reaction to blast",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Intensity of the foliar damage caused by blast",
+   "synonyms": [],
+   "mainAbbreviation": "BlaRS",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Reaction to blast",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000046",
+   "methodName": "Blast reaction score - Method",
+   "methodClass": "Estimation",
+   "description": "Estimate the disease reaction type and severity at the soft-dough stage on the top four leaves that contribute most to grain development or on all plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000047",
+   "scaleName": "bBlast reaction score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0 to <1% leaf area with mild yellow flecks, HR",
+     "2=1-5% leaf area covered with small hypersensitive lesions, R",
+     "3=6-10% leaf area covered with small hypersensitive lesions, R",
+     "4=11-20% leaf area covered with small necrotic lesions, MR",
+     "5=21-30% area covered with small necrotic coalescing lesions, MR",
+     "6=31-40% area covered with large coalescing necrotic lesions, S",
+     "7=41-50% leaf area covered with large coalescing necrotic lesions, S",
+     "8=51-75 % leaf area covered with large coalescing necrotic lesions, HS",
+     "9=76-100% leaf area covered with large coalescing necrotic lesions, HS"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000163",
+  "observationVariableName": "ErgProp_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "Erg%"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000048",
+   "traitName": "Ergot infection proportion",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Proportion of grains replaced by ergot sclerotia",
+   "synonyms": [],
+   "mainAbbreviation": "ErgProp",
+   "alternativeAbbreviations": [],
+   "entity": "Egrot sclerotia infected grain",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000049",
+   "methodName": "Ergot infection percentage - Method",
+   "methodClass": "Computation",
+   "description": "Compute the percentage of grains replaced by ergot sclerotia, based on a sample of 10 panicles",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for pearl millet [Pennisetum graucum (L.) R. Br.]. Internation Board for Plant Genetic Resources, Rome, Italy, International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000050",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000164",
+  "observationVariableName": "RusRS_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000051",
+   "traitName": "Plant reaction to rust",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Intensity of the foliar damage caused by rust",
+   "synonyms": [],
+   "mainAbbreviation": "RusRS",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Reaction to rust",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000052",
+   "methodName": "Rust reaction score - Method",
+   "methodClass": "Estimation",
+   "description": "Estimate the disease reaction type and severity at the soft-dough stage on the top four leaves that contribute most to grain development or on all plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000053",
+   "scaleName": "Score (1-9)",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0 to <1% leaf area with mild yellow flecks, HR",
+     "2=1-5% leaf area covered with small hypersensitive lesions, R",
+     "3=6-10% leaf area covered with small hypersensitive lesions, R",
+     "4=11-20% leaf area covered with small necrotic lesions, MR",
+     "5=21-30% area covered with small necrotic coalescing lesions, MR",
+     "6=31-40% area covered with large coalescing necrotic lesions, S",
+     "7=41-50% leaf area covered with large coalescing necrotic lesions, S",
+     "8=51-75 % leaf area covered with large coalescing necrotic lesions, HS",
+     "9=76-100% leaf area covered with large coalescing necrotic lesions, HS"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000165",
+  "observationVariableName": "SmuProp_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "Smu%"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000054",
+   "traitName": "Smut infection proportion",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Proportion of grains replaced by smut sori",
+   "synonyms": [],
+   "mainAbbreviation": "SmuProp",
+   "alternativeAbbreviations": [],
+   "entity": "Smut sori infected grain",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000055",
+   "methodName": "Smut infection percentage - Method",
+   "methodClass": "Computation",
+   "description": "Compute the percentage of grains replaced by smut sori, based on a sample of 10 panicles",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for pearl millet [Pennisetum graucum (L.) R. Br.]. Internation Board for Plant Genetic Resources, Rome, Italy, International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000056",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000166",
+  "observationVariableName": "PlHt_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000057",
+   "traitName": "Plant height",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of the main stalk from the base of the stalk to the tip of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PlHt",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000058",
+   "methodName": "Plant height - Method",
+   "methodClass": "Computation",
+   "description": "15 to 20 days after the end of flowering, plant height measured from a few plants in the plot with a ruler and then take the average",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000059",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000167",
+  "observationVariableName": "PanLen_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000060",
+   "traitName": "Panicle length ",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of the panicle from the base of the panicle to the tip of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanLen",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000061",
+   "methodName": "Panicle length - Method",
+   "methodClass": "Computation",
+   "description": "15 to 20 days after the end of flowering, panicle measured from the main stalk of a few representative plants in the plot with a ruler and then take the average",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000062",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000168",
+  "observationVariableName": "PanDia_Av_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000063",
+   "traitName": "Panicle diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Diameter of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanDia",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000064",
+   "methodName": "Panicle diameter - Method",
+   "methodClass": "Computation",
+   "description": "15 to 20 days after the end of flowering, panicle diameter measured from the main stalk of a few representative plants in the plot with clipers or a ruler and then take the average",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000065",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000169",
+  "observationVariableName": "PanGir_Av_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000066",
+   "traitName": "Panicle girth",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Girth of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanGir",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Girth",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000067",
+   "methodName": "Panicle girth - Method",
+   "methodClass": "Computation",
+   "description": "15 to 20 days after the end of flowering, plant height measured from the main stalk a few plants in the plot with a ruler and then take the average",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000068",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000170",
+  "observationVariableName": "PanEx_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Grain-filling stage",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000069",
+   "traitName": "Panicle exertion",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Distance between the flag leaf ligule and the base of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanEx",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Exertion",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000070",
+   "methodName": "Panicle exertion - Method",
+   "methodClass": "Computation",
+   "description": "15 to 20 days after the end of flowering, panicle exsertion measured from a few plants in the plot with a ruler and then take the average",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000173",
+  "observationVariableName": "NEmPan_Count_Pan",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000078",
+   "traitName": "Number of empty or missing panicles",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of empty or missing panicles due to bird or insect damage",
+   "synonyms": [],
+   "mainAbbreviation": "NEmPan",
+   "alternativeAbbreviations": [],
+   "entity": "Empty panicle",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000079",
+   "methodName": "Number of empty or missing panicles - Method",
+   "methodClass": "Counting",
+   "description": "Record the number of panicles lost due to breakage, damage by birds or insects, ...",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000080",
+   "scaleName": "Panicle",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000174",
+  "observationVariableName": "NHarPan_Count_Pan",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": null,
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000081",
+   "traitName": "Number of harvested panicles",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of panicles harvested from the plot",
+   "synonyms": [],
+   "mainAbbreviation": "NHarPan",
+   "alternativeAbbreviations": [],
+   "entity": "Harvested panicle",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000082",
+   "methodName": "Number of harvested panicles - Method",
+   "methodClass": "Counting",
+   "description": "Record the number of grain-bearing panicles in the plot actually harvested",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000083",
+   "scaleName": "Panicle",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000175",
+  "observationVariableName": "NOTPan_Count_Pan",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000084",
+   "traitName": "Number of off-type panicles",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of panicles harvested from the plot that are different from sown variety",
+   "synonyms": [],
+   "mainAbbreviation": "NOTPan",
+   "alternativeAbbreviations": [],
+   "entity": "Harvested off-type panicle",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000085",
+   "methodName": "Number of off-type panicles - Method",
+   "methodClass": "Counting",
+   "description": "Record the number of panicles removed as off-types when counting the number of panicles harvested or plants removed during the season",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000086",
+   "scaleName": "Panicle",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000179",
+  "observationVariableName": "PanComp_Est_3to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000096",
+   "traitName": "Panicle compactness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Compactness of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanComp",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Compactness",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000097",
+   "methodName": "Panicle compactness - Method",
+   "methodClass": "Estimation",
+   "description": "Estimation of the compactness of the panicle",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000098",
+   "scaleName": "Panicle compactness score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "3= loose",
+     "5= intermediate",
+     "7= compact"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000180",
+  "observationVariableName": "BriPre_Est_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000099",
+   "traitName": "Bristle presence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence or absence of britle on the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "BriPre",
+   "alternativeAbbreviations": [],
+   "entity": "Bristle",
+   "entityPUI": null,
+   "attribute": "Presence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000100",
+   "methodName": "Bristle presence - Method",
+   "methodClass": "Estimation",
+   "description": "Observation of the presence or absence of bristel on the main panicle on few number of plant per plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000101",
+   "scaleName": "Presence-Absence",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= present",
+     "0=absent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000181",
+  "observationVariableName": "BriLen_Av_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000102",
+   "traitName": "Bristle length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of the bristel",
+   "synonyms": [],
+   "mainAbbreviation": "BriLen",
+   "alternativeAbbreviations": [],
+   "entity": "Bristle",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000103",
+   "methodName": "Bristle length - Method",
+   "methodClass": "Computation",
+   "description": "At physiological maturity, measure the length of at least 5 bristle per plant on the panicle of the main tiller and repeat for few plants in the plot with a ruler and make the average",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000104",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000182",
+  "observationVariableName": "BriDen_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000105",
+   "traitName": "Bristle density",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Density of the bristles on the panicule",
+   "synonyms": [],
+   "mainAbbreviation": "BriDen",
+   "alternativeAbbreviations": [],
+   "entity": "Bristle",
+   "entityPUI": null,
+   "attribute": "Density",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000106",
+   "methodName": "Bristle density - Method",
+   "methodClass": "Estimation",
+   "description": "Observe the coverage of the main panicle by the bristles and estimate the bristle density",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000107",
+   "scaleName": "Bristle density scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = Very poor",
+     "2 = Poor",
+     "3 = Acceptable",
+     "4 = Good",
+     "5 = Very good"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000183",
+  "observationVariableName": "PolFer_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering stage",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000108",
+   "traitName": "Pollen fertility",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "Proportion of fertile pollen",
+   "synonyms": [],
+   "mainAbbreviation": "PolFer",
+   "alternativeAbbreviations": [],
+   "entity": "Fertile pollen",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000109",
+   "methodName": "Pollen fertility - Method",
+   "methodClass": "Computation",
+   "description": "Proportion of fertile pollen over the total number of pollen grain counted. By analizing the pollen structure under microscope, completely round and well stained pollen grains were counted as fertile while, the shrivelled, unstained or partially stained ones were considered as sterile",
+   "formula": null,
+   "reference": "Vetriventhan, M., Nirmalakumari, A., 2010. Identification and Screening of Restorers and Maintainers for different CMS Lines of Pearl Millet (Pennisetum glaucum (L.) R. Br.). Electronic Journal of Plant Breeding 1, 813?818.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000110",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000184",
+  "observationVariableName": "SDSet_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000111",
+   "traitName": "Seed set",
+   "traitClass": "Fertility",
+   "traitPUI": null,
+   "description": "Proportion of the seed set on the main panicle",
+   "synonyms": [],
+   "mainAbbreviation": "SDSet",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Set",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000112",
+   "methodName": "Seed set - Method",
+   "methodClass": "Computation",
+   "description": "Number of seeds/cm2 were counted randomly in each ear heads in five locations in selfed and open pollinated earheads",
+   "formula": null,
+   "reference": "Vetriventhan, M., Nirmalakumari, A., 2010. Identification and Screening of Restorers and Maintainers for different CMS Lines of Pearl Millet (Pennisetum glaucum (L.) R. Br.). Electronic Journal of Plant Breeding 1, 813?818.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000113",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000185",
+  "observationVariableName": "StrTol_Count_StrigaPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Vegetative growth Stage",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000114",
+   "traitName": "Striga tolerance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of striga plant in the field",
+   "synonyms": [],
+   "mainAbbreviation": "StrTol",
+   "alternativeAbbreviations": [],
+   "entity": "Striga",
+   "entityPUI": null,
+   "attribute": "Tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000115",
+   "methodName": "Striga tolerance - Method",
+   "methodClass": "Counting",
+   "description": "Number of striger counted per plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000116",
+   "scaleName": "Striga/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000186",
+  "observationVariableName": "HMD_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000117",
+   "traitName": "Head miner damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Proportion of grain and panicle destroyed by the head miner",
+   "synonyms": [],
+   "mainAbbreviation": "HMD",
+   "alternativeAbbreviations": [],
+   "entity": "Grain and panicle destroyed by head miner",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000118",
+   "methodName": "Head miner damage - Method",
+   "methodClass": "Computation",
+   "description": "Compute the proportion destroyed panicles",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000187",
+  "observationVariableName": "StBD",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Vegetative growth Stage",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000120",
+   "traitName": "Stem borer damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Causative agent: Coniesta ignefusalis Hampson Lepidoptera. Infections causes the appearance of small elongated holes in young whorl leaves, tunelling of earheads results in breakage or chaffy earheads affecting grain development.Infections causes the appearance of small elongated holes in young whorl leaves, tunelling of earheads results in breakage or chaffy earheads affecting grain development.",
+   "synonyms": [],
+   "mainAbbreviation": "StBD",
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000121",
+   "methodName": "Stem borer damage - Method",
+   "methodClass": "Computation",
+   "description": "Count the number of  total plants  and number of infected plants/dead hearts in each replication to calculate percent infestation",
+   "formula": "Percent infestation = (No. of dead hearts/total number plants) x 100",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000122",
+   "scaleName": "Percent infestation ",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000188",
+  "observationVariableName": "FLLen_Av_",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "head emerging",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000123",
+   "traitName": "Flag leaf length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Flag leaf length",
+   "synonyms": [],
+   "mainAbbreviation": "FLLen",
+   "alternativeAbbreviations": [],
+   "entity": "Flag leaf",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000124",
+   "methodName": "Flag leaf length - Method",
+   "methodClass": "Computation",
+   "description": "At panicle emerging stage, mesure from a few plants (main tiller) the length of the last leaf just below the panicle: distance in from the ligule to the tip of the leaf and make the average of the measurements",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000125",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000189",
+  "observationVariableName": "FLDia_Av_",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "head emerging",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000126",
+   "traitName": "Flag leaf dimeter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Flag leaf diameter",
+   "synonyms": [],
+   "mainAbbreviation": "FLDia",
+   "alternativeAbbreviations": [],
+   "entity": "Flag leaf",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000127",
+   "methodName": "Flag leaf dimeter - Method",
+   "methodClass": "Computation",
+   "description": "At panicle emerging stage, mesure from a few plants (main tiller) the diameter at the withest of the last leaf just below the panicle: distance in cm from the ligule to the tip og the leaf and make the average of the measurements",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000128",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000190",
+  "observationVariableName": "StDia_Av_",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000129",
+   "traitName": "Stem diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stem diameter",
+   "synonyms": [],
+   "mainAbbreviation": "StDia",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000130",
+   "methodName": "Stem diameter - Method",
+   "methodClass": "Computation",
+   "description": "Measure of the width of the main stem between the 3rd and the 4th node from the panicle at maturity",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000131",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000191",
+  "observationVariableName": "SDCol_Est_",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000132",
+   "traitName": "Seed color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The color of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "SDCol",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000133",
+   "methodName": "Seed color - Method",
+   "methodClass": "Estimation",
+   "description": "Visually estimate the seed color after threshing",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for Pearl Millet [Pennisetum glaucum (L.) R. Br. ]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000134",
+   "scaleName": "Color",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000192",
+  "observationVariableName": "BTN_Count_Till",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000135",
+   "traitName": "Basal tiller number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of basal tillers counted on plants in the field",
+   "synonyms": [],
+   "mainAbbreviation": "BTN",
+   "alternativeAbbreviations": [],
+   "entity": "Basal tiller",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000136",
+   "methodName": "Basal tiller number - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of basal tillers",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000137",
+   "scaleName": "Tiller",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000193",
+  "observationVariableName": "NTN_Count_Till",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": null,
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000138",
+   "traitName": "Nodal tiller number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of tillers arising from the upper nodes on the main stems.",
+   "synonyms": [],
+   "mainAbbreviation": "NTN",
+   "alternativeAbbreviations": [],
+   "entity": "Nodal tiller",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000139",
+   "methodName": "Nodal tiller number - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of nodal tillers",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000140",
+   "scaleName": "Tiller",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000194",
+  "observationVariableName": "GW_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000141",
+   "traitName": "Grain weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Total grain weight after threshing of all panicles harvested on the plot",
+   "synonyms": [],
+   "mainAbbreviation": "GW",
+   "alternativeAbbreviations": [],
+   "entity": "Grain",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000142",
+   "methodName": "Grain weight - Method",
+   "methodClass": "Measurement",
+   "description": "Weigh all the grains of threshed panicles harvested in the plot using a precision balance",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000143",
+   "scaleName": "Number",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000195",
+  "observationVariableName": "HGW_Meas_g100gr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "INERA-Burkina Faso",
+  "language": "EN",
+  "scientist": "Drabo Inoussa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "04-mars-14",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000144",
+   "traitName": "100 grain weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of 100 grains",
+   "synonyms": [],
+   "mainAbbreviation": "HGW",
+   "alternativeAbbreviations": [],
+   "entity": "100 grains",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000145",
+   "methodName": "100 grain weight - Method",
+   "methodClass": "Measurement",
+   "description": "Count 100 grains sampled randomly per plot and weight with a precision balance",
+   "formula": null,
+   "reference": "IBPGR and ICRISAT. 1993. Descriptors for sorghum [Sorghum bicolor (L.) Moench]. Internation Board for Plant Genetic Resources, Rome, Italy, Institut International Crops Research Institute for the Semi-Arid Tropics, Patancheru, India",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000146",
+   "scaleName": "g/100 grains",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000197",
+  "observationVariableName": "PlntPerf_Appr_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials",
+   " Nursery",
+   " Farmer group evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "AS_Est_1to5"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000196",
+   "traitName": "Overall plant performance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Overall plant performance",
+   "synonyms": [],
+   "mainAbbreviation": "PlntPerf",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Overall performance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000088",
+   "methodName": "Agronomic appreciation score - Method",
+   "methodClass": "Estimation",
+   "description": "Observation of the morphology of the entry to score agronomic desirability of the variety of five plants representative of the variety",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000089",
+   "scaleName": "Agronomic appreciation score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = Very poor",
+     "2 = Poor",
+     "3 = Acceptable",
+     "4 = Good",
+     "5 = Very good"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000198",
+  "observationVariableName": "PlntPerf_FarmAppr_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials",
+   " Nursery",
+   " Farmer group evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "FAS_Est_1to5"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000196",
+   "traitName": "Overall plant performance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Overall plant performance",
+   "synonyms": [],
+   "mainAbbreviation": "PlntPerf",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Overall performance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000091",
+   "methodName": "Farmer appreciation score - Method",
+   "methodClass": "Estimation",
+   "description": "Full appreciation of the plot by assigning an overall score, before harvest, in asking this question to the producer Is that the producer would still cultivate the variety?",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000092",
+   "scaleName": "Farmer preference score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = Bad",
+     "2 = With some problem",
+     "3 = Acceptable",
+     "4 = Good",
+     "5 = Very good"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000199",
+  "observationVariableName": "PlntPerf_FarmPref_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Trials and nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT-Niger",
+  "language": "EN",
+  "scientist": "C Tom Hash",
+  "status": "Recommended",
+  "synonyms": [
+   "FPS_Est_1to3"
+  ],
+  "date": "2012-12-16 00:00:00",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000196",
+   "traitName": "Overall plant performance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Overall plant performance",
+   "synonyms": [],
+   "mainAbbreviation": "PlntPerf",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Overall performance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000094",
+   "methodName": "Farmer preference score - Method",
+   "methodClass": "Estimation",
+   "description": "The producer observes the different plots and assigns a preference score using a pre-defined scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000095",
+   "scaleName": "Preference score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = Variety to reject",
+     "2 = Need to test again",
+     "3 = Very interresting Variety, Want to test"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000200",
+  "observationVariableName": "Panlen_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000060",
+   "traitName": "Panicle length ",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of the panicle from the base of the panicle to the tip of the panicle",
+   "synonyms": [],
+   "mainAbbreviation": "PanLen",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000203",
+  "observationVariableName": "StrTol_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity and harvest",
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000114 ",
+   "traitName": "Striga tolerance   ",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of striga plant in the field",
+   "synonyms": [],
+   "mainAbbreviation": "StrTol",
+   "alternativeAbbreviations": [],
+   "entity": "Striga",
+   "entityPUI": null,
+   "attribute": "Tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000204",
+  "observationVariableName": "GermTim_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000205",
+   "traitName": "Germination time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time of germination after planting",
+   "synonyms": [],
+   "mainAbbreviation": "GermTim",
+   "alternativeAbbreviations": [],
+   "entity": "Grain",
+   "entityPUI": null,
+   "attribute": "Germination time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000206",
+  "observationVariableName": "Germrt_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000207",
+   "traitName": "Germination Rate ",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Rate of germination",
+   "synonyms": [],
+   "mainAbbreviation": "GermRt",
+   "alternativeAbbreviations": [],
+   "entity": "Grain",
+   "entityPUI": null,
+   "attribute": "Germination rate",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000208",
+  "observationVariableName": "DisTol_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity and harvest",
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000209",
+   "traitName": "Disease tolerance ",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Tolerance to diseases - the disease type is documented in complementary data",
+   "synonyms": [],
+   "mainAbbreviation": "DisTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Disease tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000210",
+  "observationVariableName": "PtTol__CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity and harvest",
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000211",
+   "traitName": "Pest tolerance ",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Tolerance to Pests - the pest identification is documented in complementary data",
+   "synonyms": [],
+   "mainAbbreviation": "PtTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pest tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000212",
+  "observationVariableName": "AbSt_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity and harvest",
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000213",
+   "traitName": "Abiotic stress tolerance ",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Tolerance to abiotic stress - stress type is docuelnetd in complementary data",
+   "synonyms": [],
+   "mainAbbreviation": "AbSt",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Abiotic stress tolerance",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000214",
+  "observationVariableName": "DwnMid_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity and harvest",
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000215",
+   "traitName": "Downy mildew tolerance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000216",
+  "observationVariableName": "Mat_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000217",
+   "traitName": "Maturity ",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000218",
+  "observationVariableName": "StGr_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000219",
+   "traitName": "Stay green  ",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000220",
+  "observationVariableName": "Mkt__CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000221",
+   "traitName": "Marketability ",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000222",
+  "observationVariableName": "Thr_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000223",
+   "traitName": "Threshability ",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000224",
+  "observationVariableName": "Sdsz_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000225",
+   "traitName": "Seed size  ",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000226",
+  "observationVariableName": "SdszTrgtUs_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000227",
+   "traitName": "Seed size for target use  ",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000228",
+  "observationVariableName": "GrYldQual_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000229",
+   "traitName": "Grain Yield (Qualitative)",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000230",
+  "observationVariableName": "Tst_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000231",
+   "traitName": "Taste  ",
+   "traitClass": "Postharvest",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000232",
+  "observationVariableName": "OvPrf_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000233",
+   "traitName": "Overall preference ",
+   "traitClass": "Postharvest",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000234",
+  "observationVariableName": "OvPrfvLoc_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000235",
+   "traitName": "Overall preference vs local ",
+   "traitClass": "Postharvest",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000236",
+  "observationVariableName": "StoPrbTol_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000237",
+   "traitName": "Storage problems ",
+   "traitClass": "Postharvest",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_327:0000238",
+  "observationVariableName": "Stobly_CompRank_Rk3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_327",
+   "ontologyName": "Pearl millet"
+  },
+  "contextOfUse": [
+   "Technology comparison studies by users"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ClimMob",
+  "language": "EN",
+  "scientist": "Drabo Inoussa, Maina Ibnmohammed, Adikini Scovia, Lucky Omoigui, Eric Manyassa, Hapson Mushoriwa",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2023",
+  "crop": "Pearl millet",
+  "trait": {
+   "traitDbId": "CO_327:0000239",
+   "traitName": "Storability  ",
+   "traitClass": "Postharvest",
+   "traitPUI": null,
+   "description": null,
+   "synonyms": [],
+   "mainAbbreviation": null,
+   "alternativeAbbreviations": [],
+   "entity": null,
+   "entityPUI": null,
+   "attribute": null,
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_327:0000201",
+   "methodName": "Comparative ranking by users method",
+   "methodClass": "Comparative ranking",
+   "description": "Ranking of phenotypes based on field observations/on  testing of food products ​",
+   "formula": null,
+   "reference": "Tricot Millet protocol 1000 Farms project, 25-07-2023",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_327:0000202",
+   "scaleName": "Ranking: 3",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highest rank",
+     "2= Middle rank",
+     "3= Lowest rank"
+    ]
+   },
+   "units": null
+  }
+ }
+]

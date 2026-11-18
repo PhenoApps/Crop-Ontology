@@ -1,0 +1,4638 @@
+[
+ {
+  "observationVariableDbId": "CO_360:0000035",
+  "observationVariableName": "GR_Comp_cmd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000032",
+   "traitName": "Growth rate",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Growth rate ",
+   "synonyms": [],
+   "mainAbbreviation": "GR",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Growth rate",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000033",
+   "methodName": "Growth rate - Computation",
+   "methodClass": "Computation",
+   "description": "Calculation of growth rate based at harvest",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000034",
+   "scaleName": "cm/day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000043",
+  "observationVariableName": "CFC_M_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-08-14 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000040",
+   "traitName": "Carbohydrate / fiber content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Carbohydrate / fiber content ",
+   "synonyms": [],
+   "mainAbbreviation": "CFC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Carbohydrate / fiber content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000041",
+   "methodName": "Carbohydrate / fiber content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by New Jersey Feed Labs ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000047",
+  "observationVariableName": "PC_M_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-08-14 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000044",
+   "traitName": "Protein content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Protein content ",
+   "synonyms": [],
+   "mainAbbreviation": "PC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000045",
+   "methodName": "Protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by New Jersey Feed Labs ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000051",
+  "observationVariableName": "LC_M_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-08-14 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000048",
+   "traitName": "Lipid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Lipid content ",
+   "synonyms": [],
+   "mainAbbreviation": "LC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Lipid content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000049",
+   "methodName": "Lipid content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by New Jersey Feed Labs ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000055",
+  "observationVariableName": "AC_M_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-08-14 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000052",
+   "traitName": "Ash content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Ash content ",
+   "synonyms": [],
+   "mainAbbreviation": "AC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Ash content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000053",
+   "methodName": "Ash content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by New Jersey Feed Labs ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000059",
+  "observationVariableName": "CC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000056",
+   "traitName": "C content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "C content",
+   "synonyms": [],
+   "mainAbbreviation": "CC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "C content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000199",
+   "methodName": "CHN content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by UC Davis or UConn ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000063",
+  "observationVariableName": "HC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000060",
+   "traitName": "H content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "H content",
+   "synonyms": [],
+   "mainAbbreviation": "HC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "H content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000199",
+   "methodName": "CHN content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by UC Davis or UConn ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000067",
+  "observationVariableName": "NC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000064",
+   "traitName": "N content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "N content",
+   "synonyms": [],
+   "mainAbbreviation": "NC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "N content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000199",
+   "methodName": "CHN content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by UC Davis or UConn ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000071",
+  "observationVariableName": "LIC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000068",
+   "traitName": "Li content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Li content",
+   "synonyms": [],
+   "mainAbbreviation": "LIC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Li content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000075",
+  "observationVariableName": "NAC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000072",
+   "traitName": "Na content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Na content",
+   "synonyms": [],
+   "mainAbbreviation": "NAC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Na content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000079",
+  "observationVariableName": "MGC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000076",
+   "traitName": "Mg content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Mg content",
+   "synonyms": [],
+   "mainAbbreviation": "MGC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Mg content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000083",
+  "observationVariableName": "OC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000080",
+   "traitName": "O content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "O content",
+   "synonyms": [],
+   "mainAbbreviation": "OC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "O content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000087",
+  "observationVariableName": "CLC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000084",
+   "traitName": "Cl content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Cl content",
+   "synonyms": [],
+   "mainAbbreviation": "CLC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Cl content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000091",
+  "observationVariableName": "CAC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000088",
+   "traitName": "Ca content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Ca content",
+   "synonyms": [],
+   "mainAbbreviation": "CAC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Ca content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000095",
+  "observationVariableName": "SOC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000092",
+   "traitName": "SO content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "SO content",
+   "synonyms": [],
+   "mainAbbreviation": "SOC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "SO content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000099",
+  "observationVariableName": "FEC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000096",
+   "traitName": "Fe content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Fe content",
+   "synonyms": [],
+   "mainAbbreviation": "FEC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Fe content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000103",
+  "observationVariableName": "COC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000100",
+   "traitName": "Co content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Co content",
+   "synonyms": [],
+   "mainAbbreviation": "COC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Co content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000107",
+  "observationVariableName": "CUC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000104",
+   "traitName": "Cu content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Cu content",
+   "synonyms": [],
+   "mainAbbreviation": "CUC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Cu content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000111",
+  "observationVariableName": "ZNC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000108",
+   "traitName": "Zn content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Zn content",
+   "synonyms": [],
+   "mainAbbreviation": "ZNC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Zn content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000115",
+  "observationVariableName": "ASC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000112",
+   "traitName": "As content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "As content",
+   "synonyms": [],
+   "mainAbbreviation": "ASC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "As content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000119",
+  "observationVariableName": "SEC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000116",
+   "traitName": "Se content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Se content",
+   "synonyms": [],
+   "mainAbbreviation": "SEC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Se content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000123",
+  "observationVariableName": "SRC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000120",
+   "traitName": "Sr content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Sr content",
+   "synonyms": [],
+   "mainAbbreviation": "SRC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Sr content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000127",
+  "observationVariableName": "MOC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000124",
+   "traitName": "Mo content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Mo content",
+   "synonyms": [],
+   "mainAbbreviation": "MOC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Mo content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000131",
+  "observationVariableName": "CDC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000128",
+   "traitName": "Cd content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Cd content",
+   "synonyms": [],
+   "mainAbbreviation": "CDC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Cd content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000135",
+  "observationVariableName": "PBC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000132",
+   "traitName": "Pb content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Pb content",
+   "synonyms": [],
+   "mainAbbreviation": "PBC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Pb content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000139",
+  "observationVariableName": "BC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000136",
+   "traitName": "B content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "B content",
+   "synonyms": [],
+   "mainAbbreviation": "BC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "B content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000147",
+  "observationVariableName": "ALC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000144",
+   "traitName": "Al content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Al content",
+   "synonyms": [],
+   "mainAbbreviation": "ALC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Al content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000151",
+  "observationVariableName": "SC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000148",
+   "traitName": "S content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "S content",
+   "synonyms": [],
+   "mainAbbreviation": "SC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "S content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000155",
+  "observationVariableName": "KC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000152",
+   "traitName": "K content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "K content",
+   "synonyms": [],
+   "mainAbbreviation": "KC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "K content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000159",
+  "observationVariableName": "CRC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000156",
+   "traitName": "Cr content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Cr content",
+   "synonyms": [],
+   "mainAbbreviation": "CRC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Cr content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000163",
+  "observationVariableName": "MNC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000160",
+   "traitName": "Mn content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Mn content",
+   "synonyms": [],
+   "mainAbbreviation": "MNC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Mn content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000167",
+  "observationVariableName": "NIC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000164",
+   "traitName": "Ni content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Ni content",
+   "synonyms": [],
+   "mainAbbreviation": "NIC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Ni content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000171",
+  "observationVariableName": "GAC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000168",
+   "traitName": "Ga content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Ga content",
+   "synonyms": [],
+   "mainAbbreviation": "GAC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Ga content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000175",
+  "observationVariableName": "RBC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000172",
+   "traitName": "Rb content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Rb content",
+   "synonyms": [],
+   "mainAbbreviation": "RBC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Rb content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000179",
+  "observationVariableName": "INC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000176",
+   "traitName": "In content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "In content",
+   "synonyms": [],
+   "mainAbbreviation": "INC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "In content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000183",
+  "observationVariableName": "IC_M_mg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-02-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000180",
+   "traitName": "I content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "I content",
+   "synonyms": [],
+   "mainAbbreviation": "IC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "I content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000200",
+   "methodName": "Mineral content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Ionomics facility, Donald Danforth Center",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000042",
+   "scaleName": "mg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000235",
+  "observationVariableName": "M_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000036",
+   "traitName": "Maturity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity",
+   "synonyms": [],
+   "mainAbbreviation": "M",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Maturity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000198",
+   "methodName": "Maturity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of percent maturity at harvest",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000237",
+  "observationVariableName": "SPW_WM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000220",
+   "traitName": "Sporophyte weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of a single sporophyte",
+   "synonyms": [],
+   "mainAbbreviation": "SPW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Sporophyte weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000202",
+   "methodName": "Wet weight of sporophyte - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the wet weight of randomly sampled blades or all blades within 3 5cm plots",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000238",
+  "observationVariableName": "SPW_DM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000220",
+   "traitName": "Sporophyte weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of a single sporophyte",
+   "synonyms": [],
+   "mainAbbreviation": "SPW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Sporophyte weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000203",
+   "methodName": "Dry weight of sporophyte - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the dried weight of randomly sampled blades or all blades within 3 5cm plots",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000239",
+  "observationVariableName": "SW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000221",
+   "traitName": "Stipe weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stipe weight",
+   "synonyms": [],
+   "mainAbbreviation": "SW",
+   "alternativeAbbreviations": [],
+   "entity": "Stipe",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000204",
+   "methodName": "Stipe weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the weight of the stipe",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000240",
+  "observationVariableName": "BL_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000008",
+   "traitName": "Blade length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Blade length",
+   "synonyms": [],
+   "mainAbbreviation": "BL",
+   "alternativeAbbreviations": [],
+   "entity": "Blade",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000188",
+   "methodName": "Blade length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct length measurement of randomly sampled blades",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000241",
+  "observationVariableName": "BW_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000016",
+   "traitName": "Blade width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Blade width",
+   "synonyms": [],
+   "mainAbbreviation": "BW",
+   "alternativeAbbreviations": [],
+   "entity": "Blade",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000189",
+   "methodName": "Blade width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct width measurement of randomly sampled blades",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000242",
+  "observationVariableName": "BW_10_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000016",
+   "traitName": "Blade width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Blade width",
+   "synonyms": [],
+   "mainAbbreviation": "BW",
+   "alternativeAbbreviations": [],
+   "entity": "Blade",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000190",
+   "methodName": "Blade width - at 10cm - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct width measurement (at 10 cm) of randomly sampled blades",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000245",
+  "observationVariableName": "BW_W_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest ",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000016",
+   "traitName": "Blade width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Blade width",
+   "synonyms": [],
+   "mainAbbreviation": "BW",
+   "alternativeAbbreviations": [],
+   "entity": "Blade",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000193",
+   "methodName": "Blade width - at widest - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct width measurement (at widest) of randomly sampled blades",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000248",
+  "observationVariableName": "BT_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000222",
+   "traitName": "Blade thickness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Blade thickness",
+   "synonyms": [],
+   "mainAbbreviation": "BT",
+   "alternativeAbbreviations": [],
+   "entity": "Blade",
+   "entityPUI": null,
+   "attribute": "Thickness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000196",
+   "methodName": "Blade thickness - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct thickness measurement of randomly sampled blades",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000184",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000249",
+  "observationVariableName": "SL_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000024",
+   "traitName": "Stipe length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stipe length",
+   "synonyms": [],
+   "mainAbbreviation": "SL",
+   "alternativeAbbreviations": [],
+   "entity": "Stipe",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000197",
+   "methodName": "Stipe length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of stipe length",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000250",
+  "observationVariableName": "SD_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000223",
+   "traitName": "Stipe diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stipe diameter",
+   "synonyms": [],
+   "mainAbbreviation": "SD",
+   "alternativeAbbreviations": [],
+   "entity": "Stipe",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000205",
+   "methodName": "Stipe diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the diameter of the stipe",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000184",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000251",
+  "observationVariableName": "SCO_M_sc",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-05-15 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000224",
+   "traitName": "Stipe composition",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Stipe composition",
+   "synonyms": [],
+   "mainAbbreviation": "SCO",
+   "alternativeAbbreviations": [],
+   "entity": "Stipe",
+   "entityPUI": null,
+   "attribute": "Composition",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000206",
+   "methodName": "Stipe composition - Measurement",
+   "methodClass": "Measurement",
+   "description": "Composition of the stipe (either hollow if there is any hollow portion, or solid if completely solid)",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000185",
+   "scaleName": "stipe composition",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Hollow",
+     "1= Solid"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000252",
+  "observationVariableName": "BUP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000225",
+   "traitName": "Presence of bullations",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence of bullations",
+   "synonyms": [],
+   "mainAbbreviation": "BUP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of bullations",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000207",
+   "methodName": "Presence of bullations - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of bullations",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000253",
+  "observationVariableName": "SOP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000226",
+   "traitName": "Presence of sori",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence of sori",
+   "synonyms": [],
+   "mainAbbreviation": "SOP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of sori",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000208",
+   "methodName": "Presence of sori - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of sori",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000254",
+  "observationVariableName": "SOA_E_sqcm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000227",
+   "traitName": "Sori area",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Sori area",
+   "synonyms": [],
+   "mainAbbreviation": "SOA",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Sori area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000209",
+   "methodName": "Sorus area - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of area covered by sori",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000187",
+   "scaleName": "sq cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000255",
+  "observationVariableName": "TSW_WM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000228",
+   "traitName": "Tissue sample weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Tissue sample weight",
+   "synonyms": [],
+   "mainAbbreviation": "TSW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Tissue sample weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000210",
+   "methodName": "Wet weight of tissue sample - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the wet weight of a tissue sample",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000256",
+  "observationVariableName": "TSW_TDM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000228",
+   "traitName": "Tissue sample weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Tissue sample weight",
+   "synonyms": [],
+   "mainAbbreviation": "TSW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Tissue sample weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000211",
+   "methodName": "Towel-dried weight of tissue sample - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the towel-dried weight of a tissue sample",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000257",
+  "observationVariableName": "TSW_DM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000228",
+   "traitName": "Tissue sample weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Tissue sample weight",
+   "synonyms": [],
+   "mainAbbreviation": "TSW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Tissue sample weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000212",
+   "methodName": "Dry weight of tissue sample - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the dried weight of a tissue sample",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000258",
+  "observationVariableName": "TSPWD_C_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000229",
+   "traitName": "Percent dry weight of tissue sample",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Percent dry weight of tissue sample",
+   "synonyms": [],
+   "mainAbbreviation": "TSPDW",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Percent dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000213",
+   "methodName": "Percent dry weight of tissue sample - Computation",
+   "methodClass": "Computation",
+   "description": "Calculation of the percent dry weight of a tissue sample",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000259",
+  "observationVariableName": "FOP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000230",
+   "traitName": "Presence of fouling",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Presence of fouling",
+   "synonyms": [],
+   "mainAbbreviation": "FOP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of fouling",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000214",
+   "methodName": "Presence of fouling - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of any fouling",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000260",
+  "observationVariableName": "FOA_E_sqcm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000231",
+   "traitName": "Fouling area",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Fouling area",
+   "synonyms": [],
+   "mainAbbreviation": "FOA",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Fouling area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000215",
+   "methodName": "Fouling area - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of area fouled",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000187",
+   "scaleName": "sq cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000261",
+  "observationVariableName": "BRP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000232",
+   "traitName": "Presence of bryozoan",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Presence of bryozoan",
+   "synonyms": [],
+   "mainAbbreviation": "BRP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of bryozoan",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000216",
+   "methodName": "Presence of bryozoan - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of bryozoan",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000262",
+  "observationVariableName": "HEP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000233",
+   "traitName": "Presence of herbivores",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Presence of herbivores",
+   "synonyms": [],
+   "mainAbbreviation": "HEP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of herbivores",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000217",
+   "methodName": "Presence of herbivores - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of herbivores",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000263",
+  "observationVariableName": "WPP_M_pa",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-04-24 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000234",
+   "traitName": "Presence of white patches",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Presence of white patches",
+   "synonyms": [],
+   "mainAbbreviation": "WPP",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Presence of white patches",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000218",
+   "methodName": "Presence of white patches - Measurement",
+   "methodClass": "Measurement",
+   "description": "Presence or absence of white patches",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000038",
+   "scaleName": "0-1 Absence/Presence",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000274",
+  "observationVariableName": "PTW_WM_kg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-18 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000272",
+   "traitName": "Plot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in the entire plot",
+   "synonyms": [],
+   "mainAbbreviation": "PTW",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Plot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000269",
+   "methodName": "Wet weight of plot - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the wet weight of the entire plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000268",
+   "scaleName": "kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000275",
+  "observationVariableName": "SPTW_WM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-18 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000273",
+   "traitName": "Subplot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in a single subplot (1cm subsample)",
+   "synonyms": [],
+   "mainAbbreviation": "SPTW",
+   "alternativeAbbreviations": [],
+   "entity": "Subplot",
+   "entityPUI": null,
+   "attribute": "Subplot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000270",
+   "methodName": "Wet weight of subplot - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the wet weight of a 1cm subsample of a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000276",
+  "observationVariableName": "SPTW_DM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-18 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000273",
+   "traitName": "Subplot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in a single subplot (1cm subsample)",
+   "synonyms": [],
+   "mainAbbreviation": "SPTW",
+   "alternativeAbbreviations": [],
+   "entity": "Subplot",
+   "entityPUI": null,
+   "attribute": "Subplot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000271",
+   "methodName": "Dry weight of subplot - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the dry weight of a 1cm subsample of a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000279",
+  "observationVariableName": "PTL_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-18 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000278",
+   "traitName": "Plot length",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Length of the line within a plot containing kelp growth",
+   "synonyms": [],
+   "mainAbbreviation": "PTL",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Plot length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000277",
+   "methodName": "Plot length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the length of the plot containing kelp growth",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000285",
+  "observationVariableName": "CSPTW_WM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000283",
+   "traitName": "Combined subplot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in all sampled subplots (1cm subsamples)",
+   "synonyms": [],
+   "mainAbbreviation": "CSPTW",
+   "alternativeAbbreviations": [],
+   "entity": "Subplot",
+   "entityPUI": null,
+   "attribute": "Combined subplot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000280",
+   "methodName": "Wet weight of combined subplots - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the wet weight of all sampled 1cm subplots",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000286",
+  "observationVariableName": "CSPTW_DM_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000283",
+   "traitName": "Combined subplot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in all sampled subplots (1cm subsamples)",
+   "synonyms": [],
+   "mainAbbreviation": "CSPTW",
+   "alternativeAbbreviations": [],
+   "entity": "Subplot",
+   "entityPUI": null,
+   "attribute": "Combined subplot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000281",
+   "methodName": "Dry weight of combined subplots - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the dry weight of all sampled 1cm subplots",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000002",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000287",
+  "observationVariableName": "SPTC_M_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000284",
+   "traitName": "Sampled subplot count",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The count of the number of sampled subplots (1cm subsamples)",
+   "synonyms": [],
+   "mainAbbreviation": "SPTC",
+   "alternativeAbbreviations": [],
+   "entity": "Subplot",
+   "entityPUI": null,
+   "attribute": "Sampled subplot count",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000282",
+   "methodName": "Sampled subplot count - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct count of the number of subplots sampled from within a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000264",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000291",
+  "observationVariableName": "PTW_DM_kg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000272",
+   "traitName": "Plot weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of all individuals in the entire plot",
+   "synonyms": [],
+   "mainAbbreviation": "PTW",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Plot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000288",
+   "methodName": "Dry weight of plot - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct measurement of the dry weight of the entire plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000268",
+   "scaleName": "kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000292",
+  "observationVariableName": "BN_PTM_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000266",
+   "traitName": "Blade count",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Blade count",
+   "synonyms": [],
+   "mainAbbreviation": "BN",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Blade count",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000289",
+   "methodName": "Plot blade count - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct count of the number of blades in the entire plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000264",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000293",
+  "observationVariableName": "BN_SPTM_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2019-06-19 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000266",
+   "traitName": "Blade count",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Blade count",
+   "synonyms": [],
+   "mainAbbreviation": "BN",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Blade count",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000290",
+   "methodName": "Subplot blade count - Measurement",
+   "methodClass": "Measurement",
+   "description": "Direct count of the number of blades in a 1cm subsample of a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000264",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_360:0000296",
+  "observationVariableName": "MC_M_%",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_360",
+   "ontologyName": "Sugar Kelp"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "Cornell University",
+  "language": "English",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2018-08-14 00:00:00",
+  "crop": "Sugar Kelp",
+  "trait": {
+   "traitDbId": "CO_360:0000295",
+   "traitName": "Moisture content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Moisture content",
+   "synonyms": [],
+   "mainAbbreviation": "MC",
+   "alternativeAbbreviations": [],
+   "entity": "Kelp",
+   "entityPUI": null,
+   "attribute": "Moisture content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_360:0000294",
+   "methodName": "Moisture content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Done by New Jersey Feed Labs ",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_360:0000186",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

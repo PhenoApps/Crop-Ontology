@@ -1,0 +1,6065 @@
+[
+ {
+  "observationVariableDbId": "CO_336:0000249",
+  "observationVariableName": "FlwT_50Count_days",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R2",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [
+   "FLOWERDATE"
+  ],
+  "date": "11-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000000",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Anthesis or flowering time is the period during which a flower is fully open and functional. Pollination and fertilization occur during this period.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000001",
+   "methodName": "Days to 50% flowering count",
+   "methodClass": "Counting",
+   "description": "Count the number of days after sowing until 50% of the plants have one or more flowers",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000002",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000250",
+  "observationVariableName": "BP_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "12-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000003",
+   "traitName": "Bacterial Pustule",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "V-shaped chlorotic to necrotic foliar lesions,vascular blackening, Light colored, raised pustules which can coalesce into brown lesions, caused by Xanthomonas sp.",
+   "synonyms": [],
+   "mainAbbreviation": "BP",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Bacterial Pustule",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000004",
+   "methodName": "Bacterial pustle assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of 1-5 affected plants with bacterial pustule",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000005",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% lesions on plants",
+     "2=1-10% lesions on plants",
+     "3= 10-25% lesions on the plants",
+     "4=25-50% lesions on the plants",
+     "5=>50% plants with lesions"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000251",
+  "observationVariableName": "RUST_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "13-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000006",
+   "traitName": "Soybean rust",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Tan and reddish brown lesions on leaves, pods or whole plant caused by Phakopsora Pachyrhizi",
+   "synonyms": [],
+   "mainAbbreviation": "RUST",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Soybean rust",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000007",
+   "methodName": "Rust assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of 1-5 affected plants with rust",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000008",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% lesions on plants",
+     "2=1-10% lesions on plants",
+     "3= 10-25% lesions on the plants",
+     "4=25-50% lesions on the plants",
+     "5=>50% plants with lesions"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000252",
+  "observationVariableName": "SMV_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "14-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000009",
+   "traitName": "Soybean Mosaic Virus",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Stunting of plants and crinkled and mottling of leaves",
+   "synonyms": [],
+   "mainAbbreviation": "SMV",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Soybean Mosaic Virus",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000010",
+   "methodName": "SMV assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of 1-5 affected plants / plot",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000011",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% virus symptom seen",
+     "2=1-10% occaional mild symptoms",
+     "3=10-25% moderate infection",
+     "4=25-50% severe and widespread symptoms",
+     "5=>50% with likely loss in yield"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000253",
+  "observationVariableName": "FROGEYE_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "15-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000012",
+   "traitName": "Frogeye leafspot",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Tan or brown, elliptical lesions with brown purple boarder on plant parts caused by Cercospora Sojina",
+   "synonyms": [],
+   "mainAbbreviation": "FROGEYE",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Frogeye leafspot",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000013",
+   "methodName": "Frog eye assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of 1-5 affected leaf area with frog eye",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000014",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% leaf spot seen",
+     "2=few spots on some plants",
+     "3=10-25% some spots on most plants",
+     "4=25-50% infection",
+     "5=>50% infection with leaf abscision"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000254",
+  "observationVariableName": "RtNod_PropEst_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "16-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000015",
+   "traitName": "Nodulation",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Root nodule formation due to interaction with microorganisms.",
+   "synonyms": [],
+   "mainAbbreviation": "NODULE",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodulation",
+   "attributePUI": null,
+   "status": "Standard USDA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000016",
+   "methodName": "Nodulation proportion observation",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the proportion of nodules",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000017",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% nodules",
+     "2=1-10%few nodules mostly small",
+     "3=10-25% nodules some large",
+     "4=25-50% nodules several large",
+     "5=>50% nodules many large"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000255",
+  "observationVariableName": "ROOTKNOT_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "17-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000018",
+   "traitName": "Root knot nematode",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Large galls or knots on the root system caused by Meloidogyne Spp",
+   "synonyms": [],
+   "mainAbbreviation": "ROOTKNOT",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Reaction to Root knot nematode",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000019",
+   "methodName": "Root knot assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of 1-5 of nematode knots",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000020",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% root knot galling",
+     "2=1-10% few galls on some plants",
+     "3=10-25% galls on most plants",
+     "4=25-50% galls on most plants",
+     "5=>50% galling with plants stunting"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000256",
+  "observationVariableName": "MatT_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "18-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000021",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when pods have changed to final color.",
+   "synonyms": [],
+   "mainAbbreviation": "MatTime",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000022",
+   "methodName": "Days to maturity count",
+   "methodClass": "Counting",
+   "description": "Determine the number of days elapsed between sowing and when the pods have reached maturity",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000023",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000257",
+  "observationVariableName": "LPodHt_Meas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R3-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "19-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000024",
+   "traitName": "Height of lowest pods",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Height from soil surface to first pod",
+   "synonyms": [],
+   "mainAbbreviation": "HLP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height of lowest pods",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000025",
+   "methodName": "Stalk height measurement",
+   "methodClass": "Measurement",
+   "description": "Length of stem",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000026",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000258",
+  "observationVariableName": "PlntHt_Meas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "20-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000027",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Height of the plant i.e., the length from the soil surface to top main stem (not petioles and leaves) node",
+   "synonyms": [],
+   "mainAbbreviation": "PTHT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000028",
+   "methodName": "Plant height measurement",
+   "methodClass": "Measurement",
+   "description": "Length of the plant at harvest",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000029",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000259",
+  "observationVariableName": "Lodg_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "21-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000030",
+   "traitName": "Lodging",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Tendency of plant to lodge",
+   "synonyms": [],
+   "mainAbbreviation": "LODGING",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000031",
+   "methodName": "Lodging estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate the proportion of plants lodged i.e., protrated on the ground",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000032",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Almost all plants erect",
+     "2=All plants leaning slightly or a few plants down",
+     "3=All plants leaning moderately (45 degrees), or 25% - 50% of plants down",
+     "4= All plants leaning considerably, or 50% - 80% of plants down",
+     "5= Prostrate, almost all plants down"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000260",
+  "observationVariableName": "PlntHvst_Count_plant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "22-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000033",
+   "traitName": "Plants Harvested",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of plants harvested contributing to the yield",
+   "synonyms": [],
+   "mainAbbreviation": "PTHARV",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Harvested number",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000034",
+   "methodName": "Number of plants harvested in the net plot, excluding the borders",
+   "methodClass": "Counting",
+   "description": "Number of plants harvested in the net plot, excluding the borders",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000035",
+   "scaleName": "Plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000261",
+  "observationVariableName": "SdYld_MeasPerPlot_gPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "23-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000036",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Yield of a soybean field in terms of seed weight per unit area at a specified moisture content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000037",
+   "methodName": "Weighing of grain per plot",
+   "methodClass": "Measurement",
+   "description": "Weigh the amount of harvested grains (excluding the borders) adjusted to 13% moisture,",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000038",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000262",
+  "observationVariableName": "FodYld_MeasPerPlot_gPlot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "24-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000039",
+   "traitName": "Fodder Yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of harvested fodder i.e., haulm, stover per unit of area",
+   "synonyms": [],
+   "mainAbbreviation": "FODDERWT",
+   "alternativeAbbreviations": [],
+   "entity": "Fodder",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000040",
+   "methodName": "Weighing of fodder per plot",
+   "methodClass": "Measurement",
+   "description": "Measure the dry weight of stover, haulm harvested after threshing plants harvested from the plot excluing the borders.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000041",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000263",
+  "observationVariableName": "ShatEarly_EarlyEst_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000042",
+   "traitName": "Early shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of open pods at harvest",
+   "synonyms": [],
+   "mainAbbreviation": "SHATEARLY",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000043",
+   "methodName": "Early pod shattering estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate the proportion of open pods at harvest by shattering the pods left on the 1m at both ends of the plot after the net yield plot was harvested",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000044",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% pods shattered",
+     "2=1-10% pods shattered",
+     "3=11-25% pods shattered",
+     "4=26-50% pods shattered",
+     "5=>50% pods shattered"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000264",
+  "observationVariableName": "PodShat_EarlyEst_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "15-juil-15",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000248",
+   "traitName": "Pod shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of open pods",
+   "synonyms": [],
+   "mainAbbreviation": "PodShat",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000043",
+   "methodName": "Early pod shattering estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate the proportion of open pods at harvest by shattering the pods left on the 1m at both ends of the plot after the net yield plot was harvested",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000044",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% pods shattered",
+     "2=1-10% pods shattered",
+     "3=11-25% pods shattered",
+     "4=26-50% pods shattered",
+     "5=>50% pods shattered"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000265",
+  "observationVariableName": "Storab_Count_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R7",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "26-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000045",
+   "traitName": "Storability",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Capacity of a seed to emerge when planted after being stored during a given amount of time.",
+   "synonyms": [],
+   "mainAbbreviation": "STORABILITY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Storability",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000046",
+   "methodName": "Germination in storage count",
+   "methodClass": "Counting",
+   "description": "Count the number of seedlings emerged after 8 months in storage out of 100 planted seeds",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000047",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000266",
+  "observationVariableName": "SdOilCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000048",
+   "traitName": "Seed oil content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Oil content of soybean seed",
+   "synonyms": [],
+   "mainAbbreviation": "OIL",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Oil content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000049",
+   "methodName": "Seed oil content measurement in the lab",
+   "methodClass": "Computation",
+   "description": "Weigh the amount of extracted oil from seed after harvest and divide by the seed dry weight",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000050",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000267",
+  "observationVariableName": "SdProtCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000051",
+   "traitName": "Seed protein content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Protein content of seed",
+   "synonyms": [],
+   "mainAbbreviation": "PROTEIN",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000052",
+   "methodName": "Seed protein content measurement",
+   "methodClass": "Computation",
+   "description": "After harvest, measure the protein content of the seed on a dry weight basis",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000053",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000268",
+  "observationVariableName": "APHID_Est_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-V7",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000054",
+   "traitName": "Reaction to Aphis glycines",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The reaction of the plant or plant part to damage caused by Aphis glycines feeding.",
+   "synonyms": [],
+   "mainAbbreviation": "APHID",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reaction to Aphis glycines",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000055",
+   "methodName": "Aphid attack assessment",
+   "methodClass": "Estimation",
+   "description": "Observe the plant parts that are yellowing and/or curling",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000056",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000269",
+  "observationVariableName": "PlntBrnch_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000057",
+   "traitName": "Plant branching",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Tendency of plant to form primary branches",
+   "synonyms": [],
+   "mainAbbreviation": "BRANCHING",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Branching",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000058",
+   "methodName": "Plant branching observation",
+   "methodClass": "Estimation",
+   "description": "At maturity, observe the abundance of primary branches",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000059",
+   "scaleName": "1 to 5 branching scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=rarely branching",
+     "2=fair branching",
+     "3=moderatly branching",
+     "4=mostly branching",
+     "5=profusely branching"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000270",
+  "observationVariableName": "ReprodT_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000060",
+   "traitName": "Reproductive period",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time between the beginning of flowering (R1) and full maturity (R8)",
+   "synonyms": [],
+   "mainAbbreviation": "REPROD",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reproductive time",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000061",
+   "methodName": "Reproductive period duration measurement",
+   "methodClass": "Counting",
+   "description": "Count number of days from beginning of bloom (R1) to full maturity(R8)",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000062",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000271",
+  "observationVariableName": "FlwCol_Est_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R3",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000063",
+   "traitName": "Flower color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the flower petals",
+   "synonyms": [],
+   "mainAbbreviation": "FLWRCOLOR",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000064",
+   "methodName": "Flower color observation",
+   "methodClass": "Estimation",
+   "description": "At flowering, observe the color of flower",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000065",
+   "scaleName": "1 to 9 color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=B=blue",
+     "2=Dp=dark purple",
+     "3=Lp=light purple",
+     "4=M=magenta",
+     "5=Nw=near white",
+     "6=W=white",
+     "7=P=purple",
+     "8=Pm=purple mutable",
+     "9=Pth=dilute purple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000272",
+  "observationVariableName": "PodLng_Meas_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000066",
+   "traitName": "Pod length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of the pod from the calyx to the pod tip in cm or mm",
+   "synonyms": [],
+   "mainAbbreviation": "PODLENGTH",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000067",
+   "methodName": "Measure length of pod",
+   "methodClass": "Measurement",
+   "description": "Measure length of pod from caylx to pod tip using a length measuring instrument",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000068",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000273",
+  "observationVariableName": "TwinT_Est_mmdd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000069",
+   "traitName": "Twining date",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when soybean twines",
+   "synonyms": [],
+   "mainAbbreviation": "TWINNING",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Twinning time",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000070",
+   "methodName": "Twinning date observation",
+   "methodClass": "Estimation",
+   "description": "Take note of the date when 50% of plants are twining",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000071",
+   "scaleName": "mmdd",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000274",
+  "observationVariableName": "Flood_Est_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000072",
+   "traitName": "Flooding tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Response of plant to inundation by water of all or part of the plant",
+   "synonyms": [],
+   "mainAbbreviation": "FLOODING",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flooding tolerance",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000073",
+   "methodName": "Flooding reaction of plants assessment",
+   "methodClass": "Estimation",
+   "description": "Appearance of plants in response to flooding",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000074",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000275",
+  "observationVariableName": "Chlorosis_Est_SPAD",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000075",
+   "traitName": "Chlorosis",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Reduction in chlorophyll in a plant or plant part as a result of nutrient deficiency",
+   "synonyms": [],
+   "mainAbbreviation": "CHLOROSIS",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chlorosis",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000076",
+   "methodName": "Chlorophyll content measurement",
+   "methodClass": "Estimation",
+   "description": "Measurement chlorophyll content using a SPAD meter and then compare to a reference",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000077",
+   "scaleName": "SPAD unit",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000276",
+  "observationVariableName": "Drought_Est_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000078",
+   "traitName": "Drought Tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Resistance to damage by water restriction.",
+   "synonyms": [],
+   "mainAbbreviation": "DROUGHT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought Tolerance",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000079",
+   "methodName": "Drought reaction of plants observation",
+   "methodClass": "Estimation",
+   "description": "Appearance of plants in response to limited water availability",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000080",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000277",
+  "observationVariableName": "HerbSens_Est_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000081",
+   "traitName": "Herbicide sensitivity",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Reaction of the plant or plant part to herbicide exposure",
+   "synonyms": [],
+   "mainAbbreviation": "HERBSENSITIVE",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Herbicide sensitivity",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000082",
+   "methodName": "Herbicide reaction of plant assessment",
+   "methodClass": "Estimation",
+   "description": "Appearance of plants in response to herbicides sprayed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000083",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000278",
+  "observationVariableName": "SdOilProtRatio_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000084",
+   "traitName": "Seed oil/protein content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Ratio of oil content to protein content of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "OILPROTEIN",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Oil content per protein content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000085",
+   "methodName": "Oil content to protein content ratio",
+   "methodClass": "Computation",
+   "description": "Divide the oil content by the protein content. For this calculation, the oil and protein contents must be expressed in the same unit",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000086",
+   "scaleName": "Ratio",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000279",
+  "observationVariableName": "SdFillT_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4-R6",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000087",
+   "traitName": "Seed filling period",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when the seed grows in size and weight i.e., the period characterized by the beginning of R4 (full pod) and the end of R6 (full seed).",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDFILL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed filling time",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000088",
+   "methodName": "Counting days of seed fill",
+   "methodClass": "Counting",
+   "description": "Count number of days from full pod(R4) to full seed(R6) stages of growth",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000089",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000280",
+  "observationVariableName": "PodCol_Est_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000090",
+   "traitName": "Pod color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the pod.",
+   "synonyms": [],
+   "mainAbbreviation": "PODCOLOR",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000091",
+   "methodName": "Pod color observation",
+   "methodClass": "Estimation",
+   "description": "Take note of the color of the mature pod which are black, tan, brown and grey",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000092",
+   "scaleName": "1 to 4 color scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Bl=Black",
+     "2=T= Tan",
+     "3=Br=Brown",
+     "4=G=Grey"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000281",
+  "observationVariableName": "HilumCol_Est_1to12",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000093",
+   "traitName": "Hilum color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the soybean seed hilum (scar on the ovule produced by abscision of funiculus)",
+   "synonyms": [],
+   "mainAbbreviation": "HILUMCOLOR",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Hilum color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000094",
+   "methodName": "Hilum color observation",
+   "methodClass": "Estimation",
+   "description": "Observe the colour of the hilum",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000095",
+   "scaleName": "1 to 12 color scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Bf= Buff",
+     "2=Bl= Black",
+     "3=Blbr= Black hilum with brown outer ring,",
+     "4=Br= Brown",
+     "5=D= Dark shade",
+     "6=G= Gray",
+     "7=Gn= Green",
+     "8=Rbf=Reddish buff",
+     "9=Rbl= Reddish black",
+     "10=Rbr= Reddish brown",
+     "11=Tn=Tan",
+     "12=Y= Yellow"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000282",
+  "observationVariableName": "SdQual_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000096",
+   "traitName": "Seed quality",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Overall quality of the seed based on defective seed coat, greenish or diseased seeds",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDQUAL",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Quality",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000097",
+   "methodName": "Seed quality visual assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of seed quality",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000098",
+   "scaleName": "1 to 5 quality scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Good",
+     "2=moderatly good",
+     "3=fairly good",
+     "4=bad",
+     "5=poor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000283",
+  "observationVariableName": "LowTemp_Est_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000099",
+   "traitName": "Cold stress resistance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Resistance of a plant or plant part to damage by lower than normal temperatures",
+   "synonyms": [],
+   "mainAbbreviation": "LOWTEMP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Cold stress resistance",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000100",
+   "methodName": "Cold reaction assessment",
+   "methodClass": "Estimation",
+   "description": "Appearance of plant or plant part in low temperature weather",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000101",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000284",
+  "observationVariableName": "HighT_Est_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "25-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000102",
+   "traitName": "Heat stress resistance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Resistance of a plant or plant part to damage by higher than normal temperatures",
+   "synonyms": [],
+   "mainAbbreviation": "HIGHTEMP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Heat stress resistance",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000103",
+   "methodName": "Hot reaction assessment",
+   "methodClass": "Estimation",
+   "description": "Appearance of plant or plant part in high temperature weather",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000104",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000285",
+  "observationVariableName": "SdLinolncCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000105",
+   "traitName": "Seed linoleic acid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Linoleic acid content of the seed oil i.e., linoleic acid weight per total oil weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "LINOLEIC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Linoleic acid content of oil",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000106",
+   "methodName": "Linoleic acid content measurement",
+   "methodClass": "Computation",
+   "description": "Measure the content of linoleic acid in the oil extracted from the seed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000107",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000286",
+  "observationVariableName": "SdLinolcCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000108",
+   "traitName": "Seed linolenic acid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Linolenic acid content of the seed oil i.e., linolenic acid weight per total oil weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "LINOLENIC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Linolenic acid content of oil",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000109",
+   "methodName": "Linolenic acid content measurement",
+   "methodClass": "Computation",
+   "description": "Measure the content of linolenic acid in the oil extracted from the seed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000110",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000287",
+  "observationVariableName": "SdPalmiCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000111",
+   "traitName": "Seed palmitic acid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Palmitic acid content of the seed oil i.e., palmitic acid weight per total oil weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "PALMITIC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Palmitic acid content of oil",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000112",
+   "methodName": "Palmitic acid content measurement",
+   "methodClass": "Computation",
+   "description": "Measure the content of palmitic acid in the oil extracted from the seed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000113",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000288",
+  "observationVariableName": "SdOleicCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000114",
+   "traitName": "Seed oleic acid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Oleic acid content of the seed oil i.e., palmitic acid weight per total oil weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "OLIEC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Oleic acid content of oil",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000115",
+   "methodName": "Oleic acid content measurement",
+   "methodClass": "Computation",
+   "description": "Measure the content of oleic acid in the oil extracted from the seed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000116",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000289",
+  "observationVariableName": "SdMetCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000117",
+   "traitName": "Seed methionine content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of total soybean seed protein that is composed of methionine",
+   "synonyms": [],
+   "mainAbbreviation": "METHIONINE",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Methionine content of proteins",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000118",
+   "methodName": "Methionine content calculation",
+   "methodClass": "Computation",
+   "description": "Measure the weight of methionine extracted from the seed sample and divide by the weight of protein extracted from the same sample.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000119",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000290",
+  "observationVariableName": "SdStearCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000120",
+   "traitName": "Seed stearic acid content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Stearic acid content of the seed oil i.e., stearic acid weight per total oil weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "STEARIC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Stearic acid content of oil",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000121",
+   "methodName": "Stearic acid content measurement",
+   "methodClass": "Computation",
+   "description": "Measure the content of stearic acid in the oil extracted from the seed",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000122",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000291",
+  "observationVariableName": "StemTermTyp_Est_1or2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000123",
+   "traitName": "Stem termination type",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Termination type of the axial growth of a soybean plant.",
+   "synonyms": [],
+   "mainAbbreviation": "STEMTERM",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Termination type",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000124",
+   "methodName": "Termination observation",
+   "methodClass": "Estimation",
+   "description": "Observe tapering of stem tip and presence or absence of terminal raceme.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000125",
+   "scaleName": "1 or 2 type scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Determinate termination",
+     "2=Indeterminate termination"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000292",
+  "observationVariableName": "BAW_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000126",
+   "traitName": "Beet armyworm",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Foliar feeding damage caused by beet armyworm(Spodoptera exigua)",
+   "synonyms": [],
+   "mainAbbreviation": "BAW",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Reaction to Beet armyworm",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000127",
+   "methodName": "Foliar feeding assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment on the percentage of leaves eaten up by beet armyworm on a scale of 1 to 5",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000128",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0-20% defoliated",
+     "2=21-40% defoliated",
+     "3=41-60% defoliated",
+     "4=61-80% defoliated",
+     "5=81=100% defoliated"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000293",
+  "observationVariableName": "DEFOL_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000129",
+   "traitName": "Defoliation",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Defoliation by chewing insects",
+   "synonyms": [],
+   "mainAbbreviation": "DEFOL",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Reaction to chewing insects",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000130",
+   "methodName": "Defoliation assessment",
+   "methodClass": "Estimation",
+   "description": "Visuall assessment of the leaves eaten up by chewing insects",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000131",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0-20% defoliated",
+     "2=21-40% defoliated",
+     "3=41-60% defoliated",
+     "4=61-80% defoliated",
+     "5=81=100% defoliated"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000294",
+  "observationVariableName": "ShatLate_LateEst_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000132",
+   "traitName": "Late Shattering Score",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of open pods 2 weeks after harvest",
+   "synonyms": [],
+   "mainAbbreviation": "SHATLATE",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Opening",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000133",
+   "methodName": "Late pod shattering assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of pod opening 2weeks after harvest",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000134",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=no pods shattered",
+     "2=1-10% of pods shattered",
+     "3=10-25% of pods shattered",
+     "4=25-50% of pods shattered",
+     "5=>50% of pods shattered"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000295",
+  "observationVariableName": "PodShat_LateEst_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "15-juil-15",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000248",
+   "traitName": "Pod shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of open pods",
+   "synonyms": [],
+   "mainAbbreviation": "PodShat",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000133",
+   "methodName": "Late pod shattering assessment",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of pod opening 2weeks after harvest",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000134",
+   "scaleName": "1 to 5 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=no pods shattered",
+     "2=1-10% of pods shattered",
+     "3=10-25% of pods shattered",
+     "4=25-50% of pods shattered",
+     "5=>50% of pods shattered"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000296",
+  "observationVariableName": "PubCol_Est_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000135",
+   "traitName": "Pubescence Color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The color of soybean pubescence.",
+   "synonyms": [],
+   "mainAbbreviation": "PUBCOLOR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf, stem",
+   "entityPUI": null,
+   "attribute": "Pubescence Color",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000136",
+   "methodName": "Pubescence color assessment",
+   "methodClass": "Estimation",
+   "description": "Note colors of pubescence which include tawny, light tawny, near-grey and grey.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000137",
+   "scaleName": "1 to 4 color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=T=Tawny",
+     "2=LT=Light tawny",
+     "3=G=Grey",
+     "4=NG=Near grey"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000297",
+  "observationVariableName": "MatGroup_Est_1to13",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000141",
+   "traitName": "Maturity group",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity group designation of a germplasm.",
+   "synonyms": [],
+   "mainAbbreviation": "MATGROUP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity group",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000142",
+   "methodName": "Maturity group classification",
+   "methodClass": "Counting",
+   "description": "Relative classification based on maturity of cultivars in known maturity group",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000143",
+   "scaleName": "1 to 13 maturity scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0=maturity group 0 (extreme North)",
+     "1=00=maturity group 00",
+     "3=000=maturity group 000",
+     "4=I=maturity group I",
+     "5=II=maturity group II",
+     "6=III=maturity group III",
+     "7=IV=maturity group IV",
+     "8=V=maturity group V",
+     "9=VI=maturity group VI",
+     "10=VII=maturity group VII",
+     "11=VIII=maturity group VIII",
+     "12=IX=maturity group IX",
+     "13=X=maturity group X (extreme South)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000299",
+  "observationVariableName": "SdCoatMott_Est_1to10",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000144",
+   "traitName": "Seed coat mottling",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Surface of the seed coat discolored by mottling i.e. , the additional pigmentation that is observed on lines with yellow or green seed coats",
+   "synonyms": [],
+   "mainAbbreviation": "MOTTLING",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Coat mottling",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000145",
+   "methodName": "Seed coat color observation",
+   "methodClass": "Estimation",
+   "description": "Observe the color of the seed coat",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000146",
+   "scaleName": "1 to 10 percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0=less than 10% seed discolored",
+     "1=10-15% seed surface discolored",
+     "2=15-20% seed surface discolored",
+     "3=20-30% seed surface discolored",
+     "4=30-40% seed surface discolored",
+     "5=40-50% seed sueface discolored",
+     "6=50-60% seed surface discolored",
+     "7=60-70% seed surface discolored",
+     "8=70-80% seed surface discolored",
+     "9=80-90% seed surface discolored",
+     "10=more than 90% seed surface discolored"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000300",
+  "observationVariableName": "SdLysCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000147",
+   "traitName": "Seed lysine content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of total soybean seed protein that is composed of lysine",
+   "synonyms": [],
+   "mainAbbreviation": "LYSINE",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Lysine content of proteins",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000148",
+   "methodName": "Lysine context extraction method",
+   "methodClass": "Computation",
+   "description": "Measure the weight of lysine extracted from the seed sample and divide by the weight of protein extracted from the same sample.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000149",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000301",
+  "observationVariableName": "LfChlphyll_Meas_SPAD",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000150",
+   "traitName": "Leaf chlorophyll content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of chlorophyll normally found in a plant under normal environmental conditions",
+   "synonyms": [],
+   "mainAbbreviation": "CHLOROPHYLL",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophill content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000151",
+   "methodName": "Chlorophyll content measurement",
+   "methodClass": "Measurement",
+   "description": "Measure chlorophyll using a SPAD meter",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000152",
+   "scaleName": "SPAD unit",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000302",
+  "observationVariableName": "SdIsoflav_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000153",
+   "traitName": "Seed isoflavone content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The total isoflavone content of a seed.",
+   "synonyms": [],
+   "mainAbbreviation": "ISOFLAVON",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Isoflavone content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000154",
+   "methodName": "Isoflavone content measurement",
+   "methodClass": "Computation",
+   "description": "Measurement of the amount of isoflavone out of seed weight",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000155",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000303",
+  "observationVariableName": "GermT_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "VE",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000156",
+   "traitName": "Germination time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time from planting soybean seed until hypocotyl emerges from the substrate",
+   "synonyms": [],
+   "mainAbbreviation": "GERMINATIONTIME",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Germination time",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000157",
+   "methodName": "Plant germination count",
+   "methodClass": "Counting",
+   "description": "Number of days from planting to emergence(VE)",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000158",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000304",
+  "observationVariableName": "FlwNo_Count_flw",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R2-R3",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000159",
+   "traitName": "Flower number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of flowers produced by a plant",
+   "synonyms": [],
+   "mainAbbreviation": "FLWRNUMBER",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flower number",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000160",
+   "methodName": "Flower number count",
+   "methodClass": "Counting",
+   "description": "Number of flowers per plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000161",
+   "scaleName": "flower",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000305",
+  "observationVariableName": "CanoHt_Est_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000162",
+   "traitName": "Canopy height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Distance from growing medium to the top leaves",
+   "synonyms": [],
+   "mainAbbreviation": "CANOPYHT",
+   "alternativeAbbreviations": [],
+   "entity": "Canopy",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000163",
+   "methodName": "Height average of plants",
+   "methodClass": "Estimation",
+   "description": "Wooden lath placed on each plot to measure average height above ground",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000164",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000306",
+  "observationVariableName": "FFlw_1stCount_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R1",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000165",
+   "traitName": "First flower",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Days from planting when there is an open flower on any node on the main stem",
+   "synonyms": [],
+   "mainAbbreviation": "FIRSTFLOWER",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000166",
+   "methodName": "First flower date method",
+   "methodClass": "Counting",
+   "description": "Number of days from emergence to beginning of bloom (R1)",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000167",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000307",
+  "observationVariableName": "FlwT_1stCount_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R1",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-February-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000000",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Anthesis or flowering time is the period during which a flower is fully open and functional. Pollination and fertilization occur during this period.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000166",
+   "methodName": "First flower date method",
+   "methodClass": "Counting",
+   "description": "Number of days from emergence to beginning of bloom (R1)",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000167",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000308",
+  "observationVariableName": "RtNodNo_Count_nodule",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000168",
+   "traitName": "Nodule number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of nodule on the root system usually compared to wild type",
+   "synonyms": [],
+   "mainAbbreviation": "NODULENUMBER",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodule number",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000169",
+   "methodName": "Nodule number count",
+   "methodClass": "Counting",
+   "description": "Count the number of nodules on a plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000170",
+   "scaleName": "nodule",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000309",
+  "observationVariableName": "PODMATURITY_Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "28-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000171",
+   "traitName": "Pod Maturity Date",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days past planting when pods are mature. This trait is synonymous with seed pod maturity.Maturity defined as pods have reached their final color.",
+   "synonyms": [],
+   "mainAbbreviation": "PODMATURITY",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000172",
+   "methodName": "Maturity days count",
+   "methodClass": "Counting",
+   "description": "Count days from planting to pod maturity R8",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000173",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000310",
+  "observationVariableName": "FULLMATURITYT_95Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "29-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000174",
+   "traitName": "R8 Full Maturity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days past planting when 95% of pods have reached their mature color.",
+   "synonyms": [],
+   "mainAbbreviation": "FULLMATURITY",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000175",
+   "methodName": "Full maturity count",
+   "methodClass": "Counting",
+   "description": "Count days from planting to 95% pod maturity R8",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000176",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000311",
+  "observationVariableName": "MatT_95Count_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "18-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000021",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Time when pods have changed to final color.",
+   "synonyms": [],
+   "mainAbbreviation": "MatTime",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000175",
+   "methodName": "Full maturity count",
+   "methodClass": "Counting",
+   "description": "Count days from planting to 95% pod maturity R8",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000176",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000312",
+  "observationVariableName": "RtNodWght_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000177",
+   "traitName": "Root nodule weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of root nodules",
+   "synonyms": [],
+   "mainAbbreviation": "NODULEWEIGTH",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodule weight",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000178",
+   "methodName": "Nodule weight measurement",
+   "methodClass": "Measurement",
+   "description": "Dig out, dry and weigh root nodules",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000179",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000313",
+  "observationVariableName": "PrimRtShp_Est_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000180",
+   "traitName": "Primary root shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of the primary root at a stipulated range of the root",
+   "synonyms": [],
+   "mainAbbreviation": "PRIROOTSHAPE",
+   "alternativeAbbreviations": [],
+   "entity": "Primary root",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000181",
+   "methodName": "Primary root shape observation",
+   "methodClass": "Estimation",
+   "description": "Visually examine the primary root shape",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000182",
+   "scaleName": "1 to 4 shape scale of PRIROOTSHAPE",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= round",
+     "2= flat",
+     "3= Straight",
+     "4= curved"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000314",
+  "observationVariableName": "PrimRtSz_Meas_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000183",
+   "traitName": "Primary root size",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The diameter of the main root measured at a stipulated level of the root",
+   "synonyms": [],
+   "mainAbbreviation": "PRIROOTSIZE",
+   "alternativeAbbreviations": [],
+   "entity": "Primary root",
+   "entityPUI": null,
+   "attribute": "diameter",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000184",
+   "methodName": "Primary root thickness measure",
+   "methodClass": "Measurement",
+   "description": "Using a callipers measure diameter of primary root at stipulated point",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000185",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000315",
+  "observationVariableName": "LfNo_Count_lf",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000186",
+   "traitName": "Leaf number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of leaves (petioles) originating from a node on a stem",
+   "synonyms": [],
+   "mainAbbreviation": "LEAFNUMBER",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Leaf number",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000187",
+   "methodName": "Leaf number count",
+   "methodClass": "Counting",
+   "description": "Count Physically the number of leaves on a plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000188",
+   "scaleName": "leaf",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000316",
+  "observationVariableName": "StmDiam_Comp_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000189",
+   "traitName": "Main stem diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The diameter of the main stem of soybean plant",
+   "synonyms": [],
+   "mainAbbreviation": "STEMDIAM",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000190",
+   "methodName": "Average stem diameter",
+   "methodClass": "Computation",
+   "description": "The average measurement with calipers midway between the unifoliate and the first trifoliate nodes for three mature plants per plot",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000191",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000317",
+  "observationVariableName": "SdFibCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000192",
+   "traitName": "Fiber content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of fiber in soybean seed",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDFIBER",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Fibre content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000193",
+   "methodName": "Fiber content measurement",
+   "methodClass": "Computation",
+   "description": "Measurement of the amount of fibre out of seed weight",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000194",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000318",
+  "observationVariableName": "SdMoistCt_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-Apr-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000195",
+   "traitName": "Seed moisture content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of moisture of a mature seed",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDMOISTURE",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Moisture content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000196",
+   "methodName": "Moisture content measurement",
+   "methodClass": "Computation",
+   "description": "Measurement of the moisture content of a mature seed of seed at harvest",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000197",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000319",
+  "observationVariableName": "SdSucrCt_Meas_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "30-April-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000198",
+   "traitName": "Seed Sucrose content",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The amount of total seed soluble carbohydrates that is sucrose.",
+   "synonyms": [],
+   "mainAbbreviation": "SUCROSS",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Sucrose content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000199",
+   "methodName": "Sucrose content method",
+   "methodClass": "Measurement",
+   "description": "Measure amount of total seed soluble carbohydrates that is sucrose",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000200",
+   "scaleName": "g/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000320",
+  "observationVariableName": "DMildew_Est_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "04-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000201",
+   "traitName": "Downy mildew",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Reaction of the plant or plant part to Peronospora manchurica infection.",
+   "synonyms": [],
+   "mainAbbreviation": "DOWNYMILDEW",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reaction to Downy mildew",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000202",
+   "methodName": "Downy mildew assessment method",
+   "methodClass": "Estimation",
+   "description": "Look at how much of the plant or plant part is covered with small, discrete, pale to bright yellow spots",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000203",
+   "scaleName": "1-5 Iinfection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=no disease",
+     "2=1-10% of leaf area infected (light severity)",
+     "3= 11-35% leaf area infected (light to moderate severity)",
+     "4= 36-65% leaf area infected (Moderate to heavy severity)",
+     "5= greater than 66% leaf area affected (Heavy)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000321",
+  "observationVariableName": "ANTHR_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "04-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000204",
+   "traitName": "Soybean anthracnose",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Reaction of the plant or plant part to infection by Colletotrichum dematiu",
+   "synonyms": [],
+   "mainAbbreviation": "ANTHRACNOSE",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reaction to Soybean anthracnose",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000205",
+   "methodName": "Anthracnose assessment",
+   "methodClass": "Estimation",
+   "description": "How much or the plant or plant part has been affected by irregulary shaped brown areas and/or black fruiting bodies on infected areas",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000206",
+   "scaleName": "1-5 infection score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=(R) resistant",
+     "2=(S) sensitive",
+     "3=(PR) partially sensitive"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000322",
+  "observationVariableName": "LatRtSz_Meas_Undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "5-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000207",
+   "traitName": "Lateral root size",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The diameter of a lateral root measured at the proximal end of the root",
+   "synonyms": [],
+   "mainAbbreviation": "LATROOTSIZE",
+   "alternativeAbbreviations": [],
+   "entity": "Lateral root",
+   "entityPUI": null,
+   "attribute": "diameter",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000208",
+   "methodName": "Lateral root thickness measure",
+   "methodClass": "Measurement",
+   "description": "Using a callipers measure diameter of lateral root at stipulated point",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000209",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000323",
+  "observationVariableName": "LatRtShp_Est_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "05-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000210",
+   "traitName": "Lateral root shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of the lateral root at a stipulated range of the roots",
+   "synonyms": [],
+   "mainAbbreviation": "LATROOTSHAPE",
+   "alternativeAbbreviations": [],
+   "entity": "Lateral root",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Obsolete",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000211",
+   "methodName": "Lateral root shape observation",
+   "methodClass": "Estimation",
+   "description": "Visually observe the shape of the lateral root",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000212",
+   "scaleName": "1 to 4 shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=round",
+     "2=flat",
+     "3=straight",
+     "4=curved"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000324",
+  "observationVariableName": "SarchyCt_Comp_undefined",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "05-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000213",
+   "traitName": "Seed starchyose content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "The amount of total seed soluble carbohydrates that is stachyose.",
+   "synonyms": [],
+   "mainAbbreviation": "STARCHYOSE",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Starchyose content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000214",
+   "methodName": "Starchyose measurement",
+   "methodClass": "Computation",
+   "description": "Measure amount of total seed soluble carbohydrates that is stachyose.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000215",
+   "scaleName": "Percentage",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000325",
+  "observationVariableName": "RaffinCt_Comp_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "05-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000216",
+   "traitName": "Seed Raffinose content",
+   "traitClass": "Biochemical",
+   "traitPUI": null,
+   "description": "Raffinose content of a plant or plant part.",
+   "synonyms": [],
+   "mainAbbreviation": "RAFFINOSE",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Raffinose content",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000217",
+   "methodName": "Raffinose measurement",
+   "methodClass": "Computation",
+   "description": "Measure amount of total seed soluble carbohydrates that is raffinose",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000218",
+   "scaleName": "kg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": "0.0",
+    "maximumValue": "100.0",
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000326",
+  "observationVariableName": "LfletShp_Comp_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000219",
+   "traitName": "Leaflet shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of the leaflet. Remark: This trait has been incorrectly called Leaf shape.",
+   "synonyms": [],
+   "mainAbbreviation": "LEAFSHAPE",
+   "alternativeAbbreviations": [],
+   "entity": "Leaflet",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000220",
+   "methodName": "Leaf shape method",
+   "methodClass": "Computation",
+   "description": "Elliptic Fourier descriptor measures 5 components, including aspect ratio of leaflet shape, location of centroid of leaflets along midrib, straightness or distortion of leaflet shape, and roundness of leaflet shape. Measured on central leaflets of fully expanded leaflets. Can also be measured as the ratio of leaflet width to leaflet length from upper third of plant.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000221",
+   "scaleName": "1 to 4 shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Lanceolate",
+     "2=triangular",
+     "3=pointed ovate",
+     "4=rounded ovate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000327",
+  "observationVariableName": "PubescForm_Est_1to8",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000222",
+   "traitName": "Pubescence form",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Orientation of pubescence, generally on the leaf surface but pubsecence can be found on the stem",
+   "synonyms": [],
+   "mainAbbreviation": "PUBFORM",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf, stem",
+   "entityPUI": null,
+   "attribute": "Pubescence form",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000223",
+   "methodName": "Pubescence form observation",
+   "methodClass": "Estimation",
+   "description": "Observation of the type of pubescence",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000224",
+   "scaleName": "1 to 8 shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Erect",
+     "2=semi-appressed",
+     "3=glaborus",
+     "4=appressed",
+     "5=normal",
+     "6=pubescent",
+     "7=puberulent",
+     "8=curly"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000328",
+  "observationVariableName": "PubescTipTyp_Est_1or2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000225",
+   "traitName": "Pubescence tip type",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The form of the tip of a soybean pubescence",
+   "synonyms": [],
+   "mainAbbreviation": "PUBTIPTYPE",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf, stem",
+   "entityPUI": null,
+   "attribute": "Pubescence tip type",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000226",
+   "methodName": "Pubescence tip type observation",
+   "methodClass": "Estimation",
+   "description": "Observation of the type of the tip of the pubescence on the plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000227",
+   "scaleName": "1 or 2 type scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= blunt",
+     "2=Sharp"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000329",
+  "observationVariableName": "FlwForm_Est_1or2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R2",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000228",
+   "traitName": "Flower form",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Form of a flower.",
+   "synonyms": [],
+   "mainAbbreviation": "FLOWERFORM",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Form",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000229",
+   "methodName": "Flower final form observation",
+   "methodClass": "Estimation",
+   "description": "Observe the form of a flower at the final development stage",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000230",
+   "scaleName": "1 or 2 form scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=cleistogamous (closed, TO:0000882)",
+     "2=chasmogamous (open, TO:0000883)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000330",
+  "observationVariableName": "PubescPres_Est_1or2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "11-May-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000231",
+   "traitName": "Pubescence presence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence or absence of pubescence on soybean plant",
+   "synonyms": [],
+   "mainAbbreviation": "PUBPERSENCE",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf, stem",
+   "entityPUI": null,
+   "attribute": "Pubescence presence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000232",
+   "methodName": "Pubescence presence method",
+   "methodClass": "Estimation",
+   "description": "Observation of presence or absence of trichome on the plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000233",
+   "scaleName": "1 or 2 presence scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=glabrous",
+     "2=normal"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000331",
+  "observationVariableName": "PodPerPlnt_Count_pod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "NCRI",
+  "language": "EN",
+  "scientist": "Ishaq Mohammed",
+  "status": null,
+  "synonyms": [],
+  "date": "7-June-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000236",
+   "traitName": "Pod number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of pods per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PODNUMBER",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod number",
+   "attributePUI": null,
+   "status": "Standard NCRI",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000240",
+   "methodName": "Pod number count",
+   "methodClass": "Measurement",
+   "description": "Count number of Pods on a plant",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000244",
+   "scaleName": "pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000332",
+  "observationVariableName": "SdPerPod_Count_sd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "NCRI",
+  "language": "EN",
+  "scientist": "Ishaq Mohammed",
+  "status": null,
+  "synonyms": [],
+  "date": "7-June-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000237",
+   "traitName": "Number of seeds",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of seed per pod sampled",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDNUMBER",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Seed number",
+   "attributePUI": null,
+   "status": "Standard NCRI",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000241",
+   "methodName": "Seed number count",
+   "methodClass": "Measurement",
+   "description": "Count the number of seeds on a pod",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000245",
+   "scaleName": "seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000333",
+  "observationVariableName": "SdWt_Meas_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "NCRI",
+  "language": "EN",
+  "scientist": "Ishaq Mohammed",
+  "status": null,
+  "synonyms": [],
+  "date": "7-June-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000238",
+   "traitName": "Seed weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Weight of the seed",
+   "synonyms": [],
+   "mainAbbreviation": "SEEDWEIGHT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000242",
+   "methodName": "100 weight",
+   "methodClass": "Measurement",
+   "description": "Weigh 100 seeds",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000246",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000334",
+  "observationVariableName": "CercoLfS_Est_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "V1-R8",
+  "institution": "NCRI",
+  "language": "EN",
+  "scientist": "Ishaq Mohammed",
+  "status": null,
+  "synonyms": [],
+  "date": "7-June-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000239",
+   "traitName": "Cercospora Leaf spot",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Reaction of the plant or plant part to infection by Cercopsora species.",
+   "synonyms": [],
+   "mainAbbreviation": "CERCOSLEAFSPOT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reaction to Cercospora Leaf spot",
+   "attributePUI": null,
+   "status": "Standard NCRI",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000243",
+   "methodName": "Leaf disease",
+   "methodClass": "Estimation",
+   "description": "Number and density of spot on leaves",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000247",
+   "scaleName": "1-5 infection score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=0% lesions on plants",
+     "2=1-10% lesions on plants",
+     "3= 10-25% lesions on the plants",
+     "4=25-50% lesions on the plants",
+     "5=>50% plants with lesions"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000337",
+  "observationVariableName": "SdYld_CalcPerArea_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Always"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "23-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000036",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Yield of a soybean field in terms of seed weight per unit area at a specified moisture content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000335",
+   "methodName": "Grain yield calculation",
+   "methodClass": "Computation",
+   "description": "Weigh the amount of harvested grains (excluding the borders) adjusted to 13% moisture, and then divided by the area of the plot",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000336",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000340",
+  "observationVariableName": "FodYld_CalcPerArea_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R8",
+  "institution": "IITA",
+  "language": "EN",
+  "scientist": "Hesham Agrama",
+  "status": null,
+  "synonyms": [],
+  "date": "24-Feb-2014",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000039",
+   "traitName": "Fodder Yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Weight of harvested fodder i.e., haulm, stover per unit of area",
+   "synonyms": [],
+   "mainAbbreviation": "FODDERWT",
+   "alternativeAbbreviations": [],
+   "entity": "Fodder",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000338",
+   "methodName": "Caclulation of fodder yield",
+   "methodClass": "Computation",
+   "description": "Measure the dry weight of stover, haulm harvested after threshing plants harvested from the plot excluing the borders. Then divide the measured harvested weight by the effectively harvested area of the plot",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000339",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000343",
+  "observationVariableName": "RtNod_NodEst_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Sometimes"
+  ],
+  "defaultValue": null,
+  "growthStage": "R4-R6",
+  "institution": "USDA",
+  "language": "EN",
+  "scientist": "Randall Nelson",
+  "status": null,
+  "synonyms": [],
+  "date": "08-Aug-2015",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000015",
+   "traitName": "Nodulation",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Root nodule formation due to interaction with microorganisms.",
+   "synonyms": [],
+   "mainAbbreviation": "NODULE",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodulation",
+   "attributePUI": null,
+   "status": "Standard USDA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000341",
+   "methodName": "Nodulation observation",
+   "methodClass": "Estimation",
+   "description": "Visual assessment of the presence of nodulation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000342",
+   "scaleName": "0 or 1 nodulation scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0 = No nodulation",
+     "1 = Nodulation"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000345",
+  "observationVariableName": "LfletShp_Comp_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Often"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "USDA",
+  "language": "EN",
+  "scientist": "Randall Nelson",
+  "status": null,
+  "synonyms": [],
+  "date": "08-Aug-2015",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000219",
+   "traitName": "Leaflet shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of the leaflet. Remark: This trait has been incorrectly called Leaf shape.",
+   "synonyms": [],
+   "mainAbbreviation": "LEAFSHAPE",
+   "alternativeAbbreviations": [],
+   "entity": "Leaflet",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Standard IITA",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000220",
+   "methodName": "Leaf shape method",
+   "methodClass": "Computation",
+   "description": "Elliptic Fourier descriptor measures 5 components, including aspect ratio of leaflet shape, location of centroid of leaflets along midrib, straightness or distortion of leaflet shape, and roundness of leaflet shape. Measured on central leaflets of fully expanded leaflets. Can also be measured as the ratio of leaflet width to leaflet length from upper third of plant.",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000344",
+   "scaleName": "1 or 2 shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=broad",
+     "2=narrow"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_336:0000349",
+  "observationVariableName": "PubescFormLf_Est_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_336",
+   "ontologyName": "Soybean"
+  },
+  "contextOfUse": [
+   "Rarely"
+  ],
+  "defaultValue": null,
+  "growthStage": "R1-R8",
+  "institution": "USDA",
+  "language": "EN",
+  "scientist": "Randall Nelson",
+  "status": null,
+  "synonyms": [],
+  "date": "08-Aug-2015",
+  "crop": "Soybean",
+  "trait": {
+   "traitDbId": "CO_336:0000346",
+   "traitName": "Pubescence form on leaflet",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Orientation of pubescence on the surface of the leaflet",
+   "synonyms": [],
+   "mainAbbreviation": "PUBFORM",
+   "alternativeAbbreviations": [],
+   "entity": "Leaflet",
+   "entityPUI": null,
+   "attribute": "Pubescence form",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_336:0000347",
+   "methodName": "Pubescence form observation",
+   "methodClass": "Estimation",
+   "description": "Observation of the type of pubescence",
+   "formula": null,
+   "reference": "Soybean USDA description database, Soybase database, OboEdit",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_336:0000348",
+   "scaleName": "1 to 3 shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=Erect",
+     "2=semi-appressed",
+     "3=appressed"
+    ]
+   },
+   "units": null
+  }
+ }
+]

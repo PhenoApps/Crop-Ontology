@@ -1,0 +1,2759 @@
+[
+ {
+  "observationVariableDbId": "CO_367:0000001",
+  "observationVariableName": "PlotCov_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PlotCov"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000002",
+   "traitName": "Plot coverage",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Percentage of the plot covered, 1 = poor to 7 = good establishment",
+   "synonyms": [],
+   "mainAbbreviation": "PlotCov",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Coverage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000003",
+   "methodName": "Plot coverage estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000004",
+   "scaleName": "Plot coverage\t1-3-5-7-9",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: up to 20%",
+     "3: ~30% (20%–40%)",
+     "5: ~50% (40%–60%)",
+     "7: ~70% (60%–80%)",
+     "9: over 80%"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000005",
+  "observationVariableName": "PlotHomo_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PlotHomo"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000006",
+   "traitName": "Plot population homogeneity",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Judgment of homogeneity of the accession, 1 = homogeneous to 7 = mixed",
+   "synonyms": [],
+   "mainAbbreviation": "PlotHomo",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Population homogeneity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000007",
+   "methodName": "Plot population homogeneity estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000008",
+   "scaleName": "Plot population homogeneity\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Most plants are the same (up to 10% different)",
+     "3: Over half of plants are the same (10%–30% different)",
+     "5: Less than half of plants are the same (30%–50% different)",
+     "7: Over 50% of the plants are different, completely mixed plot; will need to be excluded from analysis "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000009",
+  "observationVariableName": "Brnch_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "Brnch"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000010",
+   "traitName": "Plant branchiness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Score for the overall amount of side branches of representative plants in a plot, ignoring very small and spindly branches, ranging from 1 = no branches to 7 = bushy plant with many major lateral branches",
+   "synonyms": [],
+   "mainAbbreviation": "Brnch",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Branchiness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000011",
+   "methodName": "Plant branchiness estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000012",
+   "scaleName": "Plant branchiness\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Low number or no secondary branches",
+     "3: Some branches (30 – 50% of the primary branch length has secondary branching)",
+     "5: Branched (50 – 70% of the primary branch length has secondary branching)",
+     "7: Highly branched (above 70% of the primary branch length has secondary branching)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000013",
+  "observationVariableName": "GH_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "GH"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000014",
+   "traitName": "Plant growth habit",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Four categories of growth habit described in images on the scoring card. Here the focus lies on whether branching is present from the base of the plant and if a main inflorescence can be identified",
+   "synonyms": [],
+   "mainAbbreviation": "GH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth habit",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000015",
+   "methodName": "Plant growth habit estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000016",
+   "scaleName": "Plant growth habit\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Not branched at base, usually with a clearly defined terminal panicle",
+     "3: Some branching from the base; no significant panicles on branches in the basal area (thus, this is not worth harvesting)",
+     "5: Branching from the base with more significant panicles",
+     "7: Main panicle is difficult to identify"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000017",
+  "observationVariableName": "StmBrk_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmBrk"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000018",
+   "traitName": "Stem breakage incidence",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Stems are broken or detached, assessing the percentage of the plot affected",
+   "synonyms": [],
+   "mainAbbreviation": "StmBrk",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Breakage incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000019",
+   "methodName": "Stem breakage incidence estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000020",
+   "scaleName": "Stem breakage incidence\t1-3-5-7-9",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: up to 20%",
+     "3: ~30% (20%–40%)",
+     "5: ~50% (40%–60%)",
+     "7: ~70% (60%–80%)",
+     "9: over 80%"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000021",
+  "observationVariableName": "StmLy_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmLy"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000022",
+   "traitName": "Stem lying incidence",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Stem of the plant is not emerging straight up from the soil but has a kink at the base, growing along the ground before rising; assessing the percentage of the plot affected",
+   "synonyms": [],
+   "mainAbbreviation": "StmLy",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Lying incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000023",
+   "methodName": "Stem lying incidence estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000024",
+   "scaleName": "Stem lying incidence\t1-3-5-7-9",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: up to 20%",
+     "3: ~30% (20%–40%)",
+     "5: ~50% (40%–60%)",
+     "7: ~70% (60%–80%)",
+     "9: over 80%"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000025",
+  "observationVariableName": "StmLodg_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmLodg"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000026",
+   "traitName": "Stem lodging incidence",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Plants are prostrate, on or near the ground, with intact stems; assessing the percentage of the plot affected",
+   "synonyms": [],
+   "mainAbbreviation": "StmLodg",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Lodging incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000027",
+   "methodName": "Stem lodging incidence estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000028",
+   "scaleName": "Stem lodging incidence\t1-3-5-7-9",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: up to 20%",
+     "3: ~30% (20%–40%)",
+     "5: ~50% (40%–60%)",
+     "7: ~70% (60%–80%)",
+     "9: over 80%"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000029",
+  "observationVariableName": "StmAng_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmAng"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000030",
+   "traitName": "Stem angle",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "The angle at which the majority of plants are leaning, measured between the vertical axis and the horizontal axis",
+   "synonyms": [],
+   "mainAbbreviation": "StmAng",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Angle",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000031",
+   "methodName": "Stem angle estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000032",
+   "scaleName": "Stem angle\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 < 22.5° inclination or deviation of the stem from the vertical (i.e. most plants are upright)",
+     "3< 45° ",
+     "5< 67.5°",
+     "7< 90° (i.e. most plants are on or very close to the ground)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000033",
+  "observationVariableName": "PcleAng_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleAng"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000034",
+   "traitName": "Panicle axis angle",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The angle at which the majority of panicle axes are leaning, measured between an upright panicle on the verticle and a panicle pointing towards the ground",
+   "synonyms": [],
+   "mainAbbreviation": "PcleAng",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Axis angle",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000035",
+   "methodName": "Panicle axis angle estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000036",
+   "scaleName": "Panicle axis angle\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1< 45° inclination or deviation of the panicle from the vertical (i.e. most panicles are upright)",
+     "3< 90° ",
+     "5< 135°",
+     "7< 180° (i.e. most panicles are pointing towards the ground) "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000037",
+  "observationVariableName": "PtHt_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PtHt"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000038",
+   "traitName": "Plant height",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Height of the most representative plants of the plot, usually from the middle of the plot, measured with a long measuring stick from soil to the tip of the panicle. If more than one distinct phenotype is present, more than one plant may be recorded in a new row of the spreadsheet, with all phenotypes that are differing recorded separately",
+   "synonyms": [],
+   "mainAbbreviation": "PtHt",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000039",
+   "methodName": "Plant height measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000040",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000041",
+  "observationVariableName": "PcleLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleLng"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000042",
+   "traitName": "Panicle length",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Length of the primary panicle measured with the same stick. Measured from the base of the panicle to the tip ",
+   "synonyms": [],
+   "mainAbbreviation": "PcleLng",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000043",
+   "methodName": "Panicle length measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000040",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000044",
+  "observationVariableName": "StmDiaBse_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmDiaBse"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000045",
+   "traitName": "Stem diameter near plant base",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Thickness of the stem measured with calipers at the middle of the bottom third of the plant stem",
+   "synonyms": [],
+   "mainAbbreviation": "StmDiaBse",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter at the plant base",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000046",
+   "methodName": "Stem diameter near plant base measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000047",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000048",
+  "observationVariableName": "StmDiaPcle_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmDiaPcle"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000049",
+   "traitName": "Stem diameter under the panicle",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Thickness of the stem measured just underneath the main panicle",
+   "synonyms": [],
+   "mainAbbreviation": "StmDiaPcle",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter under the panicle",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000050",
+   "methodName": "Stem diameter under the panicle measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000047",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000051",
+  "observationVariableName": "SigPcle_Ct_panicle",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SigPcle"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000052",
+   "traitName": "Number of significant panicles",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Count of the number of significant panicles, i.e., larger panicles, near the top of the plant, harvestable, that provide a major contribution to the seed harvested from the plant",
+   "synonyms": [],
+   "mainAbbreviation": "SigPcle",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Number of significant",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000053",
+   "methodName": "Number of significant panicles counting",
+   "methodClass": "Counting",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000054",
+   "scaleName": "panicle",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000055",
+  "observationVariableName": "SdSht_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdSht"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000056",
+   "traitName": "Seed shattering",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Grain persistence in the plant at physiological maturity. Assessing how easy seeds fall off the panicle upon light touch: 1 = No seeds falling to 7 = a lot of seeds falling",
+   "synonyms": [],
+   "mainAbbreviation": "SdSht",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000057",
+   "methodName": "Seed shattering estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000058",
+   "scaleName": "Seed shattering\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: No seeds falling",
+     "3: Some seeds falling ",
+     "5: Many seeds falling",
+     "7: Majority of seeds is falling, “raining” seeds, and a large number of seeds present on the ground at measurement "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000059",
+  "observationVariableName": "PcleShp_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleShp"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000060",
+   "traitName": "Panicle shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Classified into one of the three categories: glomerulate, intermediate, or amarantiform",
+   "synonyms": [],
+   "mainAbbreviation": "PcleShp",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000061",
+   "methodName": "Panicle shape estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000062",
+   "scaleName": "Panicle shape\t1-3-5",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Glomerulate – glomerules with globose shape, resembling “bulbous clusters”",
+     "3: Intermediate – panicles have both amarantiform and glomerulate traits, resembling fingers with glomerules",
+     "5: Amarantiform – glomerules with elongated shape, resembling “fingers” "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000063",
+  "observationVariableName": "PcleDen_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleDen"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000064",
+   "traitName": "Panicle density",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Scored from 1 = lax (loose) with panicle axes easily visible to 7 = tight and compact panicles",
+   "synonyms": [],
+   "mainAbbreviation": "PcleDen",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Density",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000065",
+   "methodName": "Panicle density estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000066",
+   "scaleName": "Panicle density\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Lax (loose) – glomerules sparsely spaced, panicle axes easily visible",
+     "3: Intermediate – glomerules tighter but with panicle axes still visible",
+     "5: Primary axis rarely visible",
+     "7: Compact – glomerules tightly packed, no panicle axes visible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000067",
+  "observationVariableName": "PcleLfs_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleLfs"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000068",
+   "traitName": "Panicle leafiness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Scored from 1 = no leaves to 7 = many leaves",
+   "synonyms": [],
+   "mainAbbreviation": "PcleLfs",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Leafiness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000069",
+   "methodName": "Panicle leafiness estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000070",
+   "scaleName": "Panicle leafiness\t1-3-5-7",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: leaves are present in less than ⅓ of the panicles",
+     "3: leaves are present in more than ⅓ but less than ¾ of the primary, sporadic, and not dense panicles",
+     "5: leaves present in ¾ to of the entire primary axis, frequent but not dense leafiness",
+     "7: many leaves present throughout the primary axis"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000071",
+  "observationVariableName": "PcleCol_E_4to16",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PcleCol"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000072",
+   "traitName": "Panicle color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Categorized according to the color scoring card",
+   "synonyms": [],
+   "mainAbbreviation": "PcleCol",
+   "alternativeAbbreviations": [],
+   "entity": "Panicle",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000073",
+   "methodName": "Panicle color estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000074",
+   "scaleName": "Panicle color\t13-16-4-7-15",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "13: Green",
+     "16: Green with purple",
+     "4: Pink / Purple / Red ",
+     "5: Orange / Yellow ",
+     "7: Dark colored",
+     "15: Beige / White "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000075",
+  "observationVariableName": "StmCol_E_4to15",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmCol"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000076",
+   "traitName": "Stem color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Categorized into green (13), red (4), or no pigmentation (15)",
+   "synonyms": [],
+   "mainAbbreviation": "StmCol",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000077",
+   "methodName": "Stem color estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000078",
+   "scaleName": "Stem color\t13-4-15",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "13: Green",
+     "4: Red",
+     "15: no pigmentation (beige, white, yellow) "
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000079",
+  "observationVariableName": "StmStr_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering  (~ BBCH 69)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmStr"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000080",
+   "traitName": "Stem striae",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence (1) absence (0) scoring of stem streaks or stripes",
+   "synonyms": [],
+   "mainAbbreviation": "StmStr",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Striae",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000081",
+   "methodName": "Stem striae estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000082",
+   "scaleName": "Stem striae\t0-1",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0: Absence",
+     "1: Presence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000083",
+  "observationVariableName": "AxlPig_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering  (~ BBCH 69)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "AxlPig"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000084",
+   "traitName": "Axil pigmentation",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence (1) absence (0) scoring of pigmented axils",
+   "synonyms": [],
+   "mainAbbreviation": "AxlPig",
+   "alternativeAbbreviations": [],
+   "entity": "Axil",
+   "entityPUI": null,
+   "attribute": "Pigmentation",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000085",
+   "methodName": "Axil pigmentation estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000086",
+   "scaleName": "Axil pigmentation\t0-1",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0: Absence",
+     "1: Presence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000087",
+  "observationVariableName": "StmLfShp_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering  (~ BBCH 69)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "StmLfShp"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000088",
+   "traitName": "Stem leaf shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaves of the stem are categorized into two groups: rhomboidal (1) and triangular (2)",
+   "synonyms": [],
+   "mainAbbreviation": "StmLfShp",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Leaf shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000089",
+   "methodName": "Stem leaf shape estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000090",
+   "scaleName": "Stem leaf shape\t1-2",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Rhomboidal",
+     "2: Triangular"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000091",
+  "observationVariableName": "LfMgn_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering  (~ BBCH 69)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "LfMgn"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000092",
+   "traitName": "Leaf margin",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaf margins are classified into 3 groups",
+   "synonyms": [],
+   "mainAbbreviation": "LfMgn",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Margin",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000093",
+   "methodName": "Leaf margin estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000094",
+   "scaleName": "Leaf margin\t1-3-5",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1: Entire",
+     "3: Dentate",
+     "5: Serrate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000095",
+  "observationVariableName": "GrStg_E_BBCH",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "GrStg"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000096",
+   "traitName": "Growth stage",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Phenological growth stage; very important to record at mature phenotyping",
+   "synonyms": [],
+   "mainAbbreviation": "GrStg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth stage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000097",
+   "methodName": "Growth stage estimation",
+   "methodClass": "Estimation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000098",
+   "scaleName": "BBCH",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000099",
+  "observationVariableName": "PltNoHv_Ct_plant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PltNoHv"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000100",
+   "traitName": "Number of plants harvested per plot",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Total number of plants that were harvested of the plot. ",
+   "synonyms": [],
+   "mainAbbreviation": "PltNoHv",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Plants harvested",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000101",
+   "methodName": "Number of plants harvested per plot counting",
+   "methodClass": "Counting",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000102",
+   "scaleName": "plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000103",
+  "observationVariableName": "PltNoHvRp_Ct_plant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "PltNoHvRp"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000104",
+   "traitName": "Number of representative plants harvested",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Count the number of plants that were harvested seperately from the majority of the plot, as representative plants. ",
+   "synonyms": [],
+   "mainAbbreviation": "PltNoHvRp",
+   "alternativeAbbreviations": [],
+   "entity": "Plot",
+   "entityPUI": null,
+   "attribute": "Representative plants harvested",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000105",
+   "methodName": "Number of representative plants harvested counting",
+   "methodClass": "Counting",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000102",
+   "scaleName": "plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000106",
+  "observationVariableName": "AGDBM_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "AGDBM"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000107",
+   "traitName": "Plant above-ground dry biomass",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Cutting plants at the very base with secateurs and drying the entire above-ground section of the plant. Recording total dry weight and number of plants that make up total dry weight. Divide total weight with number of plants to give weight per plant",
+   "synonyms": [],
+   "mainAbbreviation": "AGDBM",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Above-ground dry biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000108",
+   "methodName": "Plant above-ground dry biomass measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000110",
+  "observationVariableName": "BGDBM_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 89)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "BGDBM"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000111",
+   "traitName": "Plant below-ground dry biomass",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "If possible, root biomass could also be measured (especially when plants are growing in sandy soil)",
+   "synonyms": [],
+   "mainAbbreviation": "BGDBM",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Below-ground dry biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000112",
+   "methodName": "Plant below-ground dry biomass measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000113",
+  "observationVariableName": "SdWpPlot_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdWpPlot"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000114",
+   "traitName": "Seed yield per plot",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Harvesting the panicles remaining per plot while excluding borders, and adding the weight to that from the four representative plants, seed dried in oven to constant weight",
+   "synonyms": [],
+   "mainAbbreviation": "SdWpPlot",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield total",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000115",
+   "methodName": "Seed yield per plot measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000116",
+  "observationVariableName": "SdWRepPt_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdWRepPt"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000117",
+   "traitName": "Seed yield for representative plants",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Seed mass of approximately four representative plants that were harvested from the center of the plot (seed should be dried to constant weight)",
+   "synonyms": [],
+   "mainAbbreviation": "SdWRepPt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield of representative plants",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000118",
+   "methodName": "Seed yield for representative plants measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": "Yield / number of plants",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000119",
+  "observationVariableName": "SdWpPt_C_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdWpPt"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000120",
+   "traitName": "Seed yield per plant",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Total harvested seed mass per plant may be calculated from number of plants harvested and the seed mass of all plants in the plot (SdWtpPlot/PltNoHv)",
+   "synonyms": [],
+   "mainAbbreviation": "SdWpPt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield per plant",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000121",
+   "methodName": "Seed yield per plant computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": "Yield / number of plants",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000122",
+  "observationVariableName": "TGW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "TGW"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000123",
+   "traitName": "Thousand Grain Weight",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Thousand Grain Weight (TGW), the weight of 1000 seeds",
+   "synonyms": [],
+   "mainAbbreviation": "TGW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Thousand grain weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000124",
+   "methodName": "Thousand Grain Weight measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000125",
+  "observationVariableName": "HI_C_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "HI"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000126",
+   "traitName": "Harvest index",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Yield/ above-ground biomass",
+   "synonyms": [],
+   "mainAbbreviation": "HI",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Havest index",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000127",
+   "methodName": "Harvest index computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": "Yield/ above-ground biomass",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000128",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000129",
+  "observationVariableName": "SdHlW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdHlW"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000130",
+   "traitName": "Seed hectoliter weight",
+   "traitClass": "Agronomical",
+   "traitPUI": null,
+   "description": "Hectoliter weight, or specific weight of seeds: Estimation of density, determined by weighing all seeds fitting into a 100 ml volume",
+   "synonyms": [],
+   "mainAbbreviation": "SdHlW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Hectoliter weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000131",
+   "methodName": "Seed hectoliter weight measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000109",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000132",
+  "observationVariableName": "SdA_Comp_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdA"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000133",
+   "traitName": "Seed average area",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Average area of the seeds from image analysis",
+   "synonyms": [],
+   "mainAbbreviation": "SdA",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "average area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000134",
+   "methodName": "Seed average area computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000047",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000135",
+  "observationVariableName": "SdPrm_Comp_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdPrm"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000136",
+   "traitName": "Seed average perimeter",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Average perimeter of the seeds from image analysis",
+   "synonyms": [],
+   "mainAbbreviation": "SdPrm",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "average perimeter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000137",
+   "methodName": "Seed average perimeter computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000047",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000138",
+  "observationVariableName": "SdAvgRed_Comp_rgb",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdAvgRed"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000139",
+   "traitName": "Seed average red color",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Numerical seed color red value, RGB R Component from image analysis",
+   "synonyms": [],
+   "mainAbbreviation": "SdAvgRed",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "average red color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000140",
+   "methodName": "Seed average red color computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000141",
+   "scaleName": "rgb",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000142",
+  "observationVariableName": "SdAvgGreen_Comp_rgb",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdAvgGreen"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000143",
+   "traitName": "Seed average green color",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Numerical seed color green value, RGB G Component from image analysis",
+   "synonyms": [],
+   "mainAbbreviation": "SdAvgGreen",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "average green color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000144",
+   "methodName": "Seed average green color computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000141",
+   "scaleName": "rgb",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000145",
+  "observationVariableName": "SdAvgBlue_Comp_rgb",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity (~ BBCH 99)",
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdAvgBlue"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000146",
+   "traitName": "Seed average blue color",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Numerical seed color blue component, RGB B Component from image analysis",
+   "synonyms": [],
+   "mainAbbreviation": "SdAvgBlue",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "average blue color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000147",
+   "methodName": "Seed average blue color computation",
+   "methodClass": "Computation",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000141",
+   "scaleName": "rgb",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_367:0000148",
+  "observationVariableName": "SdGerm_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_367",
+   "ontologyName": "Quinoa"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "KAUST",
+  "language": "EN",
+  "scientist": "Clara Stanschewski",
+  "status": null,
+  "synonyms": [
+   "SdGerm"
+  ],
+  "date": null,
+  "crop": "Quinoa",
+  "trait": {
+   "traitDbId": "CO_367:0000149",
+   "traitName": "Seed germination rate",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Tested in petri dishes (%)",
+   "synonyms": [],
+   "mainAbbreviation": "SdGerm",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Germination rate",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_367:0000150",
+   "methodName": "Seed germination rate measurement",
+   "methodClass": "Measurement",
+   "description": null,
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_367:0000128",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

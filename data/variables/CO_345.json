@@ -1,0 +1,5343 @@
+[
+ {
+  "observationVariableDbId": "CO_345:0000148",
+  "observationVariableName": "FillSdP_C_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000018",
+   "traitName": "Filled seed proportion",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of filled seed over total seed.",
+   "synonyms": [],
+   "mainAbbreviation": "FillSdP",
+   "alternativeAbbreviations": [],
+   "entity": "Filled seed",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000074",
+   "methodName": "Filled seed proportion - Computing",
+   "methodClass": "Computation",
+   "description": "Use formula to calculate proportion of filled seed over total seed weight.",
+   "formula": "((SdNY_M_gplant)/(SdGY_M_gplant))*100",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000149",
+  "observationVariableName": "PLP_C_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000038",
+   "traitName": "Plant leafiness",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Relative leafiness of a plant defined as how leafy a plant is.",
+   "synonyms": [],
+   "mainAbbreviation": "PLP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Leafiness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000096",
+   "methodName": "Plant leafiness - Computing",
+   "methodClass": "Computation",
+   "description": "Use formula to calculate leaf weight to plant weight ratio.",
+   "formula": "((LBm_DW_gPlnt)/(LBm_DW_gPlnt + StmBm_M_gPlnt)) *100",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000150",
+  "observationVariableName": "POTP_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Progeny test"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000041",
+   "traitName": "Proportion of off-type",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion of off-types plants in a population.",
+   "synonyms": [],
+   "mainAbbreviation": "POTP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Proportion of off-types",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000098",
+   "methodName": "Plant proportion off types - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of off-types plants in a population.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000151",
+  "observationVariableName": "AreduAnti_E_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000004",
+   "traitName": "Aeneolamia reducta antibiosis",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plants antibiosis tolerance to Aeneolamia reducta.",
+   "synonyms": [],
+   "mainAbbreviation": "AreduAnti",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia reducta antibiosis",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000114",
+   "methodName": "Spittlebug antibiosis - Computing",
+   "methodClass": "Computation",
+   "description": "Calculate antibiosis tolerance to Spittlebug as survival rate of nymphs or eggs that mature to final instar or adult stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000152",
+  "observationVariableName": "AvariAnti_E_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000009",
+   "traitName": "Aeneolamia varia antibiosis",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plants antibiosis tolerance to Aeneolamia varia.",
+   "synonyms": [],
+   "mainAbbreviation": "AvariAnti",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia varia antibiosis",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000114",
+   "methodName": "Spittlebug antibiosis - Computing",
+   "methodClass": "Computation",
+   "description": "Calculate antibiosis tolerance to Spittlebug as survival rate of nymphs or eggs that mature to final instar or adult stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000153",
+  "observationVariableName": "PsimuAnti_E_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000044",
+   "traitName": "Prosapia simulans antibiosis",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plants antibiosis tolerance to Prosapia simulans.",
+   "synonyms": [],
+   "mainAbbreviation": "PsimuAnti",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Prosapia simulans antibiosis",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000114",
+   "methodName": "Spittlebug antibiosis - Computing",
+   "methodClass": "Computation",
+   "description": "Calculate antibiosis tolerance to Spittlebug as survival rate of nymphs or eggs that mature to final instar or adult stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000154",
+  "observationVariableName": "ZcarbAnti_E_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000064",
+   "traitName": "Zulia carbonaria antibiosis",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Antibiosis tolerance on a plants to Zulia carbonaria.",
+   "synonyms": [],
+   "mainAbbreviation": "ZcarbAnti",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Zulia carbonaria antibiosis",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000114",
+   "methodName": "Spittlebug antibiosis - Computing",
+   "methodClass": "Computation",
+   "description": "Calculate antibiosis tolerance to Spittlebug as survival rate of nymphs or eggs that mature to final instar or adult stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000155",
+  "observationVariableName": "LWidLngR_C_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000028",
+   "traitName": "Leaf width to length ratio",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Ratio of leaf width to length.",
+   "synonyms": [],
+   "mainAbbreviation": "LWidLngR",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Width to length ratio",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000084",
+   "methodName": "Leaf width to length ratio - Computing",
+   "methodClass": "Computation",
+   "description": "Compute leaf width to length ratio.",
+   "formula": "(LWid_M_cm/LLng_M_cm)",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000156",
+  "observationVariableName": "BmADF_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000001",
+   "traitName": "Acid detergent fiber content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Acid detergent fiber content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmADF",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Acid Detergent Fiber content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000071",
+   "methodName": "Chemical Analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard chemical analysis for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000157",
+  "observationVariableName": "BmADF_NIR_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000001",
+   "traitName": "Acid detergent fiber content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Acid detergent fiber content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmADF",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Acid Detergent Fiber content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000085",
+   "methodName": "NIR spectroscopy - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard near-infrared spectroscopy (NIRS) method for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000158",
+  "observationVariableName": "BmCP_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000016",
+   "traitName": "Crude protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Crude protein content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmCP",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Crude Protein content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000071",
+   "methodName": "Chemical Analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard chemical analysis for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000159",
+  "observationVariableName": "BmCP_NIR_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000016",
+   "traitName": "Crude protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Crude protein content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmCP",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Crude Protein content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000085",
+   "methodName": "NIR spectroscopy - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard near-infrared spectroscopy (NIRS) method for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000160",
+  "observationVariableName": "BmIVDMD_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000023",
+   "traitName": "In vitro dry matter digestibility",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "In vitro dry matter digestibility of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmIVDMD",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "In vitro dry matter digestibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000071",
+   "methodName": "Chemical Analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard chemical analysis for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000161",
+  "observationVariableName": "BmIVDMD_NIR_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000023",
+   "traitName": "In vitro dry matter digestibility",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "In vitro dry matter digestibility of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmIVDMD",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "In vitro dry matter digestibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000085",
+   "methodName": "NIR spectroscopy - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard near-infrared spectroscopy (NIRS) method for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000162",
+  "observationVariableName": "IVDMDNDF_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000024",
+   "traitName": "In vitro dry matter digestibility of neutral detergent fiber fraction",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "In vitro dry matter digestibility of aboveground biomass neutral detergent fiber fraction.",
+   "synonyms": [],
+   "mainAbbreviation": "IVDMDNDF",
+   "alternativeAbbreviations": [],
+   "entity": "Neutral detergent fiber content",
+   "entityPUI": null,
+   "attribute": "In vitro dry matter digestibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000071",
+   "methodName": "Chemical Analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard chemical analysis for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000163",
+  "observationVariableName": "IVDMDNDF_NIR_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000024",
+   "traitName": "In vitro dry matter digestibility of neutral detergent fiber fraction",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "In vitro dry matter digestibility of aboveground biomass neutral detergent fiber fraction.",
+   "synonyms": [],
+   "mainAbbreviation": "IVDMDNDF",
+   "alternativeAbbreviations": [],
+   "entity": "Neutral detergent fiber content",
+   "entityPUI": null,
+   "attribute": "In vitro dry matter digestibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000085",
+   "methodName": "NIR spectroscopy - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard near-infrared spectroscopy (NIRS) method for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000164",
+  "observationVariableName": "BmNDF_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000029",
+   "traitName": "Neutral detergent fiber content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Neutral detergent fiber content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmNDF",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Neutral Detergent Fiber",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000071",
+   "methodName": "Chemical Analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard chemical analysis for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000165",
+  "observationVariableName": "BmNDF_NIR_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000029",
+   "traitName": "Neutral detergent fiber content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Neutral detergent fiber content of aboveground biomass.",
+   "synonyms": [],
+   "mainAbbreviation": "BmNDF",
+   "alternativeAbbreviations": [],
+   "entity": "Aboveground biomass",
+   "entityPUI": null,
+   "attribute": "Neutral Detergent Fiber",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000085",
+   "methodName": "NIR spectroscopy - Measurement",
+   "methodClass": "Measurement",
+   "description": "Follow standard near-infrared spectroscopy (NIRS) method for quality determination on different fraction of the biomass.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000166",
+  "observationVariableName": "PChlorosis_E_0to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000033",
+   "traitName": "Plant chlorosis",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "An assessment of chlorosis symptoms.",
+   "synonyms": [],
+   "mainAbbreviation": "PChlorosis",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chlorosis",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000092",
+   "methodName": "Plant chlorosis - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant chlorosis and rate it.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000120",
+   "scaleName": "0-2 Symptoms general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no symptoms observed",
+     "1= mild to moderate symptoms",
+     "2= severe symptoms"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000167",
+  "observationVariableName": "RhizocSev_E_0to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000047",
+   "traitName": "Rhizoctonia severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Disease severity on a plant caused by Rhizoctonia.",
+   "synonyms": [],
+   "mainAbbreviation": "RhizocSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Rhizoctonia severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000100",
+   "methodName": "Plant Rhizoctonia severity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe relative or absolute area of plant tissue affected by Rhizoctonia and record it. Often severity is represented as a proportion or percentage of plant surface affected.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000120",
+   "scaleName": "0-2 Symptoms general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no symptoms observed",
+     "1= mild to moderate symptoms",
+     "2= severe symptoms"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000168",
+  "observationVariableName": "AreduADmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000002",
+   "traitName": "Aeneolamia reducta adult damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by adults of Aeneolamia reducta (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "AreduADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia reducta adult damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000112",
+   "methodName": "Spittlebug adult damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug adults and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000169",
+  "observationVariableName": "AreduNDmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000006",
+   "traitName": "Aeneolamia reducta nymph damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by nymphs of Aeneolamia reducta (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "AreduADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia reducta adult damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000116",
+   "methodName": "Spittlebug nymph damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug nymphs and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000170",
+  "observationVariableName": "AvariADmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000007",
+   "traitName": "Aeneolamia varia adult damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by adults of Aeneolamia varia (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "AvariADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia varia adult damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000112",
+   "methodName": "Spittlebug adult damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug adults and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000171",
+  "observationVariableName": "AvariNDmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000011",
+   "traitName": "Aeneolamia varia nymph damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by nymphs of Aeneolamia varia (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "AvariADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia varia nymph damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000116",
+   "methodName": "Spittlebug nymph damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug nymphs and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000172",
+  "observationVariableName": "PsimuADmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000042",
+   "traitName": "Prosapia simulans adult damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by adults of Prosapia simulans (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "PsimuADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Prosapia simulans adult damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000112",
+   "methodName": "Spittlebug adult damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug adults and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000173",
+  "observationVariableName": "PsimuNDmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000046",
+   "traitName": "Prosapia simulans nymph damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by nymphs of Prosapia simulans (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "PsimuADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Prosapia simulans nymph damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000116",
+   "methodName": "Spittlebug nymph damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug nymphs and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000174",
+  "observationVariableName": "RhizocSev_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000047",
+   "traitName": "Rhizoctonia severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Disease severity on a plant caused by Rhizoctonia.",
+   "synonyms": [],
+   "mainAbbreviation": "RhizocSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Rhizoctonia severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000100",
+   "methodName": "Plant Rhizoctonia severity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe relative or absolute area of plant tissue affected by Rhizoctonia and record it. Often severity is represented as a proportion or percentage of plant surface affected.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000175",
+  "observationVariableName": "ZcarbADmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000062",
+   "traitName": "Zulia carbonaria adult damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by adults of Zulia carbonaria (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "ZcarbADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Zulia carbonaria adult damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000112",
+   "methodName": "Spittlebug adult damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug adults and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000176",
+  "observationVariableName": "ZcarbNDmg_E_0to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000066",
+   "traitName": "Zulia carbonaria nymph damage",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant damage caused by nymphs of Zulia carbonaria (Spittlebug).",
+   "synonyms": [],
+   "mainAbbreviation": "ZcarbADmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Zulia carbonaria nymph damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000116",
+   "methodName": "Spittlebug nymph damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant damage caused by Splittlebug nymphs and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000121",
+   "scaleName": "0-5 Visual damage/severity score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= no detectable damage",
+     "1= 1-20% damaged foliage",
+     "2= 21-40% damaged foliage",
+     "3= 41-60% damaged foliage",
+     "4= 61-80% damaged foliage",
+     "5= 81-100% damaged foliage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000177",
+  "observationVariableName": "PBm_E_1to10",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000032",
+   "traitName": "Plant biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Amount of aboveground plant biomass (leaves and stems).",
+   "synonyms": [],
+   "mainAbbreviation": "PBm",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000091",
+   "methodName": "Plant biomass - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of plant biomass.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000122",
+   "scaleName": "1-10 Biomass scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= no biomass",
+     "2= extremely low biomass",
+     "3= very low biomass",
+     "4= low biomass",
+     "5= moderately low biomass",
+     "6= average biomass",
+     "7= moderately high biomass",
+     "8= high biomass",
+     "9= very high biomass",
+     "10= extremely high biomass"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000178",
+  "observationVariableName": "RA_E_1to10",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000048",
+   "traitName": "Root aspect",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Aspect of root system.",
+   "synonyms": [],
+   "mainAbbreviation": "RA",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Aspect",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000101",
+   "methodName": "Root aspect - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the aspect of root aspect and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000123",
+   "scaleName": "1-10 General aspect score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very poor",
+     "2= poor",
+     "3= poor to fair",
+     "4= fair",
+     "5= fair to good",
+     "6= good",
+     "7= good to very good",
+     "8= very good",
+     "9= very good to excellent",
+     "10= excellent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000179",
+  "observationVariableName": "LWid_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000027",
+   "traitName": "Leaf width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Width of fully mature leaves at the widest part.",
+   "synonyms": [],
+   "mainAbbreviation": "LWid",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000082",
+   "methodName": "Leaf width - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe whether leaves are notably wide or narrow.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000124",
+   "scaleName": "1-3 Leaf width score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "N= narrow",
+     "M= medium",
+     "W= wide"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000180",
+  "observationVariableName": "ReprodM_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000040",
+   "traitName": "Plant reproductive mode",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Uniformity of progeny, indicating that reproduction is sexual, apomictic, or facultative apomictic.",
+   "synonyms": [],
+   "mainAbbreviation": "ReprodM",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Reproductive mode",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000099",
+   "methodName": "Plant reproductive mode - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant reproductive mode and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000125",
+   "scaleName": "1-3 Reproductive mode score",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "SX = sexual",
+     "FA = facultative apomictic",
+     "AP = apomictic"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000181",
+  "observationVariableName": "FN_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000020",
+   "traitName": "Flower number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of flowers.",
+   "synonyms": [],
+   "mainAbbreviation": "FN",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000076",
+   "methodName": "Flower number - Estimation",
+   "methodClass": "Estimation",
+   "description": "Visual estimation of number of flowers.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000126",
+   "scaleName": "1-5 Flower abundance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= no flowers",
+     "2= few flowers",
+     "3= moderate flowers",
+     "4 = many flowers",
+     "5= very many flowers"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000182",
+  "observationVariableName": "PA_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000031",
+   "traitName": "Plant aspect",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Plant aspect.",
+   "synonyms": [],
+   "mainAbbreviation": "PA",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aspect",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000090",
+   "methodName": "Plant aspect - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the aspect of plants per plot/entry and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000127",
+   "scaleName": "1-5 General evaluation scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very poor (VP)",
+     "2= poor (P)",
+     "3= fair (F)",
+     "4= good (G)",
+     "5= very good (VG)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000183",
+  "observationVariableName": "GH_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000036",
+   "traitName": "Plant growth habit",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Growth habit as grade to which a plant is erect or prostrate.",
+   "synonyms": [],
+   "mainAbbreviation": "GH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth habit",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000094",
+   "methodName": "Plant Growth habit - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant growth habit and rate it.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000128",
+   "scaleName": "1-5 Growth habit scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very prostrate",
+     "2= prostrate",
+     "3= medium growth habit",
+     "4 = erect",
+     "5= very erect"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000184",
+  "observationVariableName": "PPP_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000039",
+   "traitName": "Plant phenotypic performance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Overall performance of the plant that indicates whether the material is to be culled, kept, or selected as promising for further evaluation or not.",
+   "synonyms": [],
+   "mainAbbreviation": "PPP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Phenotypic performance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000089",
+   "methodName": "Phenotypic performance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant phenotypic performance and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000129",
+   "scaleName": "1-5 Phenotypic evaluation scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1 = dead",
+     "2= culled",
+     "3= kept for future evaluation",
+     "4= selected as promising",
+     "5= selected as very promising"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000185",
+  "observationVariableName": "PLP_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following grazing or cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000038",
+   "traitName": "Plant leafiness",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Relative leafiness of a plant defined as how leafy a plant is.",
+   "synonyms": [],
+   "mainAbbreviation": "PLP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Leafiness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000097",
+   "methodName": "Plant leafiness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plants leafiness and rate it.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000130",
+   "scaleName": "1-5 Plant leafiness scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very stemmy",
+     "2= stemmy",
+     "3= intermediate",
+     "4 = leafy",
+     "5= very leafy"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000186",
+  "observationVariableName": "DrghtTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000017",
+   "traitName": "Drought tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plant tolerance to drought stress.",
+   "synonyms": [],
+   "mainAbbreviation": "DrghtTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000073",
+   "methodName": "Drought tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant drought tolerance and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000131",
+   "scaleName": "1-5 Visual tolerance score",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= susceptible",
+     "3= intermediate",
+     "4= tolerant",
+     "5= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000187",
+  "observationVariableName": "AlTol_C_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000012",
+   "traitName": "Aluminium tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to Aluminium.",
+   "synonyms": [],
+   "mainAbbreviation": "AlTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aluminium tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000067",
+   "methodName": "Aluminium Tolerance Index - Computing",
+   "methodClass": "Computation",
+   "description": "Use formula to calculate Aluminium tolerance index. Entries with indices above 1 are more resistant than the average genotype in the experiment and entries with indices less than 1 have below average tolerance.",
+   "formula": "(xi*Al+ / xi*Al-) / (xÂµ*Al+ / xÂµ*Al-)",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000132",
+   "scaleName": "Aluminium tolerance Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000188",
+  "observationVariableName": "LChl_M_CCI",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000014",
+   "traitName": "Chlorophyll content",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Chlorophyll content in leaf green tissue. Includes both chlorophyll-a and chlorophyll-b.",
+   "synonyms": [],
+   "mainAbbreviation": "LChl",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000078",
+   "methodName": "Handheld Chlorophyll meter - Measurement",
+   "methodClass": "Measurement",
+   "description": "The chlorophyll content of leaves (and other green tissues) can be quickly, and non-destructively measured using a hand-held battery portable optical meter (e.g., Minolta SPAD-502 chlorophyll meter) which measures the chlorophyll content via light transmittance (absorbance of red light at 650 nm and infrared light at 940 nm) and compensates for differing leaf thicknesses. Readings from the instrument are not absolute chlorophyll values, instead each reading is a ?chlorophyll concentration index? (CCI, ranging from 0 to 99.9). Measurements are typically made on selected/marked leaf (once fully expanded), although measurements of lower leaves may be taken to assess canopy chlorophyll profiles.",
+   "formula": null,
+   "reference": "SPAD Chlorophyll meter reading",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000133",
+   "scaleName": "CCI",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000189",
+  "observationVariableName": "LLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000026",
+   "traitName": "Leaf length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of fully mature leaves from ligule to leaf tip (exclude flowering stems).",
+   "synonyms": [],
+   "mainAbbreviation": "LLng",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000081",
+   "methodName": "Leaf length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000134",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000190",
+  "observationVariableName": "LWid_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000027",
+   "traitName": "Leaf width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Width of fully mature leaves at the widest part.",
+   "synonyms": [],
+   "mainAbbreviation": "LWid",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000083",
+   "methodName": "Leaf width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf width and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000134",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000191",
+  "observationVariableName": "PDia_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000034",
+   "traitName": "Plant diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The plant diameter.",
+   "synonyms": [],
+   "mainAbbreviation": "PDia",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000093",
+   "methodName": "Plant Diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Plant diameter is measured at the widest and most narrow point of the plant crown, and the average is recorded.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000134",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000192",
+  "observationVariableName": "PH_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000037",
+   "traitName": "Plant height",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Height of the plant from the base to the top of the canopy (excluding inflorescences).",
+   "synonyms": [],
+   "mainAbbreviation": "PH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000095",
+   "methodName": "Plant Height - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure plant height and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000134",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000193",
+  "observationVariableName": "RLD_M_cmcm3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000051",
+   "traitName": "Root length density",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Root length density.",
+   "synonyms": [],
+   "mainAbbreviation": "RLD",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length density",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000104",
+   "methodName": "Root length density - Measurement",
+   "methodClass": "Measurement",
+   "description": "Root length density measured by root scanning and image analysis using WinRhizo Software.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000135",
+   "scaleName": "cm/cm3",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000194",
+  "observationVariableName": "RL_M_cmPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000050",
+   "traitName": "Root length",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Root length.",
+   "synonyms": [],
+   "mainAbbreviation": "RL",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000103",
+   "methodName": "Root length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Root length measured by root scanning and image analysis using WinRhizo Software.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000136",
+   "scaleName": "cm/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000195",
+  "observationVariableName": "GLA_M_cm2Plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000021",
+   "traitName": "Green leaf area",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Green leaf area.",
+   "synonyms": [],
+   "mainAbbreviation": "GLA",
+   "alternativeAbbreviations": [],
+   "entity": "Green leaf",
+   "entityPUI": null,
+   "attribute": "Area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000068",
+   "methodName": "Area Meter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Green leaf area is quantified using area meter (Licor-3100).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000137",
+   "scaleName": "cm2/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000196",
+  "observationVariableName": "PGC_Img_cmPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000035",
+   "traitName": "Plant groundcover",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Projected area of the plant on the ground.",
+   "synonyms": [],
+   "mainAbbreviation": "PGC",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Groundcover",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000088",
+   "methodName": "PGC Image analysis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Non destructive determination of plant ground cover by analysis of images captured with drone.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000137",
+   "scaleName": "cm2/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000197",
+  "observationVariableName": "BmHvst_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000013",
+   "traitName": "Biomass harvest time",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Biomass harvest time.",
+   "synonyms": [],
+   "mainAbbreviation": "BmHvst",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass harvest time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000070",
+   "methodName": "Biomass harvest date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of biomass harvest.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000138",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000198",
+  "observationVariableName": "SdHvst_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000054",
+   "traitName": "Seed harvest time",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed harvest time.",
+   "synonyms": [],
+   "mainAbbreviation": "SdHvst",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed harvest time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000108",
+   "methodName": "Seed harvest date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of seed harvest.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000138",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000199",
+  "observationVariableName": "FN_Ct_fm2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000019",
+   "traitName": "Flower number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of flowers.",
+   "synonyms": [],
+   "mainAbbreviation": "FN",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000075",
+   "methodName": "Flower number - Counting",
+   "methodClass": "Counting",
+   "description": "Count flowers in a sampling quadrat.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000139",
+   "scaleName": "flower/m2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000200",
+  "observationVariableName": "WaterExt_M_gCylWk",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000060",
+   "traitName": "Water extraction rate",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Amount of water extracted in a period of time.",
+   "synonyms": [],
+   "mainAbbreviation": "WaterExt",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Water extraction rate",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000106",
+   "methodName": "Root water extraction rate - Measurement",
+   "methodClass": "Measurement",
+   "description": "Calculate amount of water extracted during a period of time.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000140",
+   "scaleName": "g/cylinder/week",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000201",
+  "observationVariableName": "ChoroticLBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000015",
+   "traitName": "Chlorotic leaf biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of chlorotic (yellow) leaves per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "YLBm",
+   "alternativeAbbreviations": [],
+   "entity": "Chlorotic leaf",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000072",
+   "methodName": "Chlorotic leaf biomass DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Separate green leaves from stem and yellow leaves, use dryer at 60C for three days and weigh.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000202",
+  "observationVariableName": "GLBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000022",
+   "traitName": "Green leaf biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of green leaves per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "GLBm",
+   "alternativeAbbreviations": [],
+   "entity": "Green leaf",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000077",
+   "methodName": "Green leaf biomass DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Separate green leaves from stem and yellow leaves, use dryer at 60C for three days and weigh.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000203",
+  "observationVariableName": "LBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000025",
+   "traitName": "Leaf biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of leaves per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "LBm",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000080",
+   "methodName": "Leaf biomass DW - Computing",
+   "methodClass": "Computation",
+   "description": "Compute leaf biomass using the formula.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000204",
+  "observationVariableName": "PBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000032",
+   "traitName": "Plant biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Amount of aboveground plant biomass (leaves and stems).",
+   "synonyms": [],
+   "mainAbbreviation": "PBm",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000086",
+   "methodName": "PBm Dry weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Cut plants and weigh to register fresh weight.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000205",
+  "observationVariableName": "PBm_FW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [
+   "Preliminary Nurseries / spaced plants"
+  ],
+  "defaultValue": null,
+  "growthStage": "NA. Measured every 7-9 weeks following cutting",
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000032",
+   "traitName": "Plant biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Amount of aboveground plant biomass (leaves and stems).",
+   "synonyms": [],
+   "mainAbbreviation": "PBm",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000087",
+   "methodName": "PBm Fresh weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record dry weight after drying samples in a dryer at 60 C for 3-5 days.",
+   "formula": null,
+   "reference": "None (will publish BR15)",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000206",
+  "observationVariableName": "RBm_M_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000049",
+   "traitName": "Root biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of root per unit area, volume or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "RBm",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000102",
+   "methodName": "Root biomass DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record dry weight of roots.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000207",
+  "observationVariableName": "SdGY_M_gplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000053",
+   "traitName": "Seed gross yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of total seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SdGY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Gross yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000107",
+   "methodName": "Seed gross yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record the weight of harvested seed.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000208",
+  "observationVariableName": "SdNY_M_gplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000055",
+   "traitName": "Seed net yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of filled seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SdNY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Net yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000109",
+   "methodName": "Seed net yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Clean harvested seed by removing not filled seeds and record the weight.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000209",
+  "observationVariableName": "ShootBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000056",
+   "traitName": "Shoot biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of shoot per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "ShootBm",
+   "alternativeAbbreviations": [],
+   "entity": "Shoot",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000110",
+   "methodName": "Shoot biomass DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record dry weight of shoots.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000210",
+  "observationVariableName": "ShootBm_FW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000056",
+   "traitName": "Shoot biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of shoot per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "ShootBm",
+   "alternativeAbbreviations": [],
+   "entity": "Shoot",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000111",
+   "methodName": "Shoot biomass FW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record shoot weight in fresh weight basis.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000211",
+  "observationVariableName": "StmBm_DW_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000059",
+   "traitName": "Stem biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of stem per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "StmBm",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000117",
+   "methodName": "Stem biomass DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Separate stem from leaves, use dryer at 60C for three days and weigh.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000141",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000212",
+  "observationVariableName": "RMDia_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000052",
+   "traitName": "Root mean diameter",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Root mean diameter.",
+   "synonyms": [],
+   "mainAbbreviation": "RMDia",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Mean diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000105",
+   "methodName": "Root mean diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Root mean diameter measured by root scanning and image analysis using WinRhizo Software.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000142",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000213",
+  "observationVariableName": "PBm_Img_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000032",
+   "traitName": "Plant biomass",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Amount of aboveground plant biomass (leaves and stems).",
+   "synonyms": [],
+   "mainAbbreviation": "PBm",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000069",
+   "methodName": "Biomass drone method - Estimation",
+   "methodClass": "Estimation",
+   "description": "Non destructive determination of plant biomass by analysis of images captured with a drone.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000143",
+   "scaleName": "Plant biomass Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000214",
+  "observationVariableName": "PQY_M_num",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000030",
+   "traitName": "Photosynthetic efficiency",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Photosyntheticâ€ quantum yield.",
+   "synonyms": [],
+   "mainAbbreviation": "PQY",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Photosynthetic efficiency",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000079",
+   "methodName": "Handheld Fluorometer - Measurement",
+   "methodClass": "Measurement",
+   "description": "Standard method for chlorophyll fluorescent measurements using a handheld Fluorometer (Fluorpen).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000144",
+   "scaleName": "QY units",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000215",
+  "observationVariableName": "AreduAN_Ct_AdultPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000003",
+   "traitName": "Aeneolamia reducta adult number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Aeneolamia reducta adults.",
+   "synonyms": [],
+   "mainAbbreviation": "AreduAN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia reducta adult number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000113",
+   "methodName": "Spittlebug adult number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug adult per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000216",
+  "observationVariableName": "AreduEN_Ct_EggPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000005",
+   "traitName": "Aeneolamia reducta egg number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Aeneolamia reducta eggs.",
+   "synonyms": [],
+   "mainAbbreviation": "AreduEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia reducta egg number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000115",
+   "methodName": "Spittlebug egg number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug eggs per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000217",
+  "observationVariableName": "AvariAN_Ct_AdultPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000008",
+   "traitName": "Aeneolamia varia adult number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Aeneolamia varia adults.",
+   "synonyms": [],
+   "mainAbbreviation": "AvariAN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia varia adult number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000113",
+   "methodName": "Spittlebug adult number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug adult per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000218",
+  "observationVariableName": "PsimuAN_Ct_AdultPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000043",
+   "traitName": "Prosapia simulans adult number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Prosapia simulans adults.",
+   "synonyms": [],
+   "mainAbbreviation": "PsimuAN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Prosapia simulans adult number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000113",
+   "methodName": "Spittlebug adult number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug adult per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000219",
+  "observationVariableName": "SpittleAN_Ct_AdultPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000057",
+   "traitName": "Spittlebug adult number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Spittlebug adults.",
+   "synonyms": [],
+   "mainAbbreviation": "SpittleAN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Spittlebug adult number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000113",
+   "methodName": "Spittlebug adult number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug adult per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000220",
+  "observationVariableName": "ZcarbAN_Ct_AdultPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000063",
+   "traitName": "Zulia carbonaria adult number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Zulia carbonaria adults.",
+   "synonyms": [],
+   "mainAbbreviation": "ZcarbAN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Zulia carbonaria adult number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000113",
+   "methodName": "Spittlebug adult number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug adult per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000145",
+   "scaleName": "Spittlebug adult/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000221",
+  "observationVariableName": "AvariEN_Ct_EggPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000010",
+   "traitName": "Aeneolamia varia egg number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Aeneolamia varia eggs.",
+   "synonyms": [],
+   "mainAbbreviation": "AvariEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aeneolamia varia egg number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000115",
+   "methodName": "Spittlebug egg number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug eggs per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000146",
+   "scaleName": "Spittlebug egg/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000222",
+  "observationVariableName": "PsimuEN_Ct_EggPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000045",
+   "traitName": "Prosapia simulans egg number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Prosapia simulans eggs.",
+   "synonyms": [],
+   "mainAbbreviation": "PsimuEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Prosapia simulans egg number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000115",
+   "methodName": "Spittlebug egg number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug eggs per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000146",
+   "scaleName": "Spittlebug egg/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000223",
+  "observationVariableName": "SpittleEN_Ct_EggPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000058",
+   "traitName": "Spittlebug egg number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Spittlebug eggs.",
+   "synonyms": [],
+   "mainAbbreviation": "SpittleEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Spittlebug egg number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000115",
+   "methodName": "Spittlebug egg number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug eggs per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000146",
+   "scaleName": "Spittlebug egg/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000224",
+  "observationVariableName": "ZcarbEN_Ct_EggPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000065",
+   "traitName": "Zulia carbonaria egg number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Number of Zulia carbonaria eggs.",
+   "synonyms": [],
+   "mainAbbreviation": "ZcarbEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Zulia carbonaria egg number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000115",
+   "methodName": "Spittlebug egg number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Spittlebug eggs per plant.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000146",
+   "scaleName": "Spittlebug egg/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000225",
+  "observationVariableName": "WlgTol_C_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000061",
+   "traitName": "Waterlogging tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Plant tolerance to waterlogging.",
+   "synonyms": [],
+   "mainAbbreviation": "WlgTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Waterlogging tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000118",
+   "methodName": "Waterlogging tolerance - Computing",
+   "methodClass": "Computation",
+   "description": "Use formula to compute waterlogging tolerance index based on visual observation recorded before treatment and at harvest time.",
+   "formula": "(PA_E_1to5_aTreat/PA_E_1to5_bTreat)/0.676164",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000147",
+   "scaleName": "Waterlogging tolerance Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000235",
+  "observationVariableName": "RV_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000226",
+   "traitName": "Root Vigor",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Root vigor.",
+   "synonyms": [],
+   "mainAbbreviation": "RV",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Vigor",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000227",
+   "methodName": "Root Vigor -Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the root vigor and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000228",
+   "scaleName": "1-4 Root vigor scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "L= Low",
+     "M= Moderate",
+     "H= High",
+     "VH= Very high"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000236",
+  "observationVariableName": "AlTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000012",
+   "traitName": "Aluminium tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to Aluminium.",
+   "synonyms": [],
+   "mainAbbreviation": "AlTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aluminium tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000229",
+   "methodName": "Aluminium Tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the aluminium tolerance and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000230",
+   "scaleName": "1-5 Aluminium tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "VS= Very sensitive",
+     "S= Sensitive",
+     "R= Resistant",
+     "MR= Moderately resistant",
+     "HR= Highly Resistant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000237",
+  "observationVariableName": "WlgTol_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000061",
+   "traitName": "Waterlogging tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Plant tolerance to waterlogging.",
+   "synonyms": [],
+   "mainAbbreviation": "WlgTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Waterlogging tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000231",
+   "methodName": "Waterlogging tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe waterlogging tolerance and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000232",
+   "scaleName": "1-4 Waterlogging tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "S= Sensitive",
+     "M= Moderately resistant",
+     "T= Tolerant",
+     "VT= Very tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_345:0000238",
+  "observationVariableName": "GLBp_C_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_345",
+   "ontologyName": "Brachiaria"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "CIAT",
+  "language": "EN",
+  "scientist": "Margaret Worthington",
+  "status": null,
+  "synonyms": [],
+  "date": "2015-10-22 00:00:00",
+  "crop": "Brachiaria",
+  "trait": {
+   "traitDbId": "CO_345:0000233",
+   "traitName": "Green Leaf Biomass proportion",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Proportion green leaves per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "GLBp",
+   "alternativeAbbreviations": [],
+   "entity": "Green leaf",
+   "entityPUI": null,
+   "attribute": "Proportion",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_345:0000234",
+   "methodName": "Proportion Green Biomass - Computing",
+   "methodClass": "Computation",
+   "description": "Use formula to calculate proportion of green leaves",
+   "formula": "GLBm_DW_gPlnt/(ChoroticLBm_DW_gPlnt+GLBm_DW_gPlnt)",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_345:0000119",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

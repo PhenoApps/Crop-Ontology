@@ -1,0 +1,5006 @@
+[
+ {
+  "observationVariableDbId": "CO_347:0000021",
+  "observationVariableName": "AlTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000019",
+   "traitName": "Aluminium tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to Aluminium.",
+   "synonyms": [],
+   "mainAbbreviation": "AlTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aluminium tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000020",
+   "methodName": "Aluminium tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the growth of plants per plot/entry in a high Aluminium soil and rate the tolerance.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000006",
+   "scaleName": "Seed yield FW basis - Measurement",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= susceptible",
+     "3= intermediate",
+     "4= tolerant",
+     "5= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000024",
+  "observationVariableName": "DroTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000022",
+   "traitName": "Drought tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to drought stress.",
+   "synonyms": [],
+   "mainAbbreviation": "DroTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "drought tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000023",
+   "methodName": "Drought tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the growth of plants per plot/entry under droughted condition and rate the tolerance.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000006",
+   "scaleName": "Seed yield FW basis - Measurement",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= susceptible",
+     "3= intermediate",
+     "4= tolerant",
+     "5= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000027",
+  "observationVariableName": "FrostDmg_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000025",
+   "traitName": "Frost damage",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plant damage caused by a frost.",
+   "synonyms": [],
+   "mainAbbreviation": "FrostDmg",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "frost damage",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000026",
+   "methodName": "Frost damage - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the growth of plants per plot/entry after a frost event and rate the damage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000007",
+   "scaleName": "1-5 Damage/Incidence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= none",
+     "2= low",
+     "3= medium",
+     "4= high",
+     "5= severe"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000030",
+  "observationVariableName": "HTempTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000028",
+   "traitName": "High temperature tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to high temperature conditions.",
+   "synonyms": [],
+   "mainAbbreviation": "HTempTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "high temperature tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000029",
+   "methodName": "High temperature tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the growth of plants per plot/entry under heat condition and rate the tolerance.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000006",
+   "scaleName": "Seed yield FW basis - Measurement",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= susceptible",
+     "3= intermediate",
+     "4= tolerant",
+     "5= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000033",
+  "observationVariableName": "SaltTol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000031",
+   "traitName": "Salinity tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to soil salinity.",
+   "synonyms": [],
+   "mainAbbreviation": "SaltTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "salinity tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000032",
+   "methodName": "Salinity tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the growth of plants per plot/entry at the field presenting soil salinity and rate the tolerance.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000006",
+   "scaleName": "Seed yield FW basis - Measurement",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= susceptible",
+     "3= intermediate",
+     "4= tolerant",
+     "5= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000036",
+  "observationVariableName": "CShattInc_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000034",
+   "traitName": "Capsule shattering incidence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The capsule shattering incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "CShattInc",
+   "alternativeAbbreviations": [],
+   "entity": "Capsule",
+   "entityPUI": null,
+   "attribute": "shattering incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000035",
+   "methodName": "Capsule shattering incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the capsule shattering incidence and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000007",
+   "scaleName": "1-5 Damage/Incidence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= none",
+     "2= low",
+     "3= medium",
+     "4= high",
+     "5= severe"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000039",
+  "observationVariableName": "CY_M_gplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000037",
+   "traitName": "Capsule yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of capsules that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "CY",
+   "alternativeAbbreviations": [],
+   "entity": "Capsule",
+   "entityPUI": null,
+   "attribute": "yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000038",
+   "methodName": "Capsule yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record weight of harvested capsules per sampling unit (plot, plant, branch, raceme, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000008",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000043",
+  "observationVariableName": "PRCN_Ct_capsule",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000040",
+   "traitName": "Primary raceme capsule number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The capsule number on primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRCN",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "capsule number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000041",
+   "methodName": "Capsule number - Counting",
+   "methodClass": "Counting",
+   "description": "Count capsules in a sampling unit (plot, plant, branch, raceme, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000042",
+   "scaleName": "capsule",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000046",
+  "observationVariableName": "PRCDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000044",
+   "traitName": "Primary raceme capsule dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The capsules dry weight on primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRCDW",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "capsule dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000045",
+   "methodName": "Primary raceme capsule DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure capsules dry weight on primary raceme and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000049",
+  "observationVariableName": "PRH_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000047",
+   "traitName": "Primary raceme height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The height from soil up to primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRH",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000048",
+   "methodName": "Primary raceme height - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure the height from soil up to primary raceme and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000053",
+  "observationVariableName": "PRSdN_Ct_sdrac",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000050",
+   "traitName": "Primary raceme seed number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The seed number on primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRSdN",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "seed number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000051",
+   "methodName": "Seed number - Counting",
+   "methodClass": "Counting",
+   "description": "Count seeds in a sampling unit (plot, sample, plant, raceme, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000052",
+   "scaleName": "seed/raceme",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000056",
+  "observationVariableName": "PRSdDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000054",
+   "traitName": "Primary raceme seed dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The seeds dry weight on primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRSdDW",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "seed dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000055",
+   "methodName": "Primary raceme seed DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seeds dry weight on primary raceme and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000059",
+  "observationVariableName": "PRDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000057",
+   "traitName": "Primary raceme dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The primary raceme dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "PRDW",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000058",
+   "methodName": "Primary raceme DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure primary raceme dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000062",
+  "observationVariableName": "PRN_Ct_racplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000060",
+   "traitName": "Productive raceme number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of productive racemes.",
+   "synonyms": [],
+   "mainAbbreviation": "PRN",
+   "alternativeAbbreviations": [],
+   "entity": "Productive raceme",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000061",
+   "methodName": "Productive raceme number - Counting",
+   "methodClass": "Counting",
+   "description": "Count productive racemes in a sampling unit (plot, plant, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000011",
+   "scaleName": "racemes/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000066",
+  "observationVariableName": "RN_Ct_racplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000063",
+   "traitName": "Raceme number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of racemes.",
+   "synonyms": [],
+   "mainAbbreviation": "RN",
+   "alternativeAbbreviations": [],
+   "entity": "Raceme",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000064",
+   "methodName": "Raceme number - Counting",
+   "methodClass": "Counting",
+   "description": "Count racemes in a sampling unit (plot, plant, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000065",
+   "scaleName": "raceme/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000069",
+  "observationVariableName": "SRN_Ct_racplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000067",
+   "traitName": "Secondary raceme number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of secondary racemes.",
+   "synonyms": [],
+   "mainAbbreviation": "SRN",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary raceme",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000068",
+   "methodName": "Secondary raceme number - Counting",
+   "methodClass": "Counting",
+   "description": "Count secondary racemes in a sampling unit (plot, plant, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000011",
+   "scaleName": "racemes/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000072",
+  "observationVariableName": "SRDW_M_gplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000070",
+   "traitName": "Secondary raceme dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The secondary raceme dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "SRDW",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary raceme",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000071",
+   "methodName": "Secondary raceme DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure secondary raceme dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000008",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000074",
+  "observationVariableName": "TSdDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000073",
+   "traitName": "Thousand seed dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The dry weight of 1000 seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "TSdDW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000005",
+   "methodName": "Seed DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Count and weigh seed per sampling unit (single, 100, 200, 1000).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000076",
+  "observationVariableName": "HSdDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000075",
+   "traitName": "Hundred seed dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The dry weight of 100 seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "HSdDW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000005",
+   "methodName": "Seed DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Count and weigh seed per sampling unit (single, 100, 200, 1000).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000078",
+  "observationVariableName": "SdY_Cmp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000001",
+   "traitName": "Seed yield fresh weight basis",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount in fresh weight basis of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SdY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000077",
+   "methodName": "Seed yield FW basis - Computing",
+   "methodClass": "Computation",
+   "description": "Compute fresh weight (FW) of harvested seed per area.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000012",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000079",
+  "observationVariableName": "SdY_M_gplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000001",
+   "traitName": "Seed yield fresh weight basis",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount in fresh weight basis of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SdY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000006",
+   "methodName": "Seed yield FW basis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record fresh weight (FW) of harvested seed per sampling unit (plot, plant, branch, raceme, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000008",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000080",
+  "observationVariableName": "SdY_M_gplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000001",
+   "traitName": "Seed yield fresh weight basis",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount in fresh weight basis of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SdY",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000006",
+   "methodName": "Seed yield FW basis - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record fresh weight (FW) of harvested seed per sampling unit (plot, plant, branch, raceme, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000008",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000083",
+  "observationVariableName": "TRN_Ct_racplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000081",
+   "traitName": "Tertiary raceme number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of tertiary racemes.",
+   "synonyms": [],
+   "mainAbbreviation": "TRN",
+   "alternativeAbbreviations": [],
+   "entity": "Tertiary raceme",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000082",
+   "methodName": "Tertiary raceme number - Counting",
+   "methodClass": "Counting",
+   "description": "Count tertiary racemes in a sampling unit (plot, plant, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000011",
+   "scaleName": "racemes/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000086",
+  "observationVariableName": "TRDW_M_gplnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000084",
+   "traitName": "Tertiary raceme dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The tertiary raceme dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "TRDW",
+   "alternativeAbbreviations": [],
+   "entity": "Tertiary raceme",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000085",
+   "methodName": "Tertiary raceme DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure tertiary raceme dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000008",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000089",
+  "observationVariableName": "GrayMoldSev_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000087",
+   "traitName": "Gray mold resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to Gray mold caused by the agent Botrytis ricini.",
+   "synonyms": [],
+   "mainAbbreviation": "GrayMoldSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Gray mold resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000088",
+   "methodName": "Gray mold resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to Gray mold, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000013",
+   "scaleName": "1-5 Susceptible/Resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= susceptible (S)",
+     "2= moderate susceptible (MS)",
+     "3= moderately resistant (MR)",
+     "4= resistant (R)",
+     "5= highly resistant (HR)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000093",
+  "observationVariableName": "GrayMoldRes_E_0to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000090",
+   "traitName": "Gray mold severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Gray mold severity caused by the agent Botrytis ricini.",
+   "synonyms": [],
+   "mainAbbreviation": "GrayMoldRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Gray mold severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000091",
+   "methodName": "Gray mold severity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe relative or absolute area of plant tissue affected by Gray mold and record it. Often severity is represented as a proportion or percentage of plant surface affected.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000092",
+   "scaleName": "0-9 Coverage percentage scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= No visible affection",
+     "1= 10% coverage",
+     "2= 20% coverage",
+     "3= 30% coverage",
+     "4= 40% coverage",
+     "5= 50% coverage",
+     "6= 60% coverage",
+     "7= 70% coverage",
+     "8= 80% coverage",
+     "9= 90% coverage"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000096",
+  "observationVariableName": "RtRotInc_E_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000094",
+   "traitName": "Root rot incidence",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Root rot incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "RtRotInc",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Root rot incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000095",
+   "methodName": "Root rot incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe incidence of Root rot, usually record as the proportion or number of plant units diseased.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000014",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000099",
+  "observationVariableName": "RtRotRes_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000097",
+   "traitName": "Root rot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to root rot.",
+   "synonyms": [],
+   "mainAbbreviation": "RtRotRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Root rot resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000098",
+   "methodName": "Root rot resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to Root rot, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000013",
+   "scaleName": "1-5 Susceptible/Resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= susceptible (S)",
+     "2= moderate susceptible (MS)",
+     "3= moderately resistant (MR)",
+     "4= resistant (R)",
+     "5= highly resistant (HR)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000103",
+  "observationVariableName": "BrPattern_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000100",
+   "traitName": "Branching pattern",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The plants branching pattern.",
+   "synonyms": [],
+   "mainAbbreviation": "BrPattern",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "branching pattern",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000101",
+   "methodName": "Branching pattern - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant branching pattern and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000102",
+   "scaleName": "1-2 Branching pattern scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Converged",
+     "2= Diverged"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000107",
+  "observationVariableName": "CSpine_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000104",
+   "traitName": "Capsule spineness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Presence of spines on capsules.",
+   "synonyms": [],
+   "mainAbbreviation": "CSpine",
+   "alternativeAbbreviations": [],
+   "entity": "Capsule spine",
+   "entityPUI": null,
+   "attribute": "spineness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000105",
+   "methodName": "Capsule spineness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe capsules spineness and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000106",
+   "scaleName": "1-9 Capsule spineness scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Non-spiny",
+     "2= slightly spiny",
+     "3= fairly spiny",
+     "3= fairly to moderately spiny",
+     "5= moderately spiny",
+     "6= moderately to very spiny",
+     "7= very spiny",
+     "8= highly spiny",
+     "9= extremly spiny"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000111",
+  "observationVariableName": "CWallHrd_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000108",
+   "traitName": "Capsule wall hardness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The degree of hardness of capsule wall.",
+   "synonyms": [],
+   "mainAbbreviation": "CWallHrd",
+   "alternativeAbbreviations": [],
+   "entity": "Capsule wall",
+   "entityPUI": null,
+   "attribute": "hardness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000109",
+   "methodName": "Capsule wall hardness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe capsule wall hardness and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000110",
+   "scaleName": "1-9 Hardness scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= extremely soft",
+     "2= very soft",
+     "3= soft",
+     "4= soft to semi-hard",
+     "5= semi-hard",
+     "6= semi-hard to hard",
+     "7= hard",
+     "8= very hard",
+     "9= extremely hard"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000114",
+  "observationVariableName": "RLngFFlw_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000112",
+   "traitName": "Raceme length covered by female flowers",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of the raceme covered by female flowers.",
+   "synonyms": [],
+   "mainAbbreviation": "RLngFFlw",
+   "alternativeAbbreviations": [],
+   "entity": "Female flower",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000113",
+   "methodName": "Female flower length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure female flower length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000118",
+  "observationVariableName": "LA_M_cm2plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000115",
+   "traitName": "Leaf area",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf area.",
+   "synonyms": [],
+   "mainAbbreviation": "LA",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "area",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000116",
+   "methodName": "Leaf area - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf area using a leaf area meter and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000117",
+   "scaleName": "cm2/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000121",
+  "observationVariableName": "LLWid_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000119",
+   "traitName": "Leaf lamina leaf width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf lamina width.",
+   "synonyms": [],
+   "mainAbbreviation": "LLWid",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf lamina",
+   "entityPUI": null,
+   "attribute": "width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000120",
+   "methodName": "Leaf lamina width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf lamina width and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000124",
+  "observationVariableName": "LLLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000122",
+   "traitName": "Leaf lamina length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf lamina length.",
+   "synonyms": [],
+   "mainAbbreviation": "LLLng",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf lamina",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000123",
+   "methodName": "Leaf lamina length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf lamina length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000127",
+  "observationVariableName": "LLDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000125",
+   "traitName": "Leaf lamina dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf lamina dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "LLDW",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf lamina",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000126",
+   "methodName": "Leaf lamina DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf lamina dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000130",
+  "observationVariableName": "LLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000128",
+   "traitName": "Leaf length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of leaf.",
+   "synonyms": [],
+   "mainAbbreviation": "LLng",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000129",
+   "methodName": "Leaf length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000134",
+  "observationVariableName": "LLobeN_Ct_lobe",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000131",
+   "traitName": "Leaf lobe number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of leaf lobes.",
+   "synonyms": [],
+   "mainAbbreviation": "LLobeN",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "lobe number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000132",
+   "methodName": "Leaf lobe number - Counting",
+   "methodClass": "Counting",
+   "description": "Count leaf lobes.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000133",
+   "scaleName": "lobe",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000138",
+  "observationVariableName": "LN_Ct_leaf",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000135",
+   "traitName": "Leaf number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of leaves.",
+   "synonyms": [],
+   "mainAbbreviation": "LN",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000136",
+   "methodName": "Leaf number - Counting",
+   "methodClass": "Counting",
+   "description": "Count leaves in a sampling unit (plot, plant, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000137",
+   "scaleName": "leaf",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000142",
+  "observationVariableName": "LShp_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000139",
+   "traitName": "Leaf shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf shape.",
+   "synonyms": [],
+   "mainAbbreviation": "LShp",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000140",
+   "methodName": "Leaf shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe leaves shape and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000141",
+   "scaleName": "1-3 Leaf shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Flat",
+     "2= Shallow cup",
+     "3= Deep cup"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000145",
+  "observationVariableName": "LDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000143",
+   "traitName": "Leaf dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The leaf dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "LDW",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000144",
+   "methodName": "Leaf DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure leaf dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000148",
+  "observationVariableName": "MStmDia_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000146",
+   "traitName": "Main stem diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The main stem diameter.",
+   "synonyms": [],
+   "mainAbbreviation": "MStmDia",
+   "alternativeAbbreviations": [],
+   "entity": "Main stem",
+   "entityPUI": null,
+   "attribute": "diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000147",
+   "methodName": "Main stem diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure main stem diameter in between 3rd and 5th internode and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000151",
+  "observationVariableName": "MStmLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000149",
+   "traitName": "Main stem length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of main stem.",
+   "synonyms": [],
+   "mainAbbreviation": "MStmLng",
+   "alternativeAbbreviations": [],
+   "entity": "Main stem",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000150",
+   "methodName": "Main stem length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure main stem length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000155",
+  "observationVariableName": "NodeN_Ct_node",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000152",
+   "traitName": "Main stem node number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of nodes up to primary raceme on main stem.",
+   "synonyms": [],
+   "mainAbbreviation": "NodeN",
+   "alternativeAbbreviations": [],
+   "entity": "Node",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000153",
+   "methodName": "Node number - Counting",
+   "methodClass": "Counting",
+   "description": "Count nodes in a sampling unit (plant, main stem, branch, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000154",
+   "scaleName": "node",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000158",
+  "observationVariableName": "MStmDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000156",
+   "traitName": "Main stem dry weight",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The main stem dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "MStmDW",
+   "alternativeAbbreviations": [],
+   "entity": "Main stem",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000157",
+   "methodName": "Main stem DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure main stem dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000161",
+  "observationVariableName": "MFlwLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000159",
+   "traitName": "Male flower length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of male flowers.",
+   "synonyms": [],
+   "mainAbbreviation": "MFlwLng",
+   "alternativeAbbreviations": [],
+   "entity": "Male flower",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000160",
+   "methodName": "Male flower length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure male flower length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000164",
+  "observationVariableName": "PetLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Research-intensive characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000162",
+   "traitName": "Petiole length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of petioles.",
+   "synonyms": [],
+   "mainAbbreviation": "PetLng",
+   "alternativeAbbreviations": [],
+   "entity": "Petiole",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000163",
+   "methodName": "Petiole length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure petioles length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000167",
+  "observationVariableName": "PH_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000165",
+   "traitName": "Plant height",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The plant height from soil to top part of pnat, apex.",
+   "synonyms": [],
+   "mainAbbreviation": "PH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000166",
+   "methodName": "Plant height - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure the plant height from soil to top part of the canopy and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000170",
+  "observationVariableName": "PRCCovLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000168",
+   "traitName": "Primary raceme capsule covered length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of primary raceme covered with capsules.",
+   "synonyms": [],
+   "mainAbbreviation": "PRCCovLng",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "capsule covered length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000169",
+   "methodName": "Primary raceme capsule covered length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure length of primary raceme covered with capsules and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000173",
+  "observationVariableName": "PRLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000171",
+   "traitName": "Primary raceme length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of primary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "PRLng",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000172",
+   "methodName": "Primary raceme length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure primary raceme length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000176",
+  "observationVariableName": "PRMFlwCovLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000174",
+   "traitName": "Primary raceme male flower covered length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of primary raceme covered with male flowers.",
+   "synonyms": [],
+   "mainAbbreviation": "PRMFlwCovLng",
+   "alternativeAbbreviations": [],
+   "entity": "Primary raceme",
+   "entityPUI": null,
+   "attribute": "male flower covered length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000175",
+   "methodName": "Primary raceme male flower covered length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure length of primary raceme covered with male flowers and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000180",
+  "observationVariableName": "RCompact_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000177",
+   "traitName": "Raceme compactness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The capsules arrangment on the raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "RCompact",
+   "alternativeAbbreviations": [],
+   "entity": "Raceme",
+   "entityPUI": null,
+   "attribute": "compactness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000178",
+   "methodName": "Raceme compactness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe racemes compactness and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000179",
+   "scaleName": "1-9 Compactness scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= extremely loose",
+     "2= very loose",
+     "3= loose",
+     "4= loose to semi-compact",
+     "5= semi-compact",
+     "6= semi-compact to compact",
+     "7= compact",
+     "8= very compact",
+     "9= extremely compact"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000184",
+  "observationVariableName": "RShp_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000181",
+   "traitName": "Raceme shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of the raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "RShp",
+   "alternativeAbbreviations": [],
+   "entity": "Raceme",
+   "entityPUI": null,
+   "attribute": "shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000182",
+   "methodName": "Raceme shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe racemes shape and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000183",
+   "scaleName": "1-3 Raceme shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= umbrella",
+     "2= cylindrical",
+     "3= conical"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000187",
+  "observationVariableName": "SBLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000185",
+   "traitName": "Secondary branch length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of secondary branch.",
+   "synonyms": [],
+   "mainAbbreviation": "SBLng",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary branch",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000186",
+   "methodName": "Secondary branch length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure secondary branch length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000191",
+  "observationVariableName": "SBN_Ct_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000188",
+   "traitName": "Secondary branch number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of secondary branches.",
+   "synonyms": [],
+   "mainAbbreviation": "SBN",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary branch",
+   "entityPUI": null,
+   "attribute": "number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000189",
+   "methodName": "Secondary branch number - Counting",
+   "methodClass": "Counting",
+   "description": "Count secondary branches in a sampling unit (plot, plant, etc).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000190",
+   "scaleName": "branch",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000194",
+  "observationVariableName": "PFW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000192",
+   "traitName": "Plant fresh weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant fresh weight.",
+   "synonyms": [],
+   "mainAbbreviation": "PFW",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "fresh weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000193",
+   "methodName": "Plant FW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure plant fresh weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000197",
+  "observationVariableName": "PDW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000195",
+   "traitName": "Plant dry weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant dry weight.",
+   "synonyms": [],
+   "mainAbbreviation": "PDW",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "dry weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000196",
+   "methodName": "Plant DW - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure plant dry weight and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000009",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000200",
+  "observationVariableName": "SRLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000198",
+   "traitName": "Secondary raceme length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of secondary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "SRLng",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary raceme",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000199",
+   "methodName": "Secondary raceme length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure secondary raceme length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000204",
+  "observationVariableName": "SdCol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000201",
+   "traitName": "Seed color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The color of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdCol",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000202",
+   "methodName": "Seed color - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe seeds color and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000203",
+   "scaleName": "1-5 Seed color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= White",
+     "2= Maroon",
+     "3= Brown",
+     "4= Dark chocolate",
+     "5= Black"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000207",
+  "observationVariableName": "SdLng_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000205",
+   "traitName": "Seed length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdLng",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000206",
+   "methodName": "Seed length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seeds width and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000015",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000211",
+  "observationVariableName": "SdShp_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000208",
+   "traitName": "Seed shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdShp",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000209",
+   "methodName": "Seed shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe seeds shape and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000210",
+   "scaleName": "1-3 Seed shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= elongated",
+     "2= oval",
+     "3= square"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000214",
+  "observationVariableName": "SdWid_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000212",
+   "traitName": "Seed width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The width of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdWid",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000213",
+   "methodName": "Seed width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seeds length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000015",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000218",
+  "observationVariableName": "StmCol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000215",
+   "traitName": "Stem color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The color of stems.",
+   "synonyms": [],
+   "mainAbbreviation": "StmCol",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "color",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000216",
+   "methodName": "Stem color - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe stems color and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000217",
+   "scaleName": "1-5 Stem color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Pink",
+     "3= Mahogany",
+     "4= Red",
+     "5= Purple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000221",
+  "observationVariableName": "TRLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000219",
+   "traitName": "Tertiary raceme length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of tertiary raceme.",
+   "synonyms": [],
+   "mainAbbreviation": "TRLng",
+   "alternativeAbbreviations": [],
+   "entity": "Tertiary raceme",
+   "entityPUI": null,
+   "attribute": "length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000220",
+   "methodName": "Tertiary raceme length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure tertiary racemes length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000010",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000223",
+  "observationVariableName": "Emer_Date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Emergence",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000002",
+   "traitName": "Emergence time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Emergence time is when the cotyledon appears above the soil surface.",
+   "synonyms": [],
+   "mainAbbreviation": "Emer",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "emergence time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000222",
+   "methodName": "Emergence date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of emergence.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000016",
+   "scaleName": "yyymmdd",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000225",
+  "observationVariableName": "Emer_DT_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Emergence",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000002",
+   "traitName": "Emergence time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Emergence time is when the cotyledon appears above the soil surface.",
+   "synonyms": [],
+   "mainAbbreviation": "Emer",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "emergence time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000224",
+   "methodName": "Days to emergence - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing to emergence.",
+   "formula": "Emer_Date_ymd - Planting_date_ymd",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000017",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000227",
+  "observationVariableName": "Flw_DateFirst_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000003",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Flowering time.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000226",
+   "methodName": "First flowering date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of first raceme at flowering, usually is the primary raceme.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000016",
+   "scaleName": "yyymmdd",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000229",
+  "observationVariableName": "Flw_DTFirst_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000003",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Flowering time.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000228",
+   "methodName": "Days to first flowering - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (or emergence) to first raceme at flowering.",
+   "formula": "Flw_Date_ymd - Emer_Date_ymd or Flw_Date_ymd - Planting_date_ymd",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000017",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000231",
+  "observationVariableName": "Mat_DatePR_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000004",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity time.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000230",
+   "methodName": "Maturity date - Estimation",
+   "methodClass": "Computation",
+   "description": "Record date of primary raceme maturity.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000017",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000233",
+  "observationVariableName": "Mat_DTPR_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000004",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity time.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000232",
+   "methodName": "Days to maturity - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (or emergence) to maturity.",
+   "formula": "Mat_Date_ymd - Emer_Date_ymd or Mat_Date_ymd - Planting_date_ymd",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000017",
+   "scaleName": "day",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000237",
+  "observationVariableName": "Earliness_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000234",
+   "traitName": "Plant earliness",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Plant earliness in primary raceme emergence.",
+   "synonyms": [],
+   "mainAbbreviation": "Earliness",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "earliness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000235",
+   "methodName": "Plant earliness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plants earliness to raceme emergence and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000236",
+   "scaleName": "1-5 Earliness scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very early (VE)",
+     "2= early (E)",
+     "3= moderate (M)",
+     "4= late (L)",
+     "5= very late (VL)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000240",
+  "observationVariableName": "OilY_Cmp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000238",
+   "traitName": "Oil yield",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The amount (weight) of oil produced per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "OilY",
+   "alternativeAbbreviations": [],
+   "entity": "Oil",
+   "entityPUI": null,
+   "attribute": "yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000239",
+   "methodName": "Oil yield - Computation",
+   "methodClass": "Computation",
+   "description": "Compute oil yield using the formula.",
+   "formula": "SdY_M_kgha * SdOil_M_pct / 100",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000012",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000243",
+  "observationVariableName": "SdOil_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000241",
+   "traitName": "Seed oil content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The content of oil in seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdOil",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "oil content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000242",
+   "methodName": "Oil content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Standard chemical method for seed oil content method.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000014",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000246",
+  "observationVariableName": "SdRicin_M_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000244",
+   "traitName": "Seed ricin content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The content of protein ricin in seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdRicin",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "ricin content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000245",
+   "methodName": "Ricin content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Standard chemical method for seed ricin content method.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000018",
+   "scaleName": "g/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_347:0000249",
+  "observationVariableName": "SdRicinine_M_gkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_347",
+   "ontologyName": "Castorbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-Harvest",
+  "institution": "NCRI, IBP",
+  "language": "EN",
+  "scientist": "Salihu Bolaji Zuluqurineen, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": null,
+  "crop": "Castorbean",
+  "trait": {
+   "traitDbId": "CO_347:0000247",
+   "traitName": "Seed ricinine content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The content of alkaloid ricinine in seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdRicinine",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "ricinine content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_347:0000248",
+   "methodName": "Ricinine content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Standard chemical method for seed ricinine content method.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_347:0000018",
+   "scaleName": "g/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

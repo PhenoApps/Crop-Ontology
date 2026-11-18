@@ -1,0 +1,4569 @@
+[
+ {
+  "observationVariableDbId": "CO_341:0000194",
+  "observationVariableName": "SM_Comp_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in sick plot nursery"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000057",
+   "traitName": "Sterility mosaic incidence",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plants infected with sterility mosaic disease in a plot",
+   "synonyms": [],
+   "mainAbbreviation": "SM",
+   "alternativeAbbreviations": [],
+   "entity": "Sterility mosaic",
+   "entityPUI": null,
+   "attribute": "Incidence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000058",
+   "methodName": "Sterility mosaic - Method",
+   "methodClass": "Computation",
+   "description": "Recorded in percentage as the number of infected plants / total number of plants X 100",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000195",
+  "observationVariableName": "STEMCLR_VisClsn_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000081",
+   "traitName": "Stem color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the stem",
+   "synonyms": [],
+   "mainAbbreviation": "SC",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000082",
+   "methodName": "Stem color - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at 50 % flowering stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000083",
+   "scaleName": "Visual Stem color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Sun red",
+     "3= Purple",
+     "4= Dark purple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000196",
+  "observationVariableName": "SOILSAL_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000151",
+   "traitName": "Soil salinity stress susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Soil salinity stress susceptibility",
+   "synonyms": [],
+   "mainAbbreviation": "SSS",
+   "alternativeAbbreviations": [],
+   "entity": "Soil salinity stress",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000163",
+   "methodName": "Soil salinity stress susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to soil salinity stress",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000182",
+   "scaleName": "Abiotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2=",
+     "3= Tolerant",
+     "4=",
+     "5= Moderately tolerant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000197",
+  "observationVariableName": "SOILACID_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000152",
+   "traitName": "Soil acidity stress susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Soil acidity stress susceptibility",
+   "synonyms": [],
+   "mainAbbreviation": "SAS",
+   "alternativeAbbreviations": [],
+   "entity": "Soil acidity stress",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000164",
+   "methodName": "Soil acidity stress susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to soil acidity stress",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000182",
+   "scaleName": "Abiotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2=",
+     "3= Tolerant",
+     "4=",
+     "5= Moderately tolerant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000198",
+  "observationVariableName": "SVI_Comp_Idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000135",
+   "traitName": "Seedling vigour",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Seedling vigour",
+   "synonyms": [],
+   "mainAbbreviation": "SVI",
+   "alternativeAbbreviations": [],
+   "entity": "Seedling",
+   "entityPUI": null,
+   "attribute": "Vigour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000136",
+   "methodName": "Seedling vigour index - Method",
+   "methodClass": "Computation",
+   "description": "Index calculated as (length of radicle + length of plumule) x germination percentage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000137",
+   "scaleName": "Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000199",
+  "observationVariableName": "SBC_VisClsn_1to10",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000078",
+   "traitName": "Seed base colour",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed base color",
+   "synonyms": [],
+   "mainAbbreviation": "SBC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed base",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000079",
+   "methodName": "Seed base colour - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually based on the Royal Horticultural Society (RHS) colour codes",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000080",
+   "scaleName": "RHS color chart",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= White (yellow-white group 158C)",
+     "2= Cream (greyed-white group 156C)",
+     "3= Orange (greyed-orange group 163B)",
+     "4= Light brown (yellow-orange group 22C)",
+     "5= Reddish-brown (reddish-brown group 200D)",
+     "6= Light grey (grey-brown group 199B)",
+     "7= Grey (greyed-green group 197A)",
+     "8= Purple (greyed-purple group 187A)",
+     "9= Dark purple (black group 202A",
+     "10= Dark grey (black group 202B)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000200",
+  "observationVariableName": "GWPL_Meas_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": null,
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000123",
+   "traitName": "Grain weight per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Grain weight per plant",
+   "synonyms": [],
+   "mainAbbreviation": "GWPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000175",
+   "methodName": "Grain weight of single plant - Method",
+   "methodClass": "Measurement",
+   "description": "Weight of seed harvested from a plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000125",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000202",
+  "observationVariableName": "YIELD_Yld_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000126",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed yield",
+   "synonyms": [],
+   "mainAbbreviation": "YLD",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000127",
+   "methodName": "Seed yield (kg/ha) - Method",
+   "methodClass": "Computation",
+   "description": "Harvested seed weight / plot area",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000128",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000203",
+  "observationVariableName": "YLD_WtPerPlot_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [
+   "GWPL_Av_g"
+  ],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000126",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Seed yield",
+   "synonyms": [],
+   "mainAbbreviation": "YLD",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000121",
+   "methodName": "Grain weight per plot - Method",
+   "methodClass": "Measurement",
+   "description": "Grain weight harvested form a plot excluding border plants and border rows",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000122",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000204",
+  "observationVariableName": "GWPL_Avg_gPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000123",
+   "traitName": "Grain weight per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Grain weight per plant",
+   "synonyms": [],
+   "mainAbbreviation": "GWPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Seed weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000124",
+   "methodName": "Average grain weight per plant - Method",
+   "methodClass": "Computation",
+   "description": "Average seed yield recorded for randomly selected 5 plants in a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000125",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000207",
+  "observationVariableName": "CKS_VolInc_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000114",
+   "traitName": "Cooking quality of seed",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Cooking quality of seed",
+   "synonyms": [],
+   "mainAbbreviation": "CKS",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Cooking quality",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000115",
+   "methodName": "Cooking quality of seed - Method",
+   "methodClass": "Measurement",
+   "description": "Recording of increase in volume (v/v) after soaking for 24 hrs and boiling for 25 min",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000137",
+   "scaleName": "Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000208",
+  "observationVariableName": "MILLP_Comp_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [
+   "Milling percentage"
+  ],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000108",
+   "traitName": "Seed milling fraction",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Milling fraction of fully dried seeds",
+   "synonyms": [],
+   "mainAbbreviation": "MP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Milling fraction",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000109",
+   "methodName": "Milling percentage - Method",
+   "methodClass": "Computation",
+   "description": "Percentage of dehusked split peas after milling",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000209",
+  "observationVariableName": "PROTNC_Meas_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000105",
+   "traitName": "Seed protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Protein content of seed",
+   "synonyms": [],
+   "mainAbbreviation": "PC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000106",
+   "methodName": "Protein content - Method",
+   "methodClass": "Measurement",
+   "description": "Whole seed crude protein percentage based on dry weight using the dye-binding method or automatic protein analyzer",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000210",
+  "observationVariableName": "GERMP_Comp_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [
+   "Germination percentage"
+  ],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000075",
+   "traitName": "Seed germination",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Propertion of grains that germinate under proper condition",
+   "synonyms": [],
+   "mainAbbreviation": "GP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Germination",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000076",
+   "methodName": "Germination percentage - Method",
+   "methodClass": "Computation",
+   "description": "Number of seeds germinated / Total number of seeds X 100",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000211",
+  "observationVariableName": "MC_Comp_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Physiology experiments"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000060",
+   "traitName": "Seed moisture content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Moisture content",
+   "synonyms": [],
+   "mainAbbreviation": "MC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Moisture content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000061",
+   "methodName": "Moisture content - Method",
+   "methodClass": "Computation",
+   "description": "Recorded in percentage as dry weight / Fresh weight X 100",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000212",
+  "observationVariableName": "SPL_Avg_SeedPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000042",
+   "traitName": "Seeds per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of seeds per plant",
+   "synonyms": [],
+   "mainAbbreviation": "SPL",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000043",
+   "methodName": "Seeds per plant - Method",
+   "methodClass": "Computation",
+   "description": "Average number of seeds counted for 5 randomly selected plants in a plot at maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000044",
+   "scaleName": "seed/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000213",
+  "observationVariableName": "SPP_Avg_SeedPod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000039",
+   "traitName": "Seeds per pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of seeds per pod",
+   "synonyms": [],
+   "mainAbbreviation": "SPP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000040",
+   "methodName": "Seeds per pod Average - Method",
+   "methodClass": "Computation",
+   "description": "Average number of seeds present in a pod for 10 randomly selected pods",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000041",
+   "scaleName": "seed/pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000214",
+  "observationVariableName": "SPP_Count_SeedPod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000039",
+   "traitName": "Seeds per pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of seeds per pod",
+   "synonyms": [],
+   "mainAbbreviation": "SPP",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000176",
+   "methodName": "Seeds per pod Count - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of seeds present in a pod",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000041",
+   "scaleName": "seed/pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000216",
+  "observationVariableName": "SW_Scr_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000030",
+   "traitName": "Seed weight",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Weight of seeds",
+   "synonyms": [],
+   "mainAbbreviation": "SWT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000031",
+   "methodName": "Seed size - Method",
+   "methodClass": "Estimation",
+   "description": "Categorize seed size based on the seed weight of air dried 100 seeds",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000032",
+   "scaleName": "Seed size 1 to 4 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Small (< 7)",
+     "2= Medium (7-9)",
+     "3= Large (> 9-11)",
+     "4= Very large (>11 g)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000217",
+  "observationVariableName": "NSBR_Count_NBr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000018",
+   "traitName": "Number of secondary branches",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of secondary branches counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "SBR",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000019",
+   "methodName": "Number of secondary branches - Method",
+   "methodClass": "Counting",
+   "description": "Number of branches that arise from primary branches",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000020",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000218",
+  "observationVariableName": "NSBR_Av_NBr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000018",
+   "traitName": "Number of secondary branches",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of secondary branches counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "SBR",
+   "alternativeAbbreviations": [],
+   "entity": "Secondary branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000177",
+   "methodName": "Average number of secondary branches - Method",
+   "methodClass": "Computation",
+   "description": "Average number of branches that arise from primary branches",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000020",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000219",
+  "observationVariableName": "RADL_Avg_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000069",
+   "traitName": "Radicle length",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Length of radicle",
+   "synonyms": [],
+   "mainAbbreviation": "RADL",
+   "alternativeAbbreviations": [],
+   "entity": "Radicule",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000070",
+   "methodName": "Radicle length - Method",
+   "methodClass": "Computation",
+   "description": "Average length of radicle for 50 seeds incubated for 10 days at 25 degree celcius in paper towel method",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000220",
+  "observationVariableName": "NPBR_Count_Nbr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000012",
+   "traitName": "Number of productive branches",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of productive branches counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PBR",
+   "alternativeAbbreviations": [],
+   "entity": "Productive branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000013",
+   "methodName": "Number of productive branches - Method",
+   "methodClass": "Counting",
+   "description": "Number of branches that bears pods out of total branches",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000020",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000221",
+  "observationVariableName": "NPRB_Count_Nbr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000015",
+   "traitName": "Number of primary branches",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of primary branches counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PRB",
+   "alternativeAbbreviations": [],
+   "entity": "Primary branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000016",
+   "methodName": "Number of primary branches Count - Method",
+   "methodClass": "Counting",
+   "description": "Number of branches that arise from main stem",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000020",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000222",
+  "observationVariableName": "NPRB_Av_NBr",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000015",
+   "traitName": "Number of primary branches",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of primary branches counted per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PRB",
+   "alternativeAbbreviations": [],
+   "entity": "Primary branch",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000178",
+   "methodName": "Number of primary branches Average - Method",
+   "methodClass": "Computation",
+   "description": "Average number of branches that arise from main stem",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000020",
+   "scaleName": "branches",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000223",
+  "observationVariableName": "PW_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000153",
+   "traitName": "Pod wasp susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susceptibility to pod wasp (Tanaostigmodes cajaninae)",
+   "synonyms": [],
+   "mainAbbreviation": "PWasp",
+   "alternativeAbbreviations": [],
+   "entity": "Pod wasp",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000165",
+   "methodName": "Pod wasp susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to pod wasp",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000224",
+  "observationVariableName": "MTG_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000154",
+   "traitName": "Pod fly susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susceptibility to pod fly (Melanagromyza btusa )",
+   "synonyms": [],
+   "mainAbbreviation": "PF",
+   "alternativeAbbreviations": [],
+   "entity": "Pod fly",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000166",
+   "methodName": "Pod fly susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to pod fly",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000225",
+  "observationVariableName": "PODBOR_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000155",
+   "traitName": "Pod borers susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susceptibility to pod borer insects (Helicoverpa armigera, Etiella zinckenella, Maruca testulalis)",
+   "synonyms": [],
+   "mainAbbreviation": "PB",
+   "alternativeAbbreviations": [],
+   "entity": "Pod borers",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000167",
+   "methodName": "Pod borers susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to pod borers",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000228",
+  "observationVariableName": "PPC_Count_PodPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000036",
+   "traitName": "Pods per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of pods per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Number of pods",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000270",
+   "methodName": "Pods per plant Count - Method",
+   "methodClass": "Counting",
+   "description": "Count the number of pods on a plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000038",
+   "scaleName": "pod/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000229",
+  "observationVariableName": "PODLENTH_Avg_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000141",
+   "traitName": "Pod length",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Pod length",
+   "synonyms": [],
+   "mainAbbreviation": "PL",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000142",
+   "methodName": "Pod length - Method",
+   "methodClass": "Computation",
+   "description": "Average length recorded for a sample of 10 pods",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000230",
+  "observationVariableName": "PODSIZE_Scr_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [
+   "PSZ_Score_1to3"
+  ],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000141",
+   "traitName": "Pod length",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Pod length",
+   "synonyms": [],
+   "mainAbbreviation": "PL",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000103",
+   "methodName": "Pod size - Method",
+   "methodClass": "Estimation",
+   "description": "Categorize pod size based on the average length of 20 pods",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000104",
+   "scaleName": "Pod size in cm",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= small <4 cm",
+     "2= medium 4-5 cm",
+     "3= long >5 cm"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000232",
+  "observationVariableName": "PWAX_VisClsn_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "premature dough stage",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000099",
+   "traitName": "Pod wax",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pod wax",
+   "synonyms": [],
+   "mainAbbreviation": "PW",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "waxiness",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000100",
+   "methodName": "Pod wax - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at premature dough stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000101",
+   "scaleName": "Visual Absent-Present scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000233",
+  "observationVariableName": "PPUB_VisClsn_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000096",
+   "traitName": "Pod pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pod pubescence",
+   "synonyms": [],
+   "mainAbbreviation": "PPB",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000097",
+   "methodName": "Pod pubescence - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at maturity stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000101",
+   "scaleName": "Visual Absent-Present scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000234",
+  "observationVariableName": "PODCL_VisClsn_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "premature dough stage",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000093",
+   "traitName": "Pod color",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Pod color",
+   "synonyms": [],
+   "mainAbbreviation": "PCL",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000094",
+   "methodName": "Pod color - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at premature dough stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000095",
+   "scaleName": "Visual Pod color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= green",
+     "2= green with brown streaks",
+     "3= green with purple streaks",
+     "4= purple",
+     "5= dark purple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000235",
+  "observationVariableName": "PPL_Avg_PodPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000036",
+   "traitName": "Pods per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of pods per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PPL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Number of pods",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000037",
+   "methodName": "Pods per plant - Method",
+   "methodClass": "Computation",
+   "description": "Average number of pods recorded for 5 randomly selected plants in a plot",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000038",
+   "scaleName": "pod/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000237",
+  "observationVariableName": "PLUL_Avg_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000072",
+   "traitName": "Plumule length",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Length of plumule",
+   "synonyms": [],
+   "mainAbbreviation": "PLUL",
+   "alternativeAbbreviations": [],
+   "entity": "Plumule",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000073",
+   "methodName": "Plumule length - Method",
+   "methodClass": "Computation",
+   "description": "Average length of plumule for 50 seeds incubated for 10 days at 25 degree celcius in paper towel method",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000238",
+  "observationVariableName": "FRT_Meas_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "In hybrid development programme"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [
+   "Fertility percent"
+  ],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000147",
+   "traitName": "Plant Fertility",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Proportion of plants with fertile pollen grains",
+   "synonyms": [],
+   "mainAbbreviation": "FRT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Fertility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000148",
+   "methodName": "Fertility fertility assessment - Method",
+   "methodClass": "Measurement",
+   "description": "Recorded with microscope the plants producing fertile pollen grains out of the total plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000239",
+  "observationVariableName": "FRT_Meas_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "In hybrid development programme"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000147",
+   "traitName": "Plant Fertility",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Proportion of plants with fertile pollen grains",
+   "synonyms": [],
+   "mainAbbreviation": "FRT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Fertility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000148",
+   "methodName": "Fertility fertility assessment - Method",
+   "methodClass": "Measurement",
+   "description": "Recorded with microscope the plants producing fertile pollen grains out of the total plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000149",
+   "scaleName": "Sterile/fertile scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0 = plant producing sterile pollen grain",
+     "1 = plant producing fertile pollen grain"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000240",
+  "observationVariableName": "DFF_Count_days",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000138",
+   "traitName": "Days to first flower",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days elapsed before the first plant flowers",
+   "synonyms": [],
+   "mainAbbreviation": "DFF",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Days to first flower",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000139",
+   "methodName": "Days to first flower - Method",
+   "methodClass": "Counting",
+   "description": "Days required from planting to open first flower on a plant",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000140",
+   "scaleName": "days",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000241",
+  "observationVariableName": "VIGOUR_VisSc_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000132",
+   "traitName": "Plant vigour",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Plant vigour",
+   "synonyms": [],
+   "mainAbbreviation": "VIGOUR",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Vigour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000133",
+   "methodName": "Vigour score - Method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring considering the check varieties as the middle level of the scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000047",
+   "scaleName": "Visual scores in 1-5 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very good",
+     "2= good",
+     "3= average",
+     "4= below average",
+     "5= poor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000242",
+  "observationVariableName": "SEN_VisSc_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000129",
+   "traitName": "Plant senescence",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Plant senescence",
+   "synonyms": [],
+   "mainAbbreviation": "SEN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Senescence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000130",
+   "methodName": "Senescence score - Method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of plant senescence",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000131",
+   "scaleName": "Visual Scoring Senescence 0 to 2",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= no effect",
+     "2= intermediate effect",
+     "3= complete mortality"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000243",
+  "observationVariableName": "HI_Comp_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000063",
+   "traitName": "Harvest index",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Proportion of (economically significant) biomass over total (biological) biomass",
+   "synonyms": [],
+   "mainAbbreviation": "HI",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Biomass partitioning",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000064",
+   "methodName": "Harvest index - Method",
+   "methodClass": "Computation",
+   "description": "Recorded in percentage as seed yield / total biological yield x 100",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000244",
+  "observationVariableName": "VSM_Scr_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials and breeding nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000051",
+   "traitName": "Visual selection scores at maturity stage",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Visual selection scores recorded at the time of maturity",
+   "synonyms": [],
+   "mainAbbreviation": "VSM",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Selection score at maturity stage",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000052",
+   "methodName": "Visual selection scores at maturity stage - Method",
+   "methodClass": "Estimation",
+   "description": "Visual scores given at the time of maturity considering check varieties as the middle level of the scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000047",
+   "scaleName": "Visual scores in 1-5 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very good",
+     "2= good",
+     "3= average",
+     "4= below average",
+     "5= poor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000245",
+  "observationVariableName": "VSP_Scr_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials and breeding nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Podding",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000048",
+   "traitName": "Visual selection scores at podding stage",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Visual selection scores recorded at the time of podding",
+   "synonyms": [],
+   "mainAbbreviation": "VSP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Selection score at podding stage",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000049",
+   "methodName": "Visual selection scores at podding stage - Method",
+   "methodClass": "Estimation",
+   "description": "Visual scores given at the time of flowering considering check varieties as the middle level of the scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000047",
+   "scaleName": "Visual scores in 1-5 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very good",
+     "2= good",
+     "3= average",
+     "4= below average",
+     "5= poor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000246",
+  "observationVariableName": "VSF_Scr_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials and breeding nurseries"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000045",
+   "traitName": "Visual selection scores at flowering stage",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Visual selection scores recorded at the time of flowering",
+   "synonyms": [],
+   "mainAbbreviation": "VSF",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Selection score at flowering stage",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000046",
+   "methodName": "Visual selection scores at flowering stage - Method",
+   "methodClass": "Estimation",
+   "description": "Visual scores given at the time of flowering considering check varieties as the middle level of the scale",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000047",
+   "scaleName": "Visual scores in 1-5 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= very good",
+     "2= good",
+     "3= average",
+     "4= below average",
+     "5= poor"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000247",
+  "observationVariableName": "PBL_Avg_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000027",
+   "traitName": "Pod bearing length",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Distance between uppermost and lowermost pod present on plant",
+   "synonyms": [],
+   "mainAbbreviation": "PBL",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod bearing length",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000028",
+   "methodName": "Pod bearing length - Method",
+   "methodClass": "Computation",
+   "description": "Length between upper most and lower most pod present on plant recorded and averaged for 5 randomly selected plants",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000248",
+  "observationVariableName": "PST_Count_plnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000024",
+   "traitName": "Plant stand",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of plants per plot",
+   "synonyms": [],
+   "mainAbbreviation": "PST",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Stand",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000025",
+   "methodName": "Plant stand - Method",
+   "methodClass": "Counting",
+   "description": "Total number of plants in a plot recorded at the time of maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000026",
+   "scaleName": "plants",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000249",
+  "observationVariableName": "PHT_Avg_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000021",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Plant height recorded per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PHT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000022",
+   "methodName": "Plant height Average - Method",
+   "methodClass": "Computation",
+   "description": "Average height of randomly selected 5 plants recorded from the base of the plant to the tip of plant at maturity.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000250",
+  "observationVariableName": "PHT_Meas_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000021",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Plant height recorded per plant",
+   "synonyms": [],
+   "mainAbbreviation": "PHT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000180",
+   "methodName": "Plant height Measured - Method",
+   "methodClass": "Measurement",
+   "description": "Height of a randomly selected plant recorded from the base of the plant to the tip of plant at maturity.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000071",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000251",
+  "observationVariableName": "MT_Count_days",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000009",
+   "traitName": "Days to 75 % maturity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days required to mature 75 % of the population",
+   "synonyms": [],
+   "mainAbbreviation": "MT",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Days to 75% maturity",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000010",
+   "methodName": "Days to maturity - Method",
+   "methodClass": "Counting",
+   "description": "Days required from planting to mature 75 % of the population",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000140",
+   "scaleName": "days",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000252",
+  "observationVariableName": "FLOW50_Count_days",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in trials"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000006",
+   "traitName": "Days to 50 % flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Number of days required to flower 50 % population in a plot",
+   "synonyms": [],
+   "mainAbbreviation": "DF",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Days to 50% flowering",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000007",
+   "methodName": "Days to 50 % flowering - Method",
+   "methodClass": "Counting",
+   "description": "Days required from planting to flower 50 % of the plant population",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000140",
+   "scaleName": "days",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000253",
+  "observationVariableName": "MTG_Class_1to12",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000003",
+   "traitName": "Maturity group",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity group based on days to 50 % flowering",
+   "synonyms": [],
+   "mainAbbreviation": "MTG",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity group",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000004",
+   "methodName": "Maturity group - Method",
+   "methodClass": "Estimation",
+   "description": "Groups are formed on the basis of days to 50 % flowering",
+   "formula": null,
+   "reference": "Crop Science: Published ahead of print 20 July 2012, doi: 10.2135/cropsci2012.04.0251",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000005",
+   "scaleName": "Days required to 50 % flowering",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=00= Super early < 50 days",
+     "2=0= Extra short between 51-60",
+     "3=I= Extra short between 61-70",
+     "4=II= Short between 71-80",
+     "5=III= Short between 81-90",
+     "6=IV= Short between 91-100",
+     "7=V= Short medium between 101-110",
+     "8=VI= Medium between 111-130",
+     "9=VII= Medium between 131-140",
+     "10=VIII= Medium long between 141-160",
+     "11=IX= Medium long between 141-160",
+     "12=X= Long between 141-160"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000254",
+  "observationVariableName": "FP_VisClsn_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Characterization of a genotype"
+  ],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000000",
+   "traitName": "Flowering pattern",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Flowering pattern like DT (determinate) vs NDT (non determinate)",
+   "synonyms": [],
+   "mainAbbreviation": "FP",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering pattern",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000001",
+   "methodName": "Flowering pattern - Method",
+   "methodClass": "Estimation",
+   "description": "On the basis of visual observation at the time of flowering",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000002",
+   "scaleName": "Visual observation Flowering pattern scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Determinate",
+     "2= Non determinate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000255",
+  "observationVariableName": "PPBLIGHT_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000156",
+   "traitName": "Phytophthora blight disease susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susecptibility to disease caused by agent Phytophthora blight (Phytophthora drechsleri f.sp. Cajani)",
+   "synonyms": [],
+   "mainAbbreviation": "DPB",
+   "alternativeAbbreviations": [],
+   "entity": "Phytophthora blight disease",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000168",
+   "methodName": "Disease Phytophthora blight susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to Phytophthora blight disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000256",
+  "observationVariableName": "NEMATODE_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000157",
+   "traitName": "Nematodes susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susecptibility to nematodes (Heterodera cajani, Meloidogyne incognita, Rotylenchus reniformis)",
+   "synonyms": [],
+   "mainAbbreviation": "Nem",
+   "alternativeAbbreviations": [],
+   "entity": "Nematodes",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000169",
+   "methodName": "Nematodes susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to nematodes",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000257",
+  "observationVariableName": "LTEMP_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000158",
+   "traitName": "Low temperature stress susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Low temperature stress susceptibility",
+   "synonyms": [],
+   "mainAbbreviation": "LTS",
+   "alternativeAbbreviations": [],
+   "entity": "Low temperature stress",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000170",
+   "methodName": "Low temperature stress susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to low temperature stress",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000182",
+   "scaleName": "Abiotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2=",
+     "3= Tolerant",
+     "4=",
+     "5= Moderately tolerant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000258",
+  "observationVariableName": "LT_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000159",
+   "traitName": "Leaf tier susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susceptibility to leaf tier (Grapholita critica)",
+   "synonyms": [],
+   "mainAbbreviation": "LT",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf tier",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000171",
+   "methodName": "Leaf tier susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to leaf tier",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000259",
+  "observationVariableName": "LFPUB_VisClsn_0or1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000087",
+   "traitName": "Leaf pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaf pubescence (hair like structure on leaf)",
+   "synonyms": [],
+   "mainAbbreviation": "LFP",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000088",
+   "methodName": "Leaf pubescence - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at flowering stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000101",
+   "scaleName": "Visual Absent-Present scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absent",
+     "1= Present"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000260",
+  "observationVariableName": "LSHAPE_VisClsn_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000084",
+   "traitName": "Leaf shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Leaf shape",
+   "synonyms": [],
+   "mainAbbreviation": "LS",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000085",
+   "methodName": "Leaf shape - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at 50 % flowering stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000086",
+   "scaleName": "Visual Leaf shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Lanceolate",
+     "2= Narrow elliptic",
+     "3= Broad elliptic",
+     "4= Obtuse",
+     "5= Obcordate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000261",
+  "observationVariableName": "SPAD_Avg_CCI",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000066",
+   "traitName": "Leaf chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Leaf chlorophyll content",
+   "synonyms": [],
+   "mainAbbreviation": "SPAD",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000067",
+   "methodName": "SPAD chlorophyll index - Method",
+   "methodClass": "Computation",
+   "description": "Average number recorded for 5 randomly selected plants in a plot with SPAD device before noon",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000068",
+   "scaleName": "CCI",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000262",
+  "observationVariableName": "HTEMP_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000160",
+   "traitName": "High temperature stress susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "High temperature stress susceptibility",
+   "synonyms": [],
+   "mainAbbreviation": "HTS",
+   "alternativeAbbreviations": [],
+   "entity": "High temperature stress",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000172",
+   "methodName": "High temperature stress susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to high temperature stress",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000182",
+   "scaleName": "Abiotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2=",
+     "3= Tolerant",
+     "4=",
+     "5= Moderately tolerant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000263",
+  "observationVariableName": "FW_Comp_Pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [
+   "Evaluation of genotypes in sick plot nursery"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000054",
+   "traitName": "Fusarium wilt Incidence",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plants infected with fusarium wilt disease in a plot",
+   "synonyms": [],
+   "mainAbbreviation": "FW",
+   "alternativeAbbreviations": [],
+   "entity": "Fusarium wilt",
+   "entityPUI": null,
+   "attribute": "Incidence",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000055",
+   "methodName": "Fusarium wilt - Method",
+   "methodClass": "Computation",
+   "description": "Recorded in percentage as the number of infected plants / Total number of plants X 100",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000059",
+   "scaleName": "Percent",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000264",
+  "observationVariableName": "FCL_VisClsn_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Flowering",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000090",
+   "traitName": "Flower color",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Color of the flower",
+   "synonyms": [],
+   "mainAbbreviation": "FCL",
+   "alternativeAbbreviations": [],
+   "entity": "Flower",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000091",
+   "methodName": "Flower color - Method",
+   "methodClass": "Estimation",
+   "description": "Recorded visually at 50% flowering stage",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000092",
+   "scaleName": "Visual Flower color scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Light yellow",
+     "2= yellow",
+     "3= orange yellow",
+     "4= purple",
+     "5= red"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000265",
+  "observationVariableName": "DROUGHT_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000161",
+   "traitName": "Drought stress susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "Drought stress susceptibility",
+   "synonyms": [],
+   "mainAbbreviation": "DS",
+   "alternativeAbbreviations": [],
+   "entity": "Drought stress",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000173",
+   "methodName": "Drought stress susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to drought stress",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000182",
+   "scaleName": "Abiotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly tolerant",
+     "2=",
+     "3= Tolerant",
+     "4=",
+     "5= Moderately tolerant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000266",
+  "observationVariableName": "CKD_VolIncr_idx",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "After harvest",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Standard ICRISAT",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000111",
+   "traitName": "Cooking quality of dhal",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Cooking quality of dhal",
+   "synonyms": [],
+   "mainAbbreviation": "CKD",
+   "alternativeAbbreviations": [],
+   "entity": "Dhal",
+   "entityPUI": null,
+   "attribute": "Cooking quality",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000112",
+   "methodName": "Cooking quality of dhal - Method",
+   "methodClass": "Measurement",
+   "description": "Recording of the increase in volume (v/v) after soaking 24 hrs and boiling for 25 min",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000137",
+   "scaleName": "Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000267",
+  "observationVariableName": "NCLP_Avg_ClustPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2014-05-01 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000144",
+   "traitName": "Number of clusters",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of pod clusters per plant",
+   "synonyms": [],
+   "mainAbbreviation": "NCP",
+   "alternativeAbbreviations": [],
+   "entity": "Cluster",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000145",
+   "methodName": "Number of clusters Average- Method",
+   "methodClass": "Computation",
+   "description": "Average number of clusters recorded for 5 randomly selected plants at the time of maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000146",
+   "scaleName": "cluster/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000268",
+  "observationVariableName": "NCLP_Count_ClustPlnt",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": "Maturity",
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "17-juin-15",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000144",
+   "traitName": "Number of clusters",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of pod clusters per plant",
+   "synonyms": [],
+   "mainAbbreviation": "NCP",
+   "alternativeAbbreviations": [],
+   "entity": "Cluster",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000181",
+   "methodName": "Number of clusters Count - Method",
+   "methodClass": "Computation",
+   "description": "Count the number of clusters of a randomly selected plant at the time of maturity",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000146",
+   "scaleName": "cluster/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_341:0000269",
+  "observationVariableName": "ALTBL_Suscp_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_341",
+   "ontologyName": "Pigeonpea"
+  },
+  "contextOfUse": [],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT",
+  "language": "EN",
+  "scientist": "Dr. C. V. Sameerkumar and Mr. Suyash Patil",
+  "status": "Recommended",
+  "synonyms": [],
+  "date": "2015-04-15 00:00:00",
+  "crop": "Pigeonpea",
+  "trait": {
+   "traitDbId": "CO_341:0000162",
+   "traitName": "Alternaria blight disease susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Susceptibility to disease caused by agent Alternaria blight (Alternaria alternata)",
+   "synonyms": [],
+   "mainAbbreviation": "DAB",
+   "alternativeAbbreviations": [],
+   "entity": "Alternaria blight disease",
+   "entityPUI": null,
+   "attribute": "Susceptibility",
+   "attributePUI": null,
+   "status": "Recommended",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_341:0000174",
+   "methodName": "Disease Alternaria blight susceptibility - method",
+   "methodClass": "Estimation",
+   "description": "Visual scoring of the susceptibility to Alternaria blight disease",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_341:0000184",
+   "scaleName": "Biotic stress Suscetibility 1-9 scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Highly resistant",
+     "2=",
+     "3= Resistant",
+     "4=",
+     "5= Moderately resistant",
+     "6=",
+     "7= Susceptible",
+     "8=",
+     "9= Highly susceptible"
+    ]
+   },
+   "units": null
+  }
+ }
+]

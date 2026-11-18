@@ -1,0 +1,3476 @@
+[
+ {
+  "observationVariableDbId": "CO_370:0000868",
+  "observationVariableName": "ColorR10_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000869",
+   "traitName": "Number of fruit, 0-10 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 0-10 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED10",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000870",
+   "methodName": "Fruit red color 0-10% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000872",
+  "observationVariableName": "ColorR20_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000873",
+   "traitName": "Number of fruit, 10-20 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 10-20 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED20",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000874",
+   "methodName": "Fruit red color 10-20% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000875",
+  "observationVariableName": "ColorR30_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000876",
+   "traitName": "Number of fruit, 20-30 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 20-30 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED30",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000877",
+   "methodName": "Fruit red color 20-30% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000878",
+  "observationVariableName": "ColorR40_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000879",
+   "traitName": "Number of fruit, 30-40 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 30-40 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED40",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000880",
+   "methodName": "Fruit red color 30-40% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000881",
+  "observationVariableName": "ColorR50_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000882",
+   "traitName": "Number of fruit, 40-50 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 40-50 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED50",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000883",
+   "methodName": "Fruit red color 40-50% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000884",
+  "observationVariableName": "ColorR60_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000885",
+   "traitName": "Number of fruit, 50-60 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 50-60 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED60",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000886",
+   "methodName": "Fruit red color 50-60% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000887",
+  "observationVariableName": "ColorR70_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000888",
+   "traitName": "Number of fruit, 60-70 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 60-70 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED70",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000889",
+   "methodName": "Fruit red color 60-70% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000890",
+  "observationVariableName": "ColorR80_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000891",
+   "traitName": "Number of fruit, 70-80 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 70-80 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED80",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000892",
+   "methodName": "Fruit red color 70-80% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000893",
+  "observationVariableName": "ColorR90_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000894",
+   "traitName": "Number of fruit, 80-90 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of 80-90 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED90",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000895",
+   "methodName": "Fruit red color 80-90% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000896",
+  "observationVariableName": "ColorR100_Obser_per",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000897",
+   "traitName": "Number of fruit, 90-100 % of red color component",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Fruit color, 90-100 % of red color component measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "PERRED100",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Fruit color red component",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000898",
+   "methodName": "Fruit red color 90-100% - counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000899",
+  "observationVariableName": "Size65M_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000900",
+   "traitName": "Number of fruit (size class 65-)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 65- measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITM65",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000901",
+   "methodName": "Fruit size class 65- counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000903",
+  "observationVariableName": "Size65P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000904",
+   "traitName": "Number of fruit (size class 65+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 65+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP65",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000905",
+   "methodName": "Fruit size class 65+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000906",
+  "observationVariableName": "Size70P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000907",
+   "traitName": "Number of fruit (size class 70+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 70+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP70",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000908",
+   "methodName": "Fruit size class 70+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000909",
+  "observationVariableName": "Size75P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000910",
+   "traitName": "Number of fruit (size class 75+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 75+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP75",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000911",
+   "methodName": "Fruit size class 75+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000912",
+  "observationVariableName": "Size80P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000913",
+   "traitName": "Number of fruit (size class 80+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 80+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP80",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000914",
+   "methodName": "Fruit size class 80+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000915",
+  "observationVariableName": "Size85P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000916",
+   "traitName": "Number of fruit (size class 85+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 85+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP85",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000917",
+   "methodName": "Fruit size class 85+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000918",
+  "observationVariableName": "Size90P_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000919",
+   "traitName": "Number of fruit (size class 90+)",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of fruit of size class 90+ measured with sorter machine",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITP90",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Size",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000920",
+   "methodName": "Fruit size class 90+ counting",
+   "methodClass": "Measurement",
+   "description": "Apple sorting machine equipped with a camera sorts fruits by diameter and color",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000921",
+  "observationVariableName": "Russeting_Obser_score",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000922",
+   "traitName": "Fruit russeting",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Russeting",
+   "synonyms": [],
+   "mainAbbreviation": "RUSSAN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Russeting",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000923",
+   "methodName": "Russeting - estimating % from total",
+   "methodClass": "Measurement",
+   "description": "Counting % from the whole amount",
+   "formula": "(Value/Total value)×100%",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000924",
+  "observationVariableName": "Blossom_Obser_date",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000925",
+   "traitName": "Tree flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date of blossom",
+   "synonyms": [],
+   "mainAbbreviation": "BLOSSOM",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Flowering blossom",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000926",
+   "methodName": "Flowering starting date - field observation",
+   "methodClass": "Measurement",
+   "description": "Field observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000927",
+   "scaleName": "date",
+   "dataType": "Interval",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000928",
+  "observationVariableName": "FlowerFull_Obser_date",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000929",
+   "traitName": "Date of full flowering",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date of full flowering",
+   "synonyms": [],
+   "mainAbbreviation": "DATEFLO",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Flowering full",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000930",
+   "methodName": "Flowering full - field observation",
+   "methodClass": "Measurement",
+   "description": "Field observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000927",
+   "scaleName": "date",
+   "dataType": "Interval",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000931",
+  "observationVariableName": "FlowerFade_Obser_date",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Annual sorting data"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000932",
+   "traitName": "Date of flower fading",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Date of flower fading",
+   "synonyms": [],
+   "mainAbbreviation": "DATEFAD",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Flowering fading",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000933",
+   "methodName": "Flowering fading- field observation",
+   "methodClass": "Measurement",
+   "description": "Field observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000927",
+   "scaleName": "date",
+   "dataType": "Interval",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000934",
+  "observationVariableName": "GDD_WS_N",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Plant development"
+  ],
+  "defaultValue": null,
+  "growthStage": "Plant development",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000935",
+   "traitName": "Time to fruit maternity",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Length of time towards fruit maturity",
+   "synonyms": [],
+   "mainAbbreviation": "WSGDD",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Time to fruit maternity",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000936",
+   "methodName": "Growing degree days estimation",
+   "methodClass": "Computation",
+   "description": "Compute growing degree days required from planting (or 50% emergence) to 50% foliage senescence or maturity.  This averaging method and take any negativ record as zero. A base temp 10 °C.",
+   "formula": "GDD = Sum[(Tmax +Tmin)/2 - Tbase]",
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000937",
+   "scaleName": "index",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=mate",
+     "2=low greasiness",
+     "3=smooth",
+     "4=lustrous",
+     "5=glossy",
+     "6=waxy surface",
+     "7=greasy",
+     "8=significant greasiness ",
+     "9=high greasiness"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000938",
+  "observationVariableName": "Shrivel_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000939",
+   "traitName": "Number of apples showing sign of shrivel",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of shrivel after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "SHRSC",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Shrivel",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000940",
+   "methodName": "Shrivel - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000941",
+  "observationVariableName": "Stains_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000942",
+   "traitName": "Number of apples showing sign of stains",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of stains after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "STSCO",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Stains",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000943",
+   "methodName": "Stains - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000944",
+  "observationVariableName": "Greasiness_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000945",
+   "traitName": "Number of apples showing sign ofgreasiness",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Greasiness of the apples shown stains after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "GRESCO",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Greasiness",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000946",
+   "methodName": "Greasiness - visual evaluation, counting",
+   "methodClass": "Measurement",
+   "description": "Visual evaluation of fruit greasiness",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000937",
+   "scaleName": "index",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=mate",
+     "2=low greasiness",
+     "3=smooth",
+     "4=lustrous",
+     "5=glossy",
+     "6=waxy surface",
+     "7=greasy",
+     "8=significant greasiness ",
+     "9=high greasiness"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000947",
+  "observationVariableName": "PeelTan_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000948",
+   "traitName": "Number of apples showing sign of peel tan browning",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of peel tan browning after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMBR",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Peel tan",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000949",
+   "methodName": "Peel tan - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000950",
+  "observationVariableName": "BitterPit_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000951",
+   "traitName": "Number of apples showing sign of bitter pit",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of bitter pit after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMPEEL",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Bitter pit",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000952",
+   "methodName": "Bitter pit - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000953",
+  "observationVariableName": "Rots_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000954",
+   "traitName": "Number of apples showing sign of rots",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of rots after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMROT",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Rots",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000955",
+   "methodName": "Rots - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000956",
+  "observationVariableName": "Lenticel_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000957",
+   "traitName": "Number of apples showing sign of lenticel rot",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of lenticel rot after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMLEN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Lenticel rot",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000958",
+   "methodName": "Lenticel rot - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000959",
+  "observationVariableName": "FrostDamage_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000960",
+   "traitName": "Number of apples showing sign of frost damage",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of frost damage after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMFRO",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Frost damage",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000961",
+   "methodName": "Frost damage - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000962",
+  "observationVariableName": "PinScab_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000963",
+   "traitName": "Number of apples showing sign of pinpoint scab",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples with pinpoint scab - gray to black spots that develop cracks as fruit grows",
+   "synonyms": [],
+   "mainAbbreviation": "NUMPIN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Pinpoint scab",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000964",
+   "methodName": "Pinpoint scab - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000965",
+  "observationVariableName": "Mildew_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000966",
+   "traitName": "Number of apples showing sign of mildew",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of frost damage after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMMILD",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Mildew",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000967",
+   "methodName": "Mildew - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000968",
+  "observationVariableName": "MDecay_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000969",
+   "traitName": "Number of apples showing sign of mealy decay",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of mealy decay after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMDEC",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Mealy decay",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000970",
+   "methodName": "Mealy decay - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000971",
+  "observationVariableName": "Browning_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000972",
+   "traitName": "Number of apples showing sign of flesh browning",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of flesh browning after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMFLE",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Flesh browning",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000973",
+   "methodName": "Flesh browning - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000974",
+  "observationVariableName": "Mould_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000975",
+   "traitName": "Number of apples showing sign of core mould",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of core mould after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMMOU",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Core mould",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000976",
+   "methodName": "Core mould - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000977",
+  "observationVariableName": "Glass_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Disorder indicator"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000978",
+   "traitName": "Number of apples showing sign of vitrescence",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Number of apples shown signs of vitrescence after the storage period",
+   "synonyms": [],
+   "mainAbbreviation": "NUMGLAS",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Vitrescence",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000979",
+   "methodName": "Vitrescence - visual evaluation, counting",
+   "methodClass": "Counting",
+   "description": "Counting number from the harvested amount",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000980",
+  "observationVariableName": "Starch_Avr_Measur_const",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000981",
+   "traitName": "Fruit starch average",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Starch standard",
+   "synonyms": [],
+   "mainAbbreviation": "INTENSAV",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Starch average",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000982",
+   "methodName": "Starch average - estimation",
+   "methodClass": "Measurement",
+   "description": "Average starch value standard",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000983",
+   "scaleName": "starch value",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000984",
+  "observationVariableName": "FirmnessAv_Measu_kg/cm2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000985",
+   "traitName": "Apple flesh firmness standard",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Firmness standard",
+   "synonyms": [],
+   "mainAbbreviation": "FIRMAVE",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Apple flesh firmness standard",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000986",
+   "methodName": "Firmness average - estimation",
+   "methodClass": "Measurement",
+   "description": "Average firmness value standard",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000987",
+   "scaleName": "kg/cm2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000988",
+  "observationVariableName": "Acidity_Measu_Ph",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000989",
+   "traitName": "Apple acidity standard",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Acidity standard",
+   "synonyms": [],
+   "mainAbbreviation": "ACIDAVE",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Apple acidity standard",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000990",
+   "methodName": "Acidity average - estimation",
+   "methodClass": "Measurement",
+   "description": "Average acidity value standard",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000991",
+   "scaleName": "g/L MA",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000992",
+  "observationVariableName": "HarvestDate_Obser_date",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Harvest"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000993",
+   "traitName": "Date of harvest",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Date of harvest",
+   "synonyms": [],
+   "mainAbbreviation": "HARVDATE",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Harvest date",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000994",
+   "methodName": "Harvest date - field observation",
+   "methodClass": "Measurement",
+   "description": "Field observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000927",
+   "scaleName": "date",
+   "dataType": "Interval",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000995",
+  "observationVariableName": "HarvestN_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Harvest"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000996",
+   "traitName": "Number of harvest",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of harvest",
+   "synonyms": [],
+   "mainAbbreviation": "HARVNUM",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Harvest numbers",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0000997",
+   "methodName": "Harvest number - field observation",
+   "methodClass": "Measurement",
+   "description": "Field observation",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0000998",
+  "observationVariableName": "Taste_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-storage analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0000999",
+   "traitName": "Eating quality",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Eating quality score",
+   "synonyms": [],
+   "mainAbbreviation": "TASTSCO",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Eating quality",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001000",
+   "methodName": "Eating quality - measurement, human sensory analysis - ",
+   "methodClass": "Measurement",
+   "description": "Human sensory analysis",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001001",
+   "scaleName": "1-8 taste scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1=poor, distasteful",
+     "2=dull, bland, dry",
+     "3=bland and insipid",
+     "4=neutral, apparently ripe",
+     "5=substantially flavorful, tasteful",
+     "6=highly flavored, pleasant taste, proper firmness",
+     "7=tasteful, matured, juicy",
+     "8=delicious, ripe, flavorful, final"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001002",
+  "observationVariableName": "Starch_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-storage analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001003",
+   "traitName": "Fruit starch content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Strength score",
+   "synonyms": [],
+   "mainAbbreviation": "STRSCO",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Starch content",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001004",
+   "methodName": "Starch - measurement with electronic refractometer",
+   "methodClass": "Measurement",
+   "description": "Pimprenelle, fruit-sorting laboratory",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000983",
+   "scaleName": "starch value",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001005",
+  "observationVariableName": "Firmness_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001006",
+   "traitName": "Fruit flesh firmness",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Firmness of the flesh measured with pimprenelle",
+   "synonyms": [],
+   "mainAbbreviation": "FIRMFLES",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Flesh firmness",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001007",
+   "methodName": "Firmness - measurement with electronic refractometer",
+   "methodClass": "Measurement",
+   "description": "Pimprenelle, fruit-sorting laboratory",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000987",
+   "scaleName": "kg/cm2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001008",
+  "observationVariableName": "Acidity_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001009",
+   "traitName": "Fruit acidity",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Acidity measured with pimprenelle",
+   "synonyms": [],
+   "mainAbbreviation": "ACIDAN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Acidity",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001010",
+   "methodName": "Acidity - measurement with electronic refractometer",
+   "methodClass": "Measurement",
+   "description": "Pimprenelle, fruit-sorting laboratory",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000991",
+   "scaleName": "g/L MA",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001011",
+  "observationVariableName": "Sugar_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001012",
+   "traitName": "Fruit sugar content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Sugar content measured with pimprenelle",
+   "synonyms": [],
+   "mainAbbreviation": "SUGAAN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Sugar content",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001013",
+   "methodName": "Sugar - measurement with electronic refractometer",
+   "methodClass": "Measurement",
+   "description": "Pimprenelle, fruit-sorting laboratory",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001014",
+   "scaleName": "°Brix",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001015",
+  "observationVariableName": "Juici_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001016",
+   "traitName": "Fruit juiciness",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Juiciness measured with pimprenelle",
+   "synonyms": [],
+   "mainAbbreviation": "JUICAN",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Juiciness",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001017",
+   "methodName": "Juiciness - measurement with electronic refractometer",
+   "methodClass": "Measurement",
+   "description": "Pimprenelle, fruit-sorting laboratory",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000871",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001018",
+  "observationVariableName": "TreeYield_Obser_sum",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Yield"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001019",
+   "traitName": "Yield in kg per tree",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Yield in kg per tree per plot",
+   "synonyms": [],
+   "mainAbbreviation": "YIELDKG",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Tree yield",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001020",
+   "methodName": "Yield per tree - measurement, weighting",
+   "methodClass": "Measurement",
+   "description": "Weighting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001021",
+   "scaleName": "kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001022",
+  "observationVariableName": "FruitSum_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Yield"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001023",
+   "traitName": "Number of fruit per tree",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of fruit per tree per plot",
+   "synonyms": [],
+   "mainAbbreviation": "FRUITNUM",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Amount of fruit",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001024",
+   "methodName": "Yield total - measurement, weighting",
+   "methodClass": "Measurement",
+   "description": "Weighting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001021",
+   "scaleName": "kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001025",
+  "observationVariableName": "PreharFruitDrop_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Yield"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001026",
+   "traitName": "Number of fallen fruit per tree",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of fallen fruit per tree per plot",
+   "synonyms": [],
+   "mainAbbreviation": "FALLNUM",
+   "alternativeAbbreviations": [],
+   "entity": "Planting",
+   "entityPUI": null,
+   "attribute": "Preharvest fruit drop",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001027",
+   "methodName": "Preharvest fruit drop - measurement, counting",
+   "methodClass": "Measurement",
+   "description": "Field observation, counting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001028",
+  "observationVariableName": "PreharFruitDrop_Obser_kg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Yield"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001029",
+   "traitName": "Number of fallen fruit per tree in kg",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of fallen fruit per tree  per plot in kg",
+   "synonyms": [],
+   "mainAbbreviation": "SUMFALL",
+   "alternativeAbbreviations": [],
+   "entity": "Tree",
+   "entityPUI": null,
+   "attribute": "Preharvest fruit drop in kg",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001030",
+   "methodName": "Preharvest fruit drop - measurement, weighting",
+   "methodClass": "Measurement",
+   "description": "Weighting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001021",
+   "scaleName": "kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001031",
+  "observationVariableName": "TreeNHarvest_Obser_photo",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Yield "
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual at harvest analysis",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001032",
+   "traitName": "Tree number at harvest",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Tree number at harvest per plot",
+   "synonyms": [],
+   "mainAbbreviation": "TREENHAR",
+   "alternativeAbbreviations": [],
+   "entity": "Planting",
+   "entityPUI": null,
+   "attribute": "Tree number at harvest",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001033",
+   "methodName": "Tree number - measurement, counting",
+   "methodClass": "Measurement",
+   "description": "Field observation, counting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0000902",
+   "scaleName": "count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_370:0001034",
+  "observationVariableName": "Durability_Obser_count",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_370",
+   "ontologyName": "Apple (Malus domestica)"
+  },
+  "contextOfUse": [
+   "Quality"
+  ],
+  "defaultValue": null,
+  "growthStage": "Annual post-storage",
+  "institution": "Laimburg Research, EURAC",
+  "language": "EN",
+  "scientist": "E. Chuprikova, W. Guerra",
+  "status": "Standard for Laimburg Research",
+  "synonyms": [],
+  "date": null,
+  "crop": "Apple (Malus domestica)",
+  "trait": {
+   "traitDbId": "CO_370:0001035",
+   "traitName": "Maximum storage life",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Maximum number of months of storage life",
+   "synonyms": [],
+   "mainAbbreviation": "DURABI",
+   "alternativeAbbreviations": [],
+   "entity": "Fruit",
+   "entityPUI": null,
+   "attribute": "Maximum storage life",
+   "attributePUI": null,
+   "status": "Standard for Laimburg Research",
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_370:0001036",
+   "methodName": "Time for maximum storage - counting",
+   "methodClass": "Counting",
+   "description": "Maximum number of months fruit can be stored under standard conditions - counting",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_370:0001037",
+   "scaleName": "month count",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

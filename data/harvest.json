@@ -1,0 +1,186 @@
+{
+ "source": "https://cropontology.org/brapi/v2",
+ "updatedAt": "2026-11-18T08:00:52.802Z",
+ "ontologies": {
+  "CO_320": {
+   "fingerprint": "a1f9a70be9f94e2a",
+   "variableCount": 399,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_321": {
+   "fingerprint": "3c0ff675dff10a3a",
+   "variableCount": 465,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_322": {
+   "fingerprint": "eb2adc04eae3cb61",
+   "variableCount": 360,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_323": {
+   "fingerprint": "710d3ed86c8bff99",
+   "variableCount": 148,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_324": {
+   "fingerprint": "aa659f49e29f1c98",
+   "variableCount": 345,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_325": {
+   "fingerprint": "da3c2857ed12ecb2",
+   "variableCount": 361,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_326": {
+   "fingerprint": "bb0e92e2aac0ddb2",
+   "variableCount": 255,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_327": {
+   "fingerprint": "1e7aea02ccbfef48",
+   "variableCount": 63,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_330": {
+   "fingerprint": "5213ced554d25b0a",
+   "variableCount": 382,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_331": {
+   "fingerprint": "159f3fe716472476",
+   "variableCount": 333,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_333": {
+   "fingerprint": "344df9c8c470fd92",
+   "variableCount": 369,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_334": {
+   "fingerprint": "dbfe8f163e77608d",
+   "variableCount": 379,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_335": {
+   "fingerprint": "cf6a94e688ca3acf",
+   "variableCount": 186,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_336": {
+   "fingerprint": "984a2cd19c09f5a6",
+   "variableCount": 90,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_337": {
+   "fingerprint": "a27e79a27e9abded",
+   "variableCount": 187,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_338": {
+   "fingerprint": "66373c7418109336",
+   "variableCount": 80,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_339": {
+   "fingerprint": "9d92989db4baaf26",
+   "variableCount": 66,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_340": {
+   "fingerprint": "cbaa799b245d9e5c",
+   "variableCount": 193,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_341": {
+   "fingerprint": "7d5574b3dd23322c",
+   "variableCount": 68,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_343": {
+   "fingerprint": "9fc595f1fe8869c2",
+   "variableCount": 238,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_345": {
+   "fingerprint": "442cc0921c38b12d",
+   "variableCount": 82,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_346": {
+   "fingerprint": "719fbfffbc9900f5",
+   "variableCount": 89,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_347": {
+   "fingerprint": "e17d06bb25328e11",
+   "variableCount": 75,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_348": {
+   "fingerprint": "92ff2a5b88e0d83e",
+   "variableCount": 155,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_350": {
+   "fingerprint": "4dbdca747fc83d5f",
+   "variableCount": 328,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_357": {
+   "fingerprint": "74bf6d5849e8e312",
+   "variableCount": 499,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_358": {
+   "fingerprint": "66b91290d49f2efd",
+   "variableCount": 279,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_359": {
+   "fingerprint": "c22d3ce64536938e",
+   "variableCount": 351,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_360": {
+   "fingerprint": "aa81d839abe0010f",
+   "variableCount": 71,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_365": {
+   "fingerprint": "b2ca5f08d9b0060d",
+   "variableCount": 94,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_366": {
+   "fingerprint": "809506d25b43d7ee",
+   "variableCount": 163,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_367": {
+   "fingerprint": "0bc2c3112ac9fa28",
+   "variableCount": 41,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_370": {
+   "fingerprint": "4690ad5fc1643f36",
+   "variableCount": 53,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_371": {
+   "fingerprint": "ea24785ffc1ce872",
+   "variableCount": 178,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_372": {
+   "fingerprint": "486ccaab653e1405",
+   "variableCount": 132,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  },
+  "CO_374": {
+   "fingerprint": "340a66f190cbc9a8",
+   "variableCount": 28,
+   "changedAt": "2026-11-18T08:00:52.802Z"
+  }
+ }
+}

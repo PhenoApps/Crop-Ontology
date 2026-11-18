@@ -1,0 +1,6086 @@
+[
+ {
+  "observationVariableDbId": "CO_346:0000032",
+  "observationVariableName": "AcdTol _E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000030",
+   "traitName": "Acid soil tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to acid soil.",
+   "synonyms": [],
+   "mainAbbreviation": "AcdTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Acid soil tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000031",
+   "methodName": "Acid soil tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Tolerance to acid soils estimated as reduction in plant height 30 days after sowing.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000019",
+   "scaleName": "1-9 Abiotic stress tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= highly susceptible to susceptible",
+     "3= susceptible",
+     "4= susceptible to moderately susceptible",
+     "5= moderately susceptible",
+     "6= moderately susceptible to moderately tolerant",
+     "7= moderately tolerant",
+     "8= tolerant",
+     "9= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000035",
+  "observationVariableName": "ColdTol_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000033",
+   "traitName": "Cold tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to lower temperatures than the optimum.",
+   "synonyms": [],
+   "mainAbbreviation": "ColdTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Cold tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000034",
+   "methodName": "Cold tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Usually estimated as reduction in general vigour and productivity after being continuously exposed to an average temperature of 15âˆžC for at least 15 days.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000019",
+   "scaleName": "1-9 Abiotic stress tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= highly susceptible to susceptible",
+     "3= susceptible",
+     "4= susceptible to moderately susceptible",
+     "5= moderately susceptible",
+     "6= moderately susceptible to moderately tolerant",
+     "7= moderately tolerant",
+     "8= tolerant",
+     "9= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000038",
+  "observationVariableName": "DrouTol_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000036",
+   "traitName": "Drought tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plant tolerance to drought stress.",
+   "synonyms": [],
+   "mainAbbreviation": "DrouTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000037",
+   "methodName": "Drought tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Tolerance to soil moisture deficit estimated as reduction in yield.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000019",
+   "scaleName": "1-9 Abiotic stress tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= highly susceptible to susceptible",
+     "3= susceptible",
+     "4= susceptible to moderately susceptible",
+     "5= moderately susceptible",
+     "6= moderately susceptible to moderately tolerant",
+     "7= moderately tolerant",
+     "8= tolerant",
+     "9= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000041",
+  "observationVariableName": "HeatTol_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000039",
+   "traitName": "Heat tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to heat conditions.",
+   "synonyms": [],
+   "mainAbbreviation": "HeatTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Heat tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000040",
+   "methodName": "Heat tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Usually estimated as yield reduction when continuously exposed to average of 40âˆžC during the flowering period.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000019",
+   "scaleName": "1-9 Abiotic stress tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= highly susceptible to susceptible",
+     "3= susceptible",
+     "4= susceptible to moderately susceptible",
+     "5= moderately susceptible",
+     "6= moderately susceptible to moderately tolerant",
+     "7= moderately tolerant",
+     "8= tolerant",
+     "9= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000044",
+  "observationVariableName": "SaltTol_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000042",
+   "traitName": "Salinity tolerance",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants tolerance to soil salinity.",
+   "synonyms": [],
+   "mainAbbreviation": "SaltTol",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Salinity tolerance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000043",
+   "methodName": "Salinity tolerance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Tolerance to salinity estimated as reduction in plant height 30 days after sowing.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000019",
+   "scaleName": "1-9 Abiotic stress tolerance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= highly susceptible",
+     "2= highly susceptible to susceptible",
+     "3= susceptible",
+     "4= susceptible to moderately susceptible",
+     "5= moderately susceptible",
+     "6= moderately susceptible to moderately tolerant",
+     "7= moderately tolerant",
+     "8= tolerant",
+     "9= highly tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000048",
+  "observationVariableName": "BrnchN_Ct_brnchplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000045",
+   "traitName": "Branch number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of branches.",
+   "synonyms": [],
+   "mainAbbreviation": "BrnchN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Branch number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000046",
+   "methodName": "Branch number - Counting",
+   "methodClass": "Counting",
+   "description": "Count only pod-bearing branches. Usually recorded when first pod changes colour.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000047",
+   "scaleName": "branch/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000052",
+  "observationVariableName": "ClusN_Ct_clustplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000049",
+   "traitName": "Cluster number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of clusters.",
+   "synonyms": [],
+   "mainAbbreviation": "ClusN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Cluster number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000050",
+   "methodName": "Cluster number - Counting",
+   "methodClass": "Counting",
+   "description": "Count number of clusters having at least one fully grown pod at first harvest including both main stem and branches.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000051",
+   "scaleName": "cluster/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000054",
+  "observationVariableName": "LodgInc_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000001",
+   "traitName": "Lodging incidence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Lodging incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "LodgInc",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000012",
+   "methodName": "Lodging incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe lodging incidence and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000053",
+   "scaleName": "1-9 Incidence general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "2= Very low",
+     "3= Low",
+     "4= Low to intermediate",
+     "5= Intermediate",
+     "6= Intermediate to severe",
+     "7= Severe",
+     "8= Severe to heavy",
+     "9= Heavy"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000056",
+  "observationVariableName": "LodgInc_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000001",
+   "traitName": "Lodging incidence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Lodging incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "LodgInc",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000012",
+   "methodName": "Lodging incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe lodging incidence and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000055",
+   "scaleName": "1-3 Incidence general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "2= Mild",
+     "3= Severe"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000060",
+  "observationVariableName": "Nodulation_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000057",
+   "traitName": "Nodulation",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Nodulation on roots.",
+   "synonyms": [],
+   "mainAbbreviation": "Nodulation",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodulation",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000058",
+   "methodName": "Nodulation - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe presence of nodules in root system and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000059",
+   "scaleName": "1-3 Nodulation scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "2= Poor",
+     "3= Heavy"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000063",
+  "observationVariableName": "PH_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000061",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Plant height.",
+   "synonyms": [],
+   "mainAbbreviation": "PH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000062",
+   "methodName": "Plant height - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on drawn-out plants, usually recorded as average of 10 plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000067",
+  "observationVariableName": "Leafiness_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000064",
+   "traitName": "Plant leafiness",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Leafiness of plants.",
+   "synonyms": [],
+   "mainAbbreviation": "Leafiness",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Leafiness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000065",
+   "methodName": "Plant leafiness - Estimation",
+   "methodClass": "Estimation",
+   "description": "Usually recorded at 50% flowering.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000066",
+   "scaleName": "1-9 Plant leafiness scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Sparse (main stem easily visible)",
+     "2= Sparse to fair",
+     "3= Fair",
+     "4= Fair to medium",
+     "5= Medium",
+     "6= Medium to dense",
+     "7= Dense",
+     "8= Dense to abundant",
+     "9= Abundant (very leafy)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000071",
+  "observationVariableName": "PStand_plantm2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000068",
+   "traitName": "Plant stand",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of plant per unit area or sample.",
+   "synonyms": [],
+   "mainAbbreviation": "PStand",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Stand",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000069",
+   "methodName": "Plant stand - Counting",
+   "methodClass": "Counting",
+   "description": "Count plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000070",
+   "scaleName": "plant/m2",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000075",
+  "observationVariableName": "PodN_M_podplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000072",
+   "traitName": "Pod number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodN",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000073",
+   "methodName": "Pod number - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually recorded as averaged number of pods from 10 representative plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000074",
+   "scaleName": "pod/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000079",
+  "observationVariableName": "SdN_Ct_sdpod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000076",
+   "traitName": "Seed number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Number of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdN",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000077",
+   "methodName": "Seed number - Counting",
+   "methodClass": "Counting",
+   "description": "Usually recorded as averaged number of seeds from 10 representative pods.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000078",
+   "scaleName": "seed/pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000083",
+  "observationVariableName": "SdShatt_E_yn",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000080",
+   "traitName": "Seed shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Shattering of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdShatt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000081",
+   "methodName": "Seed shattering - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe shattering as seeds falling from pods on standing plants.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000082",
+   "scaleName": "1-2 No/Yes scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No",
+     "2= Yes"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000085",
+  "observationVariableName": "SdWt_M_g1000Sd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000002",
+   "traitName": "Seed weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed per sample (single, 100, 200, 1000) or plant/plant part.",
+   "synonyms": [],
+   "mainAbbreviation": "SdWt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000013",
+   "methodName": "Seed weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Count and weigh seed.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000084",
+   "scaleName": "g/1000 seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000087",
+  "observationVariableName": "SdWt_M_g100Sd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000002",
+   "traitName": "Seed weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed per sample (single, 100, 200, 1000) or plant/plant part.",
+   "synonyms": [],
+   "mainAbbreviation": "SdWt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000013",
+   "methodName": "Seed weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Count and weigh seed.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000086",
+   "scaleName": "g/100 seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000090",
+  "observationVariableName": "SdYld_M_gplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area.",
+   "synonyms": [],
+   "mainAbbreviation": "SdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000088",
+   "methodName": "Seed yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually reported as averaged weight of 10 plants after drying in sun.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000089",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000093",
+  "observationVariableName": "SdYld_Comp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area.",
+   "synonyms": [],
+   "mainAbbreviation": "SdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000091",
+   "methodName": "Seed yield - Computation",
+   "methodClass": "Computation",
+   "description": "Compute seed yield.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000092",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000097",
+  "observationVariableName": "SdlingVig_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000094",
+   "traitName": "Seedling vigour",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Vigour of the seedlings.",
+   "synonyms": [],
+   "mainAbbreviation": "SdlingVig",
+   "alternativeAbbreviations": [],
+   "entity": "Seedling",
+   "entityPUI": null,
+   "attribute": "Vigour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000095",
+   "methodName": "Seedling vigour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Seedling vigour assessed 15 days after emergence.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000096",
+   "scaleName": "1-9 Vigour scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Poor",
+     "2= Very low",
+     "3= Low",
+     "4= Fair",
+     "5= Medium",
+     "6= Medium to good",
+     "7= Good",
+     "8= Very good",
+     "9= Vigorous"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000100",
+  "observationVariableName": "Shelling_Comp_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000098",
+   "traitName": "Shelling index",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "Shelling as ratio of seed and pod weight.",
+   "synonyms": [],
+   "mainAbbreviation": "Shelling",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Shelling index",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000099",
+   "methodName": "Shelling index - Computation",
+   "methodClass": "Computation",
+   "description": "Calculated as seed weight divided by pod weight, usually based on minimum of 100 pods.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000021",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000103",
+  "observationVariableName": "AphRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000101",
+   "traitName": "Aphid resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Resistance to aphids.",
+   "synonyms": [],
+   "mainAbbreviation": "AphRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aphid resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000102",
+   "methodName": "Aphid resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to aphids, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000106",
+  "observationVariableName": "BLSRes_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000104",
+   "traitName": "Bacterial leaf spot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to bacterial leaf spot (BLS) caused by the agent Xanthomonas phaseoli.",
+   "synonyms": [],
+   "mainAbbreviation": "BLSRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Bacterial leaf spot resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000105",
+   "methodName": "Bacterial leaf spot resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to BLS, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000023",
+   "scaleName": "1-4 General resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "HR= Highly resistance",
+     "MS= Moderately resistance",
+     "R= Resistance",
+     "S= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000109",
+  "observationVariableName": "BruchRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000107",
+   "traitName": "Bruchid resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Resistance to storage insect pest Callosobruchus chinensis (bruchid).",
+   "synonyms": [],
+   "mainAbbreviation": "BruchRes",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Bruchid resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000108",
+   "methodName": "Bruchid resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to bruchids, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000110",
+  "observationVariableName": "CLSRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000004",
+   "traitName": "Cercospora leaf spot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to Cercospora leaf spot (CLS) caused by the agent Cercospora canescens.",
+   "synonyms": [],
+   "mainAbbreviation": "CLSRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Bacterial leaf spot resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000014",
+   "methodName": "Cercospora leaf spot resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to CLS, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000111",
+  "observationVariableName": "CLSRes_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000004",
+   "traitName": "Cercospora leaf spot resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to Cercospora leaf spot (CLS) caused by the agent Cercospora canescens.",
+   "synonyms": [],
+   "mainAbbreviation": "CLSRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Bacterial leaf spot resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000014",
+   "methodName": "Cercospora leaf spot resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to CLS, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000023",
+   "scaleName": "1-4 General resistance scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "HR= Highly resistance",
+     "MS= Moderately resistance",
+     "R= Resistance",
+     "S= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000114",
+  "observationVariableName": "PodBorerRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000112",
+   "traitName": "Pod borer resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Resistance to pod borers.",
+   "synonyms": [],
+   "mainAbbreviation": "PodBorerRes",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Pod borer resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000113",
+   "methodName": "Pod borer resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to pod borers, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000117",
+  "observationVariableName": "PMRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000115",
+   "traitName": "Powdery Mildew resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to powdery mildew caused by the agent Erysiphe polygoni.",
+   "synonyms": [],
+   "mainAbbreviation": "PMRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Powdery Mildew resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000116",
+   "methodName": "Powdery Mildew resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to powdery mildew, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000120",
+  "observationVariableName": "WFlyRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000118",
+   "traitName": "Whitefly resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Resistance to Bemisia tabaci (whitefly).",
+   "synonyms": [],
+   "mainAbbreviation": "WFlyRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Whitefly resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000119",
+   "methodName": "Whitefly resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to whiteflies, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000123",
+  "observationVariableName": "MYMVRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000121",
+   "traitName": "Yellow mosaic virus resistance",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "Plant resistance to mungbean yellow mosaic virus (MYMV).",
+   "synonyms": [],
+   "mainAbbreviation": "MYMVRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Yellow mosaic virus resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000122",
+   "methodName": "Yellow mosaic virus resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the host reaction to MYMV, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000022",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000126",
+  "observationVariableName": "BrnchLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000124",
+   "traitName": "Branch length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of branch.",
+   "synonyms": [],
+   "mainAbbreviation": "BrnchLng",
+   "alternativeAbbreviations": [],
+   "entity": "Branch",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000125",
+   "methodName": "Branch length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure the longest branch. Usually recorded when first pod changes colour.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000130",
+  "observationVariableName": "CalixCol_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000127",
+   "traitName": "Calyx colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of calix.",
+   "synonyms": [],
+   "mainAbbreviation": "CalixCol",
+   "alternativeAbbreviations": [],
+   "entity": "Calix",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000128",
+   "methodName": "Calyx colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe calix colour and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000129",
+   "scaleName": "1-3 Calyx colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Greenish purple",
+     "3= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000134",
+  "observationVariableName": "CorollaCol_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000131",
+   "traitName": "Corolla colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of corolla (wings and standard).",
+   "synonyms": [],
+   "mainAbbreviation": "CorollaCol",
+   "alternativeAbbreviations": [],
+   "entity": "Corolla",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000132",
+   "methodName": "Corolla colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Recorded at full blossom at about 8-10 a.m.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000133",
+   "scaleName": "1-4 Corolla colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Light yellow",
+     "2= Deep yellow",
+     "3= Greenish yellow",
+     "4= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000138",
+  "observationVariableName": "FPodPos_Ct_nodPos",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000135",
+   "traitName": "First pod position",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Position of first pod.",
+   "synonyms": [],
+   "mainAbbreviation": "FPodPos",
+   "alternativeAbbreviations": [],
+   "entity": "First pod",
+   "entityPUI": null,
+   "attribute": "Position",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000136",
+   "methodName": "First pod position - Counting",
+   "methodClass": "Counting",
+   "description": "Count the node starting from the unifoliate node to the first pod-bearing node.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000137",
+   "scaleName": "node position",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000142",
+  "observationVariableName": "GwHabit_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000139",
+   "traitName": "Growth habit",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Plant growth habit.",
+   "synonyms": [],
+   "mainAbbreviation": "GwHabit",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth habit",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000140",
+   "methodName": "Growth habit - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe growth habit and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000141",
+   "scaleName": "1-3 Growth habit scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Erect: straight and prominent main stem with few branches",
+     "2= Semi-erect: main stem less prominent, but branches do not touch ground",
+     "3= Spreading: branches touch ground"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000146",
+  "observationVariableName": "GwPattern_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000143",
+   "traitName": "Growth pattern",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pattern of plant growth.",
+   "synonyms": [],
+   "mainAbbreviation": "GwPattern",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth pattern",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000144",
+   "methodName": "Growth pattern - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe growth pattern and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000145",
+   "scaleName": "1-2 Growth pattern scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Indeterminate",
+     "2= Determinate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000150",
+  "observationVariableName": "HypocCol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000147",
+   "traitName": "Hypocotyl colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of hypocotyls.",
+   "synonyms": [],
+   "mainAbbreviation": "HypocCol",
+   "alternativeAbbreviations": [],
+   "entity": "Hypocotyl",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000148",
+   "methodName": "Hypocotyl colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Usually recorded 10 days after emergence.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000149",
+   "scaleName": "1-5 Hypocotyl colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Greenish purple",
+     "3= Purple",
+     "4= Mixed",
+     "5= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000154",
+  "observationVariableName": "InMatPodCol_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000151",
+   "traitName": "Immature pod colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of immature pods.",
+   "synonyms": [],
+   "mainAbbreviation": "InMatPodCol",
+   "alternativeAbbreviations": [],
+   "entity": "Immature pod",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000152",
+   "methodName": "Immature pod colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod colour at immature stage.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000153",
+   "scaleName": "1-3 Immature pod colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Light green",
+     "2= Deep green",
+     "3= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000157",
+  "observationVariableName": "InterNodLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000155",
+   "traitName": "Internode length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of internode.",
+   "synonyms": [],
+   "mainAbbreviation": "InterNodLng",
+   "alternativeAbbreviations": [],
+   "entity": "Internode",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000156",
+   "methodName": "Internode length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure internode length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000161",
+  "observationVariableName": "LCol_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000158",
+   "traitName": "Leaf colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of leaves",
+   "synonyms": [],
+   "mainAbbreviation": "LCol",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000159",
+   "methodName": "Leaf colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe leaf colour and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000160",
+   "scaleName": "1-4 Leaf colour scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Light green",
+     "2= Green",
+     "3= Dark green",
+     "4= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000163",
+  "observationVariableName": "LPub_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000005",
+   "traitName": "Leaf pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pubescence of leaves",
+   "synonyms": [],
+   "mainAbbreviation": "LPub",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000015",
+   "methodName": "Leaf pubescence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe leaf pubescence and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000162",
+   "scaleName": "1-2 Pubescence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Glabrous",
+     "2= Pubescent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000164",
+  "observationVariableName": "LPub_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000005",
+   "traitName": "Leaf pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pubescence of leaves",
+   "synonyms": [],
+   "mainAbbreviation": "LPub",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000015",
+   "methodName": "Leaf pubescence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe leaf pubescence and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000024",
+   "scaleName": "1-3 Pubescence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Glabrous",
+     "2=Sparse",
+     "3= Dense"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000168",
+  "observationVariableName": "LTricLng_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000165",
+   "traitName": "Leaf trichome length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of leaf trichome.",
+   "synonyms": [],
+   "mainAbbreviation": "LTricLng",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf trichome",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000166",
+   "methodName": "Leaf trichome length - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe leaf trichome length and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000167",
+   "scaleName": "1-2 Length general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Short",
+     "2= Long"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000172",
+  "observationVariableName": "MatPodCol_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000169",
+   "traitName": "Mature pod colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of mature pods.",
+   "synonyms": [],
+   "mainAbbreviation": "MatPodCol",
+   "alternativeAbbreviations": [],
+   "entity": "Mature pod",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000170",
+   "methodName": "Mature pod colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod colour at mature stage.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000171",
+   "scaleName": "1-5 Mature pod colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Straw",
+     "2= Tan",
+     "3= Brown",
+     "4= Black",
+     "5= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000176",
+  "observationVariableName": "NodN_Ct_nod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000173",
+   "traitName": "Node number",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Number of nodes on main stem.",
+   "synonyms": [],
+   "mainAbbreviation": "NodN",
+   "alternativeAbbreviations": [],
+   "entity": "Node",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000174",
+   "methodName": "Node number - Counting",
+   "methodClass": "Counting",
+   "description": "Count nodes in the main stem.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000175",
+   "scaleName": "node",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000179",
+  "observationVariableName": "PedLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000177",
+   "traitName": "Peduncle length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of peduncle.",
+   "synonyms": [],
+   "mainAbbreviation": "PedLng",
+   "alternativeAbbreviations": [],
+   "entity": "Peduncle",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000178",
+   "methodName": "Peduncle length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure peduncle length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000183",
+  "observationVariableName": "PetioleCol_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000180",
+   "traitName": "Petiole colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of petioles.",
+   "synonyms": [],
+   "mainAbbreviation": "PetioleCol",
+   "alternativeAbbreviations": [],
+   "entity": "Petiole",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000181",
+   "methodName": "Petiole colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe petiole colour and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000182",
+   "scaleName": "1-4 Petiole colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Green",
+     "2= Greenish purple",
+     "3= Purple",
+     "4= Dark purple"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000186",
+  "observationVariableName": "PetioleLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000184",
+   "traitName": "Petiole length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of petioles.",
+   "synonyms": [],
+   "mainAbbreviation": "PetioleLng",
+   "alternativeAbbreviations": [],
+   "entity": "Petiole",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000185",
+   "methodName": "Petiole length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure petiole length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000189",
+  "observationVariableName": "PodConst_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000187",
+   "traitName": "Pod constriction",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Constriction of pod between seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "PodConst",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Constriction",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000188",
+   "methodName": "Pod constriction - Estimation",
+   "methodClass": "Estimation",
+   "description": "Pod constriction usually recorded when pod changes colour.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000025",
+   "scaleName": "0-1 Absence-Presence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absence",
+     "1= Presence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000193",
+  "observationVariableName": "PodCurv_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000190",
+   "traitName": "Pod curvature",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Curvature of the pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodCurv",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Curvature",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000191",
+   "methodName": "Pod curvature - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod curvature and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000192",
+   "scaleName": "1-3 Pod curvature scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Least curved",
+     "2= Medium",
+     "3= Most curved"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000196",
+  "observationVariableName": "PodLng_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000006",
+   "traitName": "Pod length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodLng",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000194",
+   "methodName": "Pod length - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod length and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000195",
+   "scaleName": "1-5 Pod length scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Short (< 14 cm)",
+     "2= Medium (14-18 cm)",
+     "3= Long (>18 cm)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000198",
+  "observationVariableName": "PodLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000006",
+   "traitName": "Pod length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodLng",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000197",
+   "methodName": "Pod length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure pod length and record it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000200",
+  "observationVariableName": "PodPub_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000007",
+   "traitName": "Pod pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pubescence of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodPub",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000016",
+   "methodName": "Pod pubescence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod pubescence and rate it. Usually recorded when the first pod changes colour.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000199",
+   "scaleName": "1-9 Pubescence density scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Glabrous",
+     "2= Very sparsely",
+     "3= Sparsely",
+     "4= Fair sparsely",
+     "5= Intermediate",
+     "6= Light densely",
+     "7= Densely",
+     "8= Very densely",
+     "9= Heavily pubescent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000201",
+  "observationVariableName": "PodPub_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000007",
+   "traitName": "Pod pubescence",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Pubescence of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodPub",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Pubescence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000016",
+   "methodName": "Pod pubescence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod pubescence and rate it. Usually recorded when the first pod changes colour.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000024",
+   "scaleName": "1-3 Pubescence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Glabrous",
+     "2=Sparse",
+     "3= Dense"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000204",
+  "observationVariableName": "PodThk_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000202",
+   "traitName": "Pod thickness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Thickness of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PodThk",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Thickness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000203",
+   "methodName": "Pod thickness - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure pod thickness.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000026",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000208",
+  "observationVariableName": "SdCoatCol_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000205",
+   "traitName": "Seed colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Colour of seed coat.",
+   "synonyms": [],
+   "mainAbbreviation": "SdCoatCol",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000206",
+   "methodName": "Seed colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe seed coat colour and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000207",
+   "scaleName": "1-7 Seed colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Yellow",
+     "2= Greenish yellow",
+     "3= Light green",
+     "4= Dark green",
+     "5= Brown",
+     "6= Mixed",
+     "7= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000212",
+  "observationVariableName": "HilumSh_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000209",
+   "traitName": "Seed hilum shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Shape of seed hilum.",
+   "synonyms": [],
+   "mainAbbreviation": "HilumSh",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Hilum shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000210",
+   "methodName": "Seed hilum shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe hilum shape.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000211",
+   "scaleName": "1-2 Seed hilum shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Concave",
+     "2= Non concave"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000215",
+  "observationVariableName": "SdLng_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000213",
+   "traitName": "Seed length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Length of seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SdLng",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000214",
+   "methodName": "Seed length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seed length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000026",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000219",
+  "observationVariableName": "SdLust_E_1to2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000216",
+   "traitName": "Seed lustre",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Lustre on seed surface.",
+   "synonyms": [],
+   "mainAbbreviation": "SdLust",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Lustre",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000217",
+   "methodName": "Seed lustre - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe seed lustre and rate it.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000218",
+   "scaleName": "1-2 Seed lustre scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Dull",
+     "2= Shiny"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000220",
+  "observationVariableName": "SdMott_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000008",
+   "traitName": "Seed mottling",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Mottling on seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SdMott",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Mottling",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000017",
+   "methodName": "Seed mottling - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe presence of spots on seed surface coat.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000025",
+   "scaleName": "0-1 Absence-Presence scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Absence",
+     "1= Presence"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000222",
+  "observationVariableName": "SdMott_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000008",
+   "traitName": "Seed mottling",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Mottling on seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SdMott",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Mottling",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000017",
+   "methodName": "Seed mottling - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe presence of spots on seed surface coat.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000221",
+   "scaleName": "1-4 Seed mottling scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Absent",
+     "2= Light",
+     "3= Medium",
+     "4= Heavy"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000226",
+  "observationVariableName": "SdSh_E_1to4",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000223",
+   "traitName": "Seed shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Shape of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SdSh",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000224",
+   "methodName": "Seed shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate seed shape and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000225",
+   "scaleName": "1-4 Seed shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Round",
+     "2= Oval",
+     "3= Drum shaped",
+     "4= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000229",
+  "observationVariableName": "SdWid_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000227",
+   "traitName": "Seed width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Width of seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SdWid",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000228",
+   "methodName": "Seed width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seed width.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000026",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000233",
+  "observationVariableName": "SdWidLng_M_ratio",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000230",
+   "traitName": "Seed width length ratio",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Seed width/length ratio.",
+   "synonyms": [],
+   "mainAbbreviation": "SdWidLng",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Width length ratio",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000231",
+   "methodName": "Seed width length ratio - Computation",
+   "methodClass": "Computation",
+   "description": "Compute seed width to length ratio.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000232",
+   "scaleName": "mm/mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000236",
+  "observationVariableName": "StmDia_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000234",
+   "traitName": "Stem diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Diameter of stems.",
+   "synonyms": [],
+   "mainAbbreviation": "StmDia",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000235",
+   "methodName": "Stem diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure stem diameter.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000026",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000239",
+  "observationVariableName": "TLletLng_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000009",
+   "traitName": "Terminal leaflet length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Terminal leaflet length",
+   "synonyms": [],
+   "mainAbbreviation": "TLletLng",
+   "alternativeAbbreviations": [],
+   "entity": "Terminal leaflet",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000237",
+   "methodName": "Terminal leaflet length - Estimation",
+   "methodClass": "Estimation",
+   "description": "Terminal leaflet lengthâ€ usually recorded for the leaf at fourth node.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000238",
+   "scaleName": "1-3 Terminal leaflet length scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Small (<10 cm)",
+     "2= Medium (10 - 13 cm)",
+     "3= Large (>13 cm)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000241",
+  "observationVariableName": "TLletLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000009",
+   "traitName": "Terminal leaflet length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Terminal leaflet length",
+   "synonyms": [],
+   "mainAbbreviation": "TLletLng",
+   "alternativeAbbreviations": [],
+   "entity": "Terminal leaflet",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000240",
+   "methodName": "Terminal leaflet length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Terminal leaflet lengthâ€ usually measured for the leaf at fourth node.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000245",
+  "observationVariableName": "TLletSh_E_1to7",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000242",
+   "traitName": "Terminal leaflet shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Terminal leaflet shape",
+   "synonyms": [],
+   "mainAbbreviation": "TLletSh",
+   "alternativeAbbreviations": [],
+   "entity": "Terminal leaflet",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000243",
+   "methodName": "Terminal leaflet shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe predominant terminal leaflet shape.",
+   "formula": null,
+   "reference": "Descriptors for Mung Bean, IBPGR SECRETARIAT, Rome, 1980.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000244",
+   "scaleName": "1-7 Terminal leaflet shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Deltoid",
+     "2= Ovate",
+     "3= Acute",
+     "4= Ovate-lanceolate",
+     "5= Cuneate",
+     "6=Lobed",
+     "7= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000248",
+  "observationVariableName": "TLletWid_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000246",
+   "traitName": "Terminal leaflet width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "Width of terminal leaflet.",
+   "synonyms": [],
+   "mainAbbreviation": "TLletWid",
+   "alternativeAbbreviations": [],
+   "entity": "Terminal leaflet",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000247",
+   "methodName": "Terminal leaflet width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Terminal leaflet widthâ€ usually measured for the leaf at fourth node.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000020",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000251",
+  "observationVariableName": "Emer_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000249",
+   "traitName": "Emergence time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Emergence time is when the first seedling structure appears above the soil surface.",
+   "synonyms": [],
+   "mainAbbreviation": "Emer",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Emergence time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000250",
+   "methodName": "Emergence date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of emergence.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000027",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000255",
+  "observationVariableName": "FlwPeriod_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000252",
+   "traitName": "Flowering period duration",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Flowering period duration.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwPeriod",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering period duration",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000253",
+   "methodName": "Flowering period duration - Estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate flowering period duration and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000254",
+   "scaleName": "1-3 Flowering period duration scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Asynchronous (flowering period >30 days)",
+     "2= Intermediate (flowering period 16-30 days)",
+     "3= Synchronous (flowering period <15 days)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000257",
+  "observationVariableName": "Flw_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000010",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Flowering or anthesis time.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000256",
+   "methodName": "Flowering date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of flowering when 50% of plants present first flower open.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000027",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000259",
+  "observationVariableName": "Flw_dt_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000010",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Flowering or anthesis time.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000258",
+   "methodName": "Days to flowering - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (or emergence) to flowering (when 50% of plants present at least first flower open).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000028",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000261",
+  "observationVariableName": "Mat_dtFirstPod_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000011",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity time.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000260",
+   "methodName": "Days to first pod maturity - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (or emergence) to first pod maturity (stage when 50% of plants have at least first ripe pod).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000028",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000263",
+  "observationVariableName": "Mat_FirstPod_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000011",
+   "traitName": "Maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Maturity time.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000262",
+   "methodName": "First pod maturity date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of first pod maturity, when 50% of plants have at least first ripe pod.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000027",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000267",
+  "observationVariableName": "PhotoResp_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000264",
+   "traitName": "Photoperiod response",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "Photoperiod response.",
+   "synonyms": [],
+   "mainAbbreviation": "PhotoResp",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Photoperiod response",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000265",
+   "methodName": "Photoperiod response - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe response to photoperiod.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000266",
+   "scaleName": "0-1 Photoperiod response scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "0= Insensitive",
+     "1= Sensitive"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000271",
+  "observationVariableName": "LChlC_M_CCI",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000268",
+   "traitName": "Leaf Chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "Leaf Chlorophyll content.",
+   "synonyms": [],
+   "mainAbbreviation": "LChlC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000269",
+   "methodName": "Leaf Chlorophyll content - Measurement",
+   "methodClass": "Measurement",
+   "description": "The chlorophyll content of leaves (and other green tissues) can be quickly, and non-destructively measured using a hand-held battery portable optical meter (e.g., Minolta SPAD-502 chlorophyll meter) which measures the chlorophyll content via light transmittance (absorbance of red light at 650 nm and infrared light at 940 nm) and compensates for differing leaf thicknesses. Readings from the instrument are not absolute chlorophyll values, instead each reading is a ?chlorophyll concentration index? (CCI, ranging from 0 to 99.9). Measurements are typically made on selected/marked leaf (once fully expanded), although measurements of lower leaves may be taken to assess canopy chlorophyll profiles.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000270",
+   "scaleName": "CCI",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000273",
+  "observationVariableName": "SdProtC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000272",
+   "traitName": "Seed protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed protein content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdProtC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000021",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000275",
+  "observationVariableName": "SdFeC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000274",
+   "traitName": "Seed Iron content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Iron content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdFeC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Iron content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000277",
+  "observationVariableName": "SdCaC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000276",
+   "traitName": "Seed Calcium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Calcium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdCaC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Calcium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000279",
+  "observationVariableName": "SdMgC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000278",
+   "traitName": "Seed Magnesium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Magnesium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdMgC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Magnesium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000281",
+  "observationVariableName": "SdZnC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000280",
+   "traitName": "Seed Zinc content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Zinc content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdZnC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Zinc content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000283",
+  "observationVariableName": "SdSeC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000282",
+   "traitName": "Seed Selenium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Selenium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdSeC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Selenium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000285",
+  "observationVariableName": "SdPC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000284",
+   "traitName": "Seed Phosphosrus content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Phosphosrus content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdPC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Phosphosrus content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000287",
+  "observationVariableName": "SdCuC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000286",
+   "traitName": "Seed Copper content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Copper content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdCuC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Copper content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000289",
+  "observationVariableName": "SdMnC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000288",
+   "traitName": "Seed Manganese content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Manganese content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdMnC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Manganese content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000291",
+  "observationVariableName": "SdNatC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000290",
+   "traitName": "Seed Sodium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Sodium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdNatC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Sodium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_346:0000293",
+  "observationVariableName": "SdKC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_346",
+   "ontologyName": "Mungbean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICRISAT, IBP",
+  "language": "EN",
+  "scientist": null,
+  "status": null,
+  "synonyms": [],
+  "date": "2016-04-21 00:00:00",
+  "crop": "Mungbean",
+  "trait": {
+   "traitDbId": "CO_346:0000292",
+   "traitName": "Seed Potassium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "Seed Potassium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SdKC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Potassium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_346:0000018",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_346:0000029",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ }
+]

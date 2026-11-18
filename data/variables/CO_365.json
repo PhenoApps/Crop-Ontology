@@ -1,0 +1,6543 @@
+[
+ {
+  "observationVariableDbId": "CO_365:0000126",
+  "observationVariableName": "SProtC_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000009",
+   "traitName": "Seed protein content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed protein content.",
+   "synonyms": [],
+   "mainAbbreviation": "SProtC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Protein content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000125",
+   "methodName": "Seed protein content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000082",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000128",
+  "observationVariableName": "PNC_C_M_pct",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000010",
+   "traitName": "Plant nitrogen content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The plant nitrogen content.",
+   "synonyms": [],
+   "mainAbbreviation": "PNC",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Nitrogen content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000127",
+   "methodName": "Plant nitrogen content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on plant using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000082",
+   "scaleName": "%",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000130",
+  "observationVariableName": "PdShatt_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NSHPP"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000011",
+   "traitName": "Pod shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The shattering of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PdShatt",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000129",
+   "methodName": "Pod shattering - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod shattering on standing plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000083",
+   "scaleName": "0-1 Shattering scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Shattering",
+     "0= Non-shattering"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000132",
+  "observationVariableName": "SShatt_E_0to1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NSHSP"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000012",
+   "traitName": "Seed shattering",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The shattering of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SShatt",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shattering",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000131",
+   "methodName": "Seed shattering - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe shattering as seeds falling from pods on standing plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000083",
+   "scaleName": "0-1 Shattering scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Shattering",
+     "0= Non-shattering"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000134",
+  "observationVariableName": "VegMetSus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000018",
+   "traitName": "Metribuzin susceptibility at vegetative stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Metribuzin at vegetative stage.",
+   "synonyms": [],
+   "mainAbbreviation": "VegMetSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Metribuzin susceptibility at vegetative stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000133",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000136",
+  "observationVariableName": "FlwMetSus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000019",
+   "traitName": "Metribuzin susceptibility at flowering stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Metribuzin at flowering stage.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwMetSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Metribuzin susceptibility at flowering stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000135",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000138",
+  "observationVariableName": "VegImizSus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000020",
+   "traitName": "Imizathapyr susceptibility at vegetative stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Imizathapyr at vegetative stage.",
+   "synonyms": [],
+   "mainAbbreviation": "VegImizSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Imizathapyr susceptibility at vegetative stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000137",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000140",
+  "observationVariableName": "FlwImizSus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000021",
+   "traitName": "Imizathapyr susceptibility at flowering stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Imizathapyr at flowering stage.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwImizSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Imizathapyr susceptibility at flowering stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000139",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000142",
+  "observationVariableName": "VegGlySus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000022",
+   "traitName": "Glyphosate susceptibility at vegetative stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Glyphosate at vegetative stage.",
+   "synonyms": [],
+   "mainAbbreviation": "VegGlySus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Glyphosate susceptibility at vegetative stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000141",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000144",
+  "observationVariableName": "FlwGlySus_E_1to5",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000023",
+   "traitName": "Glyphosate susceptibility at flowering stage",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The susceptibility to herbicide Glyphosate at flowering stage.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwGlySus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Glyphosate susceptibility at flowering stage.",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000143",
+   "methodName": "Herbicide susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to herbicide, and rate it from tolerant/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000084",
+   "scaleName": "1-5 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No visible damage",
+     "4= Susceptible",
+     "5= Highly susceptible",
+     "2= Tolerant",
+     "3= Moderately tolerant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000146",
+  "observationVariableName": "ABLSev_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ABL"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000004",
+   "traitName": "Ascochyta blight severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Ascochyta blight caused by the agent Ascochyta fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "ABLSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Ascochyta blight severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000145",
+   "methodName": "Ascochyta blight severity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Ascochyta blight, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000085",
+   "scaleName": "1-9 Ascochyta blight severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease visible on any plant (highly resistant)",
+     "4= between 3 and 5",
+     "5= Lesions visible on up to 25% of the plants, stem girdling on less than 10% of the plants but little damage (tolerant)",
+     "2= between 1 and 3",
+     "3= Lesions visible on less than 10% of the plants, no stem girdling (resistant)",
+     "8= between 7 and 9",
+     "9= Lesions profuse on all plants, stem girdling present on more than 50% of the plants and death of most plants (highly susceptible).",
+     "6= between 5 and 7",
+     "7= Lesions present on most plants, stem girdling on less than 50% of the plants, resulting in the death of a few plants and causing considerable damage (susceptible)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000148",
+  "observationVariableName": "ABLSev_E_1to9_T1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ABL1"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000004",
+   "traitName": "Ascochyta blight severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Ascochyta blight caused by the agent Ascochyta fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "ABLSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Ascochyta blight severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000147",
+   "methodName": "Ascochyta blight severity - Estimation - T1",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Ascochyta blight, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000085",
+   "scaleName": "1-9 Ascochyta blight severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease visible on any plant (highly resistant)",
+     "4= between 3 and 5",
+     "5= Lesions visible on up to 25% of the plants, stem girdling on less than 10% of the plants but little damage (tolerant)",
+     "2= between 1 and 3",
+     "3= Lesions visible on less than 10% of the plants, no stem girdling (resistant)",
+     "8= between 7 and 9",
+     "9= Lesions profuse on all plants, stem girdling present on more than 50% of the plants and death of most plants (highly susceptible).",
+     "6= between 5 and 7",
+     "7= Lesions present on most plants, stem girdling on less than 50% of the plants, resulting in the death of a few plants and causing considerable damage (susceptible)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000150",
+  "observationVariableName": "ABLSev_E_1to9_T2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ABL2"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000004",
+   "traitName": "Ascochyta blight severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Ascochyta blight caused by the agent Ascochyta fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "ABLSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Ascochyta blight severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000149",
+   "methodName": "Ascochyta blight severity - Estimation - T2",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Ascochyta blight, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000085",
+   "scaleName": "1-9 Ascochyta blight severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease visible on any plant (highly resistant)",
+     "4= between 3 and 5",
+     "5= Lesions visible on up to 25% of the plants, stem girdling on less than 10% of the plants but little damage (tolerant)",
+     "2= between 1 and 3",
+     "3= Lesions visible on less than 10% of the plants, no stem girdling (resistant)",
+     "8= between 7 and 9",
+     "9= Lesions profuse on all plants, stem girdling present on more than 50% of the plants and death of most plants (highly susceptible).",
+     "6= between 5 and 7",
+     "7= Lesions present on most plants, stem girdling on less than 50% of the plants, resulting in the death of a few plants and causing considerable damage (susceptible)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000152",
+  "observationVariableName": "ABLSev_E_1to9_T3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ABL3"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000004",
+   "traitName": "Ascochyta blight severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Ascochyta blight caused by the agent Ascochyta fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "ABLSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Ascochyta blight severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000151",
+   "methodName": "Ascochyta blight severity - Estimation - T3",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Ascochyta blight, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000085",
+   "scaleName": "1-9 Ascochyta blight severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease visible on any plant (highly resistant)",
+     "4= between 3 and 5",
+     "5= Lesions visible on up to 25% of the plants, stem girdling on less than 10% of the plants but little damage (tolerant)",
+     "2= between 1 and 3",
+     "3= Lesions visible on less than 10% of the plants, no stem girdling (resistant)",
+     "8= between 7 and 9",
+     "9= Lesions profuse on all plants, stem girdling present on more than 50% of the plants and death of most plants (highly susceptible).",
+     "6= between 5 and 7",
+     "7= Lesions present on most plants, stem girdling on less than 50% of the plants, resulting in the death of a few plants and causing considerable damage (susceptible)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000154",
+  "observationVariableName": "CSpotSev_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "Cspot"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000005",
+   "traitName": "Chocolate spot severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Chocolate spot caused by the agent Botrytis fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "CSpotSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chocolate spot severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000153",
+   "methodName": "Chocolate spot severity - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Chocolate spot, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000086",
+   "scaleName": "1-9 Chocolate spot severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease symptoms or very small specks",
+     "4= between 3 and 5",
+     "5= Some coalesced lesions with some defoliation",
+     "2= between 1 and 3",
+     "3= Few small discrete lesions",
+     "8= between 7 and 9",
+     "9= Extensive lesions on leaves, stems and pods, severe defoliation, heavy sporulation, stem girdling, blackening and death of more than 80% of plants",
+     "6= between 5 and 7",
+     "7= Large coalesced sporulating lesions, 50% defoliation and some dead plant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000156",
+  "observationVariableName": "CSpotSev_E_1to9_T1",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "CSpot1"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000005",
+   "traitName": "Chocolate spot severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Chocolate spot caused by the agent Botrytis fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "CSpotSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chocolate spot severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000155",
+   "methodName": "Chocolate spot severity - Estimation - T1",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Chocolate spot, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000086",
+   "scaleName": "1-9 Chocolate spot severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease symptoms or very small specks",
+     "4= between 3 and 5",
+     "5= Some coalesced lesions with some defoliation",
+     "2= between 1 and 3",
+     "3= Few small discrete lesions",
+     "8= between 7 and 9",
+     "9= Extensive lesions on leaves, stems and pods, severe defoliation, heavy sporulation, stem girdling, blackening and death of more than 80% of plants",
+     "6= between 5 and 7",
+     "7= Large coalesced sporulating lesions, 50% defoliation and some dead plant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000158",
+  "observationVariableName": "CSpotSev_E_1to9_T2",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "CSpot2"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000005",
+   "traitName": "Chocolate spot severity",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The severity of Chocolate spot caused by the agent Botrytis fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "CSpotSev",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chocolate spot severity",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000157",
+   "methodName": "Chocolate spot severity - Estimation - T2",
+   "methodClass": "Estimation",
+   "description": "Observe the severity of Chocolate spot, and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000086",
+   "scaleName": "1-9 Chocolate spot severity scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= No disease symptoms or very small specks",
+     "4= between 3 and 5",
+     "5= Some coalesced lesions with some defoliation",
+     "2= between 1 and 3",
+     "3= Few small discrete lesions",
+     "8= between 7 and 9",
+     "9= Extensive lesions on leaves, stems and pods, severe defoliation, heavy sporulation, stem girdling, blackening and death of more than 80% of plants",
+     "6= between 5 and 7",
+     "7= Large coalesced sporulating lesions, 50% defoliation and some dead plant"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000160",
+  "observationVariableName": "AcdSus _E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000025",
+   "traitName": "Acid soil susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants susceptibility to acid soil.",
+   "synonyms": [],
+   "mainAbbreviation": "AcdSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Acid soil susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000159",
+   "methodName": "Acid soil susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to acid soils, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000162",
+  "observationVariableName": "DrouSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000026",
+   "traitName": "Drought susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants susceptibility to drought stress.",
+   "synonyms": [],
+   "mainAbbreviation": "DrouSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Drought susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000161",
+   "methodName": "Drought susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to drought stress, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000164",
+  "observationVariableName": "FrostSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000027",
+   "traitName": "Frost susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants susceptibility to frost events.",
+   "synonyms": [],
+   "mainAbbreviation": "FrostSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Frost susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000163",
+   "methodName": "Frost susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to a frost event, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000166",
+  "observationVariableName": "HiTempSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "HTT"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000028",
+   "traitName": "High temperature susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants susceptibility to heat conditions.",
+   "synonyms": [],
+   "mainAbbreviation": "HiTempSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "High temperature susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000165",
+   "methodName": "High temperature susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to high temperature stress, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000168",
+  "observationVariableName": "SaltSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000029",
+   "traitName": "Salinity susceptibility",
+   "traitClass": "Abiotic stress",
+   "traitPUI": null,
+   "description": "The plants susceptibility to soil salinity.",
+   "synonyms": [],
+   "mainAbbreviation": "SaltSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Salinity susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000167",
+   "methodName": "Salinity susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to salinity in soils, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000170",
+  "observationVariableName": "AphSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000030",
+   "traitName": "Aphid susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The susceptibility to aphids.",
+   "synonyms": [],
+   "mainAbbreviation": "AphSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Aphid susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000169",
+   "methodName": "Aphid susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to aphids, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000172",
+  "observationVariableName": "ABLSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000031",
+   "traitName": "Ascochyta blight susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to Ascochyta blight caused by the agent Ascochyta fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "ABLSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Ascochyta blight susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000171",
+   "methodName": "Ascochyta blight susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to Ascochyta blight, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000174",
+  "observationVariableName": "CSpotSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "CSpot3"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000032",
+   "traitName": "Chocolate spot susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to Chocolate spot caused by the agent Botrytis fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "CSpotSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Chocolate spot susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000173",
+   "methodName": "Chocolate spot susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to Chocolate spot, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000176",
+  "observationVariableName": "FBNYVSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "FBNYV"
+  ],
+  "date": "10-janv-18",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000033",
+   "traitName": "Faba bean necrotic Yellow virus susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to faba bean necrotic yellow virus (FBNYV)",
+   "synonyms": [],
+   "mainAbbreviation": "FBNYVsus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Faba bean necrotic yellow virus susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000175",
+   "methodName": "Faba bean necrotic yellow virus susceptibility-Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to FBNYVâ€  and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000178",
+  "observationVariableName": "FBYMVSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000034",
+   "traitName": "Faba bean yellow mosaic virus susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to faba bean yellow mosaic virus (FBYMV).",
+   "synonyms": [],
+   "mainAbbreviation": "FBYMVSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Faba bean yellow mosaic virus susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000177",
+   "methodName": "Faba bean yellow mosaic virus susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to FBYMV, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000180",
+  "observationVariableName": "PMSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000035",
+   "traitName": "Powdery Mildew susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to powdery mildew caused by the agent Erysiphe polygoni.",
+   "synonyms": [],
+   "mainAbbreviation": "PMSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Powdery Mildew susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000179",
+   "methodName": "Powdery Mildew susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to powdery mildew, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000182",
+  "observationVariableName": "RustSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000036",
+   "traitName": "Rust susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to rust caused by the agent Uromyces fabae.",
+   "synonyms": [],
+   "mainAbbreviation": "RustSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Rust susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000181",
+   "methodName": "Rust susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to rust, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000184",
+  "observationVariableName": "SWeevSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000037",
+   "traitName": "Seed weevil susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The susceptibility to seed weevils.",
+   "synonyms": [],
+   "mainAbbreviation": "SWeevSus",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Seed weevil susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000183",
+   "methodName": "Seed weevil susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to seed weevils, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000186",
+  "observationVariableName": "StmRotSus_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000038",
+   "traitName": "Stem rot susceptibility",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The plant susceptibility to stem rot caused by the agent Sclerotinia spp.",
+   "synonyms": [],
+   "mainAbbreviation": "StmRotSus",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Stem rot susceptibility",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000185",
+   "methodName": "Stem rot susceptibility - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe the plant susceptibility to stem rot, and rate it from immune/resistant to susceptible.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000087",
+   "scaleName": "1-9 Susceptibility general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Resistant",
+     "4= Moderately resistant to tolerant",
+     "5= Tolerant",
+     "2= Resistant to moderately resistant",
+     "3= Moderately resistant",
+     "8= Moderately susceptible to susceptible",
+     "9= Susceptible",
+     "6= Tolerant to moderately susceptible",
+     "7= Moderately susceptible"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000188",
+  "observationVariableName": "PH_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "PLTH"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000041",
+   "traitName": "Plant height",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The height of the plant.",
+   "synonyms": [],
+   "mainAbbreviation": "PH",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Height",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000187",
+   "methodName": "Plant height - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure plant height from ground to the tip of the plant. Usually measured near maturity, recorded as average of 10 plants.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000088",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000190",
+  "observationVariableName": "BrnchLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000042",
+   "traitName": "Branch length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of branch.",
+   "synonyms": [],
+   "mainAbbreviation": "BrnchLng",
+   "alternativeAbbreviations": [],
+   "entity": "Branch",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000189",
+   "methodName": "Branch length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure the longest branch. Usually recorded when first pod changes colour.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000088",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000192",
+  "observationVariableName": "InterNodLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000043",
+   "traitName": "Internode length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of internode.",
+   "synonyms": [],
+   "mainAbbreviation": "InterNodLng",
+   "alternativeAbbreviations": [],
+   "entity": "Internode",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000191",
+   "methodName": "Internode length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure internode length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000088",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000194",
+  "observationVariableName": "PdLng_M_cm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000044",
+   "traitName": "Pod length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PdLng",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000193",
+   "methodName": "Pod length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure pod length and record it. Usually recorded as mean of five dry pods.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000088",
+   "scaleName": "cm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000196",
+  "observationVariableName": "Flw_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000006",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The timing of flowering.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000195",
+   "methodName": "Flowering date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of flowering when 50% of plants have flowered.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000089",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000198",
+  "observationVariableName": "Mat_FirstPd_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000007",
+   "traitName": "Pod maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The timing of pods maturity.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000197",
+   "methodName": "Pod maturity 90% date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of first pod maturity, when 50% of plants have at least first ripe pod.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000089",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000200",
+  "observationVariableName": "Emer_date_ymd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000045",
+   "traitName": "Emergence time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The timing of emergence, when the first seedling structure appears above the soil surface.",
+   "synonyms": [],
+   "mainAbbreviation": "Emer",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Emergence time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000199",
+   "methodName": "Emergence date - Estimation",
+   "methodClass": "Estimation",
+   "description": "Record date of emergence.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000089",
+   "scaleName": "Date (yymmdd)",
+   "dataType": "Date",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000202",
+  "observationVariableName": "Flw_dt_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "DTFLR"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000006",
+   "traitName": "Flowering time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The timing of flowering.",
+   "synonyms": [],
+   "mainAbbreviation": "Flw",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000201",
+   "methodName": "Days to flowering - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (in dryland areas use first day of rainfall or irrigation) to flowering (when 50% of plants have flowered).",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000090",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000204",
+  "observationVariableName": "Mat_dtFirstPd_day",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "DMAT"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000007",
+   "traitName": "Pod maturity time",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The timing of pods maturity.",
+   "synonyms": [],
+   "mainAbbreviation": "Mat",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Maturity time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000203",
+   "methodName": "Days to 90% pod maturity - Computation",
+   "methodClass": "Computation",
+   "description": "Compute number of days required from sowing (in dryland areas use first day of rainfall or irrigation) to when 90% of the pods have dried.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000090",
+   "scaleName": "day",
+   "dataType": "Duration",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000206",
+  "observationVariableName": "GreenPdYld_Cmp_gplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000001",
+   "traitName": "Green pod yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of green pods that was harvested per unit of area or per plant.",
+   "synonyms": [],
+   "mainAbbreviation": "GreenPdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Green pod",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000205",
+   "methodName": "Green pod yield per plot - Measurement",
+   "methodClass": "Computation",
+   "description": "Record green pod yield per plot.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000091",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000208",
+  "observationVariableName": "SYld_M_gplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000207",
+   "methodName": "Seed yield per plot - Measurement",
+   "methodClass": "Measurement",
+   "description": "Record seed yield per plot.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000091",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000210",
+  "observationVariableName": "OShoW_Ct_gplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ORWT"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000048",
+   "traitName": "Orobanche shoot weight",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The weight of Boomrape (Orobancheâ€ spp.) shoots per unit of area.",
+   "synonyms": [],
+   "mainAbbreviation": "OShoW",
+   "alternativeAbbreviations": [],
+   "entity": "Orobanche",
+   "entityPUI": null,
+   "attribute": "shoot weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000209",
+   "methodName": "Orobanche shoot weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure the Orobanche shoots weight per plot or measurement area.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000091",
+   "scaleName": "g/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000212",
+  "observationVariableName": "GreenPdYld_Comp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000001",
+   "traitName": "Green pod yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of green pods that was harvested per unit of area or per plant.",
+   "synonyms": [],
+   "mainAbbreviation": "GreenPdYld",
+   "alternativeAbbreviations": [],
+   "entity": "Green pod",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000211",
+   "methodName": "Green pod yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Compute green pod yield",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000092",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000214",
+  "observationVariableName": "SYld_Cmp_kgha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "GYlD"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000213",
+   "methodName": "Seed yield - Computation",
+   "methodClass": "Computation",
+   "description": "Compute seed yield.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000092",
+   "scaleName": "kg/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000216",
+  "observationVariableName": "LChlC_M_mg100g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000008",
+   "traitName": "Leaf Chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The leaf total Chlorophyll content.",
+   "synonyms": [],
+   "mainAbbreviation": "LChlC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000215",
+   "methodName": "Chlorophyll total content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured total chlorophyll content on leaves using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000093",
+   "scaleName": "mg/100g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000218",
+  "observationVariableName": "LChlaC_M_mg100g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000050",
+   "traitName": "Leaf Chlorophyll a content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The leaf Chlorophyll a content.",
+   "synonyms": [],
+   "mainAbbreviation": "LChlaC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll a content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000217",
+   "methodName": "Chlorophyll a content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured chlorophyll a content on leaves using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000093",
+   "scaleName": "mg/100g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000220",
+  "observationVariableName": "LChlbC_M_mg100g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000051",
+   "traitName": "Leaf Chlorophyll b content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The leaf Chlorophyll b content.",
+   "synonyms": [],
+   "mainAbbreviation": "LChlbC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll b content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000219",
+   "methodName": "Chlorophyll b content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured chlorophyll b content on leaves using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000093",
+   "scaleName": "mg/100g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000222",
+  "observationVariableName": "LCarotC_M_mg100g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000052",
+   "traitName": "Leaf carotenoid content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The leaf Carotenoids content.",
+   "synonyms": [],
+   "mainAbbreviation": "LCarotC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Carotenoids content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000221",
+   "methodName": "Carotenoids content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured carotenoids content on leaves using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000093",
+   "scaleName": "mg/100g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000224",
+  "observationVariableName": "SCaC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000053",
+   "traitName": "Seed Calcium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Calcium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SCaC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Calcium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000223",
+   "methodName": "Seed Calcium content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000226",
+  "observationVariableName": "SCuC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000054",
+   "traitName": "Seed Copper content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Copper content.",
+   "synonyms": [],
+   "mainAbbreviation": "SCuC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Copper content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000225",
+   "methodName": "Seed Copper content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000228",
+  "observationVariableName": "SFeC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000055",
+   "traitName": "Seed Iron content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Iron content.",
+   "synonyms": [],
+   "mainAbbreviation": "SFeC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Iron content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000227",
+   "methodName": "Seed Iron content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000230",
+  "observationVariableName": "SMgC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000056",
+   "traitName": "Seed Magnesium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Magnesium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SMgC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Magnesium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000229",
+   "methodName": "Seed Magnesium content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000232",
+  "observationVariableName": "SMnC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000057",
+   "traitName": "Seed Manganese content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Manganese content.",
+   "synonyms": [],
+   "mainAbbreviation": "SMnC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Manganese content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000231",
+   "methodName": "Seed Manganese content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000234",
+  "observationVariableName": "SPC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000058",
+   "traitName": "Seed Phosphorus content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Phosphorus content.",
+   "synonyms": [],
+   "mainAbbreviation": "SPC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Phosphorus content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000233",
+   "methodName": "Seed Phosphorus content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000236",
+  "observationVariableName": "SKC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000059",
+   "traitName": "Seed Potassium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Potassium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SKC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Potassium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000235",
+   "methodName": "Seed Potassium content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000238",
+  "observationVariableName": "SSeC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000060",
+   "traitName": "Seed Selenium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Selenium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SSeC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Selenium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000237",
+   "methodName": "Seed Selenium content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000240",
+  "observationVariableName": "SNaC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000061",
+   "traitName": "Seed Sodium content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Sodium content.",
+   "synonyms": [],
+   "mainAbbreviation": "SNaC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Sodium content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000239",
+   "methodName": "Seed Sodium content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000242",
+  "observationVariableName": "SZnC_M_mgkg",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000062",
+   "traitName": "Seed Zinc content",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed Zinc content.",
+   "synonyms": [],
+   "mainAbbreviation": "SZnC",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Zinc content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000241",
+   "methodName": "Seed Zinc content - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000094",
+   "scaleName": "mg/kg",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000244",
+  "observationVariableName": "PdThk_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000064",
+   "traitName": "Pod thickness",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The thickness of pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PdThk",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Thickness",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000243",
+   "methodName": "Pod thickness - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure pod thickness.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000095",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000246",
+  "observationVariableName": "SLng_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000065",
+   "traitName": "Seed length",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The length of seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SLng",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Length",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000245",
+   "methodName": "Seed length - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seed length.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000095",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000248",
+  "observationVariableName": "SWid_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000066",
+   "traitName": "Seed width",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The width of seed.",
+   "synonyms": [],
+   "mainAbbreviation": "SWid",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Width",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000247",
+   "methodName": "Seed width - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure seed width.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000095",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000250",
+  "observationVariableName": "StmDia_M_mm",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000067",
+   "traitName": "Stem diameter",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The diameter of stems.",
+   "synonyms": [],
+   "mainAbbreviation": "StmDia",
+   "alternativeAbbreviations": [],
+   "entity": "Stem",
+   "entityPUI": null,
+   "attribute": "Diameter",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000249",
+   "methodName": "Stem diameter - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measure stem diameter.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000095",
+   "scaleName": "mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000252",
+  "observationVariableName": "FPdPos_Ct_Nod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NNFP"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000069",
+   "traitName": "First pod position",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The position of first pod.",
+   "synonyms": [],
+   "mainAbbreviation": "FPdPos",
+   "alternativeAbbreviations": [],
+   "entity": "First pod",
+   "entityPUI": null,
+   "attribute": "Position",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000251",
+   "methodName": "First pod position - Counting",
+   "methodClass": "Counting",
+   "description": "Count the node starting from the unifoliate node to the first pod-bearing node.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000096",
+   "scaleName": "node",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000254",
+  "observationVariableName": "MainStmNodN_Ct_Nod",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000070",
+   "traitName": "Node number in main stem",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The number of nodes in main stem.",
+   "synonyms": [],
+   "mainAbbreviation": "MainStmNodN",
+   "alternativeAbbreviations": [],
+   "entity": "Main stem",
+   "entityPUI": null,
+   "attribute": "Node number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000253",
+   "methodName": "Node number in man stem- Counting",
+   "methodClass": "Counting",
+   "description": "Count nodes in the main stem.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000096",
+   "scaleName": "node",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000256",
+  "observationVariableName": "NodPdN_M_Pd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NPPN"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000072",
+   "traitName": "Pod number per node",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of pods per node",
+   "synonyms": [],
+   "mainAbbreviation": "NodPdN",
+   "alternativeAbbreviations": [],
+   "entity": "Node",
+   "entityPUI": null,
+   "attribute": "pod number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000255",
+   "methodName": "Pod number per node - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually recorded as mean number of pods on the second pod-bearing node of five plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000097",
+   "scaleName": "pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000258",
+  "observationVariableName": "PdN_M_Pd",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NPP"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000073",
+   "traitName": "Pod number per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of pods per plant.",
+   "synonyms": [],
+   "mainAbbreviation": "PdN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Pod number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000257",
+   "methodName": "Pod number per plant - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually recorded as averaged number of pods from 10 representative plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000097",
+   "scaleName": "pod",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000260",
+  "observationVariableName": "FlwPeriod_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000013",
+   "traitName": "Flowering period duration",
+   "traitClass": "Phenological",
+   "traitPUI": null,
+   "description": "The flowering period duration.",
+   "synonyms": [],
+   "mainAbbreviation": "FlwPeriod",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Flowering period duration",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000259",
+   "methodName": "Flowering period duration - Estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate flowering period duration and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000098",
+   "scaleName": "1-3 Flowering period duration scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Asynchronous (flowering period >30 days)",
+     "2= Intermediate (flowering period 16-30 days)",
+     "3= Synchronous (flowering period <15 days)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000262",
+  "observationVariableName": "GwHabit_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000014",
+   "traitName": "Growth habit",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The plant growth habit.",
+   "synonyms": [],
+   "mainAbbreviation": "GwHabit",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Growth habit",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000261",
+   "methodName": "Growth habit - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe growth habit and rate it.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000099",
+   "scaleName": "1-3 Growth habit scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Determinate: i.e. stems with terminal inflorescence",
+     "2= Semi-determinate: i.e. without terminal inflorescence",
+     "3= Indeterminate"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000264",
+  "observationVariableName": "LodgInc_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000002",
+   "traitName": "Lodging incidence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant lodging incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "LodgInc",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000263",
+   "methodName": "Lodging incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe lodging incidence and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000100",
+   "scaleName": "1-3 Incidence general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "2= Mild",
+     "3= Severe"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000266",
+  "observationVariableName": "Nodulation_E_1to3",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000015",
+   "traitName": "Nodulation",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The nodulation on roots.",
+   "synonyms": [],
+   "mainAbbreviation": "Nodulation",
+   "alternativeAbbreviations": [],
+   "entity": "Root",
+   "entityPUI": null,
+   "attribute": "Nodulation",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000265",
+   "methodName": "Nodulation - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe presence of nodules in root system and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000101",
+   "scaleName": "1-3 Nodulation scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "2= Poor",
+     "3= Heavy"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000268",
+  "observationVariableName": "PdCol_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000016",
+   "traitName": "Pod colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The colour of mature pods.",
+   "synonyms": [],
+   "mainAbbreviation": "PdCol",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000267",
+   "methodName": "Pod colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod colour at mature stage.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000102",
+   "scaleName": "1-3 Pod colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Light yellow",
+     "2= Dark",
+     "3= Mixed"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000270",
+  "observationVariableName": "PStand_E_plantplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "STAND"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000017",
+   "traitName": "Plant stand establishment",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant stand establishment.",
+   "synonyms": [],
+   "mainAbbreviation": "PStand",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "stand establishment",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000269",
+   "methodName": "Plant stand establishment - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe plant stand establishment and rate it. Usually estimated as rate of satisfactory seedling established over placed seed.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000103",
+   "scaleName": "1-5 Plant stand establishment scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= 0-25%",
+     "4= 70-90%",
+     "5= 90-100%",
+     "2= 25-50%",
+     "3= 50-70%"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000272",
+  "observationVariableName": "LodgInc_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000002",
+   "traitName": "Lodging incidence",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant lodging incidence.",
+   "synonyms": [],
+   "mainAbbreviation": "LodgInc",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging incidence",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000271",
+   "methodName": "Lodging incidence - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe lodging incidence and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000104",
+   "scaleName": "1-9 Incidence general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "4= Low to intermediate",
+     "5= Intermediate",
+     "2= Very low",
+     "3= Low",
+     "8= Severe to heavy",
+     "9= Heavy",
+     "6= Intermediate to severe",
+     "7= Severe"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000274",
+  "observationVariableName": "LodRes_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000024",
+   "traitName": "Lodging resistance",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The plant lodging resistance.",
+   "synonyms": [],
+   "mainAbbreviation": "LodgRes",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Lodging resistance",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000273",
+   "methodName": "Lodging resistance - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe lodging resistance and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000105",
+   "scaleName": "1-9 Resistance general scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= None",
+     "4= Low to medium",
+     "5= Medium",
+     "2= None to low",
+     "3= Low",
+     "8= High to extremely high",
+     "9= Extremely high",
+     "6= Medium to high",
+     "7= High"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000276",
+  "observationVariableName": "SlngVig_E_1to9",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000039",
+   "traitName": "Seedling vigour",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The vigour of the seedlings.",
+   "synonyms": [],
+   "mainAbbreviation": "SlngVig",
+   "alternativeAbbreviations": [],
+   "entity": "Seedling",
+   "entityPUI": null,
+   "attribute": "Vigour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000275",
+   "methodName": "Seedling vigour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Seedling vigour assessed 15 days after emergence.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000106",
+   "scaleName": "1-9 Vigour scale",
+   "dataType": "Ordinal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Poor",
+     "4= Fair",
+     "5= Medium",
+     "2= Very low",
+     "3= Low",
+     "8= Very good",
+     "9= Vigorous",
+     "6= Medium to good",
+     "7= Good"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000278",
+  "observationVariableName": "PBrnchN_Ct_brnch",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000040",
+   "traitName": "Branch number per plant",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of branches per plant.",
+   "synonyms": [],
+   "mainAbbreviation": "PBrnchN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Branch number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000277",
+   "methodName": "Branch number per plant - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of branches from basal nodes to the tip of the plant. Usually recorded as mean number of branches (to the nearest whole number) per plant taken from five representative plants in late flowering stage.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000107",
+   "scaleName": "branch",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000280",
+  "observationVariableName": "LChlC_M_CCI",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000008",
+   "traitName": "Leaf Chlorophyll content",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The leaf total Chlorophyll content.",
+   "synonyms": [],
+   "mainAbbreviation": "LChlC",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Chlorophyll content",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000279",
+   "methodName": "Leaf Chlorophyll content - Measurement",
+   "methodClass": "Measurement",
+   "description": "The chlorophyll content of leaves (and other green tissues) can be quickly, and non-destructively measured using a hand-held battery portable optical meter (e.g., Minolta SPAD-502 chlorophyll meter) which measures the chlorophyll content via light transmittance (absorbance of red light at 650 nm and infrared light at 940 nm) and compensates for differing leaf thicknesses. Readings from the instrument are not absolute chlorophyll values, instead each reading is a ?chlorophyll concentration index? (CCI, ranging from 0 to 99.9). Measurements are typically made on selected/marked leaf (once fully expanded), although measurements of lower leaves may be taken to assess canopy chlorophyll profiles.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000108",
+   "scaleName": "CCI",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000282",
+  "observationVariableName": "PdFlwN_M_Flw",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000046",
+   "traitName": "Flower number per pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of flowers per pod.",
+   "synonyms": [],
+   "mainAbbreviation": "PdFlwN",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Flower number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000281",
+   "methodName": "Flower number per pod - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually recorded as mean number of flowers on the second flower-bearing node of five plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000109",
+   "scaleName": "flower",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000284",
+  "observationVariableName": "HSW_M_g",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "HSW"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000047",
+   "traitName": "Hundred seed weight",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The weight of hundred seed.",
+   "synonyms": [],
+   "mainAbbreviation": "HSW",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Weight",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000283",
+   "methodName": "Hundred seed weight - Measurement",
+   "methodClass": "Measurement",
+   "description": "Count and weigh 100 seeds.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000110",
+   "scaleName": "g",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000286",
+  "observationVariableName": "SYld_M_gplant",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000285",
+   "methodName": "Seed yield - Measurement",
+   "methodClass": "Measurement",
+   "description": "Usually reported as averaged weight of 10 plants after drying in sun.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000111",
+   "scaleName": "g/plant",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000288",
+  "observationVariableName": "OIndex_Cmp_index",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "OI"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000049",
+   "traitName": "Orobanche index",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The Orobanche index.",
+   "synonyms": [],
+   "mainAbbreviation": "OIndex",
+   "alternativeAbbreviations": [],
+   "entity": "Orobanche",
+   "entityPUI": null,
+   "attribute": "index",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000287",
+   "methodName": "Orobanche index - Computation",
+   "methodClass": "Computation",
+   "description": "Compute Orobanche index. Calculated and normalized as the proportion of Orobanche number in test entries to the numbers in the check entry.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000112",
+   "scaleName": "index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000290",
+  "observationVariableName": "SCookT_M_min",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-16 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000063",
+   "traitName": "Seed cooking time",
+   "traitClass": "Quality",
+   "traitPUI": null,
+   "description": "The seed cooking time.",
+   "synonyms": [],
+   "mainAbbreviation": "SCookT",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Cooking time",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000289",
+   "methodName": "Seed cooking time - Measurement",
+   "methodClass": "Measurement",
+   "description": "Measured on seed using the standard protocol.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000113",
+   "scaleName": "minute",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000292",
+  "observationVariableName": "SWidLng_Cmp_ratio",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000068",
+   "traitName": "Seed width length ratio",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The seed width/length ratio.",
+   "synonyms": [],
+   "mainAbbreviation": "SWidLng",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Width length ratio",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000291",
+   "methodName": "Seed width length ratio - Computation",
+   "methodClass": "Computation",
+   "description": "Compute seed width to length ratio.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000114",
+   "scaleName": "mm/mm",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000294",
+  "observationVariableName": "PN_Ct_plantplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "PLNO"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000071",
+   "traitName": "Plant number",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of plants per unit area.",
+   "synonyms": [],
+   "mainAbbreviation": "PN",
+   "alternativeAbbreviations": [],
+   "entity": "Plant",
+   "entityPUI": null,
+   "attribute": "Number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000293",
+   "methodName": "Plant number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of plants.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000115",
+   "scaleName": "plant/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000296",
+  "observationVariableName": "PdAngle_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "POR"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000074",
+   "traitName": "Pod angle",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The pod angle or attitude.",
+   "synonyms": [],
+   "mainAbbreviation": "PdAngle",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "angle",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000295",
+   "methodName": "Pod angle - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe pod angle and record it. Usually recorded at pod maturity.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000116",
+   "scaleName": "Pod angle scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Erect",
+     "99= Other (specify)",
+     "2= Horizontal",
+     "3= Pendent"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000298",
+  "observationVariableName": "SN_Ct_seed",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "NSPP"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000075",
+   "traitName": "Seed number per pod",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The number of seeds per pod.",
+   "synonyms": [],
+   "mainAbbreviation": "SN",
+   "alternativeAbbreviations": [],
+   "entity": "Pod",
+   "entityPUI": null,
+   "attribute": "Seed number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000297",
+   "methodName": "Seed number per pod - Counting",
+   "methodClass": "Counting",
+   "description": "Usually recorded as averaged number of seeds from 5 representative dry pods.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000117",
+   "scaleName": "seed",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000300",
+  "observationVariableName": "SSh_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000076",
+   "traitName": "Seed shape",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The shape of seeds.",
+   "synonyms": [],
+   "mainAbbreviation": "SSh",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Shape",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000299",
+   "methodName": "Seed shape - Estimation",
+   "methodClass": "Estimation",
+   "description": "Estimate seed shape and rate it.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000118",
+   "scaleName": "Seed shape scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Flattened",
+     "99= Other (specify)",
+     "2= Angular",
+     "3= Round"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000302",
+  "observationVariableName": "STCol_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000077",
+   "traitName": "Seed testa ground colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The ground colour of seed coat.",
+   "synonyms": [],
+   "mainAbbreviation": "STCol",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000301",
+   "methodName": "Seed testa ground colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe seed testa colour and rate it. It is recommended to observe it immediately after harvest (within one month after harvest).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000119",
+   "scaleName": "Seed testa ground colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Black",
+     "4= Light green",
+     "5= Dark green",
+     "2= Dark brown",
+     "3= Light brown",
+     "8= Yellow",
+     "9= White",
+     "6= Red",
+     "7= Violet",
+     "99= Other (specify)"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000304",
+  "observationVariableName": "OShoN_Ct_shootplot",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Nursery evaluation",
+   " Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [
+   "ORBAN"
+  ],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000078",
+   "traitName": "Orobanche shoot number",
+   "traitClass": "Biotic stress",
+   "traitPUI": null,
+   "description": "The number of Boomrape (Orobancheâ€ spp.) shoots per unit of area.",
+   "synonyms": [],
+   "mainAbbreviation": "OShoN",
+   "alternativeAbbreviations": [],
+   "entity": "Orobanche",
+   "entityPUI": null,
+   "attribute": "Shoot number",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000303",
+   "methodName": "Orobanche shoot number - Counting",
+   "methodClass": "Counting",
+   "description": "Count the number of Orobanche shoots per plot or measurement area.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000120",
+   "scaleName": "shoot/plot",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000306",
+  "observationVariableName": "StdPetalCol_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000079",
+   "traitName": "Standard petal colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The ground colour of standard petal (flag).",
+   "synonyms": [],
+   "mainAbbreviation": "StdPetalCol",
+   "alternativeAbbreviations": [],
+   "entity": "Standard petal",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000305",
+   "methodName": "Standard petal colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe standard petal colour and record it.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000121",
+   "scaleName": "Standard petal colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= White",
+     "4= Light brown",
+     "5= Pink",
+     "2= Violet",
+     "3= Dark brown",
+     "99= Other (specify)",
+     "6= Red",
+     "7= Yellow"
+    ]
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000308",
+  "observationVariableName": "SYld_Cmp_tha",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000003",
+   "traitName": "Seed yield",
+   "traitClass": "Agronomic",
+   "traitPUI": null,
+   "description": "The amount (weight) of seed that was harvested per unit area or plant.",
+   "synonyms": [],
+   "mainAbbreviation": "SYld",
+   "alternativeAbbreviations": [],
+   "entity": "Seed",
+   "entityPUI": null,
+   "attribute": "Yield",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000307",
+   "methodName": "Seed yield - Computation",
+   "methodClass": "Computation",
+   "description": "Compute seed yield.",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000122",
+   "scaleName": "t/ha",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000310",
+  "observationVariableName": "LWI_M_WI",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Trial evaluation"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000080",
+   "traitName": "Leaf water index ratio",
+   "traitClass": "Physiological",
+   "traitPUI": null,
+   "description": "The water index ratio obtained by spectral reflectance analysis.",
+   "synonyms": [],
+   "mainAbbreviation": "LWI",
+   "alternativeAbbreviations": [],
+   "entity": "Leaf",
+   "entityPUI": null,
+   "attribute": "Water index",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000309",
+   "methodName": "Leaf water index - Measurement",
+   "methodClass": "Measurement",
+   "description": "The water indexâ€  (leaves and other green tissues) can be quickly, and non-destructively measured using a hand-held battery portable optical meter by spectral reflectance analysis. Measurements are typically made on selected/marked leaf (once fully expanded).",
+   "formula": null,
+   "reference": null,
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000123",
+   "scaleName": "Water Index",
+   "dataType": "Numerical",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": []
+   },
+   "units": null
+  }
+ },
+ {
+  "observationVariableDbId": "CO_365:0000312",
+  "observationVariableName": "WPetalCol_E_Cat",
+  "observationVariablePUI": null,
+  "ontologyReference": {
+   "documentationLinks": [
+    {
+     "URL": "http://purl.obolibrary.org/obo/ro.owl",
+     "type": "OBO"
+    }
+   ],
+   "ontologyDbId": "CO_365",
+   "ontologyName": "Faba bean"
+  },
+  "contextOfUse": [
+   "Characterization"
+  ],
+  "defaultValue": null,
+  "growthStage": null,
+  "institution": "ICARDA, IBP",
+  "language": "EN",
+  "scientist": "Fouad Maalouf, Julian Pietragalla",
+  "status": null,
+  "synonyms": [],
+  "date": "2017-12-15 00:00:00",
+  "crop": "Faba bean",
+  "trait": {
+   "traitDbId": "CO_365:0000081",
+   "traitName": "Wing petal colour",
+   "traitClass": "Morphological",
+   "traitPUI": null,
+   "description": "The colour of the wing petal.",
+   "synonyms": [],
+   "mainAbbreviation": "WPetalCol",
+   "alternativeAbbreviations": [],
+   "entity": "Wing petal",
+   "entityPUI": null,
+   "attribute": "Colour",
+   "attributePUI": null,
+   "status": null,
+   "additionalInfo": null
+  },
+  "method": {
+   "methodDbId": "CO_365:0000311",
+   "methodName": "Wing petal colour - Estimation",
+   "methodClass": "Estimation",
+   "description": "Observe wing petal colour and record it.",
+   "formula": null,
+   "reference": "Faba Bean Descriptors, IBPGR and ICARDA, Rome, 1985.",
+   "additionalInfo": null
+  },
+  "scale": {
+   "scaleDbId": "CO_365:0000124",
+   "scaleName": "Wing petal colour scale",
+   "dataType": "Nominal",
+   "decimalPlaces": null,
+   "scalePUI": null,
+   "validValues": {
+    "minimumValue": null,
+    "maximumValue": null,
+    "categories": [
+     "1= Uniformly white",
+     "99= Other (specify)",
+     "2= Uniformly coloured",
+     "3= Spotted"
+    ]
+   },
+   "units": null
+  }
+ }
+]

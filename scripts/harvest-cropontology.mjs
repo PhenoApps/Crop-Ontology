@@ -2,9 +2,11 @@
 // Harvest a raw snapshot of every ontology from cropontology.org, re-fetching only what changed.
 //
 // Writes (each file only when its content changes, so an unchanged run leaves no diff):
-//   data/ontologies.json            BrAPI v2 ontology records, as served, sorted by id
-//   data/variables/<ONTOLOGY>.json  BrAPI v2 observation variables, as served, sorted by id
-//   data/harvest.json               source, last-change time and a per-ontology fingerprint
+//   data/cropontology/ontologies.json            BrAPI v2 ontology records, as served, sorted by id
+//   data/cropontology/variables/<ONTOLOGY>.json  BrAPI v2 observation variables, as served, sorted by id
+//   data/cropontology/harvest.json               source, last-change time and per ontology: fingerprint,
+//                                                when the site last loaded it (loadedAt) and when this
+//                                                harvester first saw its content change (editObservedAt)
 //
 // The site's /brapi/v2/variables call is the only complete export, but it ignores `page` and takes
 // from ~35 s to several minutes per ontology. So each run first takes a cheap fingerprint of every
@@ -16,9 +18,9 @@
 // monthly) to re-download everything.
 //
 // Usage:
-//   node scripts/harvest.mjs              fetch ontologies whose fingerprint changed
-//   node scripts/harvest.mjs --full       re-fetch every ontology
-//   node scripts/harvest.mjs CO_325 ...   re-fetch just these ontologies
+//   node scripts/harvest-cropontology.mjs              fetch ontologies whose fingerprint changed
+//   node scripts/harvest-cropontology.mjs --full       re-fetch every ontology
+//   node scripts/harvest-cropontology.mjs CO_325 ...   re-fetch just these ontologies
 
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
@@ -27,10 +29,10 @@ import https from 'node:https';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isIncluded, knownBroken } from './curation.mjs';
-import { rdfDigest } from './rdf-digest.mjs';
+import { digestTriples, rdfTriples, variableIds } from './rdf-digest.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DATA = join(ROOT, 'data');
+const DATA = join(ROOT, 'data', 'cropontology');
 const SITE = (process.env.CO_SITE ?? 'https://cropontology.org').replace(/\/$/, '');
 const BRAPI = `${SITE}/brapi/v2`;
 const PAGE_SIZE = Number(process.env.CO_PAGE_SIZE ?? 100000); // one oversized page; `page` is ignored upstream
@@ -163,10 +165,13 @@ const targets = only.length ? ontologies.filter((o) => only.includes(o.ontologyD
 
 console.log(`Fingerprinting ${targets.length} ontologies…`);
 const fingerprints = {}; // null = couldn't fingerprint, so always re-fetch and never match next time
+const rdfVariables = {}; // variable ids per ontology, for fetching one at a time when the bulk export fails
 await pool(targets, 4, async (o) => {
   const id = o.ontologyDbId;
   try {
-    const rdf = rdfDigest(await get(`${SITE}/ontology/${encodeURIComponent(id)}/rdf`, { json: false }));
+    const triples = rdfTriples(await get(`${SITE}/ontology/${encodeURIComponent(id)}/rdf`, { json: false }));
+    rdfVariables[id] = variableIds(triples);
+    const rdf = digestTriples(triples);
     fingerprints[id] = sha(stableStringify({ record: o, terms: termCounts[id] ?? null, rdf })).slice(0, 16);
   } catch (err) {
     fingerprints[id] = null;
@@ -175,6 +180,27 @@ await pool(targets, 4, async (o) => {
 });
 
 const exists = async (file) => (await readFile(file).then(() => true, () => false));
+
+// When the site last loaded each ontology: every term page shows a created_at, set when the ontology's
+// trait dictionary was (re)uploaded, the same for all its terms. The BrAPI export doesn't carry it, and the
+// ontology record's `version` isn't updated on reload. One term page per ontology is enough.
+const loadedAt = {};
+await pool(targets, 4, async (o) => {
+  const id = o.ontologyDbId;
+  const vars = rdfVariables[id] ?? [];
+  // Some term pages fail on the site, so try a few terms.
+  for (const termId of [...new Set([vars[0], vars[vars.length >> 1], vars.at(-1)])].filter(Boolean)) {
+    try {
+      const html = await get(`${SITE}/term/${encodeURIComponent(termId)}`, { json: false, attempts: 1 });
+      const m = html.replace(/<[^>]*>/g, '\n').match(/created_at\s*\n\s*(\d{4}-\d{2}-\d{2})-(\d{2}:\d{2}:\d{2})/);
+      if (m) { loadedAt[id] = `${m[1]}T${m[2]}`; return; }
+    } catch {}
+  }
+  if (vars.length) console.warn(`  ${id}: no load date found on its term pages`);
+});
+for (const [id, at] of Object.entries(loadedAt)) {
+  if (state[id] && state[id].loadedAt !== at) { state[id] = { ...state[id], loadedAt: at }; changed = true; }
+}
 const toFetch = [];
 for (const o of targets) {
   const id = o.ontologyDbId;
@@ -182,6 +208,18 @@ for (const o of targets) {
   if (full || only.length || !fresh || !(await exists(join(DATA, 'variables', `${id}.json`)))) toFetch.push(o);
 }
 console.log(`${toFetch.length} to fetch, ${targets.length - toFetch.length} unchanged`);
+
+// Fetch variables one by one with ?observationVariableDbId=, which works when the per-ontology export doesn't.
+async function fetchEach(ids) {
+  const out = [];
+  await pool(ids, 4, async (vid) => {
+    const body = await get(`${BRAPI}/variables?observationVariableDbId=${encodeURIComponent(vid)}&pageSize=10&page=0`);
+    const rec = records(body).find((r) => r.observationVariableDbId === vid);
+    if (!rec) throw new Error(`${vid} not returned by ?observationVariableDbId=`);
+    out.push(rec);
+  });
+  return out;
+}
 
 const failures = [];
 const warnings = [];
@@ -194,17 +232,39 @@ await pool(toFetch, CONCURRENCY, async (o) => {
   try {
     // Known-broken ontologies get one attempt: retrying a deterministic upstream error only wastes time.
     const opts = knownBroken[id] ? { attempts: 1 } : undefined;
-    const vars = dedupe(await getAll(`variables?ontologyDbId=${encodeURIComponent(id)}`, opts), 'observationVariableDbId')
-      .sort(byKey('observationVariableDbId'));
-    const dataChanged = await writeIfChanged(join(DATA, 'variables', `${id}.json`), vars);
-    const entry = { fingerprint: fingerprints[id], variableCount: vars.length, changedAt: dataChanged ? now : state[id]?.changedAt ?? now };
+    let raw;
+    let method = 'bulk';
+    try {
+      raw = await getAll(`variables?ontologyDbId=${encodeURIComponent(id)}`, opts);
+    } catch (bulkErr) {
+      // Fallback: the bulk export can fail on data it can't serialise even when every variable loads on its own.
+      if (!rdfVariables[id]?.length) throw bulkErr;
+      console.warn(`  ! ${id} bulk export failed (${bulkErr.message}); fetching ${rdfVariables[id].length} variables one at a time`);
+      raw = await fetchEach(rdfVariables[id]);
+      method = 'per-variable';
+    }
+    const vars = dedupe(raw, 'observationVariableDbId').sort(byKey('observationVariableDbId'));
+    const file = join(DATA, 'variables', `${id}.json`);
+    const hadSnapshot = await exists(file);
+    const dataChanged = await writeIfChanged(file, vars);
+    const entry = {
+      ...state[id],
+      fingerprint: fingerprints[id], variableCount: vars.length, fetchedVia: method, loadedAt: loadedAt[id] ?? state[id]?.loadedAt ?? null,
+      changedAt: dataChanged ? now : state[id]?.changedAt ?? now,
+      // Content changed since a previous snapshot (e.g. edited in the site's curation portal, which keeps
+      // no public modified date): this run is the earliest the edit is known to have happened.
+      editObservedAt: dataChanged && hadSnapshot ? now : state[id]?.editObservedAt ?? null,
+    };
     if (stableStringify(entry) !== stableStringify(state[id] ?? null)) changed = true;
     state[id] = entry;
     const secs = Math.round((Date.now() - started) / 1000);
-    if (knownBroken[id]) {
-      const msg = `${id} is listed in curation.json knownBroken but harvested fine; remove it from that list.`;
+    if (knownBroken[id] && method === 'bulk') {
+      const msg = `${id} is listed in curation.json knownBroken but its bulk export worked; remove it from that list.`;
       console.log(`  ! ${msg}`);
       annotate('notice', msg);
+    } else if (method === 'per-variable') {
+      warnings.push(id);
+      annotate('warning', `${id}: bulk export still failing upstream; fetched ${vars.length} variables one at a time.`);
     }
     console.log(`  ✓ ${id.padEnd(16)} ${String(vars.length).padStart(5)} variables  ${dataChanged ? 'CHANGED' : 'same   '}  ${String(secs).padStart(4)}s  ${o.ontologyName}`);
   } catch (err) {
@@ -231,7 +291,7 @@ if (changed) {
   console.log('No changes.');
 }
 
-if (warnings.length) console.warn(`Known upstream failures (not fatal): ${warnings.join(', ')}`);
+if (warnings.length) console.warn(`Upstream problems (not fatal): ${warnings.join(', ')}`);
 if (failures.length) {
   console.error(`Failed: ${failures.join(', ')}`);
   process.exit(1);

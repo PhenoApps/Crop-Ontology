@@ -1,7 +1,15 @@
 {
-  "$comment": "Read by scripts/harvest.mjs and scripts/build.mjs. `include` is a regex on ontologyDbId; only matching ontologies are harvested and published. Display names are the upstream ontologyName with `stripWords` removed (whole words, case-insensitive), unless `names` overrides them by id. The original name is kept in additionalInfo.sourceOntologyName.",
+  "$comment": "Read by scripts/harvest-cropontology.mjs and scripts/build.mjs. `include` is a regex on ontologyDbId; only matching ontologies are harvested and published. Display names are the upstream ontologyName with `stripWords` removed (whole words, case-insensitive), unless `names` overrides them by id. The original name is kept in additionalInfo.sourceOntologyName. `planteomePaths` lists extra files (repo-relative) to copy from a Planteome repo when its trait data is not at the root; `planteomeFiles` picks the file to compare when a repo has several. `siteReloadsCountFrom`: cropontology.org reloads before this date (its 2023 migration re-imported old content) do not count as newer than GitHub. `sources` forces which copy wins when the two disagree.",
   "include": "^CO_\\d+$",
-  "stripWords": ["trait dictionary", "ontology", "ontologies", "traits", "trait", "phenotypes", "phenotype"],
+  "stripWords": [
+    "trait dictionary",
+    "ontology",
+    "ontologies",
+    "traits",
+    "trait",
+    "phenotypes",
+    "phenotype"
+  ],
   "names": {
     "CO_331": "Sweet potato",
     "CO_360": "Sugar kelp",
@@ -10,5 +18,11 @@
   "knownBroken": {
     "CO_356": "cropontology.org returns HTTP 500 for /brapi/v2/variables?ontologyDbId=CO_356 (and v1) at any page size, though every variable loads on its own via ?observationVariableDbId=. Likely cause: 9 scales (37 variables) have categories stored as dates by Excel, e.g. '1-2-3' became 2003-01-02T00:00:00. No other ontology has non-text categories. Found 2026-11-18.",
     "CO_369": "Empty on cropontology.org: the ontology record exists but has no terms (its RDF holds only the ontology header), and both /traits and /variables return HTTP 500 for it. Its trait dictionary is in Planteome/CO_369-sainfoin-traits on GitHub but hasn't been loaded into the site. Found 2026-11-18."
-  }
+  },
+  "planteomePaths": {
+    "CO_325": [
+      "musabase/cgiar_banana_ontology.obo"
+    ]
+  },
+  "siteReloadsCountFrom": "2024-01-01"
 }

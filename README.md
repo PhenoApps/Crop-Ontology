@@ -1,107 +1,113 @@
-# Crop Ontology mirror
+# PhenoApps Crop Ontology
 
-A read-only static copy of the trait dictionaries on [cropontology.org](https://cropontology.org),
-published with GitHub Pages as:
+Crop trait dictionaries from the [Crop Ontology](https://cropontology.org), published by
+[PhenoApps](https://phenoapps.org) as static [BrAPI v2](https://brapi.org/specification) endpoints for
+[Field Book](https://github.com/PhenoApps/Field-Book) and other phenotyping apps, with a website for browsing them.
 
-- a **browsable website**: search ontologies and variables, and view the trait, method and scale behind each variable
-- a **static [BrAPI v2](https://brapi.org/specification) endpoint per ontology**, for importing traits into
-  BrAPI clients such as [Field Book](https://github.com/PhenoApps/Field-Book)
+**Site:** https://phenoapps.github.io/Crop-Ontology/
 
-Site: `https://phenoapps.github.io/Crop-Ontology/` (once Pages is enabled; see [Setup](#setup)).
+The trait dictionaries are kept in two places that have drifted apart: the cropontology.org database and the
+`CO_###-<crop>-traits` repositories in the [Planteome](https://github.com/Planteome) GitHub organization. This
+project keeps a raw copy of both, merges them crop by crop, and publishes the result as plain files on GitHub Pages.
+The site's [About page](https://phenoapps.github.io/Crop-Ontology/#/about) explains the purpose for end users.
 
 ## BrAPI endpoints
 
-Each ontology has its own base URL, so a client imports one crop's variables at a time:
-
-```
-https://phenoapps.github.io/Crop-Ontology/<ONTOLOGY_ID>/brapi/v2
-```
-
-| Call | Contents |
+| Base URL | Serves |
 | --- | --- |
-| `serverinfo` | the calls listed here |
-| `commoncropnames` | the crop(s) named in the ontology |
-| `ontologies` | the ontology record |
-| `variables` | all observation variables, with nested trait, method and scale |
-| `traits`, `methods`, `scales` | distinct traits, methods and scales used by those variables |
+| `https://phenoapps.github.io/Crop-Ontology/brapi/v2` | every crop |
+| `https://phenoapps.github.io/Crop-Ontology/<ONTOLOGY_ID>/brapi/v2` | one crop, e.g. `CO_320` for rice |
 
-The root base URL `…/Crop-Ontology/brapi/v2` serves only `serverinfo`, `ontologies` and `commoncropnames`, to help
-clients discover the per-ontology URLs.
+Each base URL answers `serverinfo`, `commoncropnames`, `ontologies`, `variables`, `traits`, `methods` and `scales`.
+Variables carry their trait, method and scale, and every variable's `commonCropName` is its crop's name, so a
+client using the all-crops URL can filter by crop. Each record in the all-crops `ontologies` list has
+`additionalInfo.commonCropName`, `variableCount` and `brapiBasePath` (e.g. `CO_325/brapi/v2`, relative to the site
+root), so a client can offer a list of crops and then load just the one picked.
 
-Static hosting limits:
+Limits of static hosting:
 
-- **No query parameters.** Filters and `page`/`pageSize` are ignored. Every list is returned as one page with
-  `totalPages: 1`, so a client that follows the pagination metadata gets everything in one request.
-- **No single-record calls** such as `variables/{id}`, because `variables` is a file and can't also be a directory.
-- **Content type.** GitHub Pages serves extensionless files as `application/octet-stream`. Browsers and most
-  HTTP clients don't mind, but the BrAPI Java client that Field Book uses rejects any response that isn't JSON,
-  so Field Book needs a small change to import from here.
+- **No query parameters.** Filters and `page`/`pageSize` are ignored. Every list is one page with `totalPages: 1`.
+- **No single-record calls** such as `variables/{id}`.
+- **Content type.** GitHub Pages serves these extensionless files as `application/octet-stream`. Browsers and most
+  HTTP clients accept that; the BrAPI Java client used by Field Book requires a JSON content type.
 
-## How it works
+## How the data is built
 
 ```
-cropontology.org BrAPI v2 ──harvest.mjs──▶ data/ (committed raw snapshot) ──build.mjs──▶ _site/ ──▶ GitHub Pages
+cropontology.org ──harvest-cropontology──▶ data/cropontology/ ─┐
+                                                              ├─build──▶ _site/ ──▶ GitHub Pages
+Planteome GitHub ──harvest-planteome─────▶ data/planteome/ ────┘
+                                                              └─compare──▶ reports/comparison.json
 ```
 
-- `scripts/harvest.mjs` downloads each ontology's variables from `/brapi/v2/variables?ontologyDbId=…`, the only
-  complete export the site offers. Responses are stored **as served**, sorted by ID so diffs are readable.
-  - That call is slow: 35 s to several minutes per ontology, about 75 minutes for all of them. It also ignores
-    `page`, so each list is fetched in one oversized request and checked against `totalCount`.
-  - To avoid that cost every run, the harvester first **fingerprints** every ontology in a minute or two, then
-    re-downloads only those whose fingerprint changed. The fingerprint combines the BrAPI ontology record, the term
-    count from `/get-ontologies`, and a normalised hash of the RDF export (`/ontology/{id}/rdf`).
-  - The RDF covers names, descriptions, synonyms, abbreviations, scale categories, scientist and institution. It
-    doesn't include growth stage, context of use, formula, method reference, status or date, so an edit that only
-    touches those isn't detected. `--full` re-fetches everything, and the scheduled workflow does that on the first
-    Monday of each month.
-  - Files are rewritten only when their content changes. A run with no upstream change leaves no diff.
-- `scripts/build.mjs` normalises the snapshot to the BrAPI v2 shape. Lists go under `result.data`, scale
-  categories like `"1 = absent"` become `{ "value": "1", "label": "absent" }`, and both v2.0 (`min`/`max`) and v2.1
-  (`minimumValue`/`maximumValue`) bounds are set. It then writes the site and BrAPI tree to `_site/`. The generated
-  output is not committed.
-- `.github/workflows/pages.yml` builds and deploys on every push to `main` that touches the data, site or build
-  script.
-- `.github/workflows/harvest.yml` re-harvests every Monday, or on demand from the Actions tab with an optional full
-  refresh. It commits the snapshot if anything changed and redeploys.
+For each crop, the site serves every variable found in either source. Where both have a variable and they
+disagree, the Planteome GitHub copy is used unless cropontology.org changed that ontology more recently. Every
+change the build makes to the source data (merges, repaired categories and text, mapped data types, renamed crops)
+is listed on the site's *Changes from sources* page and in `changes.json`.
+
+The details are in the folder READMEs:
+
+| Folder | Contents |
+| --- | --- |
+| [`scripts/`](scripts/README.md) | harvesters, comparison, the build and its modules |
+| [`data/`](data/README.md) | raw snapshots of both sources, committed as downloaded |
+| [`site/`](site/README.md) | the browser UI (variable list, trait browser, about and changes pages) |
+| `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site |
+| `curation.json` | publishing rules: which ontologies, display names, source overrides (see below) |
+
+`_site/` (build output) and `reports/` (comparison report) are generated and not committed.
+
+## Running locally
+
+Requires Node 20 or later. There are no dependencies to install.
+
+```sh
+node scripts/harvest-cropontology.mjs   # refresh ontologies that changed on cropontology.org
+node scripts/harvest-planteome.mjs      # refresh the Planteome copies
+node scripts/compare.mjs                # optional: field-by-field comparison -> reports/comparison.json
+node scripts/build.mjs                  # build _site/
+node scripts/serve.mjs                  # preview at http://localhost:8080/
+```
+
+`serve.mjs` sends the BrAPI files as `application/json`, so a phone on the same network can import from
+`http://<your-ip>:8080/brapi/v2`.
+
+## Automation
+
+- `harvest.yml` runs both harvesters and the comparison every Monday (a full cropontology.org refresh on the first
+  Monday of the month), commits any changed snapshots, and redeploys the site when data changed. It can also be run
+  from the Actions tab.
+- `pages.yml` builds and deploys on pushes to `main` that touch the data, site, build scripts or `curation.json`.
+
+To enable Pages on a new fork: **Settings → Pages → Build and deployment → Source: GitHub Actions**, then run
+*Deploy site* from the Actions tab.
 
 ## Curation
 
-`curation.json` controls what is published and under what name. Both scripts read it.
+`curation.json` is read by the harvesters and the build.
 
-- `include`: a regex on the ontology ID. It defaults to `^CO_\d+$`, so only CO-numbered ontologies are harvested
-  and published.
-- `stripWords`: words removed from upstream titles so each ontology shows just the crop name. For example,
-  "Beet Ontology" becomes "Beet" and "Sugar Kelp trait" becomes "Sugar Kelp".
-- `names`: per-ID overrides for anything the rule gets wrong, e.g. `{ "CO_365": "Faba bean" }`.
-- `knownBroken`: ontologies that fail upstream, with the reason. The harvester tries each once, logs a warning
-  (a GitHub Actions warning annotation in CI) instead of failing the run, and adds a notice if one starts working
-  again. Its previously harvested data, if any, stays in place.
+| Key | Purpose |
+| --- | --- |
+| `include` | regex on the ontology ID; defaults to `^CO_\d+$` |
+| `stripWords` | words removed from source titles so each crop shows just its name ("Beet Ontology" → "Beet") |
+| `names` | display-name overrides by ID, e.g. `"CO_365": "Faba bean"` |
+| `knownBroken` | ontologies that fail upstream, with the reason; reported as warnings rather than failures |
+| `planteomeFiles` | which file in a Planteome repo is the trait dictionary, when the default choice is wrong |
+| `planteomePaths` | extra files to copy from a Planteome repo whose trait data isn't at its root |
+| `siteReloadsCountFrom` | cropontology.org reloads before this date (its 2023 migration) don't count as newer than GitHub |
+| `sources` | force the preferred copy for an ontology: `"cropontology"` or `"planteome"` |
 
-The raw snapshot in `data/` keeps upstream names unchanged. The published records carry the original title in
-`additionalInfo.sourceOntologyName`.
+## Licences and credit
 
-## Local use
+The trait dictionaries are the work of the crop communities and curators of the Crop Ontology. Each ontology keeps
+its own licence, shown on its page and in its BrAPI `ontologies` record. This is not the official Crop Ontology
+site. Corrections to traits belong with their curators, on cropontology.org or in the crop's Planteome repository,
+and are picked up by the next weekly refresh. The code in this repository is licensed under the terms in
+[LICENSE](LICENSE).
 
-Requires Node 20+. There are no dependencies.
+## AI use
 
-```sh
-node scripts/harvest.mjs            # refresh ontologies whose fingerprint changed (a minute or two if none)
-node scripts/harvest.mjs --full     # re-fetch everything (about 75 min; the source is slow)
-node scripts/harvest.mjs CO_325     # re-fetch one ontology
-node scripts/build.mjs              # build _site/
-node scripts/serve.mjs              # preview at http://localhost:8080/
-```
-
-`serve.mjs` serves the BrAPI files as `application/json`, which is useful for testing BrAPI clients against
-`http://<your-ip>:8080/CO_325/brapi/v2`.
-
-## Setup
-
-1. In the repo, go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
-2. Push to `main`, or run **Deploy site** from the Actions tab.
-
-## Data source and licences
-
-The data belongs to the Crop Ontology curators. Each ontology's licence is shown on its page and in its BrAPI
-`ontologies` record. This mirror copies the **cropontology.org** database, which can differ from the ontology
-files that curators keep elsewhere, such as Planteome's GitHub repositories. Changes belong upstream, not here.
+The code and documentation in this repository were written with the help of Claude Opus 5.5 working under the 
+direction of the PhenoApps maintainers, who are responsible for reviewing and accepting changes. The ontology 
+data is not AI-generated: it is copied from cropontology.org and the Planteome GitHub repositories, and every 
+automated change to it is listed in `changes.json` and on the site.

@@ -3,27 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crop Ontology Mirror</title>
-  <meta name="description" content="Static, read-only mirror of cropontology.org trait dictionaries with a BrAPI v2 endpoint per ontology.">
+  <title>PhenoApps Crop Ontology</title>
+  <meta name="description" content="Crop trait dictionaries from the Crop Ontology, published by PhenoApps as BrAPI v2 endpoints for Field Book and other phenotyping apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap">
-      <a class="brand" href="#/">Crop Ontology <span>mirror</span></a>
-      <p class="snapshot" id="snapshot"></p>
+      <a class="brand" href="#/"><small>PhenoApps</small><strong>Crop Ontology</strong></a>
+      <nav class="nav" id="nav" aria-label="Site">
+        <a href="#/" data-nav="crops">Crops</a>
+        <a href="#/about" data-nav="about">About</a>
+        <a href="#/changes" data-nav="changes">Changes from sources</a>
+        <a href="https://github.com/PhenoApps/Crop-Ontology">GitHub</a>
+      </nav>
     </div>
   </header>
   <main class="wrap" id="app" aria-live="polite">
-    <p class="muted">Loading…</p>
+    <p class="muted">Loading...</p>
   </main>
   <footer class="wrap foot">
     <p>
-      Data from <a href="https://cropontology.org">cropontology.org</a>, a read-only copy. Each ontology keeps its own licence, shown on its page.
-      Every ontology has a <a href="https://brapi.org/specification">BrAPI v2</a> base URL for importing traits into
-      clients such as <a href="https://github.com/PhenoApps/Field-Book">Field Book</a>.
-      <a href="https://github.com/PhenoApps/Crop-Ontology">Source on GitHub</a>.
+      Maintained by <a href="https://phenoapps.org">PhenoApps</a>. Trait dictionaries are created by their crop
+      communities through the <a href="https://cropontology.org">Crop Ontology</a> and the
+      <a href="https://github.com/Planteome">Planteome</a> GitHub repositories. Each ontology keeps its own licence,
+      shown on its page.
     </p>
+    <p><a href="#/about">About this site</a> &nbsp;|&nbsp; <a href="https://github.com/PhenoApps/Crop-Ontology/issues">Report a problem</a></p>
   </footer>
   <script src="app.js"></script>
 </body>

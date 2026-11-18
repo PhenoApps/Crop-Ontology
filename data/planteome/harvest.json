@@ -1,0 +1,611 @@
+{
+ "source": "https://github.com/Planteome",
+ "updatedAt": "2026-11-18T09:53:57.842Z",
+ "ontologies": {
+  "CO_320": {
+   "repo": "https://github.com/Planteome/CO_320-rice-traits",
+   "branch": "master",
+   "commit": "92a5dae34fc0587c720f694306067fe1d478fa60",
+   "committedAt": "2025-01-15T12:56:55-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Rice_TD.csv",
+     "path": "Rice_TD.csv",
+     "size": 278521,
+     "sha256": "07274f616fe3b81b7d9226cbaf03f636edf39e235b9bbe999f6fbc3112ec84c4",
+     "committedAt": "2025-01-15T12:44:37-08:00"
+    },
+    {
+     "name": "rice-trait-ontology.obo",
+     "path": "rice-trait-ontology.obo",
+     "size": 275056,
+     "sha256": "f016381ab89e88bbbb32447e231bc6d41c32a838c3e85ecb707bd7a39ff1879c",
+     "committedAt": "2025-01-15T12:44:37-08:00"
+    }
+   ]
+  },
+  "CO_321": {
+   "repo": "https://github.com/Planteome/CO_321-wheat-traits",
+   "branch": "master",
+   "commit": "25dc50e116f52289c1a442b72e5d1900f3cabd19",
+   "committedAt": "2025-01-20T13:42:13-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "wheat_TD_staging.csv",
+     "path": "wheat_TD_staging.csv",
+     "size": 8524,
+     "sha256": "e8a3c6aa986c1e705304da591eae32d304e53b80c4f36ce5b2a0190c47034296",
+     "committedAt": "2023-01-31T15:46:49+01:00"
+    },
+    {
+     "name": "wheat_TD.csv",
+     "path": "wheat_TD.csv",
+     "size": 677555,
+     "sha256": "299ccf20c6a65b170b74302f6fee0abd1fb628021c2c4d07ae17f5ce4dae7840",
+     "committedAt": "2023-01-31T15:46:49+01:00"
+    }
+   ]
+  },
+  "CO_322": {
+   "repo": "https://github.com/Planteome/CO_322-maize-traits",
+   "branch": "master",
+   "commit": "cc459dade4319038eb0ac98088ecbb80674b36ad",
+   "committedAt": "2025-01-22T14:18:42-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Maize_TD.csv",
+     "path": "Maize_TD.csv",
+     "size": 236932,
+     "sha256": "426e537ef0d13d1c763c10c7a45fa347fa7510ec9fc37d4b5207e6425ef8615c",
+     "committedAt": "2021-11-22T15:24:19+01:00"
+    },
+    {
+     "name": "maize-trait-ontology.obo",
+     "path": "maize-trait-ontology.obo",
+     "size": 273463,
+     "sha256": "3e8af2344243aab03f30ffc40cc1d926385670f7391e27ece213dc9361482038",
+     "committedAt": "2020-10-12T16:24:56+01:00"
+    }
+   ]
+  },
+  "CO_323": {
+   "repo": "https://github.com/Planteome/CO_323-barley-traits",
+   "branch": "main",
+   "commit": "9c7c48788077d5518bbeb1900164600976b31480",
+   "committedAt": "2024-06-04T09:47:27+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "barley_TD.csv",
+     "path": "barley_TD.csv",
+     "size": 92842,
+     "sha256": "c74d94982f6a8623f830f7865e40db08e1b7762f1de28157d20dc25a0efdc8c9",
+     "committedAt": "2021-09-22T14:59:34+02:00"
+    }
+   ]
+  },
+  "CO_324": {
+   "repo": "https://github.com/Planteome/CO_324-sorghum-traits",
+   "branch": "master",
+   "commit": "2f2c4950b62dd3c67dc64807e3049442e4d71b9b",
+   "committedAt": "2025-01-22T15:39:45-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "sorghum_TD.csv",
+     "path": "sorghum_TD.csv",
+     "size": 230110,
+     "sha256": "f412cd72ddb613ae6aab4f4a9c5b2411eb69300ab5af390d469ee2888e438b93",
+     "committedAt": "2021-09-22T15:13:13+02:00"
+    }
+   ]
+  },
+  "CO_325": {
+   "repo": "https://github.com/Planteome/CO_325-banana-traits",
+   "branch": "master",
+   "commit": "35c5978c072e3df5ea51c30663739058d70ac585",
+   "committedAt": "2025-04-07T13:05:44-04:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "cgiar_banana_ontology.obo",
+     "path": "musabase/cgiar_banana_ontology.obo",
+     "size": 498840,
+     "sha256": "c5cc423ae52b5d899bd0ec686ddcd1bcd52dafd3686ff421aa605996dddc3c61",
+     "committedAt": "2025-03-19T22:39:44-04:00"
+    }
+   ]
+  },
+  "CO_326": {
+   "repo": "https://github.com/Planteome/CO_326-coconut-traits",
+   "branch": "main",
+   "commit": "d6a84b619ee6e059df0c284c2ec6a10d811be9e6",
+   "committedAt": "2024-06-04T16:06:38+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_326_Coconut_TDV5.xlsx",
+     "path": "CO_326_Coconut_TDV5.xlsx",
+     "size": 59135,
+     "sha256": "de54a0d682a4be53a3dbaf2a13c8bc2011dfb658bcc8b5ff5021fb6d1e6bce00",
+     "committedAt": "2024-06-04T12:03:59+02:00"
+    }
+   ]
+  },
+  "CO_327": {
+   "repo": "https://github.com/Planteome/CO_327-pearl-millet-traits",
+   "branch": "main",
+   "commit": "eed9cc5cda97003a562c9313487a6d4b0935b811",
+   "committedAt": "2024-06-04T15:11:21+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Pearl-millet_TD.csv",
+     "path": "Pearl-millet_TD.csv",
+     "size": 31667,
+     "sha256": "0512609ee53c5788932b2baf1286501213cb1bd8f9e2ff613b3bffffee17ddd9",
+     "committedAt": "2021-09-22T15:10:13+02:00"
+    }
+   ]
+  },
+  "CO_330": {
+   "repo": "https://github.com/Planteome/CO_330-potato-traits",
+   "branch": "master",
+   "commit": "2ccd8a101b4cbf369e628df3e6ede2059dc2aeb1",
+   "committedAt": "2025-01-22T13:44:15-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Potato_TD.csv",
+     "path": "Potato_TD.csv",
+     "size": 55371,
+     "sha256": "b36da4104507bb95c2f7b7ee70a8222ccf8937faba969276a2945c13b507f369",
+     "committedAt": "2025-01-22T13:09:16-08:00"
+    },
+    {
+     "name": "potato_trait.obo",
+     "path": "potato_trait.obo",
+     "size": 282687,
+     "sha256": "0226c8d80e7815ccd45313d156a5fe48656cf9331865bac700a174a5508fa2d9",
+     "committedAt": "2023-11-02T09:13:22+01:00"
+    }
+   ]
+  },
+  "CO_331": {
+   "repo": "https://github.com/Planteome/CO_331-sweetpotato-traits",
+   "branch": "master",
+   "commit": "69dbbeb4e19cfcd59468b590d5c502f4a37045e3",
+   "committedAt": "2025-03-24T16:42:51-04:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_331_sweetpotato_TD.csv",
+     "path": "CO_331_sweetpotato_TD.csv",
+     "size": 218643,
+     "sha256": "0fdf090aa3a7547067109806f226e84aff6455b2cbdbdcac5ec51ec35079af3b",
+     "committedAt": "2024-12-12T14:42:30-08:00"
+    },
+    {
+     "name": "sweetpotato_trait.obo",
+     "path": "sweetpotato_trait.obo",
+     "size": 434146,
+     "sha256": "c1bf385f23ced6168243c4d05bf57d623a74d3ef0b3daa55346439348c00779a",
+     "committedAt": "2025-03-21T15:58:40-04:00"
+    }
+   ]
+  },
+  "CO_334": {
+   "repo": "https://github.com/Planteome/CO_334-cassava-traits",
+   "branch": "master",
+   "commit": "3678b895cf9777276a02a4da4dc63280c8a90448",
+   "committedAt": "2025-05-15T08:01:29-04:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "cassava_trait.obo",
+     "path": "cassava_trait.obo",
+     "size": 655208,
+     "sha256": "41c42feee1e0c3540a9bb5815e2c68491b28890c7b427c3cc14d98dbb1eab1ad",
+     "committedAt": "2025-05-14T17:36:42-04:00"
+    },
+    {
+     "name": "CO_334_Cassava_TD.csv",
+     "path": "CO_334_Cassava_TD.csv",
+     "size": 362640,
+     "sha256": "bcebf27018e4c92909d117fd1d28245baeec787553921a28631dbf134e9716ce",
+     "committedAt": "2025-03-10T11:31:16+01:00"
+    }
+   ]
+  },
+  "CO_335": {
+   "repo": "https://github.com/Planteome/CO_335-common-bean-traits",
+   "branch": "main",
+   "commit": "e489b43179364a6467359aa2f72a0b2b39340533",
+   "committedAt": "2023-11-21T13:32:40+01:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Common_bean_TD.csv",
+     "path": "Common_bean_TD.csv",
+     "size": 115288,
+     "sha256": "17db4fc46adf7e2e936ccb0bfb28deb5dd9b14e5ae9c9884a4cfecb2917e2181",
+     "committedAt": "2023-03-02T16:24:14+01:00"
+    }
+   ]
+  },
+  "CO_336": {
+   "repo": "https://github.com/Planteome/CO_336-soybean-traits",
+   "branch": "master",
+   "commit": "8370e131579ce42ccb8c3e3053a348264e806217",
+   "committedAt": "2025-01-22T15:15:36-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Soybean_TD.csv",
+     "path": "Soybean_TD.csv",
+     "size": 51687,
+     "sha256": "7519f58cc13053b573c17152abb21b8f4950b841d54c598314589ee6e45e1c8c",
+     "committedAt": "2021-09-22T15:13:43+02:00"
+    },
+    {
+     "name": "soybean-trait-ontology.obo",
+     "path": "soybean-trait-ontology.obo",
+     "size": 112521,
+     "sha256": "028ae1ac0719f57fef6c13074bd5ed28f507a26df2221b08cc196cd8cb5f4c9d",
+     "committedAt": "2016-09-01T18:14:52+02:00"
+    }
+   ]
+  },
+  "CO_337": {
+   "repo": "https://github.com/Planteome/CO_337-groundnut-traits",
+   "branch": "master",
+   "commit": "817aa2c909bfd28f042828633e7baacb5bccd9f5",
+   "committedAt": "2024-05-08T09:35:44+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Groundnut_TD.csv",
+     "path": "Groundnut_TD.csv",
+     "size": 92164,
+     "sha256": "d41061b9a9d241ae88074bff051350f926c218ca79db6fac012b670a3da68ad2",
+     "committedAt": "2021-09-22T15:03:48+02:00"
+    }
+   ]
+  },
+  "CO_338": {
+   "repo": "https://github.com/Planteome/CO_338-chickpea-traits",
+   "branch": "master",
+   "commit": "4acf08bd8dbe1977dac921c01d06a4bdd1e3fbd8",
+   "committedAt": "2021-09-22T15:01:57+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "chickpea_TD.csv",
+     "path": "chickpea_TD.csv",
+     "size": 44105,
+     "sha256": "d1b3350844d965068e612263cd33d1bc1500078020cd4feb8c058ab3b69378d4",
+     "committedAt": "2021-09-22T15:01:57+02:00"
+    }
+   ]
+  },
+  "CO_339": {
+   "repo": "https://github.com/Planteome/CO_339-lentil-traits",
+   "branch": "master",
+   "commit": "9e84d62fad4c37fb59eded084a8dc5e0fce5a20a",
+   "committedAt": "2025-01-20T13:40:47-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Lentil_TD.csv",
+     "path": "Lentil_TD.csv",
+     "size": 46173,
+     "sha256": "b65bd42d8142a26e14a1b48565f91bc4a6db0bc35e764e535ab08dcca0f6b968",
+     "committedAt": "2021-09-22T15:04:20+02:00"
+    }
+   ]
+  },
+  "CO_340": {
+   "repo": "https://github.com/Planteome/CO_340-cowpea-traits",
+   "branch": "master",
+   "commit": "376db9bd6580421289b860cc01e8e6c3b5087561",
+   "committedAt": "2023-07-12T16:30:56-06:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "cowpea_TD.csv",
+     "path": "cowpea_TD.csv",
+     "size": 93202,
+     "sha256": "31dc374d62c6aba89a80cdd108bc9ddb20216f93dc9128a13d4d95d7d77e5bcc",
+     "committedAt": "2021-09-22T15:02:25+02:00"
+    }
+   ]
+  },
+  "CO_341": {
+   "repo": "https://github.com/Planteome/CO_341-pigeonpea-traits",
+   "branch": "master",
+   "commit": "2ab406566f968e939fa4a6b0d589e22e37bc8b14",
+   "committedAt": "2025-01-22T15:15:48-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "Pigeonpea_TD.csv",
+     "path": "Pigeonpea_TD.csv",
+     "size": 37399,
+     "sha256": "a7ca4d39476cc6a56723bb9fd3da51ff1110d381965cfd0cb946bbae1e752cce",
+     "committedAt": "2021-09-22T15:10:35+02:00"
+    },
+    {
+     "name": "pigeonpea-trait-ontology.obo",
+     "path": "pigeonpea-trait-ontology.obo",
+     "size": 99426,
+     "sha256": "2765e30cf891137575f32a80f7f17db1947cfa029bd5c74fa019f64bd9041d17",
+     "committedAt": "2016-09-01T10:23:03+02:00"
+    }
+   ]
+  },
+  "CO_343": {
+   "repo": "https://github.com/Planteome/CO_343-yam-traits",
+   "branch": "master",
+   "commit": "f9c1038e1b974800fa0a920c36e2e4f518d7dd38",
+   "committedAt": "2025-03-27T13:28:28-04:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "yam_TD.csv",
+     "path": "yam_TD.csv",
+     "size": 146213,
+     "sha256": "f760a2982978c25dbded34cd7e05c889a1e3675bd22a4106956f53ce410452dc",
+     "committedAt": "2022-01-29T13:44:40+01:00"
+    },
+    {
+     "name": "yam-trait-ontology.obo",
+     "path": "yam-trait-ontology.obo",
+     "size": 288481,
+     "sha256": "521cd7f228c5eb11ba4a156b7ad9304302e2ea6f559a65bdd03135e2e20e5846",
+     "committedAt": "2025-03-27T10:31:46-04:00"
+    }
+   ]
+  },
+  "CO_345": {
+   "repo": "https://github.com/Planteome/CO_345-brachiaria-traits",
+   "branch": "main",
+   "commit": "786f8dad9ff247e14c8ff875e0e58b90b9936cc9",
+   "committedAt": "2024-06-04T11:17:21+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "brachiaria_TD.csv",
+     "path": "brachiaria_TD.csv",
+     "size": 38896,
+     "sha256": "125985077f7cfb77ce6c661e673d34008d924d9c1230be17aa76dec596566f61",
+     "committedAt": "2021-09-22T15:00:38+02:00"
+    }
+   ]
+  },
+  "CO_346": {
+   "repo": "https://github.com/Planteome/CO_346-mungbean-traits",
+   "branch": "main",
+   "commit": "539f65b78c0f0d29c993804479da5b4aa8777aa0",
+   "committedAt": "2024-06-10T10:03:09+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "mungbean_TD.csv",
+     "path": "mungbean_TD.csv",
+     "size": 40782,
+     "sha256": "f21c0d535dc27aeb29cb2a1b1b1a138ac2d80c7d8575e08980a76152a255e166",
+     "committedAt": "2021-09-22T15:07:15+02:00"
+    }
+   ]
+  },
+  "CO_347": {
+   "repo": "https://github.com/Planteome/CO_347-castorbean-traits",
+   "branch": "main",
+   "commit": "4bd874c010922f3a47fae3d7b68377e0ab57e073",
+   "committedAt": "2021-09-22T15:01:20+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "castorbean_TD.csv",
+     "path": "castorbean_TD.csv",
+     "size": 33729,
+     "sha256": "a0f9d4eb27fb04cd3e7c6ec05524fe469db78e73114302a72df5e03982e96885",
+     "committedAt": "2021-09-22T15:01:20+02:00"
+    }
+   ]
+  },
+  "CO_350": {
+   "repo": "https://github.com/Planteome/CO_350-oat-traits",
+   "branch": "master",
+   "commit": "036b2cb315796d86c225091ca30eebaa6bfbca00",
+   "committedAt": "2025-01-30T15:35:12-08:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_350.csv",
+     "path": "CO_350.csv",
+     "size": 149291,
+     "sha256": "5c53c964ee78c891685cbe368571edc70a608f89e93e5bf298d2234428000554",
+     "committedAt": "2021-09-22T15:09:14+02:00"
+    },
+    {
+     "name": "CO_350.xlsx",
+     "path": "CO_350.xlsx",
+     "size": 19169,
+     "sha256": "183e3054446a9feb85b74d9e4ab4a6f1b50d24a3e488151fc332161ed291228e",
+     "committedAt": "2025-01-30T14:41:29-08:00"
+    }
+   ]
+  },
+  "CO_358": {
+   "repo": "https://github.com/Planteome/CO_358-cotton-traits",
+   "branch": "main",
+   "commit": "ec471f1d1ad591dc9d0f1195780d8c6aecb32156",
+   "committedAt": "2024-06-04T13:44:10+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "cotton_TD.csv",
+     "path": "cotton_TD.csv",
+     "size": 296117,
+     "sha256": "59668c0543d40194a11b4c71967f460d534ef84e585037b7f9175b479415ff8e",
+     "committedAt": "2021-09-22T15:02:54+02:00"
+    }
+   ]
+  },
+  "CO_359": {
+   "repo": "https://github.com/Planteome/CO_359-sunflower-traits",
+   "branch": "main",
+   "commit": "0f11743fce1385f81507e082c6edc01c2d8bdd98",
+   "committedAt": "2024-06-04T16:49:57+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "sunflower_TD.csv",
+     "path": "sunflower_TD.csv",
+     "size": 164226,
+     "sha256": "941ccdc6234f520555c67ab37aae20f2c864967d2f626fcc9836e13780a30565",
+     "committedAt": "2021-09-22T15:15:54+02:00"
+    }
+   ]
+  },
+  "CO_360": {
+   "repo": "https://github.com/Planteome/CO_360-sugar-kelp-traits",
+   "branch": "main",
+   "commit": "c19deaef53cfab4dfd241c665abb960478a069f2",
+   "committedAt": "2024-06-05T07:27:46+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "sugar-kelp_TD.csv",
+     "path": "sugar-kelp_TD.csv",
+     "size": 29091,
+     "sha256": "bf4ccc240dbe87fef98c181796fac913de27aba55d306e22ff97ca4af376bbb2",
+     "committedAt": "2021-09-22T15:15:21+02:00"
+    }
+   ]
+  },
+  "CO_365": {
+   "repo": "https://github.com/Planteome/CO_365-faba-bean-traits",
+   "branch": "main",
+   "commit": "10fe62c87b873d9638ee4319f0102ab7d66c88e5",
+   "committedAt": "2024-06-04T14:18:51+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "fababean_TD.csv",
+     "path": "fababean_TD.csv",
+     "size": 52667,
+     "sha256": "7d18f7c97a64658fec2d36729b8c6df75517c29e3cc9dfa485cdc249b96c9211",
+     "committedAt": "2021-09-22T15:03:25+02:00"
+    }
+   ]
+  },
+  "CO_366": {
+   "repo": "https://github.com/Planteome/CO_366-bambara-groundnut-traits",
+   "branch": "main",
+   "commit": "5397106dca8b6dca3a1b277f96ee135f70a1743d",
+   "committedAt": "2024-06-04T09:51:09+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "bambara_TD.csv",
+     "path": "bambara_TD.csv",
+     "size": 86933,
+     "sha256": "5127786781ed9f99e8073ec343cf234a57440d05c202d489073cd1809104488a",
+     "committedAt": "2021-09-22T14:53:33+02:00"
+    }
+   ]
+  },
+  "CO_367": {
+   "repo": "https://github.com/Planteome/CO_367-quinoa-traits",
+   "branch": "main",
+   "commit": "89b51c0ae2d7c8fecde3c94172d9e0d4b47342b0",
+   "committedAt": "2024-07-04T17:02:32+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_367 _Quinoa_TDV5_23052021.xlsx",
+     "path": "CO_367 _Quinoa_TDV5_23052021.xlsx",
+     "size": 18113,
+     "sha256": "6a8b91b0c23b2fe913489f3867a845f653a4279f83917025d4afa5b1df717286",
+     "committedAt": "2024-06-05T12:41:01+02:00"
+    }
+   ]
+  },
+  "CO_369": {
+   "repo": "https://github.com/Planteome/CO_369-sainfoin-traits",
+   "branch": "main",
+   "commit": "57693f675954518d17c2cfa8545313885882e4f8",
+   "committedAt": "2025-05-29T14:45:57-04:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_369_trait_dictionary.csv",
+     "path": "CO_369_trait_dictionary.csv",
+     "size": 145681,
+     "sha256": "1c96786dbc8eb6c827f0d5282d92239b80b0e34f0b2bbca62df2b6e20566790f",
+     "committedAt": "2025-05-29T14:29:38-04:00"
+    }
+   ]
+  },
+  "CO_370": {
+   "repo": "https://github.com/Planteome/CO_370-apple-traits",
+   "branch": "main",
+   "commit": "69b4ef38fe19d4f57543e0f75f8b757cd2c1da4f",
+   "committedAt": "2024-06-04T10:51:48+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_370 TD.xlsx",
+     "path": "CO_370 TD.xlsx",
+     "size": 17269,
+     "sha256": "1233fa0b6ef0abd49a529d249e94d51ca8366a0b7c622933473b6205834d5927",
+     "committedAt": "2024-06-03T13:52:41+02:00"
+    }
+   ]
+  },
+  "CO_371": {
+   "repo": "https://github.com/Planteome/CO_371-blueberry-traits",
+   "branch": "main",
+   "commit": "acb508d59b4f107b4bace9fd6787394f6d031d0a",
+   "committedAt": "2024-06-04T10:53:17+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "blueberry_TD.csv",
+     "path": "blueberry_TD.csv",
+     "size": 97146,
+     "sha256": "d5cffe152aea7970154f76be2a11652ff11ab94be79bf8296b74d3ef23db7f9d",
+     "committedAt": "2023-11-24T12:04:40+01:00"
+    }
+   ]
+  },
+  "CO_372": {
+   "repo": "https://github.com/Planteome/CO_372-strawberry-traits",
+   "branch": "main",
+   "commit": "61d9461c4fe4fb12b78cfb0112ede1eac33d8c1d",
+   "committedAt": "2024-07-02T11:23:55+02:00",
+   "archived": false,
+   "files": [
+    {
+     "name": "CO_372_Strawberry_06.20.24_Final.xlsx",
+     "path": "CO_372_Strawberry_06.20.24_Final.xlsx",
+     "size": 86102,
+     "sha256": "6d2fd91a99b05d8ab91b2679c1de0384357ba42267ffa3b09e8710a26dd322c1",
+     "committedAt": "2024-07-02T10:41:40+02:00"
+    },
+    {
+     "name": "Strawberry_TD.csv",
+     "path": "Strawberry_TD.csv",
+     "size": 26907,
+     "sha256": "e261bca10529939ba5d048647e16ccd7893f17f1dfe25f99a2bbc3e9cd511825",
+     "committedAt": "2024-07-02T10:57:44+02:00"
+    }
+   ]
+  }
+ }
+}

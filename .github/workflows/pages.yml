@@ -3,7 +3,7 @@ name: Deploy site
 on:
   push:
     branches: [main]
-    paths: [data/**, site/**, scripts/build.mjs, scripts/curation.mjs, curation.json, .github/workflows/pages.yml]
+    paths: [data/**, site/**, scripts/build.mjs, scripts/curation.mjs, scripts/sources.mjs, scripts/fields.mjs, scripts/td.mjs, curation.json, .github/workflows/pages.yml]
   workflow_dispatch:
   workflow_call:
 

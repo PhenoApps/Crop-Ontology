@@ -84,8 +84,17 @@ export function rdfTriples(xml) {
   return triples;
 }
 
-export function rdfDigest(xml) {
-  const triples = rdfTriples(xml);
+export const rdfDigest = (xml) => digestTriples(rdfTriples(xml));
+
+// IDs of the observation variables declared in an ontology's RDF (classes under …/rdf/Variable).
+export function variableIds(triples) {
+  const SUBCLASS = 'http://www.w3.org/2000/01/rdf-schema#subClassOf';
+  return [...new Set(triples
+    .filter(([s, p, o]) => p === SUBCLASS && o === '<https://cropontology.org/rdf/Variable>' && s.startsWith('<'))
+    .map(([s]) => s.slice(1, -1).split('/rdf/').pop()))].sort();
+}
+
+export function digestTriples(triples) {
   const isBlank = (t) => t.startsWith('_:');
   // Blank nodes in this export are leaf owl:Restrictions; name each by a hash of its own pairs.
   const content = new Map();

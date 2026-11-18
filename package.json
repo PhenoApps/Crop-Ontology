@@ -1,11 +1,15 @@
 {
-  "name": "crop-ontology-mirror",
+  "name": "phenoapps-crop-ontology",
   "private": true,
-  "description": "Static mirror of cropontology.org with a BrAPI v2 endpoint per ontology, published on GitHub Pages.",
+  "description": "PhenoApps Crop Ontology: crop trait dictionaries merged from cropontology.org and the Planteome GitHub repos, published as static BrAPI v2 endpoints for Field Book.",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "harvest": "node scripts/harvest.mjs",
+    "harvest": "node scripts/harvest-cropontology.mjs",
+    "harvest:planteome": "node scripts/harvest-planteome.mjs",
+    "compare": "node scripts/compare.mjs",
     "build": "node scripts/build.mjs",
     "serve": "node scripts/serve.mjs _site 8080"
   }

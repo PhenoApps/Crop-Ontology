@@ -1,12 +1,12 @@
-name: Refresh data from cropontology.org
+name: Refresh data from sources
 
 on:
   schedule:
-    - cron: '17 6 * * 1' # Mondays 06:17 UTC; the first Monday of each month does a full refresh
+    - cron: '17 6 * * 1' # Mondays 06:17 UTC; the first Monday of each month does a full cropontology.org refresh
   workflow_dispatch:
     inputs:
       full:
-        description: Re-fetch every ontology, not just those whose fingerprint changed
+        description: Re-fetch every cropontology.org ontology, not just those whose fingerprint changed
         type: boolean
         default: false
 
@@ -24,14 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 240
     outputs:
-      changed: ${{ steps.commit.outputs.changed }}
+      site-changed: ${{ steps.commit.outputs.site-changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - id: harvest
-        name: Harvest
+      - id: cropontology
+        name: Harvest cropontology.org
         run: |
           flag=""
           if [ "${{ inputs.full }}" = "true" ] || { [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%-d)" -le 7 ]; }; then
@@ -39,30 +39,46 @@ jobs:
           fi
           # Keep going on partial failure so the ontologies that did succeed are still committed.
           status=0
-          node scripts/harvest.mjs $flag || status=$?
+          node scripts/harvest-cropontology.mjs $flag || status=$?
           echo "status=$status" >> "$GITHUB_OUTPUT"
-      - id: commit
-        name: Commit snapshot if it changed
+      - id: planteome
+        name: Harvest Planteome GitHub repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # The harvester only rewrites files whose content changed, so any diff is a real change.
-          if [ -z "$(git status --porcelain -- data)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
+          status=0
+          node scripts/harvest-planteome.mjs || status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+      - name: Compare sources
+        run: node scripts/compare.mjs
+      - id: commit
+        name: Commit snapshots if they changed
+        run: |
+          # The harvesters only rewrite files whose content changed, so any diff is a real change.
+          # The site is built from both snapshots, so any data change redeploys it.
+          site_changed=false
+          if [ -n "$(git status --porcelain -- data)" ]; then
+            site_changed=true
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A data
-            git commit -m "Refresh cropontology.org snapshot"
+            git commit -m "Refresh source snapshots"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+          echo "site-changed=$site_changed" >> "$GITHUB_OUTPUT"
+      - name: Upload comparison report
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparison
+          path: reports/comparison.json
       - name: Report harvest failures
-        if: steps.harvest.outputs.status != '0'
+        if: steps.cropontology.outputs.status != '0' || steps.planteome.outputs.status != '0'
         run: |
-          echo "::error::Some ontologies failed to harvest; see the Harvest step log."
+          echo "::error::Some sources failed to harvest; see the Harvest step logs."
           exit 1
 
   deploy:
     needs: harvest
     # Pushes made with GITHUB_TOKEN don't trigger other workflows, so deploy from here.
-    if: always() && needs.harvest.outputs.changed == 'true'
+    if: always() && needs.harvest.outputs.site-changed == 'true'
     uses: ./.github/workflows/pages.yml

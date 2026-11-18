@@ -1,51 +1,60 @@
 {
  "source": "https://cropontology.org/brapi/v2",
- "updatedAt": "2026-11-18T08:00:52.802Z",
+ "updatedAt": "2026-11-18T10:00:08.633Z",
  "ontologies": {
   "CO_320": {
    "fingerprint": "a1f9a70be9f94e2a",
    "variableCount": 399,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-07-25T13:52:48"
   },
   "CO_321": {
    "fingerprint": "3c0ff675dff10a3a",
    "variableCount": 465,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-01T12:59:34"
   },
   "CO_322": {
    "fingerprint": "eb2adc04eae3cb61",
    "variableCount": 360,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-11-22T12:37:09"
   },
   "CO_323": {
    "fingerprint": "710d3ed86c8bff99",
    "variableCount": 148,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-01T13:28:42"
   },
   "CO_324": {
    "fingerprint": "aa659f49e29f1c98",
    "variableCount": 345,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2024-01-04T16:23:39"
   },
   "CO_325": {
    "fingerprint": "da3c2857ed12ecb2",
    "variableCount": 361,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-04T13:19:28"
   },
   "CO_326": {
    "fingerprint": "bb0e92e2aac0ddb2",
    "variableCount": 255,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2024-06-11T09:12:00"
   },
   "CO_327": {
    "fingerprint": "1e7aea02ccbfef48",
    "variableCount": 63,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2024-01-04T19:04:32"
   },
   "CO_330": {
    "fingerprint": "5213ced554d25b0a",
    "variableCount": 382,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2024-10-07T11:48:07"
   },
   "CO_331": {
    "fingerprint": "159f3fe716472476",
@@ -60,12 +69,14 @@
   "CO_334": {
    "fingerprint": "dbfe8f163e77608d",
    "variableCount": 379,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-11-09T13:24:10"
   },
   "CO_335": {
    "fingerprint": "cf6a94e688ca3acf",
    "variableCount": 186,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2026-03-16T08:13:44"
   },
   "CO_336": {
    "fingerprint": "984a2cd19c09f5a6",
@@ -75,47 +86,56 @@
   "CO_337": {
    "fingerprint": "a27e79a27e9abded",
    "variableCount": 187,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-11-24T16:55:08"
   },
   "CO_338": {
    "fingerprint": "66373c7418109336",
    "variableCount": 80,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-04T13:56:50"
   },
   "CO_339": {
    "fingerprint": "9d92989db4baaf26",
    "variableCount": 66,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-04T13:58:42"
   },
   "CO_340": {
    "fingerprint": "cbaa799b245d9e5c",
    "variableCount": 193,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-11-27T13:40:39"
   },
   "CO_341": {
    "fingerprint": "7d5574b3dd23322c",
    "variableCount": 68,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:19:00"
   },
   "CO_343": {
    "fingerprint": "9fc595f1fe8869c2",
    "variableCount": 238,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2022-11-07T09:06:33"
   },
   "CO_345": {
    "fingerprint": "442cc0921c38b12d",
    "variableCount": 82,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:21:13"
   },
   "CO_346": {
    "fingerprint": "719fbfffbc9900f5",
    "variableCount": 89,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:23:24"
   },
   "CO_347": {
    "fingerprint": "e17d06bb25328e11",
    "variableCount": 75,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:25:06"
   },
   "CO_348": {
    "fingerprint": "92ff2a5b88e0d83e",
@@ -125,17 +145,26 @@
   "CO_350": {
    "fingerprint": "4dbdca747fc83d5f",
    "variableCount": 328,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2021-09-28T11:21:52"
+  },
+  "CO_356": {
+   "fingerprint": "c6141083dd1fdd56",
+   "variableCount": 165,
+   "fetchedVia": "per-variable",
+   "changedAt": "2026-11-18T09:29:08.247Z"
   },
   "CO_357": {
    "fingerprint": "74bf6d5849e8e312",
    "variableCount": 499,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-05-22T17:43:38"
   },
   "CO_358": {
    "fingerprint": "66b91290d49f2efd",
    "variableCount": 279,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2021-09-30T12:28:11"
   },
   "CO_359": {
    "fingerprint": "c22d3ce64536938e",
@@ -145,42 +174,50 @@
   "CO_360": {
    "fingerprint": "aa81d839abe0010f",
    "variableCount": 71,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:28:25"
   },
   "CO_365": {
    "fingerprint": "b2ca5f08d9b0060d",
    "variableCount": 94,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-09-05T12:26:31"
   },
   "CO_366": {
    "fingerprint": "809506d25b43d7ee",
    "variableCount": 163,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-07-25T13:49:00"
   },
   "CO_367": {
    "fingerprint": "0bc2c3112ac9fa28",
    "variableCount": 41,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2021-08-30T09:22:16"
   },
   "CO_370": {
    "fingerprint": "4690ad5fc1643f36",
    "variableCount": 53,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2022-08-23T14:01:09"
   },
   "CO_371": {
    "fingerprint": "ea24785ffc1ce872",
    "variableCount": 178,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2023-11-16T10:22:11"
   },
   "CO_372": {
    "fingerprint": "486ccaab653e1405",
    "variableCount": 132,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2025-01-29T09:44:12"
   },
   "CO_374": {
    "fingerprint": "340a66f190cbc9a8",
    "variableCount": 28,
-   "changedAt": "2026-11-18T08:00:52.802Z"
+   "changedAt": "2026-11-18T08:00:52.802Z",
+   "loadedAt": "2024-08-21T07:26:05"
   }
  }
 }

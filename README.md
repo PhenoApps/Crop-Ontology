@@ -43,7 +43,7 @@ Planteome GitHub ──harvest-planteome─────▶ data/planteome/ ─�
 For each crop, the site serves every variable found in either source. Where both have a variable and they
 disagree, the Planteome GitHub copy is used unless cropontology.org changed that ontology more recently. Every
 change the build makes to the source data (merges, repaired categories and text, mapped data types, renamed crops)
-is listed on the site's *Changes from sources* page and in `changes.json`.
+is listed on the site's *Conflicts* page and in `changes.json`.
 
 The details are in the folder READMEs:
 
@@ -51,7 +51,7 @@ The details are in the folder READMEs:
 | --- | --- |
 | [`scripts/`](scripts/README.md) | harvesters, comparison, the build and its modules |
 | [`data/`](data/README.md) | raw snapshots of both sources, committed as downloaded |
-| [`site/`](site/README.md) | the browser UI (variable list, trait browser, about and changes pages) |
+| [`site/`](site/README.md) | the browser UI (variable list, trait browser, About and Conflicts pages) |
 | `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site |
 | `curation.json` | publishing rules: which ontologies, display names, source overrides (see below) |
 

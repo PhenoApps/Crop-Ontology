@@ -33,16 +33,22 @@ export function parseDelimited(text) {
   let row = [];
   let field = '';
   let quoted = false;
+  // Each row records the 1-based physical line it starts on (header = line 1). Newlines inside quoted
+  // fields still advance the count, so the numbers match the file as GitHub displays it.
+  let line = 1;
+  let rowStart = 1;
+  const endRow = () => { row.push(field.replace(/\r$/, '')); row.line = rowStart; rows.push(row); row = []; field = ''; };
   for (let i = 0; i < text.length; i++) {
     const c = text[i];
+    if (c === '\n') line++;
     if (quoted) {
       if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else quoted = false; } else field += c;
     } else if (c === '"' && field === '') quoted = true;
     else if (c === delim) { row.push(field); field = ''; }
-    else if (c === '\n') { row.push(field.replace(/\r$/, '')); rows.push(row); row = []; field = ''; }
+    else if (c === '\n') { endRow(); rowStart = line; }
     else field += c;
   }
-  if (field !== '' || row.length) { row.push(field.replace(/\r$/, '')); rows.push(row); }
+  if (field !== '' || row.length) endRow();
   return rows;
 }
 
@@ -190,7 +196,12 @@ export function readTD(file) {
     const header = t.rows[h].map(normHeader);
     const rows = t.rows.slice(h + 1)
       .filter((r) => r.some((c) => String(c).trim() !== ''))
-      .map((r) => Object.fromEntries(header.map((k, i) => [k, String(r[i] ?? '').trim()]).filter(([k]) => k)));
+      .map((r) => {
+        const obj = Object.fromEntries(header.map((k, i) => [k, String(r[i] ?? '').trim()]).filter(([k]) => k));
+        // CSV/TSV only: where the row starts in the file. Not enumerable, so it never looks like a column.
+        if (r.line) Object.defineProperty(obj, 'line', { value: r.line, enumerable: false });
+        return obj;
+      });
     return { sheet: t.name, header, rows };
   }
   throw new Error(`no "Variable ID" header found in ${file}`);

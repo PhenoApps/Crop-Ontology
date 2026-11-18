@@ -1,7 +1,7 @@
 // PhenoApps Crop Ontology: a hash-routed viewer over the static files that scripts/build.mjs writes.
 //   #/                          crops
 //   #/about                     what the site is for and where its data comes from
-//   #/changes                   everything the build changes relative to its sources
+//   #/conflicts                 where the sources disagree and what the build changes (#/changes also works)
 //   #/CO_325                    one crop's variable list
 //   #/CO_325/browse[/TERM_ID]   trait browser: trait class > trait > variable tree beside the selected term
 //   #/CO_325/CO_325:0000577     one variable
@@ -56,10 +56,37 @@
   const provenance = (v) => info(v).provenance ?? info(v).mirrorSource ?? null;
   const buildNotes = (v) => info(v).changes ?? info(v).mirrorChanges ?? [];
 
-  function docLink(url) {
-    if (!url) return '';
-    const where = /cropontology\.org/.test(url) ? 'cropontology.org' : /github\.com/.test(url) ? 'the Planteome file' : 'the source';
-    return `<a href="${esc(url)}">View ${where === 'cropontology.org' ? 'on cropontology.org' : where}</a>`;
+  const EXT = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const extLink = (url, text) => `<a class="ext" href="${esc(url)}">${esc(text)}${EXT}<span class="sr">(external site)</span></a>`;
+  const coTermUrl = (id) => `https://cropontology.org/term/${id}`;
+
+  // Which sources have this variable, from its provenance.
+  function sourcesOf(v) {
+    const p = provenance(v) ?? {};
+    const labels = [p.source, p.alsoIn, p.differsFrom].filter(Boolean).join(' ');
+    const doc = v.documentationURL ?? '';
+    return {
+      cropOntology: /crop ?ontology/i.test(labels) || (!labels && /cropontology\.org/.test(doc)),
+      planteome: /planteome/i.test(labels) || (!labels && /github\.com/.test(doc)),
+    };
+  }
+
+  // Links from a variable back to where its information comes from: its Crop Ontology term page and/or its row in
+  // the Planteome trait dictionary (the file is pinned to the harvested commit, so the line stays valid).
+  function sourceLinks(v, o) {
+    const has = sourcesOf(v);
+    const links = [];
+    if (has.cropOntology) links.push(extLink(coTermUrl(v.observationVariableDbId), 'Crop Ontology term page'));
+    if (has.planteome) {
+      const file = o?.source?.planteomeUrl ?? (/github\.com/.test(v.documentationURL ?? '') ? v.documentationURL : null);
+      if (file) {
+        const line = provenance(v)?.planteomeLine;
+        const name = decodeURIComponent(file.split('/').pop());
+        const url = line && /\.(csv|tsv)$/i.test(file) ? `${file}?plain=1#L${line}` : file;
+        links.push(extLink(url, line ? `Planteome ${name}, line ${line}` : `Planteome ${name}`));
+      }
+    }
+    return links.length ? `<p class="sources-line"><span class="label">Original source</span>${links.join('')}</p>` : '';
   }
 
   // ---- shared pieces ------------------------------------------------------------------
@@ -108,7 +135,7 @@
     const conflicts = c.idConflicts?.filter((x) => x.ontologyDbId === id) ?? [];
     if (conflicts.length) items.push(`${conflicts.length} trait, method or scale ${conflicts.length === 1 ? 'ID is' : 'IDs are'} used with different names.`);
     if (!items.length) return '';
-    return `<div class="notice"><strong>Changes from the sources</strong><ul>${items.map((i) => `<li>${i}</li>`).join('')}</ul><a href="#/changes">All changes</a></div>`;
+    return `<details class="notice"><summary>${chevron('right')}Changes from the sources <span class="n">(${items.length})</span></summary><div class="body"><ul>${items.map((i) => `<li>${i}</li>`).join('')}</ul><a href="#/conflicts">See all conflicts</a></div></details>`;
   }
 
   function ontologyHead(o, tab, notes) {
@@ -117,8 +144,8 @@
     const mix = [['Crop Ontology', s.inCropontology ?? s.fromCropontology], ['Planteome', s.inPlanteome ?? s.fromPlanteome]]
       .map(([label, n]) => `${num(n)} in ${label}`).join('<br>');
     const links = [
-      s.cropontologyUrl && `<a href="${esc(s.cropontologyUrl)}">cropontology.org</a>`,
-      s.planteomeUrl && `<a href="${esc(s.planteomeUrl)}">${esc(s.planteomeFile ?? 'GitHub file')}</a>`,
+      s.cropontologyUrl && extLink(s.cropontologyUrl, 'cropontology.org'),
+      s.planteomeUrl && extLink(s.planteomeUrl, s.planteomeFile ?? 'Planteome file'),
     ].filter(Boolean).join('<br>');
     const fact = (label, html) => (html ? `<div><dt class="label">${label}</dt><dd>${html}</dd></div>` : '');
     return `
@@ -154,15 +181,19 @@
   }
 
   // Trait, method and scale of one variable; used by the variable page and the trait browser.
-  function variableBody(v) {
+  function variableBody(v, o) {
     const t = v.trait ?? {};
+    // Trait, method and scale IDs link to their Crop Ontology term pages when the variable is in Crop Ontology.
+    const inCO = sourcesOf(v).cropOntology;
+    const idField = (id) => (!id ? '' : `<dt>ID</dt><dd class="mono">${inCO ? extLink(coTermUrl(id), id) : esc(id)}</dd>`);
     const m = v.method ?? {};
     const s = v.scale ?? {};
     const vv = s.validValues ?? {};
     const notes = buildNotes(v);
     return `
       ${provenanceLine(v)}
-      ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="#/changes">All changes</a></div>` : ''}
+      ${sourceLinks(v, o)}
+      ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="#/conflicts">See all conflicts</a></div>` : ''}
       <div class="panel" style="margin-top:14px">
         <dl class="kv">
           ${field('Crop', v.commonCropName)}
@@ -181,7 +212,7 @@
         <section class="panel">
           <h2>Trait</h2>
           <dl class="kv">
-            ${field('Name', t.traitName)}${field('ID', t.traitDbId, true)}${field('Class', t.traitClass)}
+            ${field('Name', t.traitName)}${idField(t.traitDbId)}${field('Class', t.traitClass)}
             ${field('Description', t.description)}${field('Abbreviation', t.mainAbbreviation)}
             ${field('Other abbreviations', t.alternativeAbbreviations)}${field('Synonyms', t.synonyms)}
             ${field('Entity', t.entity)}${field('Attribute', t.attribute)}
@@ -190,14 +221,14 @@
         <section class="panel">
           <h2>Method</h2>
           <dl class="kv">
-            ${field('Name', m.methodName)}${field('ID', m.methodDbId, true)}${field('Class', m.methodClass)}
+            ${field('Name', m.methodName)}${idField(m.methodDbId)}${field('Class', m.methodClass)}
             ${field('Description', m.description)}${field('Formula', m.formula)}${field('Reference', m.reference)}
           </dl>
         </section>
         <section class="panel">
           <h2>Scale</h2>
           <dl class="kv">
-            ${field('Name', s.scaleName)}${field('ID', s.scaleDbId, true)}${field('Data type', s.dataType)}
+            ${field('Name', s.scaleName)}${idField(s.scaleDbId)}${field('Data type', s.dataType)}
             ${field('Type in source', s.additionalInfo?.sourceDataType)}
             ${field('Decimal places', s.decimalPlaces)}${field('Minimum', vv.minimumValue)}${field('Maximum', vv.maximumValue)}
           </dl>
@@ -476,7 +507,7 @@
         <span class="label">Variable</span>
         <h2>${esc(varName(v))}</h2>
         <p class="term-id">${esc(v.observationVariableDbId)}<a href="#/${enc(id)}/${enc(v.observationVariableDbId)}">Open variable page</a></p>
-        ${variableBody(v)}`;
+        ${variableBody(v, o)}`;
     }
 
     function select(key, fromClick) {
@@ -525,8 +556,7 @@
     app.innerHTML = `
       <nav class="crumbs"><a href="#/">Crops</a> / <a href="#/${enc(id)}">${esc(o.name)}</a> / <a href="#/${enc(id)}/browse/${enc(v.trait?.traitDbId ?? varId)}">${esc(v.trait?.traitName ?? 'Trait')}</a></nav>
       <div class="title-row"><h1>${esc(name)}</h1><span class="id">${esc(varId)}</span></div>
-      <p class="lede">${docLink(v.documentationURL)}</p>
-      ${variableBody(v)}`;
+      ${variableBody(v, o)}`;
   }
 
   // ---- about ------------------------------------------------------------------------
@@ -562,7 +592,7 @@
           other <a href="https://brapi.org/specification">BrAPI</a> clients can import traits from.</li>
           <li>A <strong>variable list</strong> and a <strong>trait browser</strong> for each crop, to look up a trait,
           method or scale before using it.</li>
-          <li>A record of <a href="#/changes">every change</a> made to the source data, so nothing is altered silently.</li>
+          <li>A record of <a href="#/conflicts">every conflict and change</a> made to the source data, so nothing is altered silently.</li>
         </ul>
 
         <h2>Where the data comes from</h2>
@@ -594,9 +624,9 @@
   // ---- changes ----------------------------------------------------------------------
 
   async function changesPage() {
-    setTitle('Changes from sources');
+    setTitle('Conflicts');
     const c = await loadChanges();
-    if (!c) { app.innerHTML = '<h1>Changes from sources</h1><p class="muted">No change log is available.</p>'; return; }
+    if (!c) { app.innerHTML = '<h1>Conflicts</h1><p class="muted">No change log is available.</p>'; return; }
     const { ontologies } = await loadIndex();
     const name = (id) => ontologies.find((o) => o.id === id)?.name ?? id;
     const crop = (id) => `<a href="#/${enc(id)}">${esc(name(id))}</a>`;
@@ -622,11 +652,11 @@
       ['scope', 'Scope and formatting'],
     ];
     app.innerHTML = `
-      <h1>Changes from sources</h1>
+      <h1>Conflicts</h1>
       <p class="lede">Each crop is built from two sources: Crop Ontology (cropontology.org) and the Planteome
-      trait dictionaries on GitHub. Both are kept in the repository exactly as downloaded. This page lists everything the published
-      site and BrAPI endpoints change, and why. Changed records also note it in their <code>additionalInfo</code>.</p>
-      <p class="toc">${sections.map(([key, label]) => `<a href="#/changes" data-jump="${key}">${label}</a>`).join(' &nbsp;|&nbsp; ')}</p>
+      trait dictionaries on GitHub. Both are kept in the repository exactly as downloaded. This page lists where they
+      disagree and how that was resolved, and everything else the published site and BrAPI endpoints change, and why. Changed records also note it in their <code>additionalInfo</code>.</p>
+      <p class="toc">${sections.map(([key, label]) => `<a href="#/conflicts" data-jump="${key}">${label}</a>`).join(' &nbsp;|&nbsp; ')}</p>
 
       <h2 id="sources">Which copy each crop uses</h2>
       ${c.policy?.merge?.length ? `<ul class="prose">${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
@@ -693,7 +723,7 @@
   // ---- routing ------------------------------------------------------------------------
 
   function setNav(first) {
-    const active = first === 'about' || first === 'changes' ? first : 'crops';
+    const active = first === 'about' ? 'about' : first === 'conflicts' || first === 'changes' ? 'conflicts' : 'crops';
     for (const a of document.querySelectorAll('#nav [data-nav]')) {
       if (a.dataset.nav === active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     }
@@ -710,7 +740,7 @@
       browserView = null;
       if (!first) await home();
       else if (first === 'about') await about();
-      else if (first === 'changes') await changesPage();
+      else if (first === 'conflicts' || first === 'changes') await changesPage();
       else if (!second) await ontology(first);
       else if (second === 'browse') await browser(first, third);
       else await variable(first, second);

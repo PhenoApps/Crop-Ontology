@@ -209,10 +209,15 @@ function normaliseVariable(raw, o, src) {
     externalReferences: extRef(v.method.methodDbId, src),
   };
   const type = v.scale && dataType(v.scale.dataType);
-  const typeChanged = v.scale && !blank(v.scale.dataType) && type !== v.scale.dataType;
+  // Only a real change of type is recorded. Capitalisation alone ("numerical" → "Numerical") is
+  // formatting, covered once by the policy text rather than noted on every variable.
+  const sourceType = v.scale && !blank(v.scale.dataType) ? String(v.scale.dataType).trim() : null;
+  const typeChanged = sourceType != null && type.toLowerCase() !== sourceType.toLowerCase();
   if (typeChanged) {
-    changes.dataTypes.push({ ...at, from: v.scale.dataType, to: type });
-    notes.push(`Scale data type "${v.scale.dataType}" isn't a BrAPI type, so it is served as "${type}".`);
+    changes.dataTypes.push({ ...at, from: sourceType, to: type });
+    notes.push(type === 'Text'
+      ? `Scale data type "${sourceType}" isn't a BrAPI type, so it is served as "Text".`
+      : `Scale data type "${sourceType}" is served as its BrAPI equivalent, "${type}".`);
   }
   const vv = v.scale && validValues(v.scale.validValues, v.scale, note);
   const scale = v.scale && {
@@ -360,12 +365,14 @@ for (const id of ids) {
     siteVariables: siteHasVariables ? await readJson(join(DATA, 'variables', `${id}.json`)) : null,
   });
   const other = prefer === 'planteome' ? 'cropontology' : 'planteome';
-  const variables = merged.variables.map(({ raw, source, status, diffs }) => {
+  const variables = merged.variables.map(({ raw, source, status, diffs, planteomeLine }) => {
     const v = normaliseVariable(raw, o, srcs[source]);
     const provenance = {
       source: LABELS[source],
       ...(status === 'agree' ? { alsoIn: LABELS[other] } : {}),
       ...(status === 'disagree' ? { differsFrom: LABELS[other], differingFields: diffs.map((d) => d.field) } : {}),
+      // Where the variable's row starts in the Planteome CSV/TSV (1-based, header = line 1), for deep links.
+      ...(planteomeLine ? { planteomeLine } : {}),
     };
     return { ...v, additionalInfo: { ...v.additionalInfo, provenance } };
   }).sort((a, b) => a.observationVariableDbId.localeCompare(b.observationVariableDbId, 'en', { numeric: true }));
@@ -495,7 +502,7 @@ await emit(rootBase, 'traits', listResponse(withOwnRef('trait', 'traitDbId')));
 await emit(rootBase, 'methods', listResponse(withOwnRef('method', 'methodDbId')));
 await emit(rootBase, 'scales', listResponse(withOwnRef('scale', 'scaleDbId')));
 await emit(rootBase, 'commoncropnames', listResponse([...new Map(index.flatMap((o) => o.crops).map((c) => [c.toLowerCase(), c])).values()].sort()));
-// Public record of everything the build changes relative to its sources (see the site's Changes page).
+// Public record of everything the build changes relative to its sources (see the site's Conflicts page).
 await writeFile(join(OUT, 'changes.json'), JSON.stringify({
   sourceSummary: sourcesSummary,
   policy: {
@@ -511,6 +518,7 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
       'List responses put records under result.data, as the BrAPI v2 specification requires.',
       'Scale categories written as "value = label" are split into BrAPI { value, label } objects.',
       'Scale categories are listed in value order; Crop Ontology returns them in no fixed order.',
+      'Scale data types are capitalised as BrAPI writes them (e.g. "numerical" is served as "Numerical").',
       'Scale limits are given both as BrAPI 2.1 minimumValue/maximumValue strings and BrAPI 2.0 min/max integers.',
       'Variables marked obsolete in a Planteome trait dictionary are left out, as Crop Ontology leaves them out.',
       'Each variable records where it came from in additionalInfo.provenance.',

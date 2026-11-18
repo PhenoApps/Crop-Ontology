@@ -101,7 +101,7 @@ export function mergeOntology({ id, ontologyName, siteVariables, planteome, pref
     return { variables, stats: { ...stats, onlyCropontology: variables.length } };
   }
   if (!siteVariables) {
-    const variables = usableGH.rows.map((r) => ({ raw: fromGH(r), source: 'planteome', status: 'only' }));
+    const variables = usableGH.rows.map((r) => ({ raw: fromGH(r), source: 'planteome', status: 'only', planteomeLine: r.line }));
     return { variables, stats: { ...stats, onlyPlanteome: variables.length, obsolete: [...usableGH.obsoleteIds] } };
   }
   const fields = comparableFields(usableGH.header, notExported);
@@ -114,7 +114,7 @@ export function mergeOntology({ id, ontologyName, siteVariables, planteome, pref
     if (r) {
       const diffs = diffFields(v, r, fields);
       const raw = prefer === 'planteome' ? fromGH(r) : v;
-      out.push({ raw, source: prefer, status: diffs.length ? 'disagree' : 'agree', diffs });
+      out.push({ raw, source: prefer, status: diffs.length ? 'disagree' : 'agree', diffs, planteomeLine: r.line });
       stats[diffs.length ? 'disagree' : 'agree']++;
     } else if (usableGH.obsoleteIds.has(vid) && prefer === 'planteome') {
       stats.obsolete.push(vid);
@@ -122,7 +122,7 @@ export function mergeOntology({ id, ontologyName, siteVariables, planteome, pref
       candidates.push({ raw: v, source: 'cropontology', status: 'only', obsoleteOnGitHub: usableGH.obsoleteIds.has(vid) });
     }
   }
-  for (const [vid, r] of ghById) if (!siteById.has(vid)) candidates.push({ raw: fromGH(r), source: 'planteome', status: 'only' });
+  for (const [vid, r] of ghById) if (!siteById.has(vid)) candidates.push({ raw: fromGH(r), source: 'planteome', status: 'only', planteomeLine: r.line });
   stats.obsolete.push(...[...usableGH.obsoleteIds].filter((vid) => !siteById.has(vid)));
 
   // Names in the preferred copy (including shared variables); a non-preferred-only variable with one of

@@ -95,7 +95,7 @@ The merged variables are then normalised to BrAPI v2: lists go under `result.dat
 turned into dates (`1-2-3` → 2003-01-02) and garbled accented text are repaired.
 
 Every change is recorded three ways: in the record's `additionalInfo` (`provenance`, `changes`, `sourceCropName`,
-`sourceDataType`), in `_site/changes.json`, and on the site's *Changes from sources* page.
+`sourceDataType`), in `_site/changes.json`, and on the site's *Conflicts* page.
 
 Output layout:
 

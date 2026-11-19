@@ -12,11 +12,11 @@ function baseUrlBox(ontologies) {
     .map((o) => `<option value="${esc(o.id)}">${esc(o.name)} (${esc(o.id)})</option>`).join('');
   return `
     <div class="endpoint">
-      <div class="endpoint-head">
-        <span class="label" id="base-url-label">BrAPI v2 base URL</span>
+      <span class="label" id="base-url-label">BrAPI v2 base URL</span>
+      <div class="row">
         <select id="base-url-crop" aria-label="Crop"><option value="">All crops</option>${options}</select>
+        <code id="base-url" aria-labelledby="base-url-label">${esc(brapiBase(''))}</code><button type="button" class="btn" data-copy="${esc(brapiBase(''))}">Copy</button>
       </div>
-      <div class="row"><code id="base-url" aria-labelledby="base-url-label">${esc(brapiBase(''))}</code><button type="button" class="btn" data-copy="${esc(brapiBase(''))}">Copy</button></div>
     </div>`;
 }
 

@@ -69,14 +69,8 @@ async function route() {
   }
 }
 
-// In-page jumps (data-jump="<element id>") and copy buttons (data-copy="<text>"), wherever a view renders them.
+// Copy buttons (data-copy="<text>"), wherever a view renders them.
 document.addEventListener('click', async (e) => {
-  const jump = e.target.closest('[data-jump]');
-  if (jump) {
-    e.preventDefault();
-    document.getElementById(jump.dataset.jump)?.scrollIntoView({ block: 'start' });
-    return;
-  }
   const btn = e.target.closest('[data-copy]');
   if (!btn) return;
   btn.dataset.label ??= btn.textContent;

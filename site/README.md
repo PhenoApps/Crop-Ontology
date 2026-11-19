@@ -8,7 +8,7 @@ site has to be served over HTTP, as `scripts/serve.mjs` and GitHub Pages do; ope
 | --- | --- |
 | `index.html` | page shell: header and navigation |
 | `style.css` | styles (light theme; IBM Plex Sans and Mono from Google Fonts, with system fallbacks) |
-| `js/app.js` | entry point: the hash router, copy buttons and in-page jumps, new-tab external links, and QR filling |
+| `js/app.js` | entry point: the hash router, copy buttons, new-tab external links, and QR filling |
 | `js/util.js` | escaping, number and date formatting, site and BrAPI URLs, and lazy script loading |
 | `js/data.js` | loading `ontologies.json`, `changes.json` and each crop's variables; reading provenance |
 | `js/components.js` | HTML shared by views: crop page header and change notes, a variable's details, not-found page |

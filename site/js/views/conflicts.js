@@ -105,13 +105,11 @@ export async function conflicts(only) {
     return `<h2 id="${key}" class="has-report">${esc(label)}${extLink(url, 'Report a problem')}</h2>`;
   };
   app.innerHTML = `
-    <h1>Conflicts</h1>
+    <div class="page-head"><h1>Conflicts</h1>
+      <select id="conflict-crop" aria-label="Crop"><option value="">All crops</option>${cropOptions}</select></div>
     <p class="lede">Each crop is built from two sources: Crop Ontology (cropontology.org) and the Planteome
     trait dictionaries on GitHub. Both are kept in the repository exactly as downloaded. This page lists where they
     disagree and how that was resolved, and everything else the published site and BrAPI endpoints change, and why. Changed records also note it in their <code>additionalInfo</code>.</p>
-    <div class="toolbar"><label class="sort">Crop
-      <select id="conflict-crop"><option value="">All crops</option>${cropOptions}</select></label></div>
-    <p class="toc">${sections.map(([key, label]) => `<a href="#/conflicts" data-jump="${key}">${label}</a>`).join(' &nbsp;|&nbsp; ')}</p>
 
     ${heading('sources')}
     ${c.policy?.merge?.length ? `<ul class="prose">${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}

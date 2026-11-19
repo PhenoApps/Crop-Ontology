@@ -4,7 +4,7 @@
 
 import { loadChanges, loadDifferences, loadIndex } from '../data.js';
 import { diffHtml } from '../textdiff.js';
-import { app, byName, enc, esc, num, plural, setTitle } from '../util.js';
+import { app, byName, enc, esc, extLink, issueUrl, num, plural, setTitle } from '../util.js';
 
 // One side of a repaired text: the short version (from just before the first change, clamped to three lines) and
 // the full text, which shows when the row is opened.
@@ -75,6 +75,15 @@ export async function conflicts(only) {
     ['scope', 'Scope and formatting'],
     ['differences', 'Differences between the sources'],
   ];
+  // Each section heading links to the "A change on the Conflicts page looks wrong" form, filled in for it.
+  const sectionLabel = Object.fromEntries(sections);
+  const heading = (key) => {
+    const label = sectionLabel[key];
+    const url = issueUrl('curation.yml', {
+      title: `[Conflicts] ${label}${only ? ` (${name(only)})` : ''}`, section: label, ...(only ? { crop: `${name(only)} (${only})` } : {}),
+    });
+    return `<h2 id="${key}" class="has-report">${esc(label)}${extLink(url, 'Report a problem')}</h2>`;
+  };
   app.innerHTML = `
     <h1>Conflicts</h1>
     <p class="lede">Each crop is built from two sources: Crop Ontology (cropontology.org) and the Planteome
@@ -84,14 +93,14 @@ export async function conflicts(only) {
       <select id="conflict-crop"><option value="">All crops</option>${cropOptions}</select></label></div>
     <p class="toc">${sections.map(([key, label]) => `<a href="#/conflicts" data-jump="${key}">${label}</a>`).join(' &nbsp;|&nbsp; ')}</p>
 
-    <h2 id="sources">Which copy each crop uses</h2>
+    ${heading('sources')}
     ${c.policy?.merge?.length ? `<ul class="prose">${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
     ${table(['Crop', 'Preferred copy', 'In Crop Ontology', 'In Planteome', 'Match', 'Differ', 'Why'], perOntology.map((x) => [
       crop(x.ontologyDbId), esc(x.preferred), num(x.inCropontology ?? x.fromCropontology), num(x.inPlanteome ?? x.fromPlanteome), num(x.agree),
       x.disagree ? `<a href="#/conflicts/${enc(x.ontologyDbId)}/differences" title="See how they differ">${num(x.disagree)}</a>` : num(0),
       esc(x.reason ?? '')]), [2, 3, 4, 5])}
 
-    <h2 id="categories">Repaired scale categories</h2>
+    ${heading('categories')}
     <p class="muted">Some categories were turned into dates by spreadsheet software before upload (for example
     "1-2-3" became 2 January 2003). The original text is restored by choosing the reading that ends on the
     scale's top value.${pick(c.categoriesUnrepaired).length ? ` ${pick(c.categoriesUnrepaired).length} date-like categories could not be resolved and are left as served.` : ''}</p>
@@ -99,7 +108,7 @@ export async function conflicts(only) {
       crop(x.ontologyDbId), varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName),
       esc(x.scaleName ?? x.scaleDbId), `<code>${esc(x.from)}</code>`, `<code>${esc(x.to)}</code>`]))}
 
-    <h2 id="encoding">Repaired text</h2>
+    ${heading('encoding')}
     <p class="muted">Text that was saved as UTF-8 and later read as Windows-1252 (for example "FranÃ§oise" for
     "Françoise") is decoded again, but only where the result is plausible text. Characters a source lost as "?"
     are restored where the context makes them clear (a space in "Number?of?marketable tubers", ≤ in a length
@@ -111,7 +120,7 @@ export async function conflicts(only) {
         clampCell(d.before), `${clampCell(d.after)}${toggleButton(d.changes)}`];
     }))}</div>
 
-    <h2 id="names">Crop and ontology names</h2>
+    ${heading('names')}
     <p class="muted">Ontology titles are shortened to the crop name. Each variable's crop is set to its ontology's
     name, so every crop is spelled one way; the source's value is kept in <code>additionalInfo.sourceCropName</code>.</p>
     ${table(['Crop', 'Source title or crop value', 'Published as'], [
@@ -119,7 +128,7 @@ export async function conflicts(only) {
       ...pick(c.cropNames).map((x) => [crop(x.ontologyDbId), x.from.map((f) => `${esc(f.value)} (${num(f.count)})`).join(', '), esc(x.to)]),
     ])}
 
-    <h2 id="classes">Trait class names</h2>
+    ${heading('classes')}
     <p class="muted">Trait classes only group traits for browsing; they don't change what a variable measures or
     how it is recorded. Some trait dictionaries spell one class several ways (wheat has both "Phenological traits"
     and "Phenological"), and some spell common classes differently from other crops: these are served under one
@@ -136,26 +145,26 @@ export async function conflicts(only) {
       crop(x.ontologyDbId), esc(x.from), `${esc(x.to)}${x.subclass ? ` <span class="subclass">${esc(x.subclass)}</span>` : ''}`,
       ({ regrouped: 'Grouped with a common class', subclass: 'Subclass shown as a label' })[x.kind] ?? 'Spelling', num(x.count)]), [4])}
 
-    <h2 id="types">Scale data types</h2>
+    ${heading('types')}
     <p class="muted">BrAPI allows Code, Date, Duration, Nominal, Numerical, Ordinal and Text. Other types are served
     as Text, with the original kept in the scale's <code>additionalInfo.sourceDataType</code>.</p>
     ${table(['Crop', 'Type in source', 'Served as', 'Variables'], [...typeGroups.values()].map((x) => [
       crop(x.ontologyDbId), esc(x.from), esc(x.to), String(x.n)]), [3])}
 
-    <h2 id="left-out">Variables left out</h2>
+    ${heading('left-out')}
     <p class="muted">A variable found in only one source whose name matches a different ID in the preferred copy is
     treated as the same variable renumbered. Variables marked obsolete in Planteome are left out too.</p>
     ${table(['Crop', 'Left out', 'Name', 'From', 'Kept instead'], pick(c.duplicates).map((x) => [
       crop(x.ontologyDbId), `<code>${esc(x.id)}</code>`, esc(x.name ?? ''), esc(x.source), varLink(x.ontologyDbId, x.keptId)]))}
     ${pick(c.obsoleteExcluded).length ? `<h3>Obsolete in Planteome</h3>${table(['Crop', 'Variables'], pick(c.obsoleteExcluded).map((x) => [crop(x.ontologyDbId), num(x.count)]), [1])}` : ''}
 
-    <h2 id="conflicts">IDs used with different names</h2>
+    ${heading('conflicts')}
     <p class="muted">The same trait, method or scale ID appears with different names on different variables. These
     are served as found; they are worth raising with the crop's curators.</p>
     ${table(['Crop', 'Kind', 'ID', 'Names'], pick(c.idConflicts).map((x) => [
       crop(x.ontologyDbId), esc(x.kind), `<code>${esc(x.id)}</code>`, x.names.map((n) => (n ? esc(n) : '<span class="muted">(blank)</span>')).join('<br>')]))}
 
-    <h2 id="scope">Scope and formatting</h2>
+    ${heading('scope')}
     ${table(['Crop', 'Note'], [
       ...pick(c.fetchedIndividually).map((x) => [crop(x.ontologyDbId), `The cropontology.org bulk export fails, so each variable was fetched on its own. ${esc(x.reason ?? '')}`]),
       ...pick(c.unavailable).map((x) => [`${esc(x.ontologyName)} (${esc(x.ontologyDbId)})`, `Not included. ${esc(x.reason)}`]),
@@ -165,7 +174,7 @@ export async function conflicts(only) {
       ${(c.policy?.formatting ?? []).map((p) => `<li>${esc(p)}</li>`).join('')}
     </ul>
 
-    <h2 id="differences">Differences between the sources</h2>
+    ${heading('differences')}
     <p class="muted">Variables both sources have but describe differently: for each, the fields that differ, as each
     source writes them, with the differing text highlighted. The value served is marked with a bar; the other is
     kept only in that source. Differences of formatting alone (capitalisation, spacing, category order, "0.0" and

@@ -2,7 +2,7 @@
 
 import { buildNotes, info, provenance, sourcesOf } from './data.js';
 import { italicizeSpecies } from './species.js';
-import { app, brapiBase, chevron, coTermUrl, day, enc, esc, extLink, num, plural, setTitle } from './util.js';
+import { app, brapiBase, chevron, coTermUrl, day, enc, esc, extLink, issueUrl, num, plural, setTitle } from './util.js';
 
 export function notFound() {
   setTitle('Not found');
@@ -138,12 +138,22 @@ function provenanceLine(v) {
   return `<p class="prov">From <strong>${esc(p.source)}</strong>.${rest}</p>`;
 }
 
+// Opens the "Trait data looks wrong" form with this variable filled in.
+function reportLink(v, o) {
+  const id = v.observationVariableDbId;
+  const url = issueUrl('data.yml', {
+    title: `[Data] ${v.observationVariableName ?? id} (${id})`, variable: id, ...(o ? { crop: `${o.name} (${o.id})` } : {}),
+  });
+  return `<p class="report-line">${extLink(url, 'Report a problem with this variable')}</p>`;
+}
+
 // Where a variable came from and what the build changed.
 export function variableIntro(v, o) {
   const notes = buildNotes(v);
   return `
     ${provenanceLine(v)}
     ${sourceLinks(v, o)}
+    ${reportLink(v, o)}
     ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="${conflictsHref(o.id)}">See this crop's conflicts</a></div>` : ''}`;
 }
 

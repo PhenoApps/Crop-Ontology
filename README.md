@@ -60,7 +60,8 @@ The details are in the folder READMEs:
 | [`scripts/`](scripts/README.md) | harvesters, comparison, the build and its modules |
 | [`data/`](data/README.md) | raw snapshots of both sources, committed as downloaded |
 | [`site/`](site/README.md) | the browser UI (variable list, trait browser, graph, About and Conflicts pages) |
-| `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site |
+| `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site; `labels.yml` creates the issue labels |
+| `.github/ISSUE_TEMPLATE/` | issue forms for data errors, Conflicts-page changes, BrAPI and import problems, the website, crops and suggestions |
 | `curation.json` | publishing rules: which ontologies, display names, source overrides (see below) |
 
 `_site/` (build output) and `reports/` (comparison report) are generated and not committed.
@@ -83,9 +84,14 @@ node scripts/serve.mjs                  # preview at http://localhost:8080/
 ## Automation
 
 - `harvest.yml` runs both harvesters and the comparison every Monday (a full cropontology.org refresh on the first
-  Monday of the month), commits any changed snapshots, and redeploys the site when data changed. It can also be run
-  from the Actions tab.
+  Monday of the month), commits any changed snapshots, and redeploys the site when data changed. If a source fails,
+  it opens an issue labelled `harvest` (or comments on the one already open). It can also be run from the Actions tab.
 - `pages.yml` builds and deploys on pushes to `main` that touch the data, site, build scripts or `curation.json`.
+- `labels.yml` creates or updates the labels in `.github/labels.json` (used by the issue forms and the harvest
+  workflow) whenever that file changes on `main`, or when run from the Actions tab.
+
+The site links to the issue forms with fields filled in: each variable page has "Report a problem with this
+variable", and each Conflicts section heading has "Report a problem".
 
 To enable Pages on a new fork: **Settings → Pages → Build and deployment → Source: GitHub Actions**, then run
 *Deploy site* from the Actions tab.

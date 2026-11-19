@@ -1,0 +1,9 @@
+[
+  { "name": "data", "color": "d93f0b", "description": "Trait data looks wrong" },
+  { "name": "curation", "color": "fbca04", "description": "A change on the Conflicts page looks wrong (curation.json)" },
+  { "name": "brapi", "color": "1d76db", "description": "Import or BrAPI endpoint problem" },
+  { "name": "site", "color": "5319e7", "description": "Website problem" },
+  { "name": "new-crop", "color": "0e8a16", "description": "Add or update a crop" },
+  { "name": "enhancement", "color": "a2eeef", "description": "Suggestion or new feature" },
+  { "name": "harvest", "color": "b60205", "description": "The weekly harvest failed for a source (opened automatically)" }
+]

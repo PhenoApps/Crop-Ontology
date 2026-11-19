@@ -1,0 +1,39 @@
+name: A change on the Conflicts page looks wrong
+description: A text repair, trait class grouping, choice of source, left-out variable or name change that looks wrong.
+title: "[Conflicts] "
+labels: [curation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Conflicts page lists everything this site changes from its two sources, and why. These changes are set in
+        the repository's `curation.json`, so they can be corrected here.
+  - type: input
+    id: crop
+    attributes:
+      label: Crop
+      placeholder: "Cassava (CO_334)"
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section of the Conflicts page
+      placeholder: "Trait class names"
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: Variable, trait class or other item
+      placeholder: "CO_334:0000123, or the class \"Viral disease\""
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What it should be instead

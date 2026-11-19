@@ -1,0 +1,34 @@
+name: Website problem
+description: A page doesn't load, looks broken or shows something wrong.
+title: "[Site] "
+labels: [site]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The full address from the browser, including the part after "#".
+      placeholder: "https://phenoapps.github.io/Crop-Ontology/#/CO_321/browse"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: "Chrome 131 on Windows 11, or Safari on iPhone"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the page
+        2. Click …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+      description: Screenshots help; paste or drag them in here.
+    validations:
+      required: true

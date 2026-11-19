@@ -1,0 +1,24 @@
+name: Suggestion
+description: An idea for the site, the data or the BrAPI endpoints.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Website
+        - Data, trait classes or naming
+        - BrAPI endpoints
+        - Field Book integration
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+      description: What you'd like, and what it would help with.
+    validations:
+      required: true

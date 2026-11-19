@@ -1,0 +1,55 @@
+name: Import or BrAPI problem
+description: An app or script can't import traits from the site, or a BrAPI response looks wrong.
+title: "[BrAPI] "
+labels: [brapi]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For problems with the Field Book app that aren't about this site, use the
+        [Field Book issues](https://github.com/PhenoApps/Field-Book/issues) instead.
+  - type: dropdown
+    id: method
+    attributes:
+      label: How were you importing?
+      options:
+        - Scanned a crop page's QR code
+        - Scanned a variable page's QR code
+        - Entered a base URL in an app
+        - Another BrAPI client or a script
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App and version
+      placeholder: "Field Book 6.2.1"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system
+      placeholder: "Samsung Galaxy Tab A8, Android 14"
+  - type: input
+    id: url
+    attributes:
+      label: Base URL or address used
+      placeholder: "https://phenoapps.github.io/Crop-Ontology/CO_321/brapi/v2"
+  - type: input
+    id: call
+    attributes:
+      label: BrAPI call, if known
+      placeholder: "variables"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message or log
+      render: shell

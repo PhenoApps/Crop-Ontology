@@ -14,6 +14,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write # to open an issue when a source fails to harvest
 
 concurrency:
   group: harvest
@@ -73,7 +74,24 @@ jobs:
           path: reports/comparison.json
       - name: Report harvest failures
         if: steps.cropontology.outputs.status != '0' || steps.planteome.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CO_STATUS: ${{ steps.cropontology.outputs.status }}
+          PLANTEOME_STATUS: ${{ steps.planteome.outputs.status }}
         run: |
+          # Open an issue labelled "harvest" for the maintainers, or comment on the one already open, so repeated
+          # failures don't pile up. The crops that did download were still committed above.
+          failed=""
+          [ "$CO_STATUS" != "0" ] && failed="cropontology.org"
+          [ "$PLANTEOME_STATUS" != "0" ] && failed="${failed:+$failed and }the Planteome repositories"
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          body="The harvest on $(date -u +%F) could not refresh $failed. Crops that did download were still published. See the [run log]($run_url) for which ontologies failed and why."
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --label harvest --state open --json number --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --label harvest --title "Harvest failed: $failed" --body "$body"
+          fi
           echo "::error::Some sources failed to harvest; see the Harvest step logs."
           exit 1
 

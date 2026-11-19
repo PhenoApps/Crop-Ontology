@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Field Book app problem
+    url: https://github.com/PhenoApps/Field-Book/issues
+    about: Bugs and requests for the Field Book app itself, rather than this site.
+  - name: Correct a trait at its source (Crop Ontology)
+    url: https://cropontology.org
+    about: Trait dictionaries are curated by each crop's community on cropontology.org; fixes there reach this site at the next weekly refresh.
+  - name: Correct a trait at its source (Planteome)
+    url: https://github.com/Planteome
+    about: Or in the crop's CO_###-<crop>-traits repository in the Planteome organization on GitHub.
+  - name: BrAPI specification
+    url: https://brapi.org/specification
+    about: Questions about the BrAPI standard itself.

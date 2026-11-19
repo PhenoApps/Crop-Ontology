@@ -2,9 +2,9 @@
 // it is kept up to date. #/about/brapi and the like scroll to that section (see app.js).
 
 import { loadChanges, loadIndex } from '../data.js';
-import { app, brapiBase, byName, day, esc, setTitle, siteRoot } from '../util.js';
+import { REPO, app, brapiBase, byName, day, esc, setTitle, siteRoot } from '../util.js';
 
-const ISSUES = 'https://github.com/PhenoApps/Crop-Ontology/issues';
+const ISSUES = `${REPO}/issues/new/choose`;
 
 // The BrAPI v2 base URL with a copy button and a crop picker: all crops, or one crop's own base URL.
 function baseUrlBox(ontologies) {

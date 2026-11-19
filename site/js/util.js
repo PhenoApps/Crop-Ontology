@@ -21,6 +21,9 @@ export const brapiBase = (id) => `${siteRoot()}${id ? `${id}/` : ''}brapi/v2`;
 // allowed in a path segment, and a plain ID is simpler for the scanning app to split out.
 export const variableBrapiUrl = (id, varId) => `${brapiBase(id)}/variables/${varId}`;
 export const coTermUrl = (id) => `https://cropontology.org/term/${id}`;
+// The repository, and a new-issue link that opens one of its forms (.github/ISSUE_TEMPLATE) with fields filled in.
+export const REPO = 'https://github.com/PhenoApps/Crop-Ontology';
+export const issueUrl = (template, fields = {}) => `${REPO}/issues/new?${new URLSearchParams({ template, ...fields })}`;
 
 // Source dates come in several shapes ("2025-01-15T12:44:37-08:00", "2020-08-05 08:26:03.997000"); show the day.
 export function day(s) {

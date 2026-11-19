@@ -77,8 +77,23 @@ export async function conflicts(only) {
   ];
   // Each section heading links to the "Trait data looks wrong" form, with its section (and crop) filled in.
   const sectionLabel = Object.fromEntries(sections);
+  // How many entries each section has for the crop shown (or all crops), so an empty section offers no report link.
+  // The differences table loads separately; its size is the crops' Differ totals.
+  const entries = {
+    sources: perOntology.length,
+    categories: pick(c.categories).length,
+    encoding: pick(c.encoding).length,
+    names: pick(c.renamed).length + pick(c.cropNames).length,
+    classes: pick(c.traitClasses).length,
+    types: typeGroups.size,
+    'left-out': pick(c.duplicates).length + pick(c.obsoleteExcluded).length,
+    conflicts: pick(c.idConflicts).length,
+    scope: pick(c.fetchedIndividually).length + pick(c.unavailable).length,
+    differences: pick(c.sources).reduce((n, x) => n + (x.disagree ?? 0), 0),
+  };
   const heading = (key) => {
     const label = sectionLabel[key];
+    if (!entries[key]) return `<h2 id="${key}">${esc(label)}</h2>`;
     const url = issueUrl('1-trait-data.yml', {
       title: `[Data] Conflicts page: ${label}${only ? ` (${name(only)})` : ''}`, section: label, ...(only ? { crop: `${name(only)} (${only})` } : {}),
     });

@@ -200,24 +200,31 @@ function normaliseVariable(raw, o, src, classSpelling = new Map()) {
     counts.set(clean(crop), (counts.get(clean(crop)) ?? 0) + 1);
   }
   // One spelling per trait class, and a crop's one-off classes moved into the common ones (curation.json
-  // traitClasses). Grouping doesn't change what a variable measures, so it's recorded once per class in
-  // changes.json rather than as a note on every variable.
+  // traitClasses). A class with a subclass ("Quality/Aroma") is served as its parent ("Quality"), with the subclass
+  // kept as a label in additionalInfo.traitSubclass, so the browser lists only parent classes. Grouping doesn't
+  // change what a variable measures, so it's recorded once per class in changes.json rather than on every variable.
   const sourceClass = v.trait && clean(v.trait.traitClass);
   const published = publishedTraitClass(o.ontologyDbId, sourceClass);
-  const traitClass = classSpelling.get(published.name) ?? published.name;
-  const { regrouped } = published;
+  const fullClass = classSpelling.get(published.name) ?? published.name;
+  const [traitClass, ...subParts] = fullClass ? fullClass.split('/') : [fullClass];
+  const traitSubclass = subParts.length ? subParts.join('/') : null;
   if (sourceClass && traitClass !== sourceClass) {
-    const key = `${o.ontologyDbId}|${sourceClass}|${traitClass}`;
+    const kind = published.regrouped ? 'regrouped' : fullClass !== sourceClass ? 'spelling' : 'subclass';
+    const key = `${o.ontologyDbId}|${sourceClass}|${traitClass}|${traitSubclass}`;
     if (!classNames.has(key)) {
-      classNames.set(key, { ontologyDbId: o.ontologyDbId, from: sourceClass, to: traitClass, kind: regrouped ? 'regrouped' : 'spelling', count: 0 });
+      classNames.set(key, { ontologyDbId: o.ontologyDbId, from: sourceClass, to: traitClass, subclass: traitSubclass, kind, count: 0 });
     }
     classNames.get(key).count++;
   }
+  const classInfo = {
+    ...(traitClass !== sourceClass ? { sourceTraitClass: sourceClass } : {}),
+    ...(traitSubclass ? { traitSubclass } : {}),
+  };
   const trait = v.trait && {
     ...v.trait,
     traitName: clean(v.trait.traitName),
     traitClass,
-    ...(traitClass !== sourceClass ? { additionalInfo: { ...v.trait.additionalInfo, sourceTraitClass: sourceClass } } : {}),
+    ...(Object.keys(classInfo).length ? { additionalInfo: { ...v.trait.additionalInfo, ...classInfo } } : {}),
     description: clean(v.trait.description),
     traitDescription: clean(v.trait.description),
     synonyms: v.trait.synonyms ?? [],
@@ -551,7 +558,7 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
       'Scale categories written as "value = label" are split into BrAPI { value, label } objects.',
       'Scale categories are listed in value order; Crop Ontology returns them in no fixed order.',
       'Scale data types are capitalised as BrAPI writes them (e.g. "numerical" is served as "Numerical").',
-      "Trait class names are spelled one way: variants of the common classes are merged (e.g. \"Agronomical traits\" and \"Agronomical\" are served as \"Agronomic\") and each name starts with a capital letter. Where a crop uses many one-off classes, they are grouped into the common ones (e.g. Cassava's \"Viral disease\" is served as \"Biotic stress\"). The source value is kept in the trait's additionalInfo.sourceTraitClass.",
+      "Trait class names are spelled one way: variants of the common classes are merged (e.g. \"Agronomical traits\" and \"Agronomical\" are served as \"Agronomic\") and each name starts with a capital letter. Where a crop uses many one-off classes, they are grouped into the common ones (e.g. Cassava's \"Viral disease\" is served as \"Biotic stress\"). A class with a subclass is served as its parent class, with the subclass in the trait's additionalInfo.traitSubclass (\"Quality/Aroma\" is served as \"Quality\", subclass \"Aroma\"). The source value is kept in the trait's additionalInfo.sourceTraitClass.",
       'Scale limits are given both as BrAPI 2.1 minimumValue/maximumValue strings and BrAPI 2.0 min/max integers.',
       'Variables marked obsolete in a Planteome trait dictionary are left out, as Crop Ontology leaves them out.',
       'Each variable records where it came from in additionalInfo.provenance.',

@@ -3,7 +3,7 @@
 //
 // Returns { id, select } so the router can select another term without rebuilding the page.
 
-import { field, notFound, ontologyHead, ontologyNotes, variableBody } from '../components.js';
+import { field, notFound, ontologyHead, ontologyNotes, subclassOf, subclassTag, variableBody } from '../components.js';
 import { findOntology, loadChanges, loadVariables } from '../data.js';
 import { glyph } from '../glyphs.js';
 import { app, byName, chevron, enc, esc, hashParts, plural, setTitle, terms } from '../util.js';
@@ -65,7 +65,7 @@ export async function browser(id, term) {
     for (const t of list) t.vars.sort((a, b) => byName(varName(a), varName(b)));
   }
   const traitHay = new Map([...traits.values()].map((t) => [t, [t.key, traitName(t), t.trait.description,
-    t.trait.mainAbbreviation, ...(t.trait.synonyms ?? []), t.cls].join(' ').toLowerCase()]));
+    t.trait.mainAbbreviation, ...(t.trait.synonyms ?? []), t.cls, subclassOf(t.trait)].join(' ').toLowerCase()]));
   const varHay = new Map(vars.map((v) => [v, [v.observationVariableDbId, v.observationVariableName,
     v.method?.methodName, v.scale?.scaleName, ...(v.synonyms ?? [])].join(' ').toLowerCase()]));
 
@@ -92,7 +92,7 @@ export async function browser(id, term) {
         const tOpen = (filtering && !hit(traitHay.get(t))) || open.has(`t:${t.key}`);
         return `
           <li class="tn" role="treeitem" aria-expanded="${tOpen}">
-            <div class="tn-row${selected === t.key ? ' sel' : ''}">${toggle(`t:${t.key}`, tOpen, traitName(t))}${glyph('trait')}<a class="tn-label" href="${href(t.key)}">${esc(traitName(t))}</a><span class="tn-n">${vs.length}</span></div>
+            <div class="tn-row${selected === t.key ? ' sel' : ''}">${toggle(`t:${t.key}`, tOpen, traitName(t))}${glyph('trait')}<a class="tn-label" href="${href(t.key)}">${esc(traitName(t))}</a>${subclassTag(t.trait)}<span class="tn-n">${vs.length}</span></div>
             ${tOpen ? `<ul role="group">${vs.map((v) => `
               <li class="tn tn-leaf" role="treeitem"><div class="tn-row${selected === v.observationVariableDbId ? ' sel' : ''}"><span class="tw-gap"></span>${glyph('variable')}<a class="tn-label" href="${href(v.observationVariableDbId)}">${esc(varName(v))}</a></div></li>`).join('')}</ul>` : ''}
           </li>`;
@@ -134,7 +134,7 @@ export async function browser(id, term) {
       <h2>${esc(traitName(t))}</h2>
       <p class="term-id">${esc(t.key.startsWith('none:') ? 'No trait ID' : t.key)}</p>
       <dl class="kv">
-        ${field('Class', tr.traitClass)}${field('Class in source', tr.additionalInfo?.sourceTraitClass)}
+        ${field('Class', tr.traitClass)}${field('Subclass', subclassOf(tr))}${field('Class in source', tr.additionalInfo?.sourceTraitClass)}
         ${field('Description', tr.description)}${field('Abbreviation', tr.mainAbbreviation)}
         ${field('Other abbreviations', tr.alternativeAbbreviations)}${field('Synonyms', tr.synonyms)}
         ${field('Entity', tr.entity)}${field('Attribute', tr.attribute)}${field('Status', tr.status)}

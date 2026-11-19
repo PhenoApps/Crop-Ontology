@@ -1,6 +1,6 @@
 // #/CO_320  One crop: its header and a searchable, filterable list of its variables.
 
-import { notFound, ontologyHead, ontologyNotes } from '../components.js';
+import { notFound, ontologyHead, ontologyNotes, subclassOf } from '../components.js';
 import { findOntology, loadChanges, loadVariables } from '../data.js';
 import { app, byName, chevron, enc, esc, hashParts, num, plural, setTitle, terms } from '../util.js';
 
@@ -9,7 +9,7 @@ const PAGE = 100; // rows drawn at a time; "show more" adds another page
 const row = (id, v) => `
   <li><a class="vrow" href="#/${enc(id)}/${enc(v.observationVariableDbId)}">
     <span class="c-var"><span class="primary">${esc(v.observationVariableName ?? v.observationVariableDbId)}</span><span class="sub mono">${esc(v.observationVariableDbId)}</span></span>
-    <span class="c-trait">${esc(v.trait?.traitName ?? '')}<span class="sub">${esc(v.trait?.traitClass ?? '')}</span></span>
+    <span class="c-trait">${esc(v.trait?.traitName ?? '')}<span class="sub">${esc([v.trait?.traitClass, subclassOf(v.trait)].filter(Boolean).join(' · '))}</span></span>
     <span class="c-ms">${esc(v.method?.methodName ?? '')}<span class="sub">${esc(v.scale?.scaleName ?? '')}</span></span>
     <span class="c-type type">${esc(v.scale?.dataType ?? '')}</span>
   </a></li>`;
@@ -45,7 +45,7 @@ export async function variableList(id) {
   const count = app.querySelector('#count');
   const hay = new Map(vars.map((v) => [v, [
     v.observationVariableDbId, v.observationVariableName, v.trait?.traitName, v.trait?.description,
-    v.trait?.mainAbbreviation, v.method?.methodName, v.scale?.scaleName, ...(v.synonyms ?? []), ...(v.trait?.synonyms ?? []),
+    v.trait?.mainAbbreviation, subclassOf(v.trait), v.method?.methodName, v.scale?.scaleName, ...(v.synonyms ?? []), ...(v.trait?.synonyms ?? []),
   ].join(' ').toLowerCase()]));
   let shown = PAGE;
 

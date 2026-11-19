@@ -83,10 +83,14 @@ export async function conflicts(only) {
     they are grouped into the classes other crops use; quality classes keep their original name as a subclass
     ("Viscosity trait" becomes "Quality/Viscosity"). A subclass that is itself a common class becomes that class
     ("Agronomic/Post harvest" becomes "Postharvest"), and a British spelling becomes American where the class's own
-    traits are spelled that way (Sweet potato's odor traits are under "Quality/Odor"). The source's value is kept
-    in the trait's <code>additionalInfo.sourceTraitClass</code>.</p>
+    traits are spelled that way (Sweet potato's odor traits have the subclass "Odor"). A class with a subclass is
+    served as its parent class, so each crop lists only a few classes, and the subclass is kept as a label on the
+    trait: "Quality/Aroma" is served as "Quality" with the subclass "Aroma" in
+    <code>additionalInfo.traitSubclass</code>. The source's value is kept in the trait's
+    <code>additionalInfo.sourceTraitClass</code>.</p>
     ${table(['Crop', 'Class in source', 'Published as', 'Change', 'Variables'], pick(c.traitClasses).map((x) => [
-      crop(x.ontologyDbId), esc(x.from), esc(x.to), x.kind === 'regrouped' ? 'Grouped with a common class' : 'Spelling', num(x.count)]), [4])}
+      crop(x.ontologyDbId), esc(x.from), `${esc(x.to)}${x.subclass ? ` <span class="subclass">${esc(x.subclass)}</span>` : ''}`,
+      ({ regrouped: 'Grouped with a common class', subclass: 'Subclass shown as a label' })[x.kind] ?? 'Spelling', num(x.count)]), [4])}
 
     <h2 id="types">Scale data types</h2>
     <p class="muted">BrAPI allows Code, Date, Duration, Nominal, Numerical, Ordinal and Text. Other types are served

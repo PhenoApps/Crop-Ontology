@@ -24,6 +24,10 @@ export function endpointBox(id, label, note = '') {
 export const field = (label, value, mono = false) => (value == null || value === '' || (Array.isArray(value) && !value.length))
   ? '' : `<dt>${esc(label)}</dt><dd${mono ? ' class="mono"' : ''}>${italicizeSpecies(Array.isArray(value) ? value.map(esc).join(', ') : esc(value))}</dd>`;
 
+// A trait's subclass within its class ("Aroma" under "Quality"), as the build records it, and as a small label.
+export const subclassOf = (trait) => info(trait).traitSubclass ?? null;
+export const subclassTag = (trait) => (subclassOf(trait) ? `<span class="subclass">${esc(subclassOf(trait))}</span>` : '');
+
 // The Conflicts page, filtered to one crop.
 export const conflictsHref = (id) => `#/conflicts/${enc(id)}`;
 
@@ -48,10 +52,14 @@ export function ontologyNotes(c, id) {
   const crop = c.cropNames?.find((x) => x.ontologyDbId === id);
   if (crop) items.push(`Crop name given as ${crop.from.map((x) => `"${esc(x.value)}"`).join(', ')} in the source; served as "${esc(crop.to)}".`);
   const classes = c.traitClasses?.filter((x) => x.ontologyDbId === id) ?? [];
-  const spelled = classes.filter((x) => x.kind !== 'regrouped');
+  const spelled = classes.filter((x) => x.kind === 'spelling');
   const grouped = classes.filter((x) => x.kind === 'regrouped');
+  const labelled = classes.filter((x) => x.kind === 'subclass');
   if (spelled.length) {
     items.push(`${plural(spelled.length, 'trait class name')} spelled the standard way, such as "${esc(spelled[0].from)}" shown as "${esc(spelled[0].to)}".`);
+  }
+  if (labelled.length) {
+    items.push(`${plural(labelled.length, 'class', 'classes')} with a subclass listed under the parent class with the subclass as a label, such as "${esc(labelled[0].from)}" under "${esc(labelled[0].to)}".`);
   }
   if (grouped.length) {
     items.push(`${plural(grouped.length, 'one-off trait class', 'one-off trait classes')} grouped into ${plural(new Set(grouped.map((x) => x.to)).size, 'common class', 'common classes')}, such as "${esc(grouped[0].from)}" shown as "${esc(grouped[0].to)}".`);
@@ -182,7 +190,7 @@ export function variableDetails(v, aside = '') {
       <section class="panel">
         <h2>Trait</h2>
         <dl class="kv">
-          ${field('Name', t.traitName)}${idField(t.traitDbId)}${field('Class', t.traitClass)}${field('Class in source', info(t).sourceTraitClass)}
+          ${field('Name', t.traitName)}${idField(t.traitDbId)}${field('Class', t.traitClass)}${field('Subclass', subclassOf(t))}${field('Class in source', info(t).sourceTraitClass)}
           ${field('Description', t.description)}${field('Abbreviation', t.mainAbbreviation)}
           ${field('Other abbreviations', t.alternativeAbbreviations)}${field('Synonyms', t.synonyms)}
           ${field('Entity', t.entity)}${field('Attribute', t.attribute)}

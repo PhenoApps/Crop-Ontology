@@ -65,7 +65,9 @@ All from the built site, relative to the page:
 - `changes.json` for the collapsible change notes on crop pages and the Conflicts page.
 
 The UI reads `additionalInfo.provenance` and `additionalInfo.changes` on each variable to say which source it came
-from and what was changed, and `trait.additionalInfo.sourceTraitClass` to show a trait class's original spelling.
+from and what was changed, `trait.additionalInfo.traitSubclass` for the subclass label shown on traits (classes are served as the parent, so
+"Quality/Aroma" is class "Quality" with the label "Aroma"), and `trait.additionalInfo.sourceTraitClass` to show a
+trait class's original spelling.
 Each variable links back to its sources: its Crop Ontology term page, and its row in the Planteome trait dictionary
 (`ontologies.json` `source.planteomeUrl`, pinned to the harvested commit, plus
 `additionalInfo.provenance.planteomeLine` for CSV/TSV files).

@@ -98,7 +98,7 @@ turned into dates (`1-2-3` → 2003-01-02) and garbled accented text and charact
 way per `curation.json` `traitClasses` (wheat's "Phenological traits" and "Phenological" become "Phenological").
 
 Every change is recorded three ways: in the record's `additionalInfo` (`provenance`, `changes`, `sourceCropName`,
-`sourceDataType`, the trait's `sourceTraitClass`), in `_site/changes.json`, and on the site's *Conflicts* page.
+`sourceDataType`, the trait's `sourceTraitClass` and `traitSubclass`), in `_site/changes.json`, and on the site's *Conflicts* page.
 
 Output layout:
 

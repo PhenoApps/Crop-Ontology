@@ -261,6 +261,9 @@ a.tn-label:hover { color: var(--accent); text-decoration: underline; }
 /* Element-type icons: same shape and colour as the graph. */
 .glyph { flex: 0 0 auto; width: 13px; height: 13px; margin: 5px 6px 0 0; }
 .tn-row .glyph { margin-top: 5px; }
+/* A trait's subclass within its class ("Aroma" under "Quality"), in the trait browser, variable details and Conflicts. */
+.subclass { display: inline-block; font-size: .72rem; line-height: 1.5; padding: 0 6px; border-radius: 2px; background: var(--tag); color: var(--ink-2); white-space: nowrap; vertical-align: 1px; }
+.tn-row .subclass { flex: 0 0 auto; margin: 4px 0 0 6px; }
 .type-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 2px 8px; font-size: .8rem; color: var(--ink-2); }
 .type-key span { display: inline-flex; align-items: center; }
 .type-key .glyph { margin: 0 4px 0 0; }

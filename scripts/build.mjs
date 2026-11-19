@@ -20,7 +20,7 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { displayName, isIncluded, knownBroken, siteReloadsCountFrom } from './curation.mjs';
+import { displayName, isIncluded, knownBroken, publishedTraitClass, siteReloadsCountFrom } from './curation.mjs';
 import { fieldsNotExported } from './fields.mjs';
 import { CO_DIR, LABELS, mergeOntology, planteomeCopy, preferredSource } from './sources.mjs';
 
@@ -159,6 +159,8 @@ function fixEncodingDeep(value, found) {
 
 // Every content change the build makes is recorded here and published as changes.json.
 const changes = { renamed: [], cropNames: [], categories: [], categoriesUnrepaired: [], dataTypes: [], encoding: [], fetchedIndividually: [], unavailable: [] };
+// Trait classes published under another name: "id|from|to" → { ontologyDbId, from, to, kind, count }.
+const classNames = new Map();
 // Source crop values per ontology, for the crop-name mapping in changes.json: { id: Map(value → count) }.
 const sourceCrops = new Map();
 
@@ -189,10 +191,23 @@ function normaliseVariable(raw, o, src) {
     const counts = sourceCrops.get(o.ontologyDbId) ?? sourceCrops.set(o.ontologyDbId, new Map()).get(o.ontologyDbId);
     counts.set(clean(crop), (counts.get(clean(crop)) ?? 0) + 1);
   }
+  // One spelling per trait class, and a crop's one-off classes moved into the common ones (curation.json
+  // traitClasses). Grouping doesn't change what a variable measures, so it's recorded once per class in
+  // changes.json rather than as a note on every variable.
+  const sourceClass = v.trait && clean(v.trait.traitClass);
+  const { name: traitClass, regrouped } = publishedTraitClass(o.ontologyDbId, sourceClass);
+  if (sourceClass && traitClass !== sourceClass) {
+    const key = `${o.ontologyDbId}|${sourceClass}|${traitClass}`;
+    if (!classNames.has(key)) {
+      classNames.set(key, { ontologyDbId: o.ontologyDbId, from: sourceClass, to: traitClass, kind: regrouped ? 'regrouped' : 'spelling', count: 0 });
+    }
+    classNames.get(key).count++;
+  }
   const trait = v.trait && {
     ...v.trait,
     traitName: clean(v.trait.traitName),
-    traitClass: clean(v.trait.traitClass),
+    traitClass,
+    ...(traitClass !== sourceClass ? { additionalInfo: { ...v.trait.additionalInfo, sourceTraitClass: sourceClass } } : {}),
     description: clean(v.trait.description),
     traitDescription: clean(v.trait.description),
     synonyms: v.trait.synonyms ?? [],
@@ -421,6 +436,8 @@ for (const id of ids) {
       variableCount: variables.length,
       commonCropName: o.ontologyName,
       brapiBasePath: `${id}/brapi/v2`,
+      // The ontology's citable DOI (usually Zenodo), as linked from its cropontology.org page.
+      ...(siteState?.doi ? { doi: siteState.doi } : {}),
     },
   };
   const { ref: _ref, ...ontologyRecord } = ontology;
@@ -463,7 +480,7 @@ for (const id of ids) {
 
   index.push({
     id, name: o.ontologyName, description: ontology.description, version: ontology.version,
-    licence: ontology.licence, crops, variableCount: variables.length,
+    licence: ontology.licence, doi: siteState?.doi ?? null, crops, variableCount: variables.length,
     traitClasses: [...new Set(variables.map((v) => v.trait?.traitClass).filter(Boolean))].sort(),
     source: {
       preferred: prefer, label: LABELS[prefer], reason, cropontologyUrl: site ? srcs.cropontology.url : null,
@@ -481,6 +498,9 @@ for (const [id, counts] of sourceCrops) {
   const from = [...counts].filter(([c]) => c !== to).map(([value, count]) => ({ value, count }));
   if (to && from.length) changes.cropNames.push({ ontologyDbId: id, to, from });
 }
+
+changes.traitClasses = [...classNames.values()]
+  .sort((a, b) => a.ontologyDbId.localeCompare(b.ontologyDbId, 'en', { numeric: true }) || a.from.localeCompare(b.from));
 
 const sourcesSummary = {
   cropontology: { label: LABELS.cropontology, url: 'https://cropontology.org', checked: harvest.updatedAt },
@@ -519,6 +539,7 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
       'Scale categories written as "value = label" are split into BrAPI { value, label } objects.',
       'Scale categories are listed in value order; Crop Ontology returns them in no fixed order.',
       'Scale data types are capitalised as BrAPI writes them (e.g. "numerical" is served as "Numerical").',
+      "Trait class names are spelled one way: variants of the common classes are merged (e.g. \"Agronomical traits\" and \"Agronomical\" are served as \"Agronomic\") and each name starts with a capital letter. Where a crop uses many one-off classes, they are grouped into the common ones (e.g. Cassava's \"Viral disease\" is served as \"Biotic stress\"). The source value is kept in the trait's additionalInfo.sourceTraitClass.",
       'Scale limits are given both as BrAPI 2.1 minimumValue/maximumValue strings and BrAPI 2.0 min/max integers.',
       'Variables marked obsolete in a Planteome trait dictionary are left out, as Crop Ontology leaves them out.',
       'Each variable records where it came from in additionalInfo.provenance.',
@@ -532,6 +553,6 @@ await writeFile(join(OUT, 'ontologies.json'), JSON.stringify({ sources: sourcesS
 const sum = (k) => changes.sources.reduce((n, x) => n + (x[k] ?? 0), 0);
 console.log(`Merge: ${sum('fromPlanteome')} variables from ${LABELS.planteome}, ${sum('fromCropontology')} from ${LABELS.cropontology}; ${sum('agree')} agree, ${sum('disagree')} disagree, ${sum('onlyPlanteome')} only on GitHub, ${sum('onlyCropontology')} only on the site, ${sum('duplicatesLeftOut')} renumbered duplicates and ${sum('obsoleteLeftOut')} obsolete left out`);
 console.log(`ID conflicts: ${changes.idConflicts.length}`);
-console.log(`Changes: ${changes.renamed.length} renamed, ${changes.categories.length} categories restored (${changes.categoriesUnrepaired.length} left as served), ${changes.dataTypes.length} data types mapped, ${changes.encoding.length} encoding repairs, ${changes.fetchedIndividually.length} fetched individually, ${changes.unavailable.length} unavailable`);
+console.log(`Changes: ${changes.renamed.length} renamed, ${changes.traitClasses.length} trait class names standardised, ${changes.categories.length} categories restored (${changes.categoriesUnrepaired.length} left as served), ${changes.dataTypes.length} data types mapped, ${changes.encoding.length} encoding repairs, ${changes.fetchedIndividually.length} fetched individually, ${changes.unavailable.length} unavailable`);
 if (unknownTypes.size) console.warn('Non-BrAPI scale data types served as Text:', Object.fromEntries(unknownTypes));
 console.log(`Built ${index.length} ontologies, ${total} variables -> ${OUT}`);

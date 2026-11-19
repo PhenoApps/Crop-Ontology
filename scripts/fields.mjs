@@ -1,6 +1,7 @@
 // Field-by-field comparison of a cropontology.org BrAPI variable with a Planteome trait dictionary row.
 // Shared by scripts/compare.mjs (the report) and scripts/sources.mjs (the per-variable merge).
 
+import { traitClassName } from './curation.mjs';
 import { tdCategories } from './td.mjs';
 
 // ---- normalisation for comparison --------------------------------------------------------
@@ -27,7 +28,8 @@ export const FIELDS = [
   ['crop', (v) => v.crop, (r) => r.crop, (x) => text(x).toLowerCase()],
   ['trait id', (v) => v.trait?.traitDbId, (r) => r['trait id'], text],
   ['trait name', (v) => v.trait?.traitName, (r) => r['trait name'], caseless],
-  ['trait class', (v) => v.trait?.traitClass, (r) => r['trait class'], caseless],
+  // Compared as published: "Phenological traits" and "Phenological" are the same class (see curation.json).
+  ['trait class', (v) => v.trait?.traitClass, (r) => r['trait class'], (x) => caseless(traitClassName(text(x)))],
   ['trait description', (v) => v.trait?.description, (r) => r['trait description'], text],
   ['trait synonyms', (v) => v.trait?.synonyms, (r) => r['trait synonyms'], list],
   ['main trait abbreviation', (v) => v.trait?.mainAbbreviation, (r) => r['main trait abbreviation'], text],

@@ -17,6 +17,35 @@ export function displayName(ontologyDbId, sourceName) {
   return name || sourceName || ontologyDbId;
 }
 
+// One spelling per trait class (see curation.json `traitClasses`). "Phenological traits" → "Phenological",
+// "Agronomical" → "Agronomic", "bacterial damage" → "Bacterial damage"; each part of "Quality/Aroma" separately.
+// "trait(s)" is only dropped where that leaves a known class, so "Leaf morphological trait" keeps its noun.
+const classRules = config.traitClasses ?? {};
+const standardClasses = new Map((classRules.standard ?? []).map((s) => [s.toLowerCase(), s]));
+const classAliases = new Map(Object.entries(classRules.aliases ?? {}).map(([k, v]) => [k.toLowerCase(), v]));
+const knownClass = (s) => classAliases.get(s.toLowerCase()) ?? standardClasses.get(s.toLowerCase());
+const regroup = new Map(Object.entries(classRules.regroup ?? {})
+  .map(([id, map]) => [id, new Map(Object.entries(map).map(([k, v]) => [k.toLowerCase(), v]))]));
+
+// The class name with spelling rules applied; the same for every crop (used when comparing the two sources).
+export function traitClassName(raw) {
+  if (raw == null) return raw;
+  const s = String(raw).replace(/\s+/g, ' ').trim();
+  if (!s) return s;
+  return s.split(/\s*\/\s*/).map((part) => {
+    const name = knownClass(part) ?? knownClass(part.replace(/\s+traits?$/i, '')) ?? part;
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }).join('/');
+}
+
+// The class a crop's trait is published under: its spelled name, moved by `regroup` where the crop has one.
+// { name, regrouped } so the build can say which kind of change it made.
+export function publishedTraitClass(ontologyDbId, raw) {
+  const spelled = traitClassName(raw);
+  const moved = spelled ? regroup.get(ontologyDbId)?.get(spelled.toLowerCase()) : null;
+  return { name: moved ?? spelled, regrouped: Boolean(moved) };
+}
+
 // Ontologies known to fail upstream: { id: reason }. The harvester reports these as warnings, not failures.
 export const knownBroken = config.knownBroken ?? {};
 

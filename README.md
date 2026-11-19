@@ -22,14 +22,21 @@ Each base URL answers `serverinfo`, `commoncropnames`, `ontologies`, `variables`
 Variables carry their trait, method and scale, and every variable's `commonCropName` is its crop's name, so a
 client using the all-crops URL can filter by crop. Each record in the all-crops `ontologies` list has
 `additionalInfo.commonCropName`, `variableCount` and `brapiBasePath` (e.g. `CO_325/brapi/v2`, relative to the site
-root), so a client can offer a list of crops and then load just the one picked.
+root), so a client can offer a list of crops and then load just the one picked. Where the ontology's
+cropontology.org page links a DOI (usually Zenodo), its record has it as `additionalInfo.doi`.
+
+Each variable page has a QR code of the variable's BrAPI URL,
+`https://phenoapps.github.io/Crop-Ontology/<ONTOLOGY_ID>/brapi/v2/variables/<VARIABLE_ID>`, so Field Book can add
+a single trait by scanning it. That path isn't served here; Field Book splits it into the base URL and the ID and
+reads the crop's `variables` list (see [`site/README.md`](site/README.md#the-variable-qr-code)).
 
 Limits of static hosting:
 
 - **No query parameters.** Filters and `page`/`pageSize` are ignored. Every list is one page with `totalPages: 1`.
-- **No single-record calls** such as `variables/{id}`.
+- **No single-record or search calls** such as `variables/{id}`; load the list and pick the record out by ID.
 - **Content type.** GitHub Pages serves these extensionless files as `application/octet-stream`. Browsers and most
   HTTP clients accept that; the BrAPI Java client used by Field Book requires a JSON content type.
+- **Caching.** GitHub Pages sends `Cache-Control: max-age=600`, so an update can take 10 minutes to reach clients.
 
 ## How the data is built
 
@@ -42,7 +49,8 @@ Planteome GitHub ──harvest-planteome─────▶ data/planteome/ ─�
 
 For each crop, the site serves every variable found in either source. Where both have a variable and they
 disagree, the Planteome GitHub copy is used unless cropontology.org changed that ontology more recently. Every
-change the build makes to the source data (merges, repaired categories and text, mapped data types, renamed crops)
+change the build makes to the source data (merges, repaired categories and text, mapped data types, renamed crops,
+standardised trait class names)
 is listed on the site's *Conflicts* page and in `changes.json`.
 
 The details are in the folder READMEs:
@@ -91,6 +99,7 @@ To enable Pages on a new fork: **Settings → Pages → Build and deployment →
 | `include` | regex on the ontology ID; defaults to `^CO_\d+$` |
 | `stripWords` | words removed from source titles so each crop shows just its name ("Beet Ontology" → "Beet") |
 | `names` | display-name overrides by ID, e.g. `"CO_365": "Faba bean"` |
+| `traitClasses` | one spelling per trait class: `standard` names and `aliases` ("Phenological traits" and "Agronomical" become "Phenological" and "Agronomic"), applied when comparing the sources too; `regroup` moves a crop's one-off classes into the common ones (Cassava's "Viral disease" becomes "Biotic stress") |
 | `knownBroken` | ontologies that fail upstream, with the reason; reported as warnings rather than failures |
 | `planteomeFiles` | which file in a Planteome repo is the trait dictionary, when the default choice is wrong |
 | `planteomePaths` | extra files to copy from a Planteome repo whose trait data isn't at its root |

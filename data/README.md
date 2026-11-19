@@ -25,6 +25,7 @@ Per-ontology fields in `harvest.json`:
 | `loadedAt` | when cropontology.org says it last loaded the ontology |
 | `editObservedAt` | when the harvester first saw the content change between loads, if it has |
 | `fetchedVia` | `per-variable` when the bulk export failed and variables were fetched one at a time |
+| `doi` | the DOI linked from the ontology's cropontology.org page (usually its Zenodo badge), or `null` if none; recorded even for ontologies with no variables here |
 
 ## planteome/
 

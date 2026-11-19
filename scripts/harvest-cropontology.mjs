@@ -30,6 +30,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isIncluded, knownBroken } from './curation.mjs';
 import { digestTriples, rdfTriples, variableIds } from './rdf-digest.mjs';
+import { doiFromPage } from './doi.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data', 'cropontology');
@@ -201,6 +202,22 @@ await pool(targets, 4, async (o) => {
 for (const [id, at] of Object.entries(loadedAt)) {
   if (state[id] && state[id].loadedAt !== at) { state[id] = { ...state[id], loadedAt: at }; changed = true; }
 }
+
+// The ontology's DOI, from the badge its curators put on its page (see doi.mjs); shown on the crop page and
+// published in its BrAPI ontology record. null = the page loaded and has none; missing = the page failed.
+const dois = {};
+await pool(targets, 4, async (o) => {
+  const id = o.ontologyDbId;
+  try {
+    dois[id] = doiFromPage(await get(`${SITE}/ontology/${encodeURIComponent(id)}`, { json: false, attempts: 2 }));
+  } catch (err) {
+    console.warn(`  ${id}: ontology page unavailable (${err.message}); keeping its recorded DOI`);
+  }
+});
+// Recorded even for an ontology with no variables here (e.g. CO_369, served from Planteome), so its page shows it.
+for (const [id, doi] of Object.entries(dois)) {
+  if ((state[id] || doi) && (state[id]?.doi ?? null) !== doi) { state[id] = { ...state[id], doi }; changed = true; }
+}
 const toFetch = [];
 for (const o of targets) {
   const id = o.ontologyDbId;
@@ -250,6 +267,7 @@ await pool(toFetch, CONCURRENCY, async (o) => {
     const entry = {
       ...state[id],
       fingerprint: fingerprints[id], variableCount: vars.length, fetchedVia: method, loadedAt: loadedAt[id] ?? state[id]?.loadedAt ?? null,
+      doi: id in dois ? dois[id] : state[id]?.doi ?? null,
       changedAt: dataChanged ? now : state[id]?.changedAt ?? now,
       // Content changed since a previous snapshot (e.g. edited in the site's curation portal, which keeps
       // no public modified date): this run is the earliest the edit is known to have happened.

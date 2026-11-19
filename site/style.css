@@ -17,6 +17,7 @@
   /* Changed text on the Conflicts page: what the source had, and what is published. */
   --was-bg: #f9dcd6;
   --now-bg: #d5ecd9;
+  --diff-bg: #f7e7a6; /* text that differs between the two sources (neither is "before") */
   /* Ontology element types, shared by the trait browser icons and the graph. Validated as a categorical set
      (dataviz validate_palette.js, all pairs); each type also has its own shape, so colour is never the only cue. */
   --node-term: #545c64;
@@ -157,6 +158,9 @@ button { font: inherit; cursor: pointer; }
 
 .endpoint { margin-top: 14px; background: var(--surface); border: 1px solid var(--rule); padding: 12px 14px; }
 .endpoint .label { display: block; margin-bottom: 8px; }
+.endpoint-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; margin-bottom: 8px; }
+.endpoint-head .label { margin-bottom: 0; }
+.endpoint-head select { max-width: 100%; }
 .endpoint .row { display: flex; gap: 8px; align-items: stretch; }
 .endpoint code {
   flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font-size: .85rem;
@@ -285,6 +289,17 @@ tr.open .clamp .full { display: inline; }
 #repaired-text td { overflow-wrap: anywhere; }
 .row-crop { display: block; margin-top: 2px; font-size: .8rem; }
 .row-crop a { color: var(--ink-3); }
+/* Differences between the sources: a height-capped, scrolling table with a sticky header; one block per variable. */
+.diff-box { max-height: 70vh; overflow: auto; }
+.diff-box thead th { position: sticky; top: 0; z-index: 1; }
+table.diffs { table-layout: fixed; }
+table.diffs th:nth-child(1) { width: 22%; }
+table.diffs th:nth-child(2) { width: 14%; }
+table.diffs td { overflow-wrap: anywhere; }
+table.diffs tr.var-start > td { border-top: 2px solid var(--rule-2); }
+table.diffs tr:not(.var-start) > td { border-top-color: var(--paper); }
+table.diffs td.used { box-shadow: inset 3px 0 0 var(--accent); }
+mark.diff { background: var(--diff-bg); color: inherit; border-radius: 2px; padding: 0 1px; }
 .type-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 2px 8px; font-size: .8rem; color: var(--ink-2); }
 .type-key span { display: inline-flex; align-items: center; }
 .type-key .glyph { margin: 0 4px 0 0; }
@@ -345,7 +360,9 @@ tr.open .clamp .full { display: inline; }
   .toolbar select { flex: 1 1 140px; }
   .endpoint code { white-space: normal; word-break: break-all; }
   .var-row.has-aside { grid-template-columns: 1fr; }
-  #repaired-text th:first-child { width: 30%; }
+  #repaired-text th:first-child, table.diffs th:nth-child(1) { width: 30%; }
+  table.diffs th:nth-child(2) { width: 18%; }
+  table.diffs { font-size: .82rem; }
   #repaired-text table { font-size: .82rem; }
   .scan, .fact-qr { display: none; } /* QR codes are for scanning with a phone, which can't scan its own screen */
   .vhead { display: none; }

@@ -30,7 +30,7 @@ own shape.
 | --- | --- | --- |
 | `#/` | `home.js` | crops, sorted by name, with variable count and last-updated date; sortable and filterable |
 | `#/about` | `about.js` | why the site exists, where the data comes from, BrAPI use and limits, maintenance; `#/about/brapi` (or another section ID) scrolls to that section |
-| `#/conflicts` | `conflicts.js` | where the sources disagree and everything the build changes, from `changes.json` (`#/changes` also works); `#/conflicts/CO_320` shows one crop, and crop pages link there |
+| `#/conflicts` | `conflicts.js` | where the sources disagree and everything the build changes, from `changes.json` (`#/changes` also works); `#/conflicts/CO_320` shows one crop, and crop pages link there; `#/conflicts/CO_320/differences` opens its table of differences between the sources (the Differ numbers link there) |
 | `#/CO_320` | `variable-list.js` | one crop: source details, a QR code of its BrAPI base URL, and the variable list |
 | `#/CO_320/browse` | `browser.js` | trait browser: a trait class → trait → variable tree beside the selected term |
 | `#/CO_320/browse/<TERM_ID>` | `browser.js` | the trait browser with a trait or variable selected |
@@ -64,6 +64,9 @@ All from the built site, relative to the page:
 - `<ONTOLOGY_ID>/brapi/v2/variables` when a crop is opened, cached for the session. The list, trait browser, graph
   and variable pages are all built from this one file.
 - `changes.json` for the collapsible change notes on crop pages and the Conflicts page.
+- `differences.json`, only on the Conflicts page: every variable the two sources describe differently, with each
+  differing field as each source writes it. It is kept out of `changes.json` because it is much larger (about 1 MB,
+  70 KB compressed).
 
 The UI reads `additionalInfo.provenance` and `additionalInfo.changes` on each variable to say which source it came
 from and what was changed, `trait.additionalInfo.traitSubclass` for the subclass label shown on traits (classes are served as the parent, so

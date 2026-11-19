@@ -66,12 +66,26 @@ export const comparableFields = (header, notExported = []) => FIELDS
   .filter(([f]) => !notExported.includes(f) && hasColumn(header, f));
 
 // [{ field, cropontology, planteome }] for the fields that differ.
+// A value as a reader should see it: as the source writes it, with whitespace tidied and lists joined, but not
+// lowercased or respelled the way the comparison normalisers are.
+function shownValue(field, v) {
+  if (field === 'categories') return cats((Array.isArray(v) ? v : []).map((c) => (c && typeof c === 'object' ? `${c.value} = ${c.label}` : c)));
+  if (Array.isArray(v) || /synonyms|context of use/.test(field)) return list(v ?? '');
+  return text(v);
+}
+
+// [{ field, cropontology, planteome, shown: { cropontology, planteome } }] for the fields that differ: the
+// normalised values that were compared, and the values as each source writes them.
 export function diffFields(siteVariable, row, fields) {
   const out = [];
   for (const [field, fromSite, fromTD, norm] of fields) {
     const a = norm(fromSite(siteVariable) ?? '');
     const b = norm(fromTD(row) ?? '');
-    if (a !== b) out.push({ field, cropontology: a, planteome: b });
+    if (a === b) continue;
+    out.push({
+      field, cropontology: a, planteome: b,
+      shown: { cropontology: shownValue(field, fromSite(siteVariable)), planteome: shownValue(field, fromTD(row)) },
+    });
   }
   return out;
 }

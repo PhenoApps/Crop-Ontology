@@ -1,18 +1,39 @@
 // #/about[/SECTION]  What the site is for, where its data comes from, how to use its BrAPI endpoints, and how
 // it is kept up to date. #/about/brapi and the like scroll to that section (see app.js).
 
-import { endpointBox } from '../components.js';
 import { loadChanges, loadIndex } from '../data.js';
-import { app, day, esc, setTitle, siteRoot } from '../util.js';
+import { app, brapiBase, byName, day, esc, setTitle, siteRoot } from '../util.js';
 
 const ISSUES = 'https://github.com/PhenoApps/Crop-Ontology/issues';
+
+// The BrAPI v2 base URL with a copy button and a crop picker: all crops, or one crop's own base URL.
+function baseUrlBox(ontologies) {
+  const options = [...ontologies].sort((a, b) => byName(a.name, b.name))
+    .map((o) => `<option value="${esc(o.id)}">${esc(o.name)} (${esc(o.id)})</option>`).join('');
+  return `
+    <div class="endpoint">
+      <div class="endpoint-head">
+        <span class="label" id="base-url-label">BrAPI v2 base URL</span>
+        <select id="base-url-crop" aria-label="Crop"><option value="">All crops</option>${options}</select>
+      </div>
+      <div class="row"><code id="base-url" aria-labelledby="base-url-label">${esc(brapiBase(''))}</code><button type="button" class="btn" data-copy="${esc(brapiBase(''))}">Copy</button></div>
+    </div>`;
+}
+
+function wireBaseUrlBox() {
+  const pick = app.querySelector('#base-url-crop');
+  pick?.addEventListener('change', () => {
+    const url = brapiBase(pick.value);
+    app.querySelector('#base-url').textContent = url;
+    app.querySelector('.endpoint [data-copy]').dataset.copy = url;
+  });
+}
 
 export async function about() {
   setTitle('About');
   const [{ ontologies, sources }, c] = await Promise.all([loadIndex(), loadChanges()]);
   const fromGitHub = ontologies.filter((o) => o.source?.preferred === 'planteome').length;
   const checked = (s) => (s?.checked ? day(s.checked) : null);
-  const example = ontologies.find((o) => o.id === 'CO_320') ?? ontologies[0];
   const root = siteRoot();
   app.innerHTML = `
     <div class="prose">
@@ -50,10 +71,7 @@ export async function about() {
       the <a href="#/conflicts">Conflicts</a> page.</p>
 
       <h2 id="brapi">BrAPI</h2>
-      <p>Every crop has its own BrAPI v2 base URL, shown with a QR code on the crop's page, such as
-      <code>${esc(root)}${esc(example?.id ?? 'CO_320')}/brapi/v2</code> for ${esc(example?.name ?? 'rice')}. One more
-      base URL serves every crop together:</p>
-      ${endpointBox('', 'BrAPI v2 base URL, all crops')}
+      ${baseUrlBox(ontologies)}
       <p>Each base URL answers <code>serverinfo</code>, <code>commoncropnames</code>, <code>ontologies</code>,
       <code>variables</code>, <code>traits</code>, <code>methods</code> and <code>scales</code>. Every variable
       includes its trait, method and scale, and its <code>commonCropName</code> is its crop's name, so a client using
@@ -112,4 +130,5 @@ export async function about() {
       keeps its own licence, shown on its page and in its BrAPI <code>ontologies</code> record. This site is not
       the official Crop Ontology.</p>
     </div>`;
+  wireBaseUrlBox();
 }

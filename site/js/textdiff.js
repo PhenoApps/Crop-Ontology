@@ -1,6 +1,6 @@
 // Highlight what changed between two versions of a text, for the Conflicts page's repaired text table. Returns
 // { before, after, changes }: each side as escaped HTML with the changed stretches in <mark class="was"> or
-// <mark class="now">, both in full and in a short version that starts just before the first change; and how many
+// <mark class="now"> (or the classes given), both in full and in a short version that starts just before the first change; and how many
 // separate changes there are.
 //
 // The texts are compared as tokens (ASCII words, whitespace runs and single other characters), so "?13C" → "δ13C"
@@ -10,7 +10,7 @@ import { esc } from './util.js';
 
 const tokens = (s) => String(s).match(/\s+|[A-Za-z0-9_]+|[^]/gu) ?? [];
 
-export function diffHtml(before, after) {
+export function diffHtml(before, after, [wasClass, nowClass] = ['was', 'now']) {
   const a = tokens(before);
   const b = tokens(after);
   // The common start and end are unchanged; only the middle needs comparing.
@@ -53,7 +53,7 @@ export function diffHtml(before, after) {
     full: render(t.slice(0, start), middle, t.slice(t.length - end), cls, false),
     short: render(t.slice(0, start), middle, t.slice(t.length - end), cls, true),
   });
-  return { before: side(a, was, 'was'), after: side(b, now, 'now'), changes: Math.max(...[was, now].map(countRuns)) };
+  return { before: side(a, was, wasClass), after: side(b, now, nowClass), changes: Math.max(...[was, now].map(countRuns)) };
 }
 
 const CONTEXT = 30; // characters of unchanged text kept before the first change in the short version

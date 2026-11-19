@@ -1,16 +1,47 @@
-// #/conflicts[/ONTOLOGY_ID] (#/changes also works)  Where the two sources disagree and everything the build
-// changes, from changes.json. With an ontology ID, every table shows just that crop.
+// #/conflicts[/ONTOLOGY_ID[/SECTION]] (#/changes also works)  Where the two sources disagree and everything the
+// build changes, from changes.json, and at the end every variable the sources describe differently, from
+// differences.json. With an ontology ID, every table shows just that crop; a section ID opens the page there.
 
-import { loadChanges, loadIndex } from '../data.js';
+import { loadChanges, loadDifferences, loadIndex } from '../data.js';
 import { diffHtml } from '../textdiff.js';
-import { app, byName, enc, esc, num, setTitle } from '../util.js';
+import { app, byName, enc, esc, num, plural, setTitle } from '../util.js';
 
 // One side of a repaired text: the short version (from just before the first change, clamped to three lines) and
 // the full text, which shows when the row is opened.
 const clampCell = ({ short, full }) =>
   `<div class="clamp"><span class="short">${short}</span><span class="full">${full}</span></div>`;
+const toggleButton = (changes) =>
+  `<button type="button" class="clamp-toggle" aria-expanded="false" hidden>Show all${changes > 1 ? ` (${changes} changes)` : ''}</button>`;
+
+// Rows whose clamped cells fit in three lines are shown whole; the rest keep their "Show all" button. Rows are
+// measured open, all at once.
+function measureClamps(container) {
+  const rows = [...container.querySelectorAll('tbody tr')].filter((tr) => tr.querySelector('.clamp'));
+  for (const tr of rows) tr.classList.add('open');
+  const fits = rows.map((tr) => [...tr.querySelectorAll('.clamp')].every((el) => {
+    const line = parseFloat(getComputedStyle(el).lineHeight) || 22;
+    return el.scrollHeight <= line * 3 + 2;
+  }));
+  rows.forEach((tr, i) => {
+    tr.classList.toggle('open', fits[i]);
+    const b = tr.querySelector('.clamp-toggle');
+    if (b) b.hidden = fits[i];
+  });
+}
+// One button per row opens all of the row's clamped cells.
+function wireClamps(container) {
+  container.addEventListener('click', (e) => {
+    const b = e.target.closest('.clamp-toggle');
+    if (!b) return;
+    const open = b.closest('tr').classList.toggle('open');
+    b.dataset.label ??= b.textContent;
+    b.textContent = open ? 'Show less' : b.dataset.label;
+    b.setAttribute('aria-expanded', String(open));
+  });
+}
 
 export async function conflicts(only) {
+  const differencesP = loadDifferences(); // fetched alongside; its table fills in when it arrives
   const c = await loadChanges();
   if (!c) { setTitle('Conflicts'); app.innerHTML = '<h1>Conflicts</h1><p class="muted">No change log is available.</p>'; return; }
   const { ontologies } = await loadIndex();
@@ -42,6 +73,7 @@ export async function conflicts(only) {
     ['left-out', 'Variables left out'],
     ['conflicts', 'IDs used with different names'],
     ['scope', 'Scope and formatting'],
+    ['differences', 'Differences between the sources'],
   ];
   app.innerHTML = `
     <h1>Conflicts</h1>
@@ -55,7 +87,9 @@ export async function conflicts(only) {
     <h2 id="sources">Which copy each crop uses</h2>
     ${c.policy?.merge?.length ? `<ul class="prose">${c.policy.merge.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
     ${table(['Crop', 'Preferred copy', 'In Crop Ontology', 'In Planteome', 'Match', 'Differ', 'Why'], perOntology.map((x) => [
-      crop(x.ontologyDbId), esc(x.preferred), num(x.inCropontology ?? x.fromCropontology), num(x.inPlanteome ?? x.fromPlanteome), num(x.agree), num(x.disagree), esc(x.reason ?? '')]), [2, 3, 4, 5])}
+      crop(x.ontologyDbId), esc(x.preferred), num(x.inCropontology ?? x.fromCropontology), num(x.inPlanteome ?? x.fromPlanteome), num(x.agree),
+      x.disagree ? `<a href="#/conflicts/${enc(x.ontologyDbId)}/differences" title="See how they differ">${num(x.disagree)}</a>` : num(0),
+      esc(x.reason ?? '')]), [2, 3, 4, 5])}
 
     <h2 id="categories">Repaired scale categories</h2>
     <p class="muted">Some categories were turned into dates by spreadsheet software before upload (for example
@@ -74,7 +108,7 @@ export async function conflicts(only) {
       const d = diffHtml(x.from, x.to);
       // Crop goes under the variable rather than in a column of its own, to keep the table narrow.
       return [`${varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName)}<span class="row-crop">${crop(x.ontologyDbId)}</span>`,
-        clampCell(d.before), `${clampCell(d.after)}<button type="button" class="clamp-toggle" aria-expanded="false" hidden>Show all${d.changes > 1 ? ` (${d.changes} changes)` : ''}</button>`];
+        clampCell(d.before), `${clampCell(d.after)}${toggleButton(d.changes)}`];
     }))}</div>
 
     <h2 id="names">Crop and ontology names</h2>
@@ -129,28 +163,57 @@ export async function conflicts(only) {
     <ul class="prose">
       ${c.policy?.include ? `<li>${esc(c.policy.include)}</li>` : ''}
       ${(c.policy?.formatting ?? []).map((p) => `<li>${esc(p)}</li>`).join('')}
-    </ul>`;
-  // Repaired text that fits in three lines is shown whole. Longer text collapses to three lines starting just before
-  // its first change, and one button per row opens both columns. Rows are measured open, all at once.
+    </ul>
+
+    <h2 id="differences">Differences between the sources</h2>
+    <p class="muted">Variables both sources have but describe differently: for each, the fields that differ, as each
+    source writes them, with the differing text highlighted. The value served is marked with a bar; the other is
+    kept only in that source. Differences of formatting alone (capitalisation, spacing, category order, "0.0" and
+    "0") aren't counted.</p>
+    <div class="toolbar"><label class="sort">Field <select id="diff-field" disabled><option value="">All fields</option></select></label>
+      <span class="count" id="diff-count"></span></div>
+    <div class="table-wrap diff-box" id="differences-box"><p class="muted" style="padding:10px 14px">Loading…</p></div>`;
+  // Repaired text longer than three lines collapses to three lines starting just before its first change.
   const repaired = app.querySelector('#repaired-text');
-  const rows = [...repaired.querySelectorAll('tbody tr')];
-  for (const tr of rows) tr.classList.add('open');
-  const fits = rows.map((tr) => [...tr.querySelectorAll('.clamp')].every((el) => {
-    const line = parseFloat(getComputedStyle(el).lineHeight) || 22;
-    return el.scrollHeight <= line * 3 + 2;
-  }));
-  rows.forEach((tr, i) => {
-    tr.classList.toggle('open', fits[i]);
-    tr.querySelector('.clamp-toggle').hidden = fits[i];
-  });
-  repaired.addEventListener('click', (e) => {
-    const b = e.target.closest('.clamp-toggle');
-    if (!b) return;
-    const open = b.closest('tr').classList.toggle('open');
-    b.dataset.label ??= b.textContent;
-    b.textContent = open ? 'Show less' : b.dataset.label;
-    b.setAttribute('aria-expanded', String(open));
-  });
+  measureClamps(repaired);
+  wireClamps(repaired);
+
+  // Differences between the sources, once differences.json has loaded.
+  const box = app.querySelector('#differences-box');
+  const fieldSelect = app.querySelector('#diff-field');
+  const count = app.querySelector('#diff-count');
+  wireClamps(box);
+  const d = await differencesP;
+  if (!box.isConnected) return; // navigated away while loading
+  const vars = (d?.variables ?? []).filter((v) => !only || v.ontologyDbId === only);
+  const fieldCounts = new Map();
+  for (const v of vars) for (const f of v.fields) fieldCounts.set(f.field, (fieldCounts.get(f.field) ?? 0) + 1);
+  fieldSelect.insertAdjacentHTML('beforeend', [...fieldCounts].sort(([a], [b]) => a.localeCompare(b))
+    .map(([f, n]) => `<option value="${esc(f)}">${esc(f)} (${num(n)})</option>`).join(''));
+  fieldSelect.disabled = !fieldCounts.size;
+  const labels = d?.sources ?? { cropontology: 'Crop Ontology', planteome: 'Planteome' };
+  const drawDifferences = () => {
+    const field = fieldSelect.value;
+    const html = [];
+    let nVars = 0;
+    for (const v of vars) {
+      const fields = v.fields.filter((f) => !field || f.field === field);
+      if (!fields.length) continue;
+      nVars++;
+      fields.forEach((f, i) => {
+        const diff = diffHtml(f.cropontology, f.planteome, ['diff', 'diff']);
+        const value = (side, text, label) => `<td${v.used === label ? ' class="used"' : ''}>${text ? clampCell(side) : '<span class="muted">(blank)</span>'}`;
+        html.push(`<tr${i === 0 ? ' class="var-start"' : ''}>${i === 0 ? `<td rowspan="${fields.length}">${varLink(v.ontologyDbId, v.observationVariableDbId, v.observationVariableName)}<span class="row-crop">${crop(v.ontologyDbId)} · ${esc(v.used)} value served</span></td>` : ''}<td>${esc(f.field)}</td>${value(diff.before, f.cropontology, labels.cropontology)}</td>${value(diff.after, f.planteome, labels.planteome)}${toggleButton(diff.changes)}</td></tr>`);
+      });
+    }
+    box.innerHTML = html.length
+      ? `<table class="data diffs"><thead><tr><th>Variable</th><th>Field</th><th>${esc(labels.cropontology)}</th><th>${esc(labels.planteome)}</th></tr></thead><tbody>${html.join('')}</tbody></table>`
+      : '<p class="muted" style="padding:10px 14px">None.</p>';
+    count.textContent = html.length ? `${plural(nVars, 'variable')}, ${plural(html.length, 'difference')}` : '';
+    measureClamps(box);
+  };
+  fieldSelect.addEventListener('change', drawDifferences);
+  drawDifferences();
   app.querySelector('#conflict-crop').addEventListener('change', (e) => {
     location.hash = e.target.value ? `#/conflicts/${enc(e.target.value)}` : '#/conflicts';
   });

@@ -8,6 +8,7 @@
 // Output (default: _site/):
 //   index.html, app.js, style.css       browser UI (copied from site/)
 //   ontologies.json                     small index the UI loads first
+//   changes.json, differences.json      what the build changes; how the two sources differ, variable by variable
 //   brapi/v2/{serverinfo,commoncropnames,ontologies}            all-ontology discovery
 //   <ONTOLOGY>/brapi/v2/{serverinfo,commoncropnames,ontologies,variables,traits,methods,scales}
 //
@@ -339,6 +340,9 @@ changes.duplicates = [];
 changes.obsoleteExcluded = [];
 changes.idConflicts = [];
 const allVariables = [];
+// Every variable both sources have but describe differently, field by field, as each source writes it. Published
+// as differences.json for the Conflicts page (kept out of changes.json, which every crop page loads).
+const differences = [];
 
 // How to label and link back to each copy of an ontology.
 function sourcesFor(id, planteome) {
@@ -408,6 +412,13 @@ for (const id of ids) {
       // Where the variable's row starts in the Planteome CSV/TSV (1-based, header = line 1), for deep links.
       ...(planteomeLine ? { planteomeLine } : {}),
     };
+    if (status === 'disagree') {
+      differences.push({
+        ontologyDbId: id, observationVariableDbId: v.observationVariableDbId, observationVariableName: v.observationVariableName,
+        used: LABELS[source],
+        fields: diffs.map((d) => ({ field: d.field, cropontology: d.shown.cropontology, planteome: d.shown.planteome })),
+      });
+    }
     return { ...v, additionalInfo: { ...v.additionalInfo, provenance } };
   }).sort((a, b) => a.observationVariableDbId.localeCompare(b.observationVariableDbId, 'en', { numeric: true }));
 
@@ -566,6 +577,10 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
     ],
   },
   ...changes,
+}));
+await writeFile(join(OUT, 'differences.json'), JSON.stringify({
+  sources: { cropontology: LABELS.cropontology, planteome: LABELS.planteome },
+  variables: differences.sort((a, b) => a.observationVariableDbId.localeCompare(b.observationVariableDbId, 'en', { numeric: true })),
 }));
 await writeFile(join(OUT, 'ontologies.json'), JSON.stringify({ sources: sourcesSummary, ontologies: index }));
 

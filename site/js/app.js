@@ -1,7 +1,7 @@
 // PhenoApps Crop Ontology: a hash-routed viewer over the static files that scripts/build.mjs writes.
 //   #/                          crops
 //   #/about[/SECTION]           what the site is for, its data, BrAPI and maintenance (SECTION scrolls to it)
-//   #/conflicts[/CO_325]        where the sources disagree and what the build changes, optionally for one crop
+//   #/conflicts[/CO_325[/SECTION]]  where the sources disagree and what the build changes, optionally for one crop
 //   #/CO_325                    one crop's variable list
 //   #/CO_325/browse[/TERM_ID]   trait browser: trait class > trait > variable tree beside the selected term
 //   #/CO_325/graph              network graph of the ontology
@@ -33,7 +33,7 @@ function setNav(first) {
 function render(first, second, third) {
   if (!first) return home();
   if (first === 'about') return about();
-  if (first === 'conflicts' || first === 'changes') return conflicts(second);
+  if (first === 'conflicts' || first === 'changes') return conflicts(second, third);
   if (!second) return variableList(first);
   if (second === 'browse') return browser(first, third);
   if (second === 'graph') return graphView(first);
@@ -54,7 +54,9 @@ async function route() {
     const handle = await render(first, second, third);
     if (seq !== routeSeq) { handle?.stop?.(); return; }
     current = handle ?? null;
-    const section = first === 'about' && second ? document.getElementById(second) : null;
+    // #/about/<section> and #/conflicts/<crop>/<section> open at that section.
+    const sectionId = first === 'about' ? second : first === 'conflicts' || first === 'changes' ? third : null;
+    const section = sectionId ? document.getElementById(sectionId) : null;
     if (section) section.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0);
   } catch (err) {
     app.innerHTML = `<h1>Something went wrong</h1><p class="muted">${esc(err.message)}</p>`;

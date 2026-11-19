@@ -1,6 +1,7 @@
 // #/  The crops, as cards that can be filtered and sorted.
 
 import { loadIndex } from '../data.js';
+import { italicizeSpecies } from '../species.js';
 import { app, byName, day, enc, esc, plural, setTitle, terms } from '../util.js';
 
 const state = { q: '', sort: 'name' }; // kept while browsing, so returning to the list restores it
@@ -17,7 +18,7 @@ const card = (o) => {
   return `
     <a class="crop" href="#/${enc(o.id)}">
       <span class="crop-top"><span class="crop-name">${esc(o.name)}</span><span class="crop-id">${esc(o.id)}</span></span>
-      ${o.description ? `<span class="crop-desc">${esc(o.description)}</span>` : ''}
+      ${o.description ? `<span class="crop-desc">${italicizeSpecies(esc(o.description))}</span>` : ''}
       <span class="crop-tags">
         <span class="tag">${plural(o.variableCount, 'variable')}</span>
         ${updated ? `<span class="tag" title="Last change to the copy served here (${esc(o.source?.label ?? '')})">Updated ${esc(updated)}</span>` : ''}

@@ -107,6 +107,7 @@ _site/
   index.html, style.css, js/                UI, copied from site/
   ontologies.json                           index the UI loads first
   changes.json                              every change made to the source data
+  differences.json                          per variable, the fields the two sources disagree on, as each writes them
   brapi/v2/{serverinfo,commoncropnames,ontologies,variables,traits,methods,scales}               all crops
   <ONTOLOGY_ID>/brapi/v2/{serverinfo,commoncropnames,ontologies,variables,traits,methods,scales} one crop
 ```

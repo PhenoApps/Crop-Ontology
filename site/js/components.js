@@ -9,17 +9,6 @@ export function notFound() {
   app.innerHTML = '<h1>Not found</h1><p><a href="#/">Back to all crops</a></p>';
 }
 
-// A base URL with a copy button.
-export function endpointBox(id, label, note = '') {
-  const url = brapiBase(id);
-  return `
-    <div class="endpoint">
-      <span class="label">${esc(label)}</span>
-      <div class="row"><code>${esc(url)}</code><button type="button" class="btn" data-copy="${esc(url)}">Copy</button></div>
-      ${note ? `<p>${note}</p>` : ''}
-    </div>`;
-}
-
 // One label/value pair in a <dl class="kv">; empty values are left out. Scientific names are set in italics.
 export const field = (label, value, mono = false) => (value == null || value === '' || (Array.isArray(value) && !value.length))
   ? '' : `<dt>${esc(label)}</dt><dd${mono ? ' class="mono"' : ''}>${italicizeSpecies(Array.isArray(value) ? value.map(esc).join(', ') : esc(value))}</dd>`;
@@ -102,7 +91,7 @@ export function ontologyHead(o, tab, notes) {
   return `
     <nav class="crumbs"><a href="#/">Crops</a> / ${esc(o.name)}</nav>
     <div class="title-row"><h1>${esc(o.name)}</h1><span class="id">${esc(o.id)}</span></div>
-    ${o.description ? `<p class="lede">${esc(o.description)}</p>` : ''}
+    ${o.description ? `<p class="lede">${italicizeSpecies(esc(o.description))}</p>` : ''}
     <dl class="facts">
       ${fact('Variables', `${num(o.variableCount)}<span class="note">${mix}</span>`)}
       ${fact('Updated', day(o.version) ? esc(day(o.version)) : '')}

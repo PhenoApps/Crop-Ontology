@@ -3,6 +3,7 @@
 const cache = new Map();
 let indexP = null;
 let changesP = null;
+let differencesP = null;
 
 async function getJson(url) {
   const res = await fetch(url);
@@ -14,6 +15,8 @@ async function getJson(url) {
 export const loadIndex = () => (indexP ??= getJson('ontologies.json'));
 // changes.json: every change the build made to the source data (null if missing).
 export const loadChanges = () => (changesP ??= getJson('changes.json').catch(() => null));
+// differences.json: variables the two sources describe differently, field by field (null if missing).
+export const loadDifferences = () => (differencesP ??= getJson('differences.json').catch(() => null));
 // One crop's variables, cached for the session; the list, trait browser, graph and variable pages share it.
 export function loadVariables(id) {
   if (!cache.has(id)) cache.set(id, getJson(`${id}/brapi/v2/variables`).then((b) => b.result.data));

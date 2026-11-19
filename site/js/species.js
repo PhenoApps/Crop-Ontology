@@ -25,21 +25,29 @@ Schizaphis Sclerophthora Sclerotinia Sclerotium Septoria Sesamia Sitona Sitophil
 Sogatodes Soracladium Sorghum Sphacelotheca Sphaerotheca Sphaerulina Spodoptera Stagonospora Stemphylium
 Stenchaetothrips Strauzia Striga Suleima Tagosodes Tanaostigmodes Tapesia Tetanops Tetranychus Thanatephorus
 Thanethoporus Thekopsora Tilletia Urocystic Uromyces Ustilaginoidea Ustilago Vaccinium Verticilium Verticillium Vinca
-Xanthomonas Zabrotes Zulia Zygogramma`.split(/\s+/);
+Xanthomonas Zabrotes Zulia Zygogramma Busseola Drosophila
+Avena Beta Brachiaria Cajanus Chenopodium Cicer Cocos Dioscorea Fragaria Glycine Gossypium Hordeum Ipomoea Malus Manihot
+Medicago Musa Oryza Phaseolus Pisum Ricinus Saccharina Secale Solanum Trifolium Triticum Urochloa Vicia Vigna Vitis Zea`
+  .split(/\s+/);
 
-// Genera that are also crop or English words: italic only with an epithet ("Sorghum bicolor", not "Sorghum").
-const NEEDS_EPITHET = new Set(['brassica', 'lens', 'sorghum']);
-const EPITHET = /^[a-z]+(?:us|um|a|ae|i|is|ensis|oides|orum|arum|ix|ax|ex|or|ens|ans)$/;
+// Genera that are also crop names or ordinary words: italic only with an epithet ("Sorghum bicolor", not the crop
+// "Sorghum"; "Beta vulgaris", not "Beta carotene"; "Glycine max", not the amino acid).
+const NEEDS_EPITHET = new Set(['beta', 'brachiaria', 'brassica', 'glycine', 'lens', 'sorghum', 'vitis', 'zea']);
+const EPITHET = /^[a-z]+(?:us|um|a|ae|i|is|ensis|ense|oides|orum|arum|ix|ax|ex|or|ens|ans|ale|are|ile)$/;
 const NOT_EPITHET = new Set(['area', 'data', 'plus', 'via', 'versus', 'analysis', 'basis', 'status', 'axis', 'color',
   'colour', 'flavor', 'odor', 'vigor', 'factor', 'sector', 'for', 'or', 'is', 'as', 'a', 'i', 'ii', 'this', 'thus',
-  'index', 'maximum', 'minimum', 'medium', 'optimum', 'spectrum', 'premium', 'serum', 'stadium']);
+  'index', 'maximum', 'minimum', 'medium', 'optimum', 'spectrum', 'premium', 'serum', 'stadium',
+  'scale', 'female', 'male', 'rare', 'share', 'square', 'compare', 'profile', 'while', 'mobile', 'volatile',
+  'larvae', 'pupae', 'nymphae', 'antennae', 'formulae', 'algae', 'hyphae', 'vertebrae']);
+// Crop epithets that don't end like Latin adjectives.
+const CROP_EPITHETS = new Set(['mays', 'max', 'batatas', 'cajan', 'quinoa', 'faba', 'radiata', 'subterranea']);
 const NAME = new RegExp(`\\b(${GENERA.join('|')})\\b(?:(\\s+)(spp?\\.|[a-z]+))?`, 'gi');
 
 export function italicizeSpecies(html) {
   return String(html).replace(NAME, (match, genus, space, word) => {
     // "Striga" or "striga", but not an abbreviation such as "STRIGA" or "AphIS".
     if (genus !== genus.toLowerCase() && genus !== genus[0] + genus.slice(1).toLowerCase()) return match;
-    const epithet = word && (/^spp?\.$/.test(word) || (EPITHET.test(word) && !NOT_EPITHET.has(word))) ? space + word : '';
+    const epithet = word && (/^spp?\.$/.test(word) || CROP_EPITHETS.has(word) || (EPITHET.test(word) && !NOT_EPITHET.has(word))) ? space + word : '';
     if (!epithet && NEEDS_EPITHET.has(genus.toLowerCase())) return match;
     return `<i>${genus}${epithet}</i>${match.slice(genus.length + epithet.length)}`;
   });

@@ -59,7 +59,7 @@ export async function conflicts(only) {
   const crop = (id) => `<a href="#/${enc(id)}">${esc(name(id))}</a>`;
   const varLink = (id, vid, text) => `<a href="#/${enc(id)}/${enc(vid)}">${esc(text ?? vid)}</a>`;
   const table = (head, rows, numeric = []) => (rows.length
-    ? `<div class="table-wrap"><table class="data"><thead><tr>${head.map((h, i) => `<th${numeric.includes(i) ? ' class="num"' : ''}>${h}</th>`).join('')}</tr></thead><tbody>${
+    ? `<div class="table-wrap capped"><table class="data"><thead><tr>${head.map((h, i) => `<th${numeric.includes(i) ? ' class="num"' : ''}>${h}</th>`).join('')}</tr></thead><tbody>${
       rows.map((r) => `<tr>${r.map((x, i) => `<td${numeric.includes(i) ? ' class="num"' : ''}>${x}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`
     : '<p class="muted">None.</p>');
   const typeGroups = new Map();
@@ -201,7 +201,7 @@ export async function conflicts(only) {
     for "0") aren't counted.</p>
     <div class="toolbar"><label class="sort">Field <select id="diff-field" disabled><option value="">All fields</option></select></label>
       <span class="count" id="diff-count"></span></div>
-    <div class="table-wrap diff-box" id="differences-box"><p class="muted" style="padding:10px 14px">Loading…</p></div>`;
+    <div class="table-wrap capped" id="differences-box"><p class="muted" style="padding:10px 14px">Loading…</p></div>`;
   // Repaired text longer than three lines collapses to three lines starting just before its first change.
   const repaired = app.querySelector('#repaired-text');
   measureClamps(repaired);

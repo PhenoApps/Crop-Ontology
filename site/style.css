@@ -295,9 +295,10 @@ tr.open .clamp .full { display: inline; }
 #repaired-text td { overflow-wrap: anywhere; }
 .row-crop { display: block; margin-top: 2px; font-size: .8rem; }
 .row-crop a { color: var(--ink-3); }
-/* Differences between the sources: a height-capped, scrolling table with a sticky header; one block per variable. */
-.diff-box { max-height: 70vh; overflow: auto; }
-.diff-box thead th { position: sticky; top: 0; z-index: 1; }
+/* Conflicts tables: capped in height, scrolling, with a sticky header. */
+.capped { max-height: 70vh; overflow: auto; }
+.capped thead th { position: sticky; top: 0; z-index: 1; }
+/* Differences between the sources: one block per variable. */
 table.diffs { table-layout: fixed; }
 table.diffs th:nth-child(1) { width: 22%; }
 table.diffs th:nth-child(2) { width: 14%; }

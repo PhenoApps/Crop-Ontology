@@ -1,4 +1,4 @@
-// #/CO_320/browse[/TERM_ID]  Trait browser, like the tree on cropontology.org: trait classes, their traits,
+// #/CO_320 or #/CO_320/browse[/TERM_ID]  Trait browser, the crop's first tab, like the tree on cropontology.org: trait classes, their traits,
 // and each trait's variables, beside the selected term. TERM_ID can be a trait, a variable, or a method or scale,
 // which aren't in the tree but have their own page listing the variables that use them.
 //
@@ -62,7 +62,8 @@ export async function browser(id, term) {
     </div>`;
 
   const vars = await loadVariables(id);
-  if (hashParts()[0] !== id || hashParts()[1] !== 'browse') return;
+  const [, view] = hashParts();
+  if (hashParts()[0] !== id || (view && view !== 'browse')) return; // navigated away while loading
   const tq = app.querySelector('#tq');
   const tree = app.querySelector('#tree');
   const pane = app.querySelector('#term');

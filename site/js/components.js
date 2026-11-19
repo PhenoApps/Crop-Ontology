@@ -102,8 +102,8 @@ export function ontologyHead(o, tab, notes) {
     </dl>
     ${notes}
     <nav class="tabs" aria-label="Views">
-      ${tabLink('list', `#/${enc(o.id)}`, 'Variable list')}
-      ${tabLink('browse', `#/${enc(o.id)}/browse`, 'Trait browser')}
+      ${tabLink('browse', `#/${enc(o.id)}`, 'Trait browser')}
+      ${tabLink('list', `#/${enc(o.id)}/list`, 'Variable list')}
       ${tabLink('graph', `#/${enc(o.id)}/graph`, 'Graph')}
     </nav>`;
 }

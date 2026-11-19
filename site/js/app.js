@@ -2,8 +2,9 @@
 //   #/                          crops
 //   #/about[/SECTION]           what the site is for, its data, BrAPI and maintenance (SECTION scrolls to it)
 //   #/conflicts[/CO_325[/SECTION]]  where the sources disagree and what the build changes, optionally for one crop
-//   #/CO_325                    one crop's variable list
-//   #/CO_325/browse[/TERM_ID]   trait browser: trait class > trait > variable tree beside the selected term
+//   #/CO_325                    one crop, opening on its trait browser (#/CO_325/browse also works)
+//   #/CO_325/browse/TERM_ID     the trait browser with a trait, variable, method, or scale selected
+//   #/CO_325/list               one crop's variable list
 //   #/CO_325/graph              network graph of the ontology
 //   #/CO_325/CO_325:0000577     one variable
 //
@@ -34,8 +35,8 @@ function render(first, second, third) {
   if (!first) return home();
   if (first === 'about') return about();
   if (first === 'conflicts' || first === 'changes') return conflicts(second, third);
-  if (!second) return variableList(first);
-  if (second === 'browse') return browser(first, third);
+  if (!second || second === 'browse') return browser(first, third);
+  if (second === 'list') return variableList(first);
   if (second === 'graph') return graphView(first);
   return variable(first, second);
 }
@@ -44,7 +45,8 @@ async function route() {
   const [first, second, third] = hashParts();
   setNav(first);
   try {
-    if (first && second === 'browse' && current?.select && current.id === first && app.querySelector('#tree')) {
+    // Another term in the trait browser already on screen: select it without rebuilding the page.
+    if (first && (!second || second === 'browse') && current?.select && current.id === first && app.querySelector('#tree')) {
       current.select(third, true);
       return;
     }

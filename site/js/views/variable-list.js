@@ -1,4 +1,4 @@
-// #/CO_320  One crop: its header and a searchable, filterable list of its variables.
+// #/CO_320/list  One crop: its header and a searchable, filterable list of its variables (the second tab).
 
 import { notFound, ontologyHead, ontologyNotes, subclassOf } from '../components.js';
 import { findOntology, loadChanges, loadVariables } from '../data.js';
@@ -33,7 +33,7 @@ export async function variableList(id) {
     <button type="button" class="more" id="more" aria-label="Show more variables" title="Show more" hidden>${chevron('down')}</button>`;
 
   const vars = await loadVariables(id);
-  if (hashParts()[0] !== id) return; // navigated away while loading
+  if (hashParts()[0] !== id || hashParts()[1] !== 'list') return; // navigated away while loading
   const sorted = [...vars].sort((a, b) => byName(a.observationVariableName ?? '', b.observationVariableName ?? ''));
   const dt = app.querySelector('#dt');
   dt.insertAdjacentHTML('beforeend', [...new Set(vars.map((v) => v.scale?.dataType).filter(Boolean))].sort()

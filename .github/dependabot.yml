@@ -1,0 +1,14 @@
+# Weekly check for newer versions of the GitHub Actions the workflows use, grouped into one pull request.
+# The project has no npm dependencies; the browser libraries (d3, qrcode-generator) are pinned cdnjs URLs in
+# site/js and are updated by hand.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels: [dependencies]
+    groups:
+      github-actions:
+        patterns: ['*']

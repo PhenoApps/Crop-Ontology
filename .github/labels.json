@@ -2,5 +2,7 @@
   { "name": "data", "color": "d93f0b", "description": "Trait data, or a change on the Conflicts page, looks wrong" },
   { "name": "brapi", "color": "1d76db", "description": "Import or BrAPI endpoint problem" },
   { "name": "enhancement", "color": "a2eeef", "description": "Suggestion or new feature" },
-  { "name": "harvest", "color": "b60205", "description": "The weekly harvest failed for a source (opened automatically)" }
+  { "name": "harvest", "color": "b60205", "description": "The weekly harvest failed for a source (opened automatically)" },
+  { "name": "data-refresh", "color": "0e8a16", "description": "Weekly refresh of the source snapshots (opened automatically)" },
+  { "name": "dependencies", "color": "c5def5", "description": "GitHub Actions version updates (Dependabot)" }
 ]

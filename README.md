@@ -60,7 +60,7 @@ The details are in the folder READMEs:
 | [`scripts/`](scripts/README.md) | harvesters, the comparison, and the build and its modules |
 | [`data/`](data/README.md) | raw snapshots of both sources, committed as downloaded |
 | [`site/`](site/README.md) | the browser UI (variable list, trait browser, graph, and the About and Conflicts pages) |
-| `.github/workflows/` | `harvest.yml` refreshes the data weekly; `pages.yml` builds and deploys the site; `labels.yml` creates the issue labels |
+| `.github/workflows/` | `harvest.yml` proposes a weekly data refresh as a pull request; `pages.yml` builds and deploys the site; `labels.yml` creates the issue labels |
 | `.github/ISSUE_TEMPLATE/` | issue forms for trait data (including changes listed on the Conflicts page), import and BrAPI problems, and suggestions |
 | `curation.json` | publishing rules: which ontologies, display names, source overrides (see below) |
 
@@ -84,11 +84,16 @@ node scripts/serve.mjs                  # preview at http://localhost:8080/
 ## Automation
 
 - `harvest.yml` runs both harvesters and the comparison every Monday (a full cropontology.org refresh on the first
-  Monday of the month), commits any changed snapshots, and redeploys the site when data changed. If a source fails,
-  it opens an issue labelled `harvest` (or comments on the one already open). It can also be run from the Actions tab.
+  Monday of the month). If anything changed, it opens a pull request, *Data refresh*, from the `data-refresh` branch
+  (or updates the open one), with the crops that changed and a check that the site still builds. The site updates
+  when it's merged. Each run starts again from `main` and replaces the branch. If a source fails, it also opens an
+  issue labelled `harvest` (or comments on the one already open). It can be run from the Actions tab too, and needs
+  **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests**.
 - `pages.yml` builds and deploys on pushes to `main` that touch the data, site, build scripts, or `curation.json`.
-- `labels.yml` creates or updates the labels in `.github/labels.json` (used by the issue forms and the harvest
-  workflow) whenever that file changes on `main`, or when run from the Actions tab.
+- `labels.yml` creates or updates the labels in `.github/labels.json` (used by the issue forms, the harvest
+  workflow, and Dependabot) whenever that file changes on `main`, or when run from the Actions tab.
+- Dependabot (`.github/dependabot.yml`) checks the workflows' GitHub Actions for updates every Monday and groups them
+  into one pull request.
 
 The site links to the issue forms with fields filled in: each variable page has "Report a problem", and each Conflicts section heading has "Report a problem".
 

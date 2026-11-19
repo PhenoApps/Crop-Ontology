@@ -585,7 +585,7 @@ await writeFile(join(OUT, 'differences.json'), JSON.stringify({
 await writeFile(join(OUT, 'ontologies.json'), JSON.stringify({ sources: sourcesSummary, ontologies: index }));
 
 const sum = (k) => changes.sources.reduce((n, x) => n + (x[k] ?? 0), 0);
-console.log(`Merge: ${sum('fromPlanteome')} variables from ${LABELS.planteome}, ${sum('fromCropontology')} from ${LABELS.cropontology}; ${sum('agree')} agree, ${sum('disagree')} disagree, ${sum('onlyPlanteome')} only on GitHub, ${sum('onlyCropontology')} only on the site, ${sum('duplicatesLeftOut')} renumbered duplicates and ${sum('obsoleteLeftOut')} obsolete left out`);
+console.log(`Merge: ${sum('fromPlanteome')} variables from ${LABELS.planteome}, ${sum('fromCropontology')} from ${LABELS.cropontology}; ${sum('agree')} agree, ${sum('disagree')} disagree, ${sum('onlyPlanteome')} only on GitHub, ${sum('onlyCropontology')} only on the site; ${sum('duplicatesLeftOut')} renumbered duplicates and ${sum('obsoleteLeftOut')} obsolete variables left out`);
 console.log(`ID conflicts: ${changes.idConflicts.length}`);
 console.log(`Changes: ${changes.renamed.length} renamed, ${changes.traitClasses.length} trait class names standardised, ${changes.categories.length} categories restored (${changes.categoriesUnrepaired.length} left as served), ${changes.dataTypes.length} data types mapped, ${changes.encoding.length} text repairs, ${changes.fetchedIndividually.length} fetched individually, ${changes.unavailable.length} unavailable`);
 if (unknownTypes.size) console.warn('Non-BrAPI scale data types served as Text:', Object.fromEntries(unknownTypes));

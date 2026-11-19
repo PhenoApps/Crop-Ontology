@@ -1,5 +1,12 @@
 name: Refresh data from sources
 
+# Re-downloads both sources and, if anything changed, proposes the new snapshots as a pull request ("Data refresh"
+# on the data-refresh branch) instead of publishing them. The site updates when a maintainer merges it: merging is a
+# push to main that touches data/, which runs pages.yml. Each run starts again from main and replaces the branch, so
+# the pull request always holds one fresh refresh.
+#
+# Needs "Allow GitHub Actions to create and approve pull requests" (Settings → Actions → General).
+
 on:
   schedule:
     - cron: '17 6 * * 1' # Mondays 06:17 UTC; the first Monday of each month does a full cropontology.org refresh
@@ -11,10 +18,9 @@ on:
         default: false
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-  issues: write # to open an issue when a source fails to harvest
+  contents: write # push the data-refresh branch
+  pull-requests: write # open or update the pull request
+  issues: write # open an issue when a source fails to harvest
 
 concurrency:
   group: harvest
@@ -24,8 +30,6 @@ jobs:
   harvest:
     runs-on: ubuntu-latest
     timeout-minutes: 240
-    outputs:
-      site-changed: ${{ steps.commit.outputs.site-changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,7 +42,8 @@ jobs:
           if [ "${{ inputs.full }}" = "true" ] || { [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%-d)" -le 7 ]; }; then
             flag="--full"
           fi
-          # Keep going on partial failure so the ontologies that did succeed are still committed.
+          echo "full=${flag:+true}" >> "$GITHUB_OUTPUT"
+          # Keep going on partial failure so the ontologies that did succeed are still proposed.
           status=0
           node scripts/harvest-cropontology.mjs $flag || status=$?
           echo "status=$status" >> "$GITHUB_OUTPUT"
@@ -52,21 +57,56 @@ jobs:
           echo "status=$status" >> "$GITHUB_OUTPUT"
       - name: Compare sources
         run: node scripts/compare.mjs
-      - id: commit
-        name: Commit snapshots if they changed
+      - id: summary
+        name: Check the build and describe the changes
+        env:
+          FULL: ${{ steps.cropontology.outputs.full }}
         run: |
           # The harvesters only rewrite files whose content changed, so any diff is a real change.
-          # The site is built from both snapshots, so any data change redeploys it.
-          site_changed=false
-          if [ -n "$(git status --porcelain -- data)" ]; then
-            site_changed=true
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A data
-            git commit -m "Refresh source snapshots"
-            git push
+          if [ -z "$(git status --porcelain -- data)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-          echo "site-changed=$site_changed" >> "$GITHUB_OUTPUT"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          build=ok
+          node scripts/build.mjs _site > build.log 2>&1 || build=failed
+          files=$(git status --porcelain -uall -- data | cut -c4-)
+          list() { sed -nE "$1" <<<"$files" | sort -u | paste -sd ',' | sed 's/,/, /g'; }
+          co=$(list 's#^data/cropontology/variables/(CO_[0-9]+)\.json$#\1#p')
+          pl=$(list 's#^data/planteome/(CO_[0-9]+)/.*#\1#p')
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          body="$RUNNER_TEMP/pr-body.md"
+          {
+            echo "Refresh of both sources on $(date -u +%F)${FULL:+, with a full cropontology.org re-download}. The site updates when this is merged."
+            echo
+            echo "**Crop Ontology:** ${co:-no variable changes}"
+            echo "**Planteome:** ${pl:-no changes}"
+            echo
+            if [ "$build" = ok ]; then
+              echo "The site builds with this data:"
+              echo
+              echo '```'
+              grep -E '^(Merge:|ID conflicts:|Changes:|Built )' build.log || true
+              echo '```'
+            else
+              echo "> [!WARNING]"
+              echo "> The site does not build with this data. Don't merge until the build is fixed; see the [run log]($run_url)."
+            fi
+            echo
+            echo "Field-by-field differences are in the run's comparison artifact ([run log]($run_url)). The next weekly run replaces this branch with a fresh refresh from \`main\`, so merge or close it first if you add commits."
+          } > "$body"
+          echo "body=$body" >> "$GITHUB_OUTPUT"
+      - name: Open or update the data refresh pull request
+        if: steps.summary.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: data
+          commit-message: Refresh source snapshots
+          branch: data-refresh
+          delete-branch: true
+          title: Data refresh
+          body-path: ${{ steps.summary.outputs.body }}
+          labels: data-refresh
       - name: Upload comparison report
         uses: actions/upload-artifact@v4
         with:
@@ -80,12 +120,12 @@ jobs:
           PLANTEOME_STATUS: ${{ steps.planteome.outputs.status }}
         run: |
           # Open an issue labelled "harvest" for the maintainers, or comment on the one already open, so repeated
-          # failures don't pile up. The crops that did download were still committed above.
+          # failures don't pile up. The crops that did download are still in the data refresh pull request.
           failed=""
           [ "$CO_STATUS" != "0" ] && failed="cropontology.org"
           [ "$PLANTEOME_STATUS" != "0" ] && failed="${failed:+$failed and }the Planteome repositories"
           run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          body="The harvest on $(date -u +%F) could not refresh $failed. Crops that did download were still published. See the [run log]($run_url) for which ontologies failed and why."
+          body="The harvest on $(date -u +%F) could not refresh $failed. Crops that did download are in the data refresh pull request. See the [run log]($run_url) for which ontologies failed and why."
           open=$(gh issue list --repo "$GITHUB_REPOSITORY" --label harvest --state open --json number --jq '.[0].number // empty')
           if [ -n "$open" ]; then
             gh issue comment "$open" --repo "$GITHUB_REPOSITORY" --body "$body"
@@ -94,9 +134,3 @@ jobs:
           fi
           echo "::error::Some sources failed to harvest; see the Harvest step logs."
           exit 1
-
-  deploy:
-    needs: harvest
-    # Pushes made with GITHUB_TOKEN don't trigger other workflows, so deploy from here.
-    if: always() && needs.harvest.outputs.site-changed == 'true'
-    uses: ./.github/workflows/pages.yml

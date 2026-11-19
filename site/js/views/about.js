@@ -112,10 +112,10 @@ export async function about() {
         <li>cropontology.org is checked for ontologies that changed, and only those are downloaded again. On the
         first Monday of each month every ontology is downloaded again, to catch edits the quick check can't see.</li>
         <li>Each Planteome repository is copied again if its latest commit changed.</li>
-        <li>The two sources are compared, changed snapshots are committed to the repository, and the site is rebuilt
-        and redeployed. If nothing changed upstream, nothing is redeployed.</li>
-        <li>If a source fails to download, the crops that did download are still published and the run is flagged
-        as failed for the maintainers.</li>
+        <li>The two sources are compared, and any changes are proposed to the maintainers for review. The site is
+        rebuilt and redeployed once they're accepted; if nothing changed upstream, nothing is proposed.</li>
+        <li>If a source fails to download, the crops that did download are still proposed, and the maintainers are
+        told about the failure.</li>
       </ul>
       <p>Crop Ontology was last checked ${esc(checked(sources?.cropontology) ?? 'recently')}; Planteome
       ${esc(checked(sources?.planteome) ?? 'recently')}. Errors in a trait itself, such as a wrong description or a

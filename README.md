@@ -90,8 +90,7 @@ node scripts/serve.mjs                  # preview at http://localhost:8080/
 - `labels.yml` creates or updates the labels in `.github/labels.json` (used by the issue forms and the harvest
   workflow) whenever that file changes on `main`, or when run from the Actions tab.
 
-The site links to the issue forms with fields filled in: each variable page has "Report a problem with this
-variable", and each Conflicts section heading has "Report a problem".
+The site links to the issue forms with fields filled in: each variable page has "Report a problem", and each Conflicts section heading has "Report a problem".
 
 To enable Pages on a new fork: **Settings → Pages → Build and deployment → Source: GitHub Actions**, then run
 *Deploy site* from the Actions tab.

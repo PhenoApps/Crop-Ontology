@@ -144,7 +144,7 @@ function reportLink(v, o) {
   const url = issueUrl('1-trait-data.yml', {
     title: `[Data] ${v.observationVariableName ?? id} (${id})`, variable: id, ...(o ? { crop: `${o.name} (${o.id})` } : {}),
   });
-  return `<p class="report-line">${extLink(url, 'Report a problem with this variable')}</p>`;
+  return `<p class="report-line">${extLink(url, 'Report a problem')}</p>`;
 }
 
 // Where a variable came from and what the build changed.

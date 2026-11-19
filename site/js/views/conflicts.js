@@ -48,7 +48,12 @@ export async function conflicts(only) {
   const name = (id) => ontologies.find((o) => o.id === id)?.name ?? id;
   setTitle(only ? `Conflicts | ${name(only)}` : 'Conflicts');
   // Every list in changes.json is per ontology; with a crop picked, keep just its rows.
-  const pick = (list) => (Array.isArray(list) ? list : []).filter((x) => !only || x.ontologyDbId === only);
+  // Rows are listed by crop name, A to Z; the sort is stable, so each crop's rows keep their order (e.g. by variable ID).
+  const cropName = (x) => ontologies.find((o) => o.id === x.ontologyDbId)?.name ?? x.ontologyName ?? x.ontologyDbId;
+  const byCrop = (a, b) => byName(cropName(a), cropName(b));
+  const pick = (list) => (Array.isArray(list) ? list : []).filter((x) => !only || x.ontologyDbId === only).sort(byCrop);
+  // A table built from two lists: sort the combined rows by crop. Each entry is [source record, table row].
+  const rowsByCrop = (entries) => entries.sort(([a], [b]) => byCrop(a, b)).map(([, row]) => row);
   const cropOptions = [...ontologies].sort((a, b) => byName(a.name, b.name))
     .map((o) => `<option value="${esc(o.id)}"${o.id === only ? ' selected' : ''}>${esc(o.name)}</option>`).join('');
   const crop = (id) => `<a href="#/${enc(id)}">${esc(name(id))}</a>`;
@@ -62,7 +67,7 @@ export async function conflicts(only) {
     const k = `${x.ontologyDbId}|${x.from}`;
     typeGroups.set(k, { ...x, n: (typeGroups.get(k)?.n ?? 0) + 1 });
   }
-  const perOntology = pick(c.sources).sort((a, b) => byName(name(a.ontologyDbId), name(b.ontologyDbId)));
+  const perOntology = pick(c.sources);
   const sections = [
     ['sources', 'Which copy each crop uses'],
     ['categories', 'Repaired scale categories'],
@@ -138,10 +143,10 @@ export async function conflicts(only) {
     ${heading('names')}
     <p class="muted">Ontology titles are shortened to the crop name. Each variable's crop is set to its ontology's
     name, so every crop is spelled one way; the source's value is kept in <code>additionalInfo.sourceCropName</code>.</p>
-    ${table(['Crop', 'Source title or crop value', 'Published as'], [
-      ...pick(c.renamed).map((x) => [crop(x.ontologyDbId), esc(x.from), esc(x.to)]),
-      ...pick(c.cropNames).map((x) => [crop(x.ontologyDbId), x.from.map((f) => `${esc(f.value)} (${num(f.count)})`).join(', '), esc(x.to)]),
-    ])}
+    ${table(['Crop', 'Source title or crop value', 'Published as'], rowsByCrop([
+      ...pick(c.renamed).map((x) => [x, [crop(x.ontologyDbId), esc(x.from), esc(x.to)]]),
+      ...pick(c.cropNames).map((x) => [x, [crop(x.ontologyDbId), x.from.map((f) => `${esc(f.value)} (${num(f.count)})`).join(', '), esc(x.to)]]),
+    ]))}
 
     ${heading('classes')}
     <p class="muted">Trait classes only group traits for browsing; they don't change what a variable measures or
@@ -180,10 +185,10 @@ export async function conflicts(only) {
       crop(x.ontologyDbId), esc(x.kind), `<code>${esc(x.id)}</code>`, x.names.map((n) => (n ? esc(n) : '<span class="muted">(blank)</span>')).join('<br>')]))}
 
     ${heading('scope')}
-    ${table(['Crop', 'Note'], [
-      ...pick(c.fetchedIndividually).map((x) => [crop(x.ontologyDbId), `The cropontology.org bulk export fails, so each variable was fetched on its own. ${esc(x.reason ?? '')}`]),
-      ...pick(c.unavailable).map((x) => [`${esc(x.ontologyName)} (${esc(x.ontologyDbId)})`, `Not included. ${esc(x.reason)}`]),
-    ])}
+    ${table(['Crop', 'Note'], rowsByCrop([
+      ...pick(c.fetchedIndividually).map((x) => [x, [crop(x.ontologyDbId), `The cropontology.org bulk export fails, so each variable was fetched on its own. ${esc(x.reason ?? '')}`]]),
+      ...pick(c.unavailable).map((x) => [x, [`${esc(x.ontologyName)} (${esc(x.ontologyDbId)})`, `Not included. ${esc(x.reason)}`]]),
+    ]))}
     <ul class="prose">
       ${c.policy?.include ? `<li>${esc(c.policy.include)}</li>` : ''}
       ${(c.policy?.formatting ?? []).map((p) => `<li>${esc(p)}</li>`).join('')}
@@ -209,7 +214,7 @@ export async function conflicts(only) {
   wireClamps(box);
   const d = await differencesP;
   if (!box.isConnected) return; // navigated away while loading
-  const vars = (d?.variables ?? []).filter((v) => !only || v.ontologyDbId === only);
+  const vars = pick(d?.variables);
   const fieldCounts = new Map();
   for (const v of vars) for (const f of v.fields) fieldCounts.set(f.field, (fieldCounts.get(f.field) ?? 0) + 1);
   fieldSelect.insertAdjacentHTML('beforeend', [...fieldCounts].sort(([a], [b]) => a.localeCompare(b))

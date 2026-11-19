@@ -69,7 +69,7 @@ export async function about() {
       <h3 id="field-book">Field Book</h3>
       <p><a href="https://github.com/PhenoApps/Field-Book">Field Book</a> allows traits from this site to be added
       through the Crop Ontology Settings. QR codes on the site can be scanned to add entire crops or individual
-      variables to Field Book.</p>
+      variables to the app.</p>
 
       <h3 id="limitations">Limitations</h3>
       <p>The site is plain files on GitHub Pages with no server backend, which changes how the BrAPI endpoints

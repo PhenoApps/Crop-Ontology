@@ -339,7 +339,7 @@ tr.open .clamp .full { display: inline; }
   .toolbar select { flex: 1 1 140px; }
   .endpoint code { white-space: normal; word-break: break-all; }
   .var-row.has-aside { grid-template-columns: 1fr; }
-  .scan { justify-self: start; }
+  .scan { display: none; } /* a phone can't scan its own screen */
   .vhead { display: none; }
   .vrow { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
   .vrow .c-trait, .vrow .c-ms { grid-column: 1 / -1; }

@@ -134,6 +134,22 @@ button { font: inherit; cursor: pointer; }
 /* A page title with a control (the Conflicts crop picker) at the right of the same row. */
 .page-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .page-head select { flex: 0 1 220px; }
+/* A long dropdown (every crop) whose open list is capped in height instead of filling the screen. Uses the
+   customisable select where the browser has it (Chrome and Edge 135+); elsewhere it stays a native dropdown. */
+@supports (appearance: base-select) {
+  select.short-list, select.short-list::picker(select) { appearance: base-select; }
+  select.short-list { display: flex; align-items: center; justify-content: space-between; gap: 8px; cursor: pointer; }
+  select.short-list::picker-icon { color: var(--ink-3); }
+  select.short-list::picker(select) {
+    max-height: min(50vh, 360px); overflow-y: auto; margin-top: 2px; padding: 4px 0;
+    color: var(--ink); background: var(--surface); border: 1px solid var(--rule-2); border-radius: 2px;
+    box-shadow: 0 6px 18px rgb(0 0 0 / .14);
+  }
+  select.short-list option { padding: 5px 12px; }
+  select.short-list option::checkmark { display: none; }
+  select.short-list option:hover, select.short-list option:focus-visible { background: var(--hover); outline: 0; }
+  select.short-list option:checked { font-weight: 600; }
+}
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; margin: 20px 0 0;
   border: 1px solid var(--rule); background: var(--surface); }
 .facts > div { padding: 10px 14px; border-right: 1px solid var(--rule); margin-right: -1px; }

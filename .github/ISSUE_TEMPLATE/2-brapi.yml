@@ -23,7 +23,7 @@ body:
     id: app
     attributes:
       label: App and version
-      placeholder: "Field Book 6.2.1"
+      placeholder: "Field Book 7.4.1"
     validations:
       required: true
   - type: input

@@ -6,13 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Each variable's page on the site links to its original source: its Crop Ontology term page, its row in the
-        Planteome trait dictionary, or both. If the error is there too, the lasting fix is with the crop's curators; we
-        can pass it on, and it will reach this site at the next weekly refresh.
+        Each variable's page on the site links to its original source. If the error is there too, the lasting fix is with the crop's curators; we can pass it on, and it will reach this site at the next weekly refresh.
 
-        The Conflicts page lists everything this site changes from its two sources (text repairs, trait class
-        groupings, which copy is served, left-out variables, and names). Those changes are set in the repository's
-        `curation.json`, so they can be corrected here.
+        The Conflicts page lists everything this site changes from its two sources (text repairs, trait class groupings, which copy is served, left-out variables, and names). Those changes are set in the repository's `curation.json`, so they can be corrected here.
   - type: input
     id: variable
     attributes:
@@ -39,16 +35,10 @@ body:
         - Scale or units
         - Scale categories
         - Minimum or maximum
-        - A change listed on the Conflicts page
-        - Something else
+        - A change on the Conflicts page
+        - Other
     validations:
       required: true
-  - type: input
-    id: section
-    attributes:
-      label: Conflicts page section
-      description: If it's about a change listed on the Conflicts page.
-      placeholder: "Trait class names"
   - type: textarea
     id: current
     attributes:

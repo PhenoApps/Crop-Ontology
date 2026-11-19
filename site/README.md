@@ -15,6 +15,7 @@ site has to be served over HTTP, as `scripts/serve.mjs` and GitHub Pages do; ope
 | `js/glyphs.js` | element types (trait class, trait, variable, method, scale) with their colour token and shape |
 | `js/qr.js` | turns any `data-qr="<text>"` element into a QR code |
 | `js/species.js` | sets scientific names in italics in variable and trait details, from a list of the genera in the data |
+| `js/textdiff.js` | highlights what changed between two texts, for the repaired text table on the Conflicts page |
 | `js/views/*.js` | one module per view (see below) |
 
 Two small libraries are loaded from cdnjs only where they're needed: [d3](https://d3js.org) 7.9.0 for the graph

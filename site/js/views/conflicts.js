@@ -2,7 +2,13 @@
 // changes, from changes.json. With an ontology ID, every table shows just that crop.
 
 import { loadChanges, loadIndex } from '../data.js';
+import { diffHtml } from '../textdiff.js';
 import { app, byName, enc, esc, num, setTitle } from '../util.js';
+
+// One side of a repaired text: the short version (from just before the first change, clamped to three lines) and
+// the full text, which shows when the row is opened.
+const clampCell = ({ short, full }) =>
+  `<div class="clamp"><span class="short">${short}</span><span class="full">${full}</span></div>`;
 
 export async function conflicts(only) {
   const c = await loadChanges();
@@ -64,8 +70,11 @@ export async function conflicts(only) {
     "Françoise") is decoded again, but only where the result is plausible text. Characters a source lost as "?"
     are restored where the context makes them clear (a space in "Number?of?marketable tubers", ≤ in a length
     range); those repairs are listed in <code>curation.json</code>.</p>
-    ${table(['Crop', 'Variable', 'In source', 'Published as'], pick(c.encoding).map((x) => [
-      crop(x.ontologyDbId), varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName), esc(x.from), esc(x.to)]))}
+    <div id="repaired-text">${table(['Crop', 'Variable', 'In source', 'Published as'], pick(c.encoding).map((x) => {
+      const d = diffHtml(x.from, x.to);
+      return [crop(x.ontologyDbId), varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName),
+        clampCell(d.before), `${clampCell(d.after)}<button type="button" class="clamp-toggle" aria-expanded="false" hidden>Show all${d.changes > 1 ? ` (${d.changes} changes)` : ''}</button>`];
+    }))}</div>
 
     <h2 id="names">Crop and ontology names</h2>
     <p class="muted">Ontology titles are shortened to the crop name. Each variable's crop is set to its ontology's
@@ -120,6 +129,27 @@ export async function conflicts(only) {
       ${c.policy?.include ? `<li>${esc(c.policy.include)}</li>` : ''}
       ${(c.policy?.formatting ?? []).map((p) => `<li>${esc(p)}</li>`).join('')}
     </ul>`;
+  // Repaired text that fits in three lines is shown whole. Longer text collapses to three lines starting just before
+  // its first change, and one button per row opens both columns. Rows are measured open, all at once.
+  const repaired = app.querySelector('#repaired-text');
+  const rows = [...repaired.querySelectorAll('tbody tr')];
+  for (const tr of rows) tr.classList.add('open');
+  const fits = rows.map((tr) => [...tr.querySelectorAll('.clamp')].every((el) => {
+    const line = parseFloat(getComputedStyle(el).lineHeight) || 22;
+    return el.scrollHeight <= line * 3 + 2;
+  }));
+  rows.forEach((tr, i) => {
+    tr.classList.toggle('open', fits[i]);
+    tr.querySelector('.clamp-toggle').hidden = fits[i];
+  });
+  repaired.addEventListener('click', (e) => {
+    const b = e.target.closest('.clamp-toggle');
+    if (!b) return;
+    const open = b.closest('tr').classList.toggle('open');
+    b.dataset.label ??= b.textContent;
+    b.textContent = open ? 'Show less' : b.dataset.label;
+    b.setAttribute('aria-expanded', String(open));
+  });
   app.querySelector('#conflict-crop').addEventListener('change', (e) => {
     location.hash = e.target.value ? `#/conflicts/${enc(e.target.value)}` : '#/conflicts';
   });

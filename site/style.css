@@ -14,6 +14,9 @@
   --tag: #efede7;
   --warn: #9a5b0c;
   --warn-bg: #fbf4e6;
+  /* Changed text on the Conflicts page: what the source had, and what is published. */
+  --was-bg: #f9dcd6;
+  --now-bg: #d5ecd9;
   /* Ontology element types, shared by the trait browser icons and the graph. Validated as a categorical set
      (dataviz validate_palette.js, all pairs); each type also has its own shape, so colour is never the only cue. */
   --node-term: #545c64;
@@ -264,6 +267,18 @@ a.tn-label:hover { color: var(--accent); text-decoration: underline; }
 /* A trait's subclass within its class ("Aroma" under "Quality"), in the trait browser, variable details and Conflicts. */
 .subclass { display: inline-block; font-size: .72rem; line-height: 1.5; padding: 0 6px; border-radius: 2px; background: var(--tag); color: var(--ink-2); white-space: nowrap; vertical-align: 1px; }
 .tn-row .subclass { flex: 0 0 auto; margin: 4px 0 0 6px; }
+/* Repaired text on the Conflicts page: changes highlighted, long texts clamped to three lines until opened. */
+mark.was, mark.now { color: inherit; border-radius: 2px; padding: 0 1px; }
+mark.was { background: var(--was-bg); }
+mark.now { background: var(--now-bg); }
+.clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; white-space: pre-line; }
+.clamp .full { display: none; }
+tr.open .clamp { display: block; }
+tr.open .clamp .short { display: none; }
+tr.open .clamp .full { display: inline; }
+.clamp-toggle { display: block; margin-top: 4px; padding: 0; border: 0; background: none; font: inherit; font-size: .8rem; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.clamp-toggle:hover { color: var(--accent-ink); }
+.clamp-toggle[hidden] { display: none; }
 .type-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 2px 8px; font-size: .8rem; color: var(--ink-2); }
 .type-key span { display: inline-flex; align-items: center; }
 .type-key .glyph { margin: 0 4px 0 0; }

@@ -3,8 +3,8 @@
 //
 // Returns { id, select } so the router can select another term without rebuilding the page.
 
-import { field, notFound, ontologyHead, ontologyNotes, subclassOf, subclassTag, variableBody } from '../components.js';
-import { findOntology, loadChanges, loadVariables } from '../data.js';
+import { field, htmlField, notFound, ontologyHead, ontologyNotes, sourceLinks, subclassOf, subclassTag, variableBody } from '../components.js';
+import { findOntology, loadChanges, loadVariables, sourcesOf } from '../data.js';
 import { glyph } from '../glyphs.js';
 import { app, byName, chevron, enc, esc, hashParts, plural, setTitle, terms } from '../util.js';
 
@@ -138,6 +138,7 @@ export async function browser(id, term) {
         ${field('Description', tr.description)}${field('Abbreviation', tr.mainAbbreviation)}
         ${field('Other abbreviations', tr.alternativeAbbreviations)}${field('Synonyms', tr.synonyms)}
         ${field('Entity', tr.entity)}${field('Attribute', tr.attribute)}${field('Status', tr.status)}
+        ${htmlField('Source', sourceLinks(t.vars.find((x) => sourcesOf(x).cropOntology) ?? t.vars[0], o, tr.traitDbId))}
       </dl>
       <h3>${plural(t.vars.length, 'variable')}</h3>
       <div class="table-wrap"><table class="data">
@@ -153,7 +154,7 @@ export async function browser(id, term) {
     pane.innerHTML = `
       <span class="label">${glyph('variable')}Variable</span>
       <h2>${esc(varName(v))}</h2>
-      <p class="term-id">${esc(v.observationVariableDbId)}<a href="#/${enc(id)}/${enc(v.observationVariableDbId)}">Open variable page</a></p>
+      <p class="term-id"><a href="#/${enc(id)}/${enc(v.observationVariableDbId)}" title="Open the variable's page">${esc(v.observationVariableDbId)}</a></p>
       ${variableBody(v, o)}`;
   }
 

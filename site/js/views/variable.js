@@ -28,5 +28,5 @@ export async function variable(id, varId) {
     <nav class="crumbs"><a href="#/">Crops</a> / <a href="#/${enc(id)}">${esc(o.name)}</a> / <a href="#/${enc(id)}/browse/${enc(v.trait?.traitDbId ?? varId)}">${esc(v.trait?.traitName ?? 'Trait')}</a></nav>
     <div class="title-row"><h1>${esc(name)}</h1><span class="id">${esc(varId)}</span></div>
     ${variableIntro(v, o)}
-    ${variableDetails(v, scanCard(o, v))}`;
+    ${variableDetails(v, o, scanCard(o, v))}`;
 }

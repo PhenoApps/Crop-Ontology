@@ -36,7 +36,8 @@ export function day(s) {
 export const chevron = (dir) => `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="${dir === 'down' ? 'M3 6l5 5 5-5' : 'M6 3l5 5-5 5'}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const EXT = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 // A link that leaves the site (app.js makes every such link open in a new tab).
-export const extLink = (url, text) => `<a class="ext" href="${esc(url)}">${esc(text)}${EXT}<span class="sr">(opens in a new tab)</span></a>`;
+export const extLink = (url, text, title = '') =>
+  `<a class="ext" href="${esc(url)}"${title ? ` title="${esc(title)}"` : ''}>${esc(text)}${EXT}<span class="sr">(opens in a new tab)</span></a>`;
 
 // Lazily load a script from cdnjs once; `global` is the name it defines on window.
 export function loadScript(src, global, what) {

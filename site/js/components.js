@@ -82,8 +82,8 @@ export function ontologyHead(o, tab, notes) {
   const mix = [['Crop Ontology', s.inCropontology ?? s.fromCropontology], ['Planteome', s.inPlanteome ?? s.fromPlanteome]]
     .map(([label, n]) => `${num(n)} in ${label}`).join('<br>');
   const links = [
-    s.cropontologyUrl && extLink(s.cropontologyUrl, 'cropontology.org'),
-    s.planteomeUrl && extLink(s.planteomeUrl, s.planteomeFile ?? 'Planteome file'),
+    s.cropontologyUrl && extLink(s.cropontologyUrl, 'Crop Ontology', 'This ontology on cropontology.org'),
+    s.planteomeUrl && extLink(s.planteomeUrl, 'Planteome', `Planteome trait dictionary: ${s.planteomeFile ?? 'file'}`),
     o.doi && doiBadge(o.doi),
   ].filter(Boolean).join('<br>');
   const fact = (label, html, cls = '') => (html ? `<div${cls ? ` class="${cls}"` : ''}><dt class="label">${label}</dt><dd>${html}</dd></div>` : '');
@@ -112,21 +112,26 @@ export function ontologyHead(o, tab, notes) {
 
 // Links from a variable back to where its information comes from: its Crop Ontology term page and/or its row in
 // the Planteome trait dictionary (the file is pinned to the harvested commit, so the line stays valid).
-function sourceLinks(v, o) {
+// One row of the Planteome trait dictionary holds a variable with its trait, method, and scale.
+function planteomeRow(v, o) {
+  const file = o?.source?.planteomeUrl ?? (/github\.com/.test(v.documentationURL ?? '') ? v.documentationURL : null);
+  if (!file) return null;
+  const line = provenance(v)?.planteomeLine;
+  const name = decodeURIComponent(file.split('/').pop());
+  return { url: line && /\.(csv|tsv)$/i.test(file) ? `${file}?plain=1#L${line}` : file, label: line ? `${name}, line ${line}` : name };
+}
+// Links to where a variable, or one of its terms, comes from: the term's Crop Ontology page (termId: the
+// variable's own ID, or its trait, method, or scale ID) and the variable's row in the Planteome trait dictionary.
+export function sourceLinks(v, o, termId = v.observationVariableDbId) {
   const has = sourcesOf(v);
   const links = [];
-  if (has.cropOntology) links.push(extLink(coTermUrl(v.observationVariableDbId), 'Crop Ontology term page'));
-  if (has.planteome) {
-    const file = o?.source?.planteomeUrl ?? (/github\.com/.test(v.documentationURL ?? '') ? v.documentationURL : null);
-    if (file) {
-      const line = provenance(v)?.planteomeLine;
-      const name = decodeURIComponent(file.split('/').pop());
-      const url = line && /\.(csv|tsv)$/i.test(file) ? `${file}?plain=1#L${line}` : file;
-      links.push(extLink(url, line ? `Planteome ${name}, line ${line}` : `Planteome ${name}`));
-    }
-  }
-  return links.length ? `<p class="sources-line"><span class="label">Original source</span>${links.join('')}</p>` : '';
+  if (has.cropOntology && termId) links.push(extLink(coTermUrl(termId), 'Crop Ontology', `${termId} on cropontology.org`));
+  const row = has.planteome ? planteomeRow(v, o) : null;
+  if (row) links.push(extLink(row.url, 'Planteome', `Planteome trait dictionary: ${row.label}`));
+  return links.join('<span class="link-sep"> · </span>');
 }
+// A label/value pair whose value is already HTML.
+export const htmlField = (label, html) => (html ? `<dt>${esc(label)}</dt><dd>${html}</dd>` : '');
 
 function provenanceLine(v) {
   const p = provenance(v);
@@ -152,18 +157,19 @@ export function variableIntro(v, o) {
   const notes = buildNotes(v);
   return `
     ${provenanceLine(v)}
-    ${sourceLinks(v, o)}
     ${reportLink(v, o)}
     ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="${conflictsHref(o.id)}">See this crop's conflicts</a></div>` : ''}`;
 }
 
 // A variable's own fields, then its trait, method, and scale. `aside` (the variable page's QR card) sits on the
 // same row as the first box.
-export function variableDetails(v, aside = '') {
+export function variableDetails(v, o, aside = '') {
   const t = v.trait ?? {};
-  // Trait, method, and scale IDs link to their Crop Ontology term pages when the variable is in Crop Ontology.
-  const inCO = sourcesOf(v).cropOntology;
-  const idField = (id) => (!id ? '' : `<dt>ID</dt><dd class="mono">${inCO ? extLink(coTermUrl(id), id) : esc(id)}</dd>`);
+  const crop = o?.id ?? v.ontologyReference?.ontologyDbId;
+  // IDs stay on this site: a trait ID opens the trait in the trait browser; method and scale IDs, which have no
+  // page here, are plain. Each section's Source field links out to the original.
+  const idField = (id, href) => (!id ? '' : `<dt>ID</dt><dd class="mono">${href ? `<a href="${href}">${esc(id)}</a>` : esc(id)}</dd>`);
+  const traitHref = t.traitDbId && crop ? `#/${enc(crop)}/browse/${enc(t.traitDbId)}` : null;
   const m = v.method ?? {};
   const s = v.scale ?? {};
   const vv = s.validValues ?? {};
@@ -181,6 +187,7 @@ export function variableDetails(v, aside = '') {
         ${field('Default value', v.defaultValue)}
         ${field('Status', v.status)}
         ${field('Language', v.language)}
+        ${htmlField('Source', sourceLinks(v, o))}
       </dl>
     </div>
     ${aside}
@@ -189,10 +196,11 @@ export function variableDetails(v, aside = '') {
       <section class="panel">
         <h2>Trait</h2>
         <dl class="kv">
-          ${field('Name', t.traitName)}${idField(t.traitDbId)}${field('Class', t.traitClass)}${field('Subclass', subclassOf(t))}${field('Class in source', info(t).sourceTraitClass)}
+          ${field('Name', t.traitName)}${idField(t.traitDbId, traitHref)}${field('Class', t.traitClass)}${field('Subclass', subclassOf(t))}${field('Class in source', info(t).sourceTraitClass)}
           ${field('Description', t.description)}${field('Abbreviation', t.mainAbbreviation)}
           ${field('Other abbreviations', t.alternativeAbbreviations)}${field('Synonyms', t.synonyms)}
           ${field('Entity', t.entity)}${field('Attribute', t.attribute)}
+          ${htmlField('Source', sourceLinks(v, o, t.traitDbId))}
         </dl>
       </section>
       <section class="panel">
@@ -200,6 +208,7 @@ export function variableDetails(v, aside = '') {
         <dl class="kv">
           ${field('Name', m.methodName)}${idField(m.methodDbId)}${field('Class', m.methodClass)}
           ${field('Description', m.description)}${field('Formula', m.formula)}${field('Reference', m.reference)}
+          ${htmlField('Source', sourceLinks(v, o, m.methodDbId))}
         </dl>
       </section>
       <section class="panel">
@@ -208,6 +217,7 @@ export function variableDetails(v, aside = '') {
           ${field('Name', s.scaleName)}${idField(s.scaleDbId)}${field('Data type', s.dataType)}
           ${field('Type in source', s.additionalInfo?.sourceDataType)}
           ${field('Decimal places', s.decimalPlaces)}${field('Minimum', vv.minimumValue)}${field('Maximum', vv.maximumValue)}
+          ${htmlField('Source', sourceLinks(v, o, s.scaleDbId))}
         </dl>
         ${vv.categories?.length ? `<table class="data cats"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody>${vv.categories.map((c) =>
           `<tr><td>${esc(c.value)}</td><td>${c.label !== c.value ? italicizeSpecies(esc(c.label)) : ''}</td></tr>`).join('')}</tbody></table>` : ''}
@@ -215,4 +225,4 @@ export function variableDetails(v, aside = '') {
     </div>`;
 }
 
-export const variableBody = (v, o) => variableIntro(v, o) + variableDetails(v);
+export const variableBody = (v, o) => variableIntro(v, o) + variableDetails(v, o);

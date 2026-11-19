@@ -67,7 +67,7 @@ export function ontologyNotes(c, id) {
   const encs = c.encoding?.filter((x) => x.ontologyDbId === id) ?? [];
   if (encs.length) items.push(`Garbled accented characters repaired in ${plural(new Set(encs.map((x) => x.observationVariableDbId)).size, 'variable')}.`);
   const conflicts = c.idConflicts?.filter((x) => x.ontologyDbId === id) ?? [];
-  if (conflicts.length) items.push(`${conflicts.length} trait, method or scale ${conflicts.length === 1 ? 'ID is' : 'IDs are'} used with different names.`);
+  if (conflicts.length) items.push(`${conflicts.length} trait, method, or scale ${conflicts.length === 1 ? 'ID is' : 'IDs are'} used with different names.`);
   if (!items.length) return '';
   return `<details class="notice"><summary>${chevron('right')}Changes from the sources <span class="n">(${items.length})</span></summary><div class="body"><ul>${items.map((i) => `<li>${i}</li>`).join('')}</ul><a href="${conflictsHref(id)}">See this crop's conflicts</a></div></details>`;
 }
@@ -75,7 +75,7 @@ export function ontologyNotes(c, id) {
 // The ontology's DOI as a two-part badge like the Zenodo one on its cropontology.org page, drawn in CSS.
 const doiBadge = (doi) => `<a class="doi" href="https://doi.org/${esc(doi)}" title="Cite this ontology: doi.org/${esc(doi)}"><span class="doi-k">DOI</span><span class="doi-v">${esc(doi).replace('/', '/<wbr>').replace(/\.(?=\d+$)/, '.<wbr>')}</span><span class="sr">(opens in a new tab)</span></a>`;
 
-// Title, facts, BrAPI QR code, change notes and view tabs at the top of each crop page.
+// Title, facts, BrAPI QR code, change notes, and view tabs at the top of each crop page.
 export function ontologyHead(o, tab, notes) {
   const s = o.source ?? {};
   // How many of the served variables each source has; a variable in both counts for both.
@@ -141,7 +141,7 @@ function provenanceLine(v) {
 // Opens the "Trait data looks wrong" form with this variable filled in.
 function reportLink(v, o) {
   const id = v.observationVariableDbId;
-  const url = issueUrl('data.yml', {
+  const url = issueUrl('1-trait-data.yml', {
     title: `[Data] ${v.observationVariableName ?? id} (${id})`, variable: id, ...(o ? { crop: `${o.name} (${o.id})` } : {}),
   });
   return `<p class="report-line">${extLink(url, 'Report a problem with this variable')}</p>`;
@@ -157,11 +157,11 @@ export function variableIntro(v, o) {
     ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="${conflictsHref(o.id)}">See this crop's conflicts</a></div>` : ''}`;
 }
 
-// A variable's own fields, then its trait, method and scale. `aside` (the variable page's QR card) sits on the
+// A variable's own fields, then its trait, method, and scale. `aside` (the variable page's QR card) sits on the
 // same row as the first box.
 export function variableDetails(v, aside = '') {
   const t = v.trait ?? {};
-  // Trait, method and scale IDs link to their Crop Ontology term pages when the variable is in Crop Ontology.
+  // Trait, method, and scale IDs link to their Crop Ontology term pages when the variable is in Crop Ontology.
   const inCO = sourcesOf(v).cropOntology;
   const idField = (id) => (!id ? '' : `<dt>ID</dt><dd class="mono">${inCO ? extLink(coTermUrl(id), id) : esc(id)}</dd>`);
   const m = v.method ?? {};

@@ -75,12 +75,12 @@ export async function conflicts(only) {
     ['scope', 'Scope and formatting'],
     ['differences', 'Differences between the sources'],
   ];
-  // Each section heading links to the "A change on the Conflicts page looks wrong" form, filled in for it.
+  // Each section heading links to the "Trait data looks wrong" form, with its section (and crop) filled in.
   const sectionLabel = Object.fromEntries(sections);
   const heading = (key) => {
     const label = sectionLabel[key];
-    const url = issueUrl('curation.yml', {
-      title: `[Conflicts] ${label}${only ? ` (${name(only)})` : ''}`, section: label, ...(only ? { crop: `${name(only)} (${only})` } : {}),
+    const url = issueUrl('1-trait-data.yml', {
+      title: `[Data] Conflicts page: ${label}${only ? ` (${name(only)})` : ''}`, section: label, ...(only ? { crop: `${name(only)} (${only})` } : {}),
     });
     return `<h2 id="${key}" class="has-report">${esc(label)}${extLink(url, 'Report a problem')}</h2>`;
   };
@@ -146,7 +146,7 @@ export async function conflicts(only) {
       ({ regrouped: 'Grouped with a common class', subclass: 'Subclass shown as a label' })[x.kind] ?? 'Spelling', num(x.count)]), [4])}
 
     ${heading('types')}
-    <p class="muted">BrAPI allows Code, Date, Duration, Nominal, Numerical, Ordinal and Text. Other types are served
+    <p class="muted">BrAPI allows Code, Date, Duration, Nominal, Numerical, Ordinal, and Text. Other types are served
     as Text, with the original kept in the scale's <code>additionalInfo.sourceDataType</code>.</p>
     ${table(['Crop', 'Type in source', 'Served as', 'Variables'], [...typeGroups.values()].map((x) => [
       crop(x.ontologyDbId), esc(x.from), esc(x.to), String(x.n)]), [3])}
@@ -159,7 +159,7 @@ export async function conflicts(only) {
     ${pick(c.obsoleteExcluded).length ? `<h3>Obsolete in Planteome</h3>${table(['Crop', 'Variables'], pick(c.obsoleteExcluded).map((x) => [crop(x.ontologyDbId), num(x.count)]), [1])}` : ''}
 
     ${heading('conflicts')}
-    <p class="muted">The same trait, method or scale ID appears with different names on different variables. These
+    <p class="muted">The same trait, method, or scale ID appears with different names on different variables. These
     are served as found; they are worth raising with the crop's curators.</p>
     ${table(['Crop', 'Kind', 'ID', 'Names'], pick(c.idConflicts).map((x) => [
       crop(x.ontologyDbId), esc(x.kind), `<code>${esc(x.id)}</code>`, x.names.map((n) => (n ? esc(n) : '<span class="muted">(blank)</span>')).join('<br>')]))}
@@ -177,8 +177,8 @@ export async function conflicts(only) {
     ${heading('differences')}
     <p class="muted">Variables both sources have but describe differently: for each, the fields that differ, as each
     source writes them, with the differing text highlighted. The value served is marked with a bar; the other is
-    kept only in that source. Differences of formatting alone (capitalisation, spacing, category order, "0.0" and
-    "0") aren't counted.</p>
+    kept only in that source. Differences of formatting alone (capitalisation, spacing, category order, or "0.0"
+    for "0") aren't counted.</p>
     <div class="toolbar"><label class="sort">Field <select id="diff-field" disabled><option value="">All fields</option></select></label>
       <span class="count" id="diff-count"></span></div>
     <div class="table-wrap diff-box" id="differences-box"><p class="muted" style="padding:10px 14px">Loading…</p></div>`;

@@ -32,7 +32,7 @@ export async function home() {
   app.innerHTML = `
     <h1>Crops</h1>
     <div class="toolbar">
-      <input type="search" id="q" placeholder="Filter by crop, ID or description" aria-label="Filter crops" value="${esc(state.q)}">
+      <input type="search" id="q" placeholder="Filter by crop, ID, or description" aria-label="Filter crops" value="${esc(state.q)}">
       <label class="sort">Sort by
         <select id="sort">
           <option value="name">Name</option><option value="updated">Last updated</option>

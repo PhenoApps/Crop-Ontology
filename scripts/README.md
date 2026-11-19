@@ -18,7 +18,7 @@ Modules used by the scripts above:
 | `curation.mjs` | reads `curation.json`: which ontologies to include, display names, overrides |
 | `sources.mjs` | merges the two copies of an ontology and converts trait dictionary rows to BrAPI variables |
 | `fields.mjs` | the field-by-field comparison shared by `compare.mjs` and `sources.mjs` |
-| `td.mjs` | reads trait dictionary files (CSV, TSV and `.xlsx`) without dependencies |
+| `td.mjs` | reads trait dictionary files (CSV, TSV, and `.xlsx`) without dependencies |
 | `rdf-digest.mjs` | a stable content hash of cropontology.org's RDF export, used to detect changes |
 | `doi.mjs` | finds the DOI an ontology's cropontology.org page links to |
 
@@ -39,10 +39,10 @@ re-downloads only those whose fingerprint changed. The fingerprint combines the 
 count from `/get-ontologies`, and a hash of the RDF export (`/ontology/{id}/rdf`). Each run also reads every
 ontology's page (`/ontology/{id}`) for the DOI its curators link there.
 
-- The RDF covers names, descriptions, synonyms, abbreviations, scale categories, scientist and institution, but
-  not growth stage, context of use, formula, method reference, status or date. An edit that only touches those
+- The RDF covers names, descriptions, synonyms, abbreviations, scale categories, scientist, and institution, but
+  not growth stage, context of use, formula, method reference, status, or date. An edit that only touches those
   isn't detected, so `--full` re-fetches everything; the scheduled workflow does that monthly.
-- The export changes blank-node IDs, namespace prefixes and element order on every request, so `rdf-digest.mjs`
+- The export changes blank-node IDs, namespace prefixes, and element order on every request, so `rdf-digest.mjs`
   hashes the RDF's triples rather than its text.
 - If an ontology's bulk export fails, its variables are fetched one at a time with `?observationVariableDbId=`,
   using the variable IDs from its RDF. Vitis (CO_356) needs this.
@@ -69,7 +69,7 @@ node scripts/compare.mjs CO_320 CO_321           # just these
 ```
 
 Matches variables by ID across the two copies and compares 28 fields: names, synonyms, context, growth stage,
-status, people, and the trait, method and scale fields, limits and categories. Formatting-only differences are
+status, people, and the trait, method, and scale fields, limits, and categories. Formatting-only differences are
 ignored (whitespace, capitalisation of names and classes, trait class spellings that `curation.json` merges, `1=x` vs `1 = x`, `0.0` vs `0`, category order), as are
 fields the cropontology.org export never fills and columns a GitHub file doesn't have. The report lists, per
 ontology, the variables found in only one copy and the field-level differences for each shared variable.
@@ -89,7 +89,7 @@ For each included ontology, `sources.mjs` decides which copy is preferred and me
   on or after `siteReloadsCountFrom` or the harvester saw it change, after the GitHub file's last commit;
 - a variable in only one copy whose name matches a different ID in the preferred copy is treated as renumbered and
   left out, as are variables marked obsolete on GitHub;
-- a GitHub file is only used if it has trait, method and scale ID columns.
+- a GitHub file is only used if it has trait, method, and scale ID columns.
 
 The merged variables are then normalised to BrAPI v2: lists go under `result.data`; scale categories such as
 `"1 = absent"` become `{ "value": "1", "label": "absent" }` in value order; both BrAPI 2.0 (`min`/`max`) and 2.1
@@ -98,7 +98,7 @@ turned into dates (`1-2-3` → 2003-01-02) and garbled accented text and charact
 way per `curation.json` `traitClasses` (wheat's "Phenological traits" and "Phenological" become "Phenological").
 
 Every change is recorded three ways: in the record's `additionalInfo` (`provenance`, `changes`, `sourceCropName`,
-`sourceDataType`, the trait's `sourceTraitClass` and `traitSubclass`), in `_site/changes.json`, and on the site's *Conflicts* page.
+`sourceDataType`, and the trait's `sourceTraitClass` and `traitSubclass`), in `_site/changes.json`, and on the site's *Conflicts* page.
 
 Output layout:
 

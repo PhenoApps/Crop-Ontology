@@ -1,5 +1,5 @@
 name: Suggestion
-description: An idea for the site, the data or the BrAPI endpoints.
+description: An idea for the site, the data, or the BrAPI endpoints.
 title: "[Idea] "
 labels: [enhancement]
 body:
@@ -9,7 +9,7 @@ body:
       label: Area
       options:
         - Website
-        - Data, trait classes or naming
+        - Data, trait classes, or naming
         - BrAPI endpoints
         - Field Book integration
         - Something else

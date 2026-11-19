@@ -562,7 +562,7 @@ await writeFile(join(OUT, 'changes.json'), JSON.stringify({
       'Where both have a variable and its details agree, it is served as is.',
       `Where they disagree, the Planteome version is used, unless Crop Ontology changed the ontology later than the Planteome file: a reload on or after ${siteReloadsCountFrom} (earlier reloads were Crop Ontology's 2023 migration) or an edit seen by the harvester.`,
       'A variable that only one copy has, but whose name matches a variable under a different ID in the preferred copy, is treated as the same variable renumbered and left out.',
-      'A Planteome trait dictionary is only used if it has trait, method and scale columns.',
+      'A Planteome trait dictionary is only used if it has trait, method, and scale columns.',
     ],
     formatting: [
       'List responses put records under result.data, as the BrAPI v2 specification requires.',

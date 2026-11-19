@@ -56,7 +56,7 @@ export async function graphView(id) {
       </div>
       <div class="graph-legend" id="g-legend" role="group" aria-label="Node types (click to show or hide)"></div>
       <div class="graph" id="g-box">
-        <canvas id="g-canvas" aria-label="Network graph of ${esc(o.name)} traits, methods, scales and variables. The variable list and trait browser tabs show the same data as text."></canvas>
+        <canvas id="g-canvas" aria-label="Network graph of ${esc(o.name)} traits, methods, scales, and variables. The variable list and trait browser tabs show the same data as text."></canvas>
         <div class="g-tip" id="g-tip" hidden></div>
         <div class="g-info" id="g-info" hidden></div>
         <p class="g-status" id="g-status">Loading...</p>

@@ -53,8 +53,8 @@ export async function about() {
       <a href="https://github.com/Planteome">Planteome</a> organization on GitHub. Some crops have been updated in one
       and not the other.</p>
       <p>cropontology.org also has only limited <a href="https://brapi.org/specification">BrAPI</a> support. Its
-      service lists six calls, covering variables, traits and ontologies, and has no <code>commoncropnames</code>,
-      <code>methods</code> or <code>scales</code>. It ignores paging, returns some lists under
+      service lists six calls, covering variables, traits, and ontologies, and has no <code>commoncropnames</code>,
+      <code>methods</code>, or <code>scales</code>. It ignores paging, returns some lists under
       <code>result.data</code> as the specification requires and others directly under <code>result</code>, and
       returns errors when asked for a single variable or trait (<code>variables/{id}</code>,
       <code>traits/{id}</code>), though it lists both calls. Listing one crop's variables
@@ -73,8 +73,8 @@ export async function about() {
       <h2 id="brapi">BrAPI</h2>
       ${baseUrlBox(ontologies)}
       <p>Each base URL answers <code>serverinfo</code>, <code>commoncropnames</code>, <code>ontologies</code>,
-      <code>variables</code>, <code>traits</code>, <code>methods</code> and <code>scales</code>. Every variable
-      includes its trait, method and scale, and its <code>commonCropName</code> is its crop's name, so a client using
+      <code>variables</code>, <code>traits</code>, <code>methods</code>, and <code>scales</code>. Every variable
+      includes its trait, method, and scale, and its <code>commonCropName</code> is its crop's name, so a client using
       the all-crops URL can filter by crop. Where the build changed something from the sources, the record notes it
       in its <code>additionalInfo</code>.</p>
 

@@ -33,6 +33,7 @@ own shape.
 | `#/conflicts` | `conflicts.js` | where the sources disagree and everything the build changes, from `changes.json` (`#/changes` also works); `#/conflicts/CO_320` shows one crop, and crop pages link there; `#/conflicts/CO_320/differences` opens its table of differences between the sources (the Differ numbers link there) |
 | `#/CO_320` | `browser.js` | one crop: source details, a QR code of its BrAPI base URL, and its first tab, the trait browser: a trait class → trait → variable tree beside the selected term (`#/CO_320/browse` also works) |
 | `#/CO_320/list` | `variable-list.js` | the variable list tab |
+| `#/CO_320/methods`, `#/CO_320/scales` | `term-list.js` | the method list and scale list tabs: each method or scale once, with the number of variables that use it; a row opens it in the trait browser |
 | `#/CO_320/browse/<TERM_ID>` | `browser.js` | the trait browser with a trait or variable selected, or the page of a method or scale (its details and every variable that uses it; trait, method, and scale IDs and names across the site link here) |
 | `#/CO_320/graph` | `graph.js` | network graph of the ontology: classes, traits, variables, methods, and scales (like the cropontology.org explorer) |
 | `#/CO_320/<VARIABLE_ID>` | `variable.js` | one variable with its trait, method, and scale, and an "Add to Field Book" QR code |

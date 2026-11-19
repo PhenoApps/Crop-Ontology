@@ -5,6 +5,7 @@
 //   #/CO_325                    one crop, opening on its trait browser (#/CO_325/browse also works)
 //   #/CO_325/browse/TERM_ID     the trait browser with a trait, variable, method, or scale selected
 //   #/CO_325/list               one crop's variable list
+//   #/CO_325/methods            one crop's methods, each opening in the trait browser (#/CO_325/scales for scales)
 //   #/CO_325/graph              network graph of the ontology
 //   #/CO_325/CO_325:0000577     one variable
 //
@@ -18,6 +19,7 @@ import { browser } from './views/browser.js';
 import { conflicts } from './views/conflicts.js';
 import { graphView } from './views/graph.js';
 import { home } from './views/home.js';
+import { methodList, scaleList } from './views/term-list.js';
 import { variable } from './views/variable.js';
 import { variableList } from './views/variable-list.js';
 
@@ -37,6 +39,8 @@ function render(first, second, third) {
   if (first === 'conflicts' || first === 'changes') return conflicts(second, third);
   if (!second || second === 'browse') return browser(first, third);
   if (second === 'list') return variableList(first);
+  if (second === 'methods') return methodList(first);
+  if (second === 'scales') return scaleList(first);
   if (second === 'graph') return graphView(first);
   return variable(first, second);
 }

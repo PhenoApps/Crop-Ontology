@@ -51,6 +51,36 @@ const ontologies = (await readJson(join(DATA, 'ontologies.json')))
 const blank = (v) => v == null || (typeof v === 'string' && v.trim() === '');
 const clean = (v) => (blank(v) ? null : typeof v === 'string' ? v.trim() : v);
 
+// A variable's source date as an ISO timestamp (midnight UTC), or null. Curators write dates many ways:
+// "2015-10-25 00:00:00", "16/05/2022", "30/01/20", and "20-06-2024" (day first), "09-mars-16" and "08-May-2012" (French or
+// English month names, 2- or 4-digit years), "2020" (a year alone, read as 1 January), and spreadsheet serial
+// numbers such as "40899" (days since 30 Dec 1899, here 22 Dec 2011).
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+const FRENCH_MONTHS = { janv: 1, fevr: 2, mars: 3, avr: 4, mai: 5, juin: 6, juil: 7, aout: 8, sept: 9, oct: 10, nov: 11, dec: 12 };
+function monthNumber(name) {
+  const n = name.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/\.$/, '');
+  if (FRENCH_MONTHS[n]) return FRENCH_MONTHS[n];
+  const i = MONTHS.indexOf(n.slice(0, 3));
+  return i >= 0 && (n.length === 3 || ['january', 'february', 'march', 'april', 'june', 'july', 'august', 'september', 'sept', 'october', 'november', 'december'].includes(n)) ? i + 1 : null;
+}
+function sourceDate(value) {
+  const s = String(value ?? '').trim();
+  let y, m, d, x;
+  if ((x = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})(?:[ T][\d:.]+Z?)?$/))) [, y, m, d] = x.map(Number);
+  else if ((x = s.match(/^(\d{1,2})[/-](\d{1,2})[/-](\d{2}|\d{4})$/))) [, d, m, y] = x.map(Number);
+  else if ((x = s.match(/^(\d{1,2})[- ]([\p{L}.]+)[- ](\d{2}|\d{4})$/u))) [d, m, y] = [Number(x[1]), monthNumber(x[2]), Number(x[3])];
+  else if ((x = s.match(/^(\d{4})$/))) [y, m, d] = [Number(x[1]), 1, 1];
+  else if (/^\d{5}$/.test(s) && Number(s) >= 25000) {
+    const t = new Date(Date.UTC(1899, 11, 30 + Number(s)));
+    [y, m, d] = [t.getUTCFullYear(), t.getUTCMonth() + 1, t.getUTCDate()];
+  } else return null;
+  if (y < 100) y += 2000;
+  const t = new Date(Date.UTC(y, m - 1, d));
+  // Reject impossible dates ("31/02/2020", a month name not recognised) rather than letting them roll over, and
+  // dates in the future: a spreadsheet fill-down can count the year up a column ("31/01/2019" … "31/01/2039").
+  return m && y >= 1900 && t <= Date.now() && t.getUTCMonth() === m - 1 && t.getUTCDate() === d ? t.toISOString() : null;
+}
+
 // ---- normalisation ---------------------------------------------------------------------
 
 const DATA_TYPES = new Set(['Code', 'Date', 'Duration', 'Nominal', 'Numerical', 'Ordinal', 'Text']);
@@ -137,28 +167,40 @@ const CP1252 = new Map([[0x20ac, 0x80], [0x201a, 0x82], [0x0192, 0x83], [0x201e,
 const MOJIBAKE = /[ÃÂâÅÄ][\u0080-¿Œ-Ÿƒˆ˜–-™]/;
 const utf8 = new TextDecoder('utf-8', { fatal: true });
 const PLAUSIBLE = /^[\x00-\x7f\p{L}\p{M} °±²³µ·½×–—‘’“”…≤≥]*$/u;
-function fixEncoding(s) {
-  if (typeof s !== 'string' || !MOJIBAKE.test(s)) return s;
+// A garbled run: the character a UTF-8 lead byte reads as, then those its continuation bytes read as.
+const MOJIBAKE_RUN = /[Â-ô][\u0080-¿ŒœŠšŸŽžƒˆ˜–—‘’‚“”„†‡•…‰‹›€™]+/g;
+function redecode(s) {
   const bytes = [];
   for (const ch of s) {
     const c = ch.codePointAt(0);
     if (c <= 0xff) bytes.push(c);
     else if (CP1252.has(c)) bytes.push(CP1252.get(c));
-    else return s;
+    else return null;
   }
   try {
     const fixed = utf8.decode(Uint8Array.from(bytes));
     // Accept only plausible text: letters, marks and everyday punctuation. A result such as "†" where a
     // dash was meant means the original bytes were already damaged, so leave those as served.
-    return fixed !== s && PLAUSIBLE.test(fixed) ? fixed : s;
-  } catch { return s; }
+    return fixed !== s && PLAUSIBLE.test(fixed) ? fixed : null;
+  } catch { return null; }
 }
-// Repair every string in a record: encoding first, then the ontology's curated repairs of characters the source
-// lost as "?" (curation.json textRepairs). found collects original → repaired text.
+function fixEncoding(s) {
+  if (typeof s !== 'string' || !MOJIBAKE.test(s)) return s;
+  // The whole string at once, or else each garbled run on its own, for text that also holds correctly encoded
+  // characters ("CarrÃ¨re HÃ©lÃ¨ne, … Françoise").
+  return redecode(s) ?? s.replace(MOJIBAKE_RUN, (run) => redecode(run) ?? run);
+}
+// Spacing that is invisible on the page but breaks matching and search: non-breaking and zero-width spaces, doubled
+// spaces, and spaces at either end (a trait ID "CO_327:0000114" with a non-breaking space after it). Tidied without
+// being listed as a repair, as it changes nothing a reader sees.
+const tidySpace = (s) => s.replace(/ /g, ' ').replace(/[​﻿]/g, '').replace(/ {2,}/g, ' ').trim();
+// Repair every string in a record: spacing and encoding first, then the ontology's curated repairs of characters the
+// source lost as "?" or garbled (curation.json textRepairs). found collects original → repaired text.
 function repairTextDeep(value, found, repairs = []) {
   if (typeof value === 'string') {
-    const f = repairs.reduce((t, [re, to]) => t.replace(re, to), fixEncoding(value));
-    if (f !== value) found.set(value, f);
+    const tidy = tidySpace(value);
+    const f = repairs.reduce((t, [re, to]) => t.replace(re, to), fixEncoding(tidy));
+    if (f !== tidy) found.set(tidy, f);
     return f;
   }
   if (Array.isArray(value)) return value.map((x) => repairTextDeep(x, found, repairs));
@@ -273,7 +315,7 @@ function normaliseVariable(raw, o, src, classSpelling = new Map()) {
     institution: clean(v.institution),
     scientist: clean(v.scientist),
     documentationURL: src.termUrl(id),
-    submissionTimestamp: date && !Number.isNaN(Date.parse(date)) ? new Date(date).toISOString() : null,
+    submissionTimestamp: sourceDate(date),
     externalReferences: extRef(id, src),
     ontologyReference: ref,
     trait,

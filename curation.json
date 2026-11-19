@@ -132,6 +132,11 @@
         "find": "\\?(chlorophyll concentration index)\\?",
         "replace": "“$1”",
         "why": "curly quotes in the chlorophyll meter method"
+      },
+      {
+        "find": "â€ ",
+        "replace": " ",
+        "why": "a space garbled to \"â€\" (\"theâ€ plant\", \"Orobancheâ€ spp.\")"
       }
     ],
     "CO_320": [
@@ -238,9 +243,19 @@
         "find": "Anthesis \\? Grain filling",
         "replace": "Anthesis – Grain filling",
         "why": "an en dash"
+      },
+      {
+        "find": "Â?¡",
+        "replace": "°",
+        "why": "a degree sign, saved in a Mac encoding and read back as \"¡\" (\"¡C\", \"Â¡C\")"
       }
     ],
     "CO_324": [
+      {
+        "find": "∞",
+        "replace": "°",
+        "why": "a degree sign, read back in a Mac encoding as \"∞\" (\"11∞C\", \"n∞12\")"
+      },
       {
         "find": "number \\? 5, and no branches",
         "replace": "number ≤ 5, and no branches",
@@ -270,6 +285,31 @@
         "find": "User Guide\\?Version",
         "replace": "User Guide—Version",
         "why": "an em dash"
+      },
+      {
+        "find": "†(?=Exserted|Well-exserted)",
+        "replace": "",
+        "why": "a stray, garbled \"†\" at the start of two exsertion categories"
+      },
+      {
+        "find": "PotierFrançoise",
+        "replace": "Potier Françoise",
+        "why": "a missing space between two names"
+      },
+      {
+        "find": "Durete ÃÅ caracte ÃÅ ris- tiques",
+        "replace": "Dureté caractéristiques",
+        "why": "accents garbled (and a line-break hyphen kept) when a French reference was copied from a PDF"
+      },
+      {
+        "find": "de ÃÅ corticage",
+        "replace": "décorticage",
+        "why": "an accent garbled in a French reference"
+      },
+      {
+        "find": "Ce ÃÅ re ÃÅ ales en re ÃÅ gions",
+        "replace": "Céréales en régions",
+        "why": "accents garbled in a French reference"
       }
     ],
     "CO_325": [
@@ -373,6 +413,11 @@
         "find": "variability \\? Implications",
         "replace": "variability — Implications",
         "why": "an em dash"
+      },
+      {
+        "find": " ?Â¬Â©$",
+        "replace": "",
+        "why": "stray garbled characters (\"Â¬Â©\") after a leaf shape category"
       }
     ],
     "CO_338": [
@@ -424,6 +469,16 @@
         "only": [
           "CO_357:0000211"
         ]
+      },
+      {
+        "find": "◦C",
+        "replace": "°C",
+        "why": "a degree sign copied from a PDF as \"◦\" (\"70 ◦C\")"
+      },
+      {
+        "find": "´",
+        "replace": "'",
+        "why": "an acute accent used as an apostrophe (\"other´s\")"
       }
     ],
     "CO_359": [

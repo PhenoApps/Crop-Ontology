@@ -31,8 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - id: cropontology
@@ -98,7 +98,7 @@ jobs:
           echo "body=$body" >> "$GITHUB_OUTPUT"
       - name: Open or update the data refresh pull request
         if: steps.summary.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           add-paths: data
           commit-message: Refresh source snapshots
@@ -108,7 +108,7 @@ jobs:
           body-path: ${{ steps.summary.outputs.body }}
           labels: data-refresh
       - name: Upload comparison report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: comparison
           path: reports/comparison.json

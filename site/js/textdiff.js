@@ -56,6 +56,6 @@ export function diffHtml(before, after) {
   return { before: side(a, was, 'was'), after: side(b, now, 'now'), changes: Math.max(...[was, now].map(countRuns)) };
 }
 
-const CONTEXT = 60; // characters of unchanged text kept before the first change in the short version
+const CONTEXT = 30; // characters of unchanged text kept before the first change in the short version
 // How many separate changed stretches one side has.
 const countRuns = (list) => list.reduce((n, [, changed], k) => n + (changed && !list[k - 1]?.[1] ? 1 : 0), 0);

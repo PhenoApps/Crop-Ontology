@@ -84,7 +84,7 @@ export function ontologyNotes(c, id) {
 }
 
 // The ontology's DOI as a two-part badge like the Zenodo one on its cropontology.org page, drawn in CSS.
-const doiBadge = (doi) => `<a class="doi" href="https://doi.org/${esc(doi)}" title="Cite this ontology: doi.org/${esc(doi)}"><span class="doi-k">DOI</span><span class="doi-v">${esc(doi).replace('/', '/<wbr>')}</span><span class="sr">(opens in a new tab)</span></a>`;
+const doiBadge = (doi) => `<a class="doi" href="https://doi.org/${esc(doi)}" title="Cite this ontology: doi.org/${esc(doi)}"><span class="doi-k">DOI</span><span class="doi-v">${esc(doi).replace('/', '/<wbr>').replace(/\.(?=\d+$)/, '.<wbr>')}</span><span class="sr">(opens in a new tab)</span></a>`;
 
 // Title, facts, BrAPI QR code, change notes and view tabs at the top of each crop page.
 export function ontologyHead(o, tab, notes) {
@@ -97,7 +97,7 @@ export function ontologyHead(o, tab, notes) {
     s.planteomeUrl && extLink(s.planteomeUrl, s.planteomeFile ?? 'Planteome file'),
     o.doi && doiBadge(o.doi),
   ].filter(Boolean).join('<br>');
-  const fact = (label, html) => (html ? `<div><dt class="label">${label}</dt><dd>${html}</dd></div>` : '');
+  const fact = (label, html, cls = '') => (html ? `<div${cls ? ` class="${cls}"` : ''}><dt class="label">${label}</dt><dd>${html}</dd></div>` : '');
   const tabLink = (key, href, text) => `<a href="${href}"${tab === key ? ' aria-current="page"' : ''}>${text}</a>`;
   return `
     <nav class="crumbs"><a href="#/">Crops</a> / ${esc(o.name)}</nav>
@@ -109,7 +109,7 @@ export function ontologyHead(o, tab, notes) {
       ${fact('Served from', s.label ? `${esc(s.label)}${s.reason ? `<span class="note">${esc(s.reason)}</span>` : ''}` : '')}
       ${fact('Licence', esc(o.licence ?? ''))}
       ${fact('Sources', links)}
-      ${fact('BrAPI v2', `<span class="qr" data-qr="${esc(brapiBase(o.id))}" role="img" aria-label="QR code of the BrAPI v2 base URL for ${esc(o.name)}" title="${esc(brapiBase(o.id))}"></span>`)}
+      ${fact('BrAPI v2', `<span class="qr" data-qr="${esc(brapiBase(o.id))}" role="img" aria-label="QR code of the BrAPI v2 base URL for ${esc(o.name)}" title="${esc(brapiBase(o.id))}"></span>`, 'fact-qr')}
     </dl>
     ${notes}
     <nav class="tabs" aria-label="Views">

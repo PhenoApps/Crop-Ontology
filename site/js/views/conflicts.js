@@ -70,9 +70,10 @@ export async function conflicts(only) {
     "Françoise") is decoded again, but only where the result is plausible text. Characters a source lost as "?"
     are restored where the context makes them clear (a space in "Number?of?marketable tubers", ≤ in a length
     range); those repairs are listed in <code>curation.json</code>.</p>
-    <div id="repaired-text">${table(['Crop', 'Variable', 'In source', 'Published as'], pick(c.encoding).map((x) => {
+    <div id="repaired-text">${table(['Variable', 'In source', 'Published as'], pick(c.encoding).map((x) => {
       const d = diffHtml(x.from, x.to);
-      return [crop(x.ontologyDbId), varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName),
+      // Crop goes under the variable rather than in a column of its own, to keep the table narrow.
+      return [`${varLink(x.ontologyDbId, x.observationVariableDbId, x.observationVariableName)}<span class="row-crop">${crop(x.ontologyDbId)}</span>`,
         clampCell(d.before), `${clampCell(d.after)}<button type="button" class="clamp-toggle" aria-expanded="false" hidden>Show all${d.changes > 1 ? ` (${d.changes} changes)` : ''}</button>`];
     }))}</div>
 

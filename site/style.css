@@ -279,6 +279,12 @@ tr.open .clamp .full { display: inline; }
 .clamp-toggle { display: block; margin-top: 4px; padding: 0; border: 0; background: none; font: inherit; font-size: .8rem; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
 .clamp-toggle:hover { color: var(--accent-ink); }
 .clamp-toggle[hidden] { display: none; }
+/* The repaired text table always fits the page: fixed column widths, and long names and URLs wrap. */
+#repaired-text table { table-layout: fixed; }
+#repaired-text th:first-child { width: 22%; }
+#repaired-text td { overflow-wrap: anywhere; }
+.row-crop { display: block; margin-top: 2px; font-size: .8rem; }
+.row-crop a { color: var(--ink-3); }
 .type-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 2px 8px; font-size: .8rem; color: var(--ink-2); }
 .type-key span { display: inline-flex; align-items: center; }
 .type-key .glyph { margin: 0 4px 0 0; }
@@ -339,7 +345,9 @@ tr.open .clamp .full { display: inline; }
   .toolbar select { flex: 1 1 140px; }
   .endpoint code { white-space: normal; word-break: break-all; }
   .var-row.has-aside { grid-template-columns: 1fr; }
-  .scan { display: none; } /* a phone can't scan its own screen */
+  #repaired-text th:first-child { width: 30%; }
+  #repaired-text table { font-size: .82rem; }
+  .scan, .fact-qr { display: none; } /* QR codes are for scanning with a phone, which can't scan its own screen */
   .vhead { display: none; }
   .vrow { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
   .vrow .c-trait, .vrow .c-ms { grid-column: 1 / -1; }

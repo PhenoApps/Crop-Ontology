@@ -94,7 +94,7 @@ For each included ontology, `sources.mjs` decides which copy is preferred and me
 The merged variables are then normalised to BrAPI v2: lists go under `result.data`; scale categories such as
 `"1 = absent"` become `{ "value": "1", "label": "absent" }` in value order; both BrAPI 2.0 (`min`/`max`) and 2.1
 (`minimumValue`/`maximumValue`) limits are set; non-BrAPI scale types become Text; categories that spreadsheets
-turned into dates (`1-2-3` → 2003-01-02) and garbled accented text are repaired; trait class names are spelled one
+turned into dates (`1-2-3` → 2003-01-02) and garbled accented text and characters lost as `?` (`curation.json` `textRepairs`) are repaired; trait class names are spelled one
 way per `curation.json` `traitClasses` (wheat's "Phenological traits" and "Phenological" become "Phenological").
 
 Every change is recorded three ways: in the record's `additionalInfo` (`provenance`, `changes`, `sourceCropName`,

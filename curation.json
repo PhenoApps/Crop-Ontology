@@ -1,5 +1,5 @@
 {
-  "$comment": "Read by scripts/harvest-cropontology.mjs and scripts/build.mjs. `include` is a regex on ontologyDbId; only matching ontologies are harvested and published. Display names are the upstream ontologyName with `stripWords` removed (whole words, case-insensitive), unless `names` overrides them by id. The original name is kept in additionalInfo.sourceOntologyName. `planteomePaths` lists extra files (repo-relative) to copy from a Planteome repo when its trait data is not at the root; `planteomeFiles` picks the file to compare when a repo has several. `siteReloadsCountFrom`: cropontology.org reloads before this date (its 2023 migration re-imported old content) do not count as newer than GitHub. `traitClasses` standardises trait class names. `sources` forces which copy wins when the two disagree.",
+  "$comment": "Read by scripts/harvest-cropontology.mjs and scripts/build.mjs. `include` is a regex on ontologyDbId; only matching ontologies are harvested and published. Display names are the upstream ontologyName with `stripWords` removed (whole words, case-insensitive), unless `names` overrides them by id. The original name is kept in additionalInfo.sourceOntologyName. `planteomePaths` lists extra files (repo-relative) to copy from a Planteome repo when its trait data is not at the root; `planteomeFiles` picks the file to compare when a repo has several. `siteReloadsCountFrom`: cropontology.org reloads before this date (its 2023 migration re-imported old content) do not count as newer than GitHub. `traitClasses` standardises trait class names. `textRepairs` restores characters a source lost. `sources` forces which copy wins when the two disagree.",
   "include": "^CO_\\d+$",
   "stripWords": [
     "trait dictionary",
@@ -16,17 +16,35 @@
     "CO_365": "Faba bean"
   },
   "traitClasses": {
-    "$comment": "Trait class names are standardised so one class isn't listed under several spellings (e.g. wheat's \"Phenological traits\" and \"Phenological\"). Each part of a class (\"Quality/Aroma\" has two) that matches an `aliases` key or a `standard` class, ignoring case and a trailing \"trait\" or \"traits\", is spelled as the alias target or standard class; every part then starts with a capital letter. `regroup` then moves a crop's one-off classes into the common ones, by ontology ID and the class name as spelled after those rules (keys match case-insensitively). The source value is kept in the trait's additionalInfo.sourceTraitClass.",
-    "standard": ["Abiotic stress", "Agronomic", "Biochemical", "Biotic stress", "Fertility", "Morphological", "Phenological", "Physiological", "Postharvest", "Quality"],
+    "$comment": "Trait class names are standardised so one class isn't listed under several spellings (e.g. wheat's \"Phenological traits\" and \"Phenological\"). Each part of a class (\"Quality/Aroma\" has two) that matches an `aliases` key or a `standard` class, ignoring case and a trailing \"trait\" or \"traits\", is spelled as the alias target or standard class; every part then starts with a capital letter. `regroup` then moves a crop's one-off classes into the common ones, by ontology ID and the class name as spelled after those rules (keys match case-insensitively); quality-type classes keep their original name as a subclass (\"Quality/Viscosity\"). A class whose subclass is itself a `standard` class becomes that class (\"Agronomic/Postharvest\" becomes \"Postharvest\"). Last, a British spelling in `americanSpellings` becomes the American one when more of the class's trait names use the American spelling (sweet potato's odor traits give \"Quality/Odor\"). The source value is kept in the trait's additionalInfo.sourceTraitClass.",
+    "standard": [
+      "Abiotic stress",
+      "Agronomic",
+      "Biochemical",
+      "Biotic stress",
+      "Fertility",
+      "Morphological",
+      "Phenological",
+      "Physiological",
+      "Postharvest",
+      "Quality"
+    ],
     "aliases": {
       "Agronomical": "Agronomic",
       "Post harvest": "Postharvest",
       "Pstharvest": "Postharvest",
       "Appearence": "Appearance",
-      "Odor": "Odour",
       "Texture by hand": "Texture in hand",
       "Pro-vitamine A": "Pro-vitamin A",
       "Helicotylincus mulicinctus damage": "Helicotylenchus multicinctus damage"
+    },
+    "americanSpellings": {
+      "Odour": "Odor",
+      "Colour": "Color",
+      "Flavour": "Flavor",
+      "Fibre": "Fiber",
+      "Mould": "Mold",
+      "Grey": "Gray"
     },
     "regroup": {
       "CO_325": {
@@ -42,11 +60,11 @@
         "Pratylenchus spp. damage": "Biotic stress",
         "Pro-vitamin A": "Biochemical",
         "Radopholus similis damage": "Biotic stress",
-        "Sensory traits": "Quality",
+        "Sensory traits": "Quality/Sensory",
         "Taste": "Quality/Taste",
         "Texture in hand": "Quality/Texture in hand",
         "Texture in mouth": "Quality/Texture in mouth",
-        "Texture trait - instrumental": "Quality",
+        "Texture trait - instrumental": "Quality/Instrumental texture",
         "Total carotenoids": "Biochemical",
         "Variable": "Biotic stress",
         "Weevil damage assessment": "Biotic stress",
@@ -55,7 +73,7 @@
       "CO_331": {
         "Appearance": "Quality/Appearance",
         "Aroma": "Quality/Aroma",
-        "Odour": "Quality/Odour",
+        "Odor": "Quality/Odour",
         "Other/Crop research": "Agronomic",
         "Quality/Harvest trait": "Quality/Appearance",
         "Taste": "Quality/Taste",
@@ -69,13 +87,13 @@
         "Days to branching": "Phenological",
         "Days to first female flower opens": "Phenological",
         "Days to senescence": "Phenological",
-        "Dry matter content": "Quality",
+        "Dry matter content": "Quality/Dry matter content",
         "Farmer preference trait": "Agronomic",
         "Female flower number": "Morphological",
         "Flower and flowering morphological trait": "Morphological",
         "Fresh shoot weight": "Agronomic",
         "Fruit morphological trait": "Morphological",
-        "Fufu quality": "Quality",
+        "Fufu quality": "Quality/Fufu",
         "Fungal disease": "Biotic stress",
         "Insect damage": "Biotic stress",
         "Leaf morphological trait": "Morphological",
@@ -86,16 +104,345 @@
         "Number of fruitset": "Morphological",
         "Plant branch morphological trait": "Morphological",
         "Remote sensing trait": "Agronomic",
-        "Root quality traits": "Quality",
-        "Starch properties": "Quality",
+        "Root quality traits": "Quality/Root",
+        "Starch properties": "Quality/Starch properties",
         "Stem morphological trait": "Morphological",
         "Storage root morphological trait": "Morphological",
         "Storage root weight": "Agronomic",
-        "Textural characteristic": "Quality",
+        "Textural characteristic": "Quality/Instrumental texture",
         "Viral disease": "Biotic stress",
-        "Viscosity trait": "Quality"
+        "Viscosity trait": "Quality/Viscosity"
       }
     }
+  },
+  "textRepairs": {
+    "$comment": "Characters a source stored as \"?\" (lost when the text was uploaded) or garbled, restored from context. Per ontology (\"*\" applies to all), each `find` is a regular expression applied in order to every text field of every variable and replaced by `replace` (which may use $1 for a captured group); `only` limits a repair to the listed variables; `why` says what was lost. Repairs are listed on the Conflicts page with the other text repairs.",
+    "*": [
+      {
+        "find": "(\\d)\\?C\\b",
+        "replace": "$1°C",
+        "why": "a degree sign before C (\"70?C\")"
+      },
+      {
+        "find": "(\\d)\\?(\\d)",
+        "replace": "$1–$2",
+        "why": "an en dash in a number range or page range (\"85?90 mm\", \"813?818\")"
+      },
+      {
+        "find": "\\?(chlorophyll concentration index)\\?",
+        "replace": "“$1”",
+        "why": "curly quotes in the chlorophyll meter method"
+      }
+    ],
+    "CO_320": [
+      {
+        "find": "<30\\?",
+        "replace": "<30°",
+        "why": "a degree sign in culm angles"
+      },
+      {
+        "find": "\\?(45|60)\\?",
+        "replace": "≈$1°",
+        "why": "approximately and a degree sign in culm angles (\"Intermediate ?45?\")"
+      },
+      {
+        "find": ">60\\?",
+        "replace": ">60°",
+        "why": "a degree sign in culm angles"
+      },
+      {
+        "find": "Userâ€žs",
+        "replace": "User’s",
+        "why": "an apostrophe, garbled"
+      },
+      {
+        "find": "Qu\\?bec",
+        "replace": "Québec",
+        "why": "an accented letter"
+      }
+    ],
+    "CO_321": [
+      {
+        "find": "CID \\(\\?13C\\)",
+        "replace": "CID (Δ13C)",
+        "why": "capital delta for carbon isotope discrimination (Farquhar et al. 1989)"
+      },
+      {
+        "find": "analysis as: \\?13C",
+        "replace": "analysis as: Δ13C",
+        "why": "capital delta for carbon isotope discrimination"
+      },
+      {
+        "find": "\\(\\?a-\\?p\\)",
+        "replace": "(δa − δp)",
+        "why": "small deltas for isotope composition, and a minus sign"
+      },
+      {
+        "find": "\\?p/1000",
+        "replace": "δp/1000",
+        "why": "small delta for isotope composition"
+      },
+      {
+        "find": "\\?13C",
+        "replace": "δ13C",
+        "why": "small delta for carbon isotope composition"
+      },
+      {
+        "find": " \\(\\?\\)",
+        "replace": " (‰)",
+        "why": "per mille sign"
+      },
+      {
+        "find": "Rstandard\\)\\?1\\]",
+        "replace": "Rstandard) − 1]",
+        "why": "a minus sign"
+      },
+      {
+        "find": "\\(1989\\) \\? rather",
+        "replace": "(1989) — rather",
+        "why": "an em dash"
+      },
+      {
+        "find": "screen \\? 40 shakes",
+        "replace": "screen — 40 shakes",
+        "why": "an em dash"
+      },
+      {
+        "find": "(\\d\\.\\d) \\? (\\d\\.\\d)",
+        "replace": "$1–$2",
+        "why": "an en dash in screen size ranges (\"2.8 ? 2.5\")"
+      },
+      {
+        "find": "\\?(whole stem)\\?",
+        "replace": "“$1”",
+        "why": "curly quotes"
+      },
+      {
+        "find": "plant\\?s",
+        "replace": "plant’s",
+        "why": "an apostrophe"
+      },
+      {
+        "find": "\\?mol",
+        "replace": "µmol",
+        "why": "a micro sign"
+      }
+    ],
+    "CO_322": [
+      {
+        "find": "\\?(recover irrigation)\\?",
+        "replace": "“$1”",
+        "why": "curly quotes"
+      },
+      {
+        "find": "Anthesis \\? Grain filling",
+        "replace": "Anthesis – Grain filling",
+        "why": "an en dash"
+      }
+    ],
+    "CO_324": [
+      {
+        "find": "number \\? 5, and no branches",
+        "replace": "number ≤ 5, and no branches",
+        "why": "≤ in Striga vigour categories"
+      },
+      {
+        "find": "per striga plant is \\? 1\\b",
+        "replace": "per striga plant is ≥ 1",
+        "why": "≥ in Striga vigour categories (category 2 has no branches)"
+      },
+      {
+        "find": "per striga plant is \\? (5|10)\\b",
+        "replace": "per striga plant is ≤ $1",
+        "why": "≤ in Striga vigour categories (paired with \"> 5\" and \"> 10\")"
+      },
+      {
+        "find": "St√§rke",
+        "replace": "Stärke",
+        "why": "an umlaut, garbled (UTF-8 read as Mac Roman)"
+      },
+      {
+        "find": "‚\\?\\?",
+        "replace": "–",
+        "why": "an en dash in page ranges, garbled (UTF-8 read as Mac Roman)"
+      },
+      {
+        "find": "User Guide\\?Version",
+        "replace": "User Guide—Version",
+        "why": "an em dash"
+      }
+    ],
+    "CO_325": [
+      {
+        "find": "_\\?M$",
+        "replace": "_µm",
+        "why": "micrometres, the unit of the weevil measurement variable names",
+        "only": [
+          "CO_325:0000625",
+          "CO_325:0000627",
+          "CO_325:0000629",
+          "CO_325:0000631",
+          "CO_325:0000637",
+          "CO_325:0000639",
+          "CO_325:0000641",
+          "CO_325:0000643"
+        ]
+      },
+      {
+        "find": "^m$",
+        "replace": "µm",
+        "why": "micrometres: the scale lost its micro sign altogether",
+        "only": [
+          "CO_325:0000625",
+          "CO_325:0000627",
+          "CO_325:0000629",
+          "CO_325:0000631",
+          "CO_325:0000637",
+          "CO_325:0000639",
+          "CO_325:0000641",
+          "CO_325:0000643"
+        ]
+      },
+      {
+        "find": "juice\\?\\?\\?\\?",
+        "replace": "juice",
+        "why": "stray characters at the end of the vitamin C scale name"
+      },
+      {
+        "find": "incognita, \\?\\)",
+        "replace": "incognita, …)",
+        "why": "an ellipsis ending a list of species"
+      }
+    ],
+    "CO_330": [
+      {
+        "find": "(?<=[A-Za-z])\\?(?=[A-Za-z])",
+        "replace": " ",
+        "why": "a space between words (\"Number?of?marketable tubers\")"
+      },
+      {
+        "find": "Potatoleaf",
+        "replace": "Potato leaf",
+        "why": "the same lost space, dropped altogether"
+      },
+      {
+        "find": "X \\? ",
+        "replace": "X ≤ ",
+        "why": "≤ in stolon length ranges (\"20 cm < X ? 40 cm\")"
+      },
+      {
+        "find": "90Â¨\\?",
+        "replace": "90°",
+        "why": "a degree sign in leaflet base angles"
+      },
+      {
+        "find": "^\\?$",
+        "replace": "°C",
+        "why": "the canopy temperature scale"
+      },
+      {
+        "find": "_\\?$",
+        "replace": "_°C",
+        "why": "the unit at the end of canopy temperature variable names"
+      },
+      {
+        "find": "^\\?\\{",
+        "replace": "√{",
+        "why": "the square root in the geometric mean productivity formula"
+      }
+    ],
+    "CO_331": [
+      {
+        "find": "_\\?$",
+        "replace": "_°C",
+        "why": "the unit at the end of canopy temperature variable names"
+      },
+      {
+        "find": "^\\?$",
+        "replace": "°C",
+        "why": "the canopy temperature scale"
+      }
+    ],
+    "CO_337": [
+      {
+        "find": "TDP = \\? \\(number of days â—Š number",
+        "replace": "TDP = Σ (number of days × number",
+        "why": "a summation sign, and a multiplication sign garbled through a symbol font"
+      },
+      {
+        "find": "variability \\? Implications",
+        "replace": "variability — Implications",
+        "why": "an em dash"
+      }
+    ],
+    "CO_338": [
+      {
+        "find": "^\\?$",
+        "replace": "‰",
+        "why": "per mille, the unit of carbon isotope discrimination (CID_Meas_PerThsnd)"
+      }
+    ],
+    "CO_343": [
+      {
+        "find": "\\?(?=\\s?(?:1 ?kg|500 ?gm|0\\.5 ?kg))",
+        "replace": "≥",
+        "why": "≥ in tuber size classes (\"big size ( ?1 kg)\")"
+      },
+      {
+        "find": "\\?ber",
+        "replace": "fiber",
+        "why": "a lost \"fi\" ligature"
+      },
+      {
+        "find": "Presenceof",
+        "replace": "Presence of",
+        "why": "a missing space"
+      },
+      {
+        "find": "\\+\\?\\.\\+",
+        "replace": "+…+",
+        "why": "an ellipsis in averaging formulas"
+      },
+      {
+        "find": "\\?(blight)\\?",
+        "replace": "“$1”",
+        "why": "curly quotes"
+      }
+    ],
+    "CO_348": [
+      {
+        "find": "at \\? (\\d)",
+        "replace": "at ≈ $1",
+        "why": "approximately, in drying temperatures"
+      }
+    ],
+    "CO_357": [
+      {
+        "find": "^(\\d+) = \\?$",
+        "replace": "$1",
+        "why": "Competition category labels were lost entirely; only the values are kept",
+        "only": [
+          "CO_357:0000211"
+        ]
+      }
+    ],
+    "CO_359": [
+      {
+        "find": "\\?(typical)\\?",
+        "replace": "“$1”",
+        "why": "curly quotes"
+      },
+      {
+        "find": "it\\?s",
+        "replace": "it’s",
+        "why": "an apostrophe"
+      },
+      {
+        "find": "crop\\?wild",
+        "replace": "crop–wild",
+        "why": "an en dash"
+      }
+    ]
   },
   "knownBroken": {
     "CO_356": "cropontology.org returns HTTP 500 for /brapi/v2/variables?ontologyDbId=CO_356 (and v1) at any page size, though every variable loads on its own via ?observationVariableDbId=. Likely cause: 9 scales (37 variables) have categories stored as dates by Excel, e.g. '1-2-3' became 2003-01-02T00:00:00. No other ontology has non-text categories. Found 2026-11-18.",

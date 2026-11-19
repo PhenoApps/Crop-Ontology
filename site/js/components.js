@@ -1,6 +1,7 @@
 // HTML pieces shared by several views: the crop page header, its change notes, and a variable's details.
 
 import { buildNotes, info, provenance, sourcesOf } from './data.js';
+import { italicizeSpecies } from './species.js';
 import { app, brapiBase, chevron, coTermUrl, day, enc, esc, extLink, num, plural, setTitle } from './util.js';
 
 export function notFound() {
@@ -19,9 +20,12 @@ export function endpointBox(id, label, note = '') {
     </div>`;
 }
 
-// One label/value pair in a <dl class="kv">; empty values are left out.
+// One label/value pair in a <dl class="kv">; empty values are left out. Scientific names are set in italics.
 export const field = (label, value, mono = false) => (value == null || value === '' || (Array.isArray(value) && !value.length))
-  ? '' : `<dt>${esc(label)}</dt><dd${mono ? ' class="mono"' : ''}>${Array.isArray(value) ? value.map(esc).join(', ') : esc(value)}</dd>`;
+  ? '' : `<dt>${esc(label)}</dt><dd${mono ? ' class="mono"' : ''}>${italicizeSpecies(Array.isArray(value) ? value.map(esc).join(', ') : esc(value))}</dd>`;
+
+// The Conflicts page, filtered to one crop.
+export const conflictsHref = (id) => `#/conflicts/${enc(id)}`;
 
 // ---- crop pages -------------------------------------------------------------------------
 
@@ -68,7 +72,7 @@ export function ontologyNotes(c, id) {
   const conflicts = c.idConflicts?.filter((x) => x.ontologyDbId === id) ?? [];
   if (conflicts.length) items.push(`${conflicts.length} trait, method or scale ${conflicts.length === 1 ? 'ID is' : 'IDs are'} used with different names.`);
   if (!items.length) return '';
-  return `<details class="notice"><summary>${chevron('right')}Changes from the sources <span class="n">(${items.length})</span></summary><div class="body"><ul>${items.map((i) => `<li>${i}</li>`).join('')}</ul><a href="#/conflicts">See all conflicts</a></div></details>`;
+  return `<details class="notice"><summary>${chevron('right')}Changes from the sources <span class="n">(${items.length})</span></summary><div class="body"><ul>${items.map((i) => `<li>${i}</li>`).join('')}</ul><a href="${conflictsHref(id)}">See this crop's conflicts</a></div></details>`;
 }
 
 // The ontology's DOI as a two-part badge like the Zenodo one on its cropontology.org page, drawn in CSS.
@@ -143,11 +147,12 @@ export function variableIntro(v, o) {
   return `
     ${provenanceLine(v)}
     ${sourceLinks(v, o)}
-    ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="#/conflicts">See all conflicts</a></div>` : ''}`;
+    ${notes.length ? `<div class="notice"><strong>Changed when publishing</strong><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul><a href="${conflictsHref(o.id)}">See this crop's conflicts</a></div>` : ''}`;
 }
 
-// A variable's own fields, then its trait, method and scale.
-export function variableDetails(v) {
+// A variable's own fields, then its trait, method and scale. `aside` (the variable page's QR card) sits on the
+// same row as the first box.
+export function variableDetails(v, aside = '') {
   const t = v.trait ?? {};
   // Trait, method and scale IDs link to their Crop Ontology term pages when the variable is in Crop Ontology.
   const inCO = sourcesOf(v).cropOntology;
@@ -156,7 +161,8 @@ export function variableDetails(v) {
   const s = v.scale ?? {};
   const vv = s.validValues ?? {};
   return `
-    <div class="panel" style="margin-top:14px">
+    <div class="var-row${aside ? ' has-aside' : ''}">
+    <div class="panel">
       <dl class="kv">
         ${field('Crop', v.commonCropName)}
         ${field('Crop in source', info(v).sourceCropName)}
@@ -169,6 +175,8 @@ export function variableDetails(v) {
         ${field('Status', v.status)}
         ${field('Language', v.language)}
       </dl>
+    </div>
+    ${aside}
     </div>
     <div class="sections">
       <section class="panel">
@@ -195,7 +203,7 @@ export function variableDetails(v) {
           ${field('Decimal places', s.decimalPlaces)}${field('Minimum', vv.minimumValue)}${field('Maximum', vv.maximumValue)}
         </dl>
         ${vv.categories?.length ? `<table class="data cats"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody>${vv.categories.map((c) =>
-          `<tr><td>${esc(c.value)}</td><td>${c.label !== c.value ? esc(c.label) : ''}</td></tr>`).join('')}</tbody></table>` : ''}
+          `<tr><td>${esc(c.value)}</td><td>${c.label !== c.value ? italicizeSpecies(esc(c.label)) : ''}</td></tr>`).join('')}</tbody></table>` : ''}
       </section>
     </div>`;
 }

@@ -38,13 +38,51 @@ export function traitClassName(raw) {
   }).join('/');
 }
 
-// The class a crop's trait is published under: its spelled name, moved by `regroup` where the crop has one.
+// The class a crop's trait is published under: its spelled name, moved by `regroup` where the crop has one, and
+// then, if its subclass is itself a standard class, that class ("Agronomic/Postharvest" → "Postharvest").
 // { name, regrouped } so the build can say which kind of change it made.
 export function publishedTraitClass(ontologyDbId, raw) {
   const spelled = traitClassName(raw);
-  const moved = spelled ? regroup.get(ontologyDbId)?.get(spelled.toLowerCase()) : null;
-  return { name: moved ?? spelled, regrouped: Boolean(moved) };
+  if (!spelled) return { name: spelled, regrouped: false };
+  let name = regroup.get(ontologyDbId)?.get(spelled.toLowerCase()) ?? spelled;
+  const sub = name.split('/').at(-1);
+  if (name.includes('/') && standardClasses.has(sub.toLowerCase())) name = standardClasses.get(sub.toLowerCase());
+  return { name, regrouped: name !== spelled };
 }
+
+// British spellings in class names that become American where the class's own trait names use the American one
+// more: { published class → class with American spelling } for one ontology. Applied after publishedTraitClass.
+const americanWords = Object.entries(classRules.americanSpellings ?? {});
+export function americanClassSpellings(ontologyDbId, variables) {
+  const traitNames = new Map();
+  for (const v of variables) {
+    const { name } = publishedTraitClass(ontologyDbId, v.trait?.traitClass);
+    if (name) (traitNames.get(name) ?? traitNames.set(name, []).get(name)).push(String(v.trait?.traitName ?? ''));
+  }
+  const out = new Map();
+  for (const [cls, names] of traitNames) {
+    let fixed = cls;
+    for (const [uk, us] of americanWords) {
+      const word = (w) => new RegExp(`\\b${w}`, 'i');
+      if (!word(uk).test(fixed)) continue;
+      if (names.filter((n) => word(us).test(n)).length > names.filter((n) => word(uk).test(n)).length) {
+        fixed = fixed.replace(new RegExp(`\\b${uk}`, 'gi'), (m) => (m[0] === m[0].toUpperCase() ? us : us.toLowerCase()));
+      }
+    }
+    if (fixed !== cls) out.set(cls, fixed);
+  }
+  return out;
+}
+
+// Characters a source lost as "?" or garbled, restored (see curation.json textRepairs): the [[RegExp, replacement], …]
+// to apply, in order, to one variable's text. The "*" repairs come first, then the ontology's own; a repair with
+// `only` applies just to the variables it lists.
+const repairLists = Object.fromEntries(Object.entries(config.textRepairs ?? {})
+  .filter(([id]) => !id.startsWith('$'))
+  .map(([id, list]) => [id, list.map((r) => ({ re: new RegExp(r.find, 'g'), to: r.replace, only: r.only ? new Set(r.only) : null }))]));
+export const textRepairsFor = (ontologyDbId, variableId) => [...(repairLists['*'] ?? []), ...(repairLists[ontologyDbId] ?? [])]
+  .filter((r) => !r.only || r.only.has(variableId))
+  .map((r) => [r.re, r.to]);
 
 // Ontologies known to fail upstream: { id: reason }. The harvester reports these as warnings, not failures.
 export const knownBroken = config.knownBroken ?? {};

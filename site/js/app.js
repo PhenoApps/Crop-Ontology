@@ -1,7 +1,7 @@
 // PhenoApps Crop Ontology: a hash-routed viewer over the static files that scripts/build.mjs writes.
 //   #/                          crops
 //   #/about[/SECTION]           what the site is for, its data, BrAPI and maintenance (SECTION scrolls to it)
-//   #/conflicts                 where the sources disagree and what the build changes (#/changes also works)
+//   #/conflicts[/CO_325]        where the sources disagree and what the build changes, optionally for one crop
 //   #/CO_325                    one crop's variable list
 //   #/CO_325/browse[/TERM_ID]   trait browser: trait class > trait > variable tree beside the selected term
 //   #/CO_325/graph              network graph of the ontology
@@ -33,7 +33,7 @@ function setNav(first) {
 function render(first, second, third) {
   if (!first) return home();
   if (first === 'about') return about();
-  if (first === 'conflicts' || first === 'changes') return conflicts();
+  if (first === 'conflicts' || first === 'changes') return conflicts(second);
   if (!second) return variableList(first);
   if (second === 'browse') return browser(first, third);
   if (second === 'graph') return graphView(first);

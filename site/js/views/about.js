@@ -61,13 +61,11 @@ export async function about() {
       in its <code>additionalInfo</code>.</p>
 
       <h3>In Field Book</h3>
-      <p>In Field Book's BrAPI settings, set the base URL to a crop's base URL, by typing it or scanning the QR code
-      on the crop's page, and import traits as from any other BrAPI server. See the content type note below.</p>
-      <p>Each variable's page also has a QR code for adding just that variable: scan it in Field Book and the trait
-      is added. The code holds the variable's BrAPI address, its crop's base URL followed by
-      <code>/variables/</code> and its ID, such as <code>${esc(root)}CO_321/brapi/v2/variables/CO_321:0001034</code>.
-      That address can't be opened here (see below), so Field Book reads the crop's base URL and the ID from it and
-      picks the variable out of the crop's list.</p>
+      <p>Field Book has this site built in, so its traits can be added without setting up a BrAPI server. Each
+      variable's page has a QR code: scan it in Field Book to add that variable as a trait. The code holds the
+      variable's BrAPI address, its crop's base URL followed by <code>/variables/</code> and its ID, such as
+      <code>${esc(root)}CO_321/brapi/v2/variables/CO_321:0001034</code>. That address can't be opened here (see
+      below), so Field Book reads the crop and the ID from it and picks the variable out of the crop's list.</p>
 
       <h3>Limits of GitHub Pages</h3>
       <p>The site is plain files on GitHub Pages with no server program behind it, which changes how the endpoints
@@ -102,15 +100,12 @@ export async function about() {
         as failed for the maintainers.</li>
       </ul>
       <p>Crop Ontology was last checked ${esc(checked(sources?.cropontology) ?? 'recently')}; Planteome
-      ${esc(checked(sources?.planteome) ?? 'recently')}.</p>
-
-      <h3>Reporting problems</h3>
-      <p>Report problems with this site or its BrAPI endpoints as an <a href="${ISSUES}">issue on GitHub</a>: a page
-      that doesn't load, an app that can't import from it, or a merge or repair that looks wrong. Include the crop and
-      variable IDs and, for import problems, the app and its version.</p>
-      <p>Errors in a trait itself, such as a wrong description or a missing scale category, belong with the crop's
-      curators, on cropontology.org or in the crop's Planteome repository. Each variable's page links to its
-      sources. Fixes made there appear here after the next weekly run.</p>
+      ${esc(checked(sources?.planteome) ?? 'recently')}. Errors in a trait itself, such as a wrong description or a
+      missing scale category, belong with the crop's curators, on cropontology.org or in the crop's Planteome
+      repository; each variable's page links to its sources, and fixes made there appear here after the next weekly
+      run. Problems with this site or its BrAPI endpoints, such as a page that doesn't load, an app that can't import
+      from it, or a merge or repair that looks wrong, can be reported as an <a href="${ISSUES}">issue on GitHub</a>,
+      with the crop and variable IDs and, for import problems, the app and its version.</p>
 
       <h2 id="credit">Credit</h2>
       <p>The trait dictionaries are the work of the crop communities and curators of the Crop Ontology. Each crop

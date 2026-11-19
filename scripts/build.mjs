@@ -20,7 +20,9 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { displayName, isIncluded, knownBroken, publishedTraitClass, siteReloadsCountFrom } from './curation.mjs';
+import {
+  americanClassSpellings, displayName, isIncluded, knownBroken, publishedTraitClass, siteReloadsCountFrom, textRepairsFor,
+} from './curation.mjs';
 import { fieldsNotExported } from './fields.mjs';
 import { CO_DIR, LABELS, mergeOntology, planteomeCopy, preferredSource } from './sources.mjs';
 
@@ -150,10 +152,16 @@ function fixEncoding(s) {
     return fixed !== s && PLAUSIBLE.test(fixed) ? fixed : s;
   } catch { return s; }
 }
-function fixEncodingDeep(value, found) {
-  if (typeof value === 'string') { const f = fixEncoding(value); if (f !== value) found.set(value, f); return f; }
-  if (Array.isArray(value)) return value.map((x) => fixEncodingDeep(x, found));
-  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([k, x]) => [k, fixEncodingDeep(x, found)]));
+// Repair every string in a record: encoding first, then the ontology's curated repairs of characters the source
+// lost as "?" (curation.json textRepairs). found collects original → repaired text.
+function repairTextDeep(value, found, repairs = []) {
+  if (typeof value === 'string') {
+    const f = repairs.reduce((t, [re, to]) => t.replace(re, to), fixEncoding(value));
+    if (f !== value) found.set(value, f);
+    return f;
+  }
+  if (Array.isArray(value)) return value.map((x) => repairTextDeep(x, found, repairs));
+  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([k, x]) => [k, repairTextDeep(x, found, repairs)]));
   return value;
 }
 
@@ -164,10 +172,10 @@ const classNames = new Map();
 // Source crop values per ontology, for the crop-name mapping in changes.json: { id: Map(value → count) }.
 const sourceCrops = new Map();
 
-function normaliseVariable(raw, o, src) {
+function normaliseVariable(raw, o, src, classSpelling = new Map()) {
   const ref = ontologyReference(o);
   const encodingFixes = new Map();
-  const v = fixEncodingDeep(raw, encodingFixes);
+  const v = repairTextDeep(raw, encodingFixes, textRepairsFor(o.ontologyDbId, raw.observationVariableDbId));
   const id = v.observationVariableDbId;
   const at = {
     ontologyDbId: o.ontologyDbId, observationVariableDbId: id, observationVariableName: clean(v.observationVariableName),
@@ -176,7 +184,7 @@ function normaliseVariable(raw, o, src) {
   const notes = [];
   for (const [from, to] of encodingFixes) {
     changes.encoding.push({ ...at, from, to });
-    notes.push(`Text encoding repaired: "${from}" → "${to}".`);
+    notes.push(`Text repaired: "${from}" → "${to}".`);
   }
   const note = (kind, detail) => {
     if (kind === 'category') {
@@ -195,7 +203,9 @@ function normaliseVariable(raw, o, src) {
   // traitClasses). Grouping doesn't change what a variable measures, so it's recorded once per class in
   // changes.json rather than as a note on every variable.
   const sourceClass = v.trait && clean(v.trait.traitClass);
-  const { name: traitClass, regrouped } = publishedTraitClass(o.ontologyDbId, sourceClass);
+  const published = publishedTraitClass(o.ontologyDbId, sourceClass);
+  const traitClass = classSpelling.get(published.name) ?? published.name;
+  const { regrouped } = published;
   if (sourceClass && traitClass !== sourceClass) {
     const key = `${o.ontologyDbId}|${sourceClass}|${traitClass}`;
     if (!classNames.has(key)) {
@@ -380,8 +390,10 @@ for (const id of ids) {
     siteVariables: siteHasVariables ? await readJson(join(DATA, 'variables', `${id}.json`)) : null,
   });
   const other = prefer === 'planteome' ? 'cropontology' : 'planteome';
+  // Class names spelled the American way where the class's traits are (curation.json americanSpellings).
+  const classSpelling = americanClassSpellings(id, merged.variables.map((x) => x.raw));
   const variables = merged.variables.map(({ raw, source, status, diffs, planteomeLine }) => {
-    const v = normaliseVariable(raw, o, srcs[source]);
+    const v = normaliseVariable(raw, o, srcs[source], classSpelling);
     const provenance = {
       source: LABELS[source],
       ...(status === 'agree' ? { alsoIn: LABELS[other] } : {}),
@@ -553,6 +565,6 @@ await writeFile(join(OUT, 'ontologies.json'), JSON.stringify({ sources: sourcesS
 const sum = (k) => changes.sources.reduce((n, x) => n + (x[k] ?? 0), 0);
 console.log(`Merge: ${sum('fromPlanteome')} variables from ${LABELS.planteome}, ${sum('fromCropontology')} from ${LABELS.cropontology}; ${sum('agree')} agree, ${sum('disagree')} disagree, ${sum('onlyPlanteome')} only on GitHub, ${sum('onlyCropontology')} only on the site, ${sum('duplicatesLeftOut')} renumbered duplicates and ${sum('obsoleteLeftOut')} obsolete left out`);
 console.log(`ID conflicts: ${changes.idConflicts.length}`);
-console.log(`Changes: ${changes.renamed.length} renamed, ${changes.traitClasses.length} trait class names standardised, ${changes.categories.length} categories restored (${changes.categoriesUnrepaired.length} left as served), ${changes.dataTypes.length} data types mapped, ${changes.encoding.length} encoding repairs, ${changes.fetchedIndividually.length} fetched individually, ${changes.unavailable.length} unavailable`);
+console.log(`Changes: ${changes.renamed.length} renamed, ${changes.traitClasses.length} trait class names standardised, ${changes.categories.length} categories restored (${changes.categoriesUnrepaired.length} left as served), ${changes.dataTypes.length} data types mapped, ${changes.encoding.length} text repairs, ${changes.fetchedIndividually.length} fetched individually, ${changes.unavailable.length} unavailable`);
 if (unknownTypes.size) console.warn('Non-BrAPI scale data types served as Text:', Object.fromEntries(unknownTypes));
 console.log(`Built ${index.length} ontologies, ${total} variables -> ${OUT}`);

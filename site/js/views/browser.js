@@ -1,19 +1,30 @@
 // #/CO_320/browse[/TERM_ID]  Trait browser, like the tree on cropontology.org: trait classes, their traits,
-// and each trait's variables, beside the selected term.
+// and each trait's variables, beside the selected term. TERM_ID can be a trait, a variable, or a method or scale,
+// which aren't in the tree but have their own page listing the variables that use them.
 //
 // Returns { id, select } so the router can select another term without rebuilding the page.
 
-import { field, htmlField, notFound, ontologyHead, ontologyNotes, sourceLinks, subclassOf, subclassTag, variableBody } from '../components.js';
+import { categoriesTable, field, htmlField, notFound, ontologyHead, ontologyNotes, sourceLinks, subclassOf, subclassTag, variableBody } from '../components.js';
 import { findOntology, loadChanges, loadVariables, sourcesOf } from '../data.js';
 import { glyph } from '../glyphs.js';
 import { app, byName, chevron, enc, esc, hashParts, plural, setTitle, terms } from '../util.js';
 
-// class name -> traits; trait key -> { key, trait, cls, vars }; variable ID -> its trait entry
+// class name -> traits; trait key -> { key, trait, cls, vars }; variable ID -> its trait entry;
+// method and scale ID -> { key, term, vars }
 function index(vars) {
   const classes = new Map();
   const traits = new Map();
   const varIndex = new Map();
+  const methods = new Map();
+  const scales = new Map();
+  const addTerm = (map, term, key, v) => {
+    if (!key) return;
+    if (!map.has(key)) map.set(key, { key, term, vars: [] });
+    map.get(key).vars.push(v);
+  };
   for (const v of vars) {
+    addTerm(methods, v.method, v.method?.methodDbId, v);
+    addTerm(scales, v.scale, v.scale?.scaleDbId, v);
     const key = v.trait?.traitDbId ?? `none:${v.observationVariableDbId}`;
     let t = traits.get(key);
     if (!t) {
@@ -26,7 +37,7 @@ function index(vars) {
     t.vars.push(v);
     varIndex.set(v.observationVariableDbId, t);
   }
-  return { classes, traits, varIndex };
+  return { classes, traits, varIndex, methods, scales };
 }
 
 const traitName = (t) => t.trait.traitName || t.vars[0].observationVariableName || t.key;
@@ -57,7 +68,7 @@ export async function browser(id, term) {
   const pane = app.querySelector('#term');
   const tcount = app.querySelector('#tcount');
 
-  const { classes, traits, varIndex } = index(vars);
+  const { classes, traits, varIndex, methods, scales } = index(vars);
   const classList = [...classes.entries()]
     .sort(([a], [b]) => (a === 'Unclassified') - (b === 'Unclassified') || byName(a, b));
   for (const [, list] of classList) {
@@ -144,8 +155,44 @@ export async function browser(id, term) {
       <div class="table-wrap"><table class="data">
         <thead><tr><th>Variable</th><th>Method</th><th>Scale</th><th>Data type</th></tr></thead>
         <tbody>${t.vars.map((v) => `
-          <tr><td><a href="${href(v.observationVariableDbId)}">${esc(varName(v))}</a></td><td>${esc(v.method?.methodName ?? '')}</td>
-          <td>${esc(v.scale?.scaleName ?? '')}</td><td class="mono">${esc(v.scale?.dataType ?? '')}</td></tr>`).join('')}
+          <tr><td><a href="${href(v.observationVariableDbId)}">${esc(varName(v))}</a></td><td>${termLink(v.method?.methodDbId, v.method?.methodName)}</td>
+          <td>${termLink(v.scale?.scaleDbId, v.scale?.scaleName)}</td><td class="mono">${esc(v.scale?.dataType ?? '')}</td></tr>`).join('')}
+        </tbody>
+      </table></div>`;
+  }
+
+  // A link to a trait, method, or scale page in the browser (plain text if it has no ID).
+  const termLink = (termId, text) => (termId ? `<a href="${href(termId)}">${esc(text || termId)}</a>` : esc(text ?? ''));
+  const termName = (kind, e) => (kind === 'method' ? e.term?.methodName : e.term?.scaleName) || e.key;
+
+  // A method or scale: its details, then every variable that uses it, with the other parts of each variable.
+  function showTerm(kind, e) {
+    const x = e.term ?? {};
+    const isMethod = kind === 'method';
+    const vv = x.validValues ?? {};
+    const details = isMethod
+      ? `${field('Class', x.methodClass)}${field('Description', x.description)}${field('Formula', x.formula)}${field('Reference', x.reference)}`
+      : `${field('Data type', x.dataType)}${field('Type in source', x.additionalInfo?.sourceDataType)}${field('Decimal places', x.decimalPlaces)}
+         ${field('Minimum', vv.minimumValue)}${field('Maximum', vv.maximumValue)}`;
+    const vs = [...e.vars].sort((a, b) => byName(varName(a), varName(b)));
+    const traitOf = (v) => varIndex.get(v.observationVariableDbId);
+    pane.innerHTML = `
+      <span class="label">${glyph(kind)}${isMethod ? 'Method' : 'Scale'}</span>
+      <h2>${esc(termName(kind, e))}</h2>
+      <p class="term-id">${esc(e.key)}</p>
+      <dl class="kv">
+        ${details}
+        ${htmlField('Source', sourceLinks(vs.find((v) => sourcesOf(v).cropOntology) ?? vs[0], o, e.key))}
+      </dl>
+      ${isMethod ? '' : categoriesTable(vv)}
+      <h3>Used by ${plural(vs.length, 'variable')}</h3>
+      <div class="table-wrap"><table class="data">
+        <thead><tr><th>Variable</th><th>Trait</th><th>${isMethod ? 'Scale' : 'Method'}</th>${isMethod ? '<th>Data type</th>' : ''}</tr></thead>
+        <tbody>${vs.map((v) => `
+          <tr><td><a href="${href(v.observationVariableDbId)}">${esc(varName(v))}</a></td>
+          <td>${termLink(traitOf(v)?.key, traitOf(v) ? traitName(traitOf(v)) : '')}</td>
+          <td>${isMethod ? termLink(v.scale?.scaleDbId, v.scale?.scaleName) : termLink(v.method?.methodDbId, v.method?.methodName)}</td>
+          ${isMethod ? `<td class="mono">${esc(v.scale?.dataType ?? '')}</td>` : ''}</tr>`).join('')}
         </tbody>
       </table></div>`;
   }
@@ -163,13 +210,16 @@ export async function browser(id, term) {
     const t = traits.get(selected) ?? varIndex.get(selected);
     const v = varIndex.has(selected) ? t.vars.find((x) => x.observationVariableDbId === selected) : null;
     if (t) { open.add(`c:${t.cls}`); open.add(`t:${t.key}`); }
+    const term = !t && selected ? (methods.has(selected) ? ['method', methods.get(selected)] : scales.has(selected) ? ['scale', scales.get(selected)] : null) : null;
     if (traits.has(selected)) showTrait(t);
     else if (v) showVariable(v);
+    else if (term) showTerm(...term);
     else { selected = null; showOverview(); }
     drawTree();
     revealSelection();
     if (fromClick && selected && matchMedia('(max-width: 760px)').matches) pane.scrollIntoView({ block: 'start' });
-    setTitle(selected ? `${v ? varName(v) : traitName(t)} | ${o.name}` : `${o.name} traits`);
+    const title = v ? varName(v) : t ? traitName(t) : term ? termName(...term) : null;
+    setTitle(title ? `${title} | ${o.name}` : `${o.name} traits`);
   }
 
   tree.addEventListener('click', (e) => {

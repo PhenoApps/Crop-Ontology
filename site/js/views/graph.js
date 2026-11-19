@@ -254,7 +254,7 @@ export async function graphView(id) {
     } else if (n.type === 'trait') {
       body = `<p><a href="#/${enc(id)}/browse/${enc(n.ref)}">Open in trait browser</a></p>`;
     } else if (n.vars) {
-      body = `<p>Used by ${plural(n.vars.length, 'variable')}:</p><ul>${n.vars.slice(0, 12).map((v) =>
+      body = `<p><a href="#/${enc(id)}/browse/${enc(n.key)}">Open in trait browser</a></p><p>Used by ${plural(n.vars.length, 'variable')}:</p><ul>${n.vars.slice(0, 12).map((v) =>
         `<li><a href="#/${enc(id)}/browse/${enc(v.observationVariableDbId)}">${esc(v.observationVariableName ?? v.observationVariableDbId)}</a></li>`).join('')}${n.vars.length > 12 ? `<li class="muted">and ${n.vars.length - 12} more</li>` : ''}</ul>`;
     } else {
       body = `<p>${[['trait', 'trait'], ['term', 'trait class']].map(([t, word]) => byType(t).length && plural(byType(t).length, word)).filter(Boolean).join(', ')} linked.</p>`;

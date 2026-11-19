@@ -130,6 +130,12 @@ export function sourceLinks(v, o, termId = v.observationVariableDbId) {
   if (row) links.push(extLink(row.url, 'Planteome', `Planteome trait dictionary: ${row.label}`));
   return links.join('<span class="link-sep"> · </span>');
 }
+// A scale's categories, value and meaning.
+export const categoriesTable = (vv) => (vv?.categories?.length
+  ? `<table class="data cats"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody>${vv.categories.map((c) =>
+    `<tr><td>${esc(c.value)}</td><td>${c.label !== c.value ? italicizeSpecies(esc(c.label)) : ''}</td></tr>`).join('')}</tbody></table>`
+  : '');
+
 // A label/value pair whose value is already HTML.
 export const htmlField = (label, html) => (html ? `<dt>${esc(label)}</dt><dd>${html}</dd>` : '');
 
@@ -166,10 +172,10 @@ export function variableIntro(v, o) {
 export function variableDetails(v, o, aside = '') {
   const t = v.trait ?? {};
   const crop = o?.id ?? v.ontologyReference?.ontologyDbId;
-  // IDs stay on this site: a trait ID opens the trait in the trait browser; method and scale IDs, which have no
-  // page here, are plain. Each section's Source field links out to the original.
+  // IDs stay on this site: trait, method, and scale IDs open their pages in the trait browser. Each section's
+  // Source field links out to the original.
   const idField = (id, href) => (!id ? '' : `<dt>ID</dt><dd class="mono">${href ? `<a href="${href}">${esc(id)}</a>` : esc(id)}</dd>`);
-  const traitHref = t.traitDbId && crop ? `#/${enc(crop)}/browse/${enc(t.traitDbId)}` : null;
+  const browseHref = (termId) => (termId && crop ? `#/${enc(crop)}/browse/${enc(termId)}` : null);
   const m = v.method ?? {};
   const s = v.scale ?? {};
   const vv = s.validValues ?? {};
@@ -196,7 +202,7 @@ export function variableDetails(v, o, aside = '') {
       <section class="panel">
         <h2>Trait</h2>
         <dl class="kv">
-          ${field('Name', t.traitName)}${idField(t.traitDbId, traitHref)}${field('Class', t.traitClass)}${field('Subclass', subclassOf(t))}${field('Class in source', info(t).sourceTraitClass)}
+          ${field('Name', t.traitName)}${idField(t.traitDbId, browseHref(t.traitDbId))}${field('Class', t.traitClass)}${field('Subclass', subclassOf(t))}${field('Class in source', info(t).sourceTraitClass)}
           ${field('Description', t.description)}${field('Abbreviation', t.mainAbbreviation)}
           ${field('Other abbreviations', t.alternativeAbbreviations)}${field('Synonyms', t.synonyms)}
           ${field('Entity', t.entity)}${field('Attribute', t.attribute)}
@@ -206,7 +212,7 @@ export function variableDetails(v, o, aside = '') {
       <section class="panel">
         <h2>Method</h2>
         <dl class="kv">
-          ${field('Name', m.methodName)}${idField(m.methodDbId)}${field('Class', m.methodClass)}
+          ${field('Name', m.methodName)}${idField(m.methodDbId, browseHref(m.methodDbId))}${field('Class', m.methodClass)}
           ${field('Description', m.description)}${field('Formula', m.formula)}${field('Reference', m.reference)}
           ${htmlField('Source', sourceLinks(v, o, m.methodDbId))}
         </dl>
@@ -214,13 +220,12 @@ export function variableDetails(v, o, aside = '') {
       <section class="panel">
         <h2>Scale</h2>
         <dl class="kv">
-          ${field('Name', s.scaleName)}${idField(s.scaleDbId)}${field('Data type', s.dataType)}
+          ${field('Name', s.scaleName)}${idField(s.scaleDbId, browseHref(s.scaleDbId))}${field('Data type', s.dataType)}
           ${field('Type in source', s.additionalInfo?.sourceDataType)}
           ${field('Decimal places', s.decimalPlaces)}${field('Minimum', vv.minimumValue)}${field('Maximum', vv.maximumValue)}
           ${htmlField('Source', sourceLinks(v, o, s.scaleDbId))}
         </dl>
-        ${vv.categories?.length ? `<table class="data cats"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody>${vv.categories.map((c) =>
-          `<tr><td>${esc(c.value)}</td><td>${c.label !== c.value ? italicizeSpecies(esc(c.label)) : ''}</td></tr>`).join('')}</tbody></table>` : ''}
+        ${categoriesTable(vv)}
       </section>
     </div>`;
 }
